@@ -1,5 +1,3 @@
-# https://dreampuf.github.io/GraphvizOnline/
-
 digraph Signs {
     
   subgraph restoration {
