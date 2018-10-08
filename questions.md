@@ -1,4 +1,4 @@
-# Questions
+# Open Questions
 
 * When is the burning? Does it occurr as the heavens are opened and Christ is revealed 
 and he comes down with the saints?
@@ -30,6 +30,21 @@ returns in the seventh seal.
 as the "Angel sounds his trump?"
 
 * What is the relationship, in terms of timing, between the Burning and the Great earthquake?
+
+## Possible Synonyms
+
+* "Moon turned to blood" and "Moon darkened"
+* "Heavens shake" and "Stars fall from heaven"
+
+# In Progress
+
+* Are "Christ comes in the clouds," "Great sign in heaven," and "Sign of the Son of Man" all the same?
+
+| Sign | Before | After |
+----- | ---- | ----
+| Christ comes in the clouds | Mount of Olives splits; Gentiles help gather God's people; Jews gathered in Jerusalem; Morning of the First Resurrection; Rapture; Sign of the Son of Man; Gathering of the remainder of the elect; Sun darkened; Moon turned to blood; Stars refuse their light; Stars fall from heaven; Signs in Heavens; Wars | Burning; Christ reigns as king |
+| Great sign in heaven | Stars fall from heaven; sun darkened; Moon turned to blood; Thunderings, lightenings, tempests, tsunamis; Earthquakes | Silence for halfan hour; Curtain of heaven unfolded as a scroll |
+| Sign of the Son of Man | Moon darkened; Stars fall from heaven; Heavens shake; Sun darkened | Christ comes in the clouds |
 
 # Resolved Questions
 
