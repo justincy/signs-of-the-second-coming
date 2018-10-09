@@ -38,13 +38,15 @@ as the "Angel sounds his trump?"
 
 # In Progress
 
-* Are "Christ comes in the clouds," "Great sign in heaven," and "Sign of the Son of Man" all the same?
+## Are "Christ comes in the clouds," "Great sign in heaven," and "Sign of the Son of Man" all the same?
 
 | Sign | Before | After |
 ----- | ---- | ----
 | Christ comes in the clouds | Mount of Olives splits; Gentiles help gather God's people; Jews gathered in Jerusalem; Morning of the First Resurrection; Rapture; Sign of the Son of Man; Gathering of the remainder of the elect; Sun darkened; Moon turned to blood; Stars refuse their light; Stars fall from heaven; Signs in Heavens; Wars | Burning; Christ reigns as king |
 | Great sign in heaven | Stars fall from heaven; sun darkened; Moon turned to blood; Thunderings, lightenings, tempests, tsunamis; Earthquakes | Silence for halfan hour; Curtain of heaven unfolded as a scroll |
 | Sign of the Son of Man | Moon darkened; Stars fall from heaven; Heavens shake; Sun darkened | Christ comes in the clouds |
+
+I'm pretty sure that "Great sign in heaven" and "Sign of the Son of Man" are the same. However I'm not sure that "Christ comes in the clouds" is the same. It seems that a sign may be given before he actually appears. My main reason for believing this is that JST Matthew 1:36 seems to imply that Christ comes in the clouds _after_ the sign is given.
 
 # Resolved Questions
 
