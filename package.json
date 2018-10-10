@@ -1,0 +1,16 @@
+{
+  "name": "signs-of-the-second-coming",
+  "version": "1.0.0",
+  "description": "Exploring the order of the signs of the Second Coming of Christ as mentioned in scripture.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justincy/signs-of-the-second-coming.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justincy/signs-of-the-second-coming/issues"
+  },
+  "homepage": "https://github.com/justincy/signs-of-the-second-coming#readme",
+  "dependencies": {
+    "yargs": "^12.0.2"
+  }
+}
