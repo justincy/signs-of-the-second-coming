@@ -48,6 +48,8 @@ as the "Angel sounds his trump?"
 
 I'm pretty sure that "Great sign in heaven" and "Sign of the Son of Man" are the same. However I'm not sure that "Christ comes in the clouds" is the same. It seems that a sign may be given before he actually appears. My main reason for believing this is that JST Matthew 1:36 seems to imply that Christ comes in the clouds _after_ the sign is given.
 
+![Relationship between "Christ comes in the clouds", "Great sign in heaven", and "Sign of the Son of Man"](img/christ-in-the-clouds.png)
+
 # Resolved Questions
 
 * Is the quickening of saints to meet Christ in the clouds the same as the morning of
