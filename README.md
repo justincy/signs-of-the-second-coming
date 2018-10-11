@@ -9,4 +9,4 @@ I have a list of [questions](questions.md) regarding my current analysis.
 
 Here's a recent image of the chart I have so far.
 
-![Signs chart](signs.png)
+![Signs chart](img/signs.png)

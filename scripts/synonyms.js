@@ -4,7 +4,7 @@
  * contains only the extracted nodes and edges.
  */
 const fs = require('fs');
-const Graph = require('./graph.js');
+const Graph = require('./lib/graph.js');
 
 // Gather params: list of signs we want to extract; output?
 const args = require('yargs')
