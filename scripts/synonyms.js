@@ -30,7 +30,6 @@ async function run() {
 
   // Reconstruct subgraph for only the signs we're interested in
   const subgraph = graph.subgraph(signs);
-  console.log(subgraph.nodes);
 
   // Output subgraph
   writeGraph('synonyms.gv', subgraph);
@@ -94,10 +93,13 @@ function readFile() {
 function writeGraph(filename, subgraph) {
   // Construct a set of {x -> y} pairs so that we dedup
   const allPairs = subgraph.allPairs();
-  console.log(allPairs);
 
   // Write to a file
-    // opening digraph statement
+  const file = fs.createWriteStream(filename);
+  file.write('digraph synonyms {');
+  allPairs.forEach((pair) => {
+    file.write(`\n\t"${pair[0]}" -> "${pair[1]}"`);
+  });
+  file.end('\n}');
     // each pair on a line with quotes around values
-    // closing brace
 }
