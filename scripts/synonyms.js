@@ -27,9 +27,10 @@ run().catch(e => {
 async function run() {
   // Construct the graph
   const graph = await loadGraph();
-  console.log(graph);
 
   // Reconstruct subgraph for only the signs we're interested in
+  const subgraph = graph.subgraph(signs);
+  console.log(subgraph.nodes);
 
   // Output subgraph
 }
