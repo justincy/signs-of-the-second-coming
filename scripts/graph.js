@@ -8,6 +8,57 @@ class Graph {
   }
 
   /**
+   * Get a list of all nodes in this graph.
+   * 
+   * @returns {array} nodes
+   */
+  getNodes() {
+    return Object.keys(this.nodes);
+  }
+
+  /**
+   * Get a node's relationships
+   * 
+   * @param {string} node 
+   */
+  getNode(node) {
+    return this.nodes[node];
+  }
+
+  /**
+   * Get a list of [x,y] pairs for this node
+   * 
+   * @param {string} node 
+   * @returns {array} pairs
+   */
+  getNodePairs(node) {
+    const rels = this.getNode(node);
+    const pairs = [];
+    rels.before.forEach((val) => {
+      pairs.push([val, node]);
+    });
+    rels.after.forEach((val) => {
+      pairs.push([node, val]);
+    });
+    return pairs;
+  }
+
+  /**
+   * Get a list of all unique [x,y] pairs for this graph
+   * 
+   * @returns {array} list of pairs
+   */
+  allPairs() {
+    const pairs = new Set();
+    this.getNodes().forEach((node) => {
+      this.getNodePairs(node).forEach((pair) => {
+        pairs.add(`${pair[0]}::${pair[1]}`);
+      });
+    });
+    return Array.from(pairs.values()).map((pair) => pair.split('::'));
+  }
+
+  /**
    * Adds a x -> x pair of nodes to the graph
    * 
    * @param {string} first 

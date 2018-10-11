@@ -33,6 +33,7 @@ async function run() {
   console.log(subgraph.nodes);
 
   // Output subgraph
+  writeGraph('synonyms.gv', subgraph);
 }
 
 /**
@@ -82,4 +83,21 @@ function readFile() {
       resolve(data.toString());
     })
   });
+}
+
+/**
+ * Write a graph to a file
+ * 
+ * @param {string} filename
+ * @param {object} subgraph
+ */
+function writeGraph(filename, subgraph) {
+  // Construct a set of {x -> y} pairs so that we dedup
+  const allPairs = subgraph.allPairs();
+  console.log(allPairs);
+
+  // Write to a file
+    // opening digraph statement
+    // each pair on a line with quotes around values
+    // closing brace
 }
