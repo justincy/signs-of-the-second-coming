@@ -35,6 +35,7 @@ as the "Angel sounds his trump?"
 
 * "Moon turned to blood" and "Moon darkened"
 * "Heavens shake" and "Stars fall from heaven"
+* "Christ comes in the clouds", "Great sign in heaven", "Sign of the Son of Man"
 
 # In Progress
 
@@ -49,6 +50,11 @@ as the "Angel sounds his trump?"
 I'm pretty sure that "Great sign in heaven" and "Sign of the Son of Man" are the same. However I'm not sure that "Christ comes in the clouds" is the same. It seems that a sign may be given before he actually appears. My main reason for believing this is that JST Matthew 1:36 seems to imply that Christ comes in the clouds _after_ the sign is given.
 
 ![Relationship between "Christ comes in the clouds", "Great sign in heaven", and "Sign of the Son of Man"](img/christ-in-the-clouds.png)
+
+JST Revelation 12:1 refers to the "great sign in heaven" as being "a woman clothed with the sun, and the moon under her feet, and upon her head a crown of twelve stars."
+
+The "sign of the son of man" is only referred to in Matthew 24 (and JST Matthew 1).
+The "great sign in heaven" is referred to in Revelation 12:1 and D&C 88.
 
 # Resolved Questions
 
