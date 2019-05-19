@@ -32,7 +32,7 @@ async function run() {
   const subgraph = graph.subgraph(signs);
 
   // Output subgraph
-  writeGraph('synonyms.gv', subgraph);
+  writeGraph('subgraph.gv', subgraph);
 }
 
 /**
