@@ -46,8 +46,8 @@ class Node {
    * @param {Node} node
    */
   merge(node) {
-    this.before = new Set(...this.before, ...node.before);
-    this.after = new Set(...this.after, ...node.after);
+    this.before = new Set([...this.before, ...node.before]);
+    this.after = new Set([...this.after, ...node.after]);
   }
 
   /**
@@ -58,10 +58,16 @@ class Node {
    * @param {sring} replace
    */
   replace(search, replace) {
-    this.before.delete(search);
-    this.before.add(replace);
-    this.after.delete(search);
-    this.after.add(replace);
+    if (this.value !== replace) {
+      if (this.before.has(search)) {
+        this.before.delete(search);
+        this.before.add(replace);
+      }
+      if (this.after.has(search)) {
+        this.after.delete(search);
+        this.after.add(replace);
+      }
+    }
   }
 
 }
