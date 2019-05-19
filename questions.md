@@ -51,10 +51,12 @@ I'm pretty sure that "Great sign in heaven" and "Sign of the Son of Man" are the
 
 ![Relationship between "Christ comes in the clouds", "Great sign in heaven", and "Sign of the Son of Man"](img/christ-in-the-clouds.png)
 
-JST Revelation 12:1 refers to the "great sign in heaven" as being "a woman clothed with the sun, and the moon under her feet, and upon her head a crown of twelve stars."
-
 The "sign of the son of man" is only referred to in Matthew 24 (and JST Matthew 1).
 The "great sign in heaven" is referred to in Revelation 12:1 and D&C 88.
+
+JST Revelation 12:1 refers to the "great sign in heaven" as being "a woman clothed with the sun, and the moon under her feet, and upon her head a crown of twelve stars." But it also says that the sign was "in the likeness of things on the earth." John is describing his vision which is symbolic and not necessarily literal. Also, he's talking about the apostasy and war in heaven, not the second coming. So I don't believe this is the same sign as the one being described in D&C 88 which clearly is related to the second coming.
+
+Therefore, we're left with the "sign of the son of man" in Matthew 24 (JST Matthew 1) and the "great sign in heaven" in D&C 88.
 
 # Resolved Questions
 
