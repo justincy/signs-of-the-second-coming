@@ -28,7 +28,7 @@ module.exports = {
     let parts;
 
     // Iterate over all lines
-    lines.forEach((line) => {
+    lines.forEach(function processLine(line) {
 
       // Skip lines that start with a #
       if (line.trim().indexOf('#') === 0) {

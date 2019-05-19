@@ -1,0 +1,13 @@
+# List of signs that I believe are synonyms.
+#
+# My reasoning for considering two signs as synonyms
+# is documented elsewhere. This list is used to 
+# programatically simplify the full graph by 
+# collapsing synonyms.
+#
+# In each (a -> b) pair, the sign on the left will
+# be replaced in the graph by the sign on the right.
+
+digraph {
+  "Great sign in heaven" -> "Sign of the Son of Man"
+}
