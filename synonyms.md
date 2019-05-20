@@ -32,6 +32,25 @@ The two different phrases seem very different initiatlly. "Turned to blood" impl
 - **2 Nephi 23:10 (Isaiah 13:10)** - moon shall not cause her light to shine
   - For the stars of heaven and the constellations thereof shall not give their light; the sun shall be darkened in his going forth, and the *moon shall not cause her light to shine*.
 
+### Other
+
+These scriptures use similar terminology but appear to be describing events at a different time. The scriptures above focus on periods of destruction before the Second Coming. These scriptures relate to the actual moment of Christ's coming, the Millenium, or his death.
+
+- **Isaiah 24:23** - Then the moon shall be confounded, and the sun ashamed, when the Lord of hosts shall reign in mount Zion, and in Jerusalem, and before his ancients gloriously.
+  - Speaking of the Millenium
+- **Isaiah 30:26** - Moreover the light of the moon shall be as the light of the sun, and the light of the sun shall be sevenfold, as the light of seven days, in the day that the Lord bindeth up the breach of his people, and healeth the stroke of their wound.
+  - Appears to be speaking of the Second Coming or Millenium.
+- **Ezekiel 32:7-8** - And when I shall put thee out, I will cover the heaven, and make the stars thereof dark; I will cover the sun with a cloud, and the moon shall not give her light. All the bright lights of heaven will I make dark over thee, and set darkness upon thy land, saith the Lord God.
+  - This is Ezekiel prophesying the destruction of Egypt.
+- **Revelation 21:23** - And the city had no need of the sun, neither of the moon, to shine in it: for the glory of God did lighten it, and the Lamb is the light thereof.
+  - Millenium
+- **Helaman 14:20** - But behold, as I said unto you concerning another sign, a sign of his death, behold, in that day that he shall suffer death the sun shall be darkened and refuse to give his light unto you; and also the moon and the stars; and there shall be no light upon the face of the land, even from the time that he shall suffer death, for the space of three days, to the time that he shall rise again from the dead.
+  - Samuel the Lamanite describes a sign of Christ's death.
+- **3 Nephi 8:22** - And there was not any light seen, neither fire, nor glimmer, neither the sun, nor the moon, nor the stars, for so great were the mists of darkness which were upon the face of the land.
+  - Description of events in the Americas at Christ's death.
+- **D&C 133:49** - And so great shall be the glory of his presence that the sun shall hide his face in shame, and the moon shall withold its light, and the stars shall be hurled from their places.
+  - Seems to be speaking of the Second Coming.
+
 | Scripture | Sun | Moon | Stars | Notes |
 | ---- | ---- | ---- | ---- | ---- |
 | Joel 2:31 | sun shall be turned into darkness | moon into blood | |
@@ -47,6 +66,9 @@ The two different phrases seem very different initiatlly. "Turned to blood" impl
 | D&C 45:42 | sun shall be darkened | moon be turned into blood | stars fall from heaven |
 | D&C 88:87 | sun shall hide his face, and shall refuse to give light | moon shall be bathed in blood | stars shall become exceedingly angry, and shall cast themselves down as a fig that falleth from off a fig tree |
 
+Is there a symbollic connection between these prophecies and the kingdoms of glory being described as the sun, the moon, and the stars?
+
+Different sides of the earth may see different signs. Only half the earth can see the sun at a time; only half can see the moon.
 
 ## "Christ comes in the clouds," "Great sign in heaven," and "Sign of the Son of Man"
 
