@@ -32,6 +32,22 @@ The two different phrases seem very different initiatlly. "Turned to blood" impl
 - **2 Nephi 23:10 (Isaiah 13:10)** - moon shall not cause her light to shine
   - For the stars of heaven and the constellations thereof shall not give their light; the sun shall be darkened in his going forth, and the *moon shall not cause her light to shine*.
 
+| Scripture | Sun | Moon | Stars | Notes |
+| ---- | ---- | ---- | ---- | ---- |
+| Joel 2:31 | sun shall be turned into darkness | moon into blood | |
+| Joel 3:15 | sun [shall be darkened] | moon shall be darkened | stars shall withdraw their shining |
+| Matthew 24:29-30 (JST Matthew 1) | sun be darkened | moon shall not give her light | stars shall fall from heaven | the powers of the heavens shall be shaken: And then shall appear the sign of the Son of man in heaven: and then shall all the tribes of the earth mourn, and they shall see the Son of man coming in the clouds of heaven with power and great glory. |
+| Mark 13:24 | sun shall be darkened | moon shall not give her light | stars of heaven shall fall | and the powers that are in heaven shall be shaken. And then shall they see the Son of man coming in the clouds with great power and glory. |
+| Acts 2:20 | sun shall be turned into darkness | moon into blood | | Paul is quoting Joel |
+| Revelation 6:12 | sun became black as sackcloth of hair | moon became as blood | stars of heaven fell unto the earth |
+| Revelation 8:12 | third part of the sun was smitten | third part of the moon | third part of the stars | And the fourth angel sounded ... so as the third part of them was darkened, and the day shone not for a third part of it, and the night likewise. |
+| 2 Nephi 23:10 (Isaiah 13:10) | sun shall be darkened in his going forth | moon shall not cause her light to shine | stars of heaven and the constellations thereof shall not give their light |
+| D&C 29:14 | sun shall be darkened | moon shall be turned into blood | stars shall fall from heaven | and there shall be greater signs in heaven above and in the earth beneath |
+| D&C 34:9 | sun shall be darkened | moon be turned into blood | stars shall refuse their shining, and some shall fall |
+| D&C 45:42 | sun shall be darkened | moon be turned into blood | stars fall from heaven |
+| D&C 88:87 | sun shall hide his face, and shall refuse to give light | moon shall be bathed in blood | stars shall become exceedingly angry, and shall cast themselves down as a fig that falleth from off a fig tree |
+
+
 ## "Christ comes in the clouds," "Great sign in heaven," and "Sign of the Son of Man"
 
 | Sign | Before | After |
