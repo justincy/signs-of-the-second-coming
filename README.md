@@ -5,7 +5,7 @@ I use [DOT](https://en.wikipedia.org/wiki/DOT_(graph_description_language)) to d
 relationships between signs and then visualize it with either an [online](https://dreampuf.github.io/GraphvizOnline/) 
 tool or a local [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=joaompinto.vscode-graphviz).
 
-I have a list of [questions](questions.md) regarding my current analysis as well as an exploration of various [synonyms](synonyms.md).
+I have a list of [questions](questions.md) regarding my current analysis as well as an exploration of various [synonyms](./synonyms).
 
 Here's a recent image of the chart I have so far.
 

@@ -15,7 +15,7 @@ async function run() {
   const fullGraph = await utils.loadGraph('signs.gv');
 
   // Load the list of synonyms
-  const synonyms = await utils.loadGraph('synonyms.gv')
+  const synonyms = await utils.loadGraph('synonyms/synonyms.gv')
 
   // Simplify the graph by collapsing synonyms
   synonyms.allPairs().forEach(synonym => {
