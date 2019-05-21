@@ -34,7 +34,7 @@ The two different phrases seem very different initially. "Turned to blood" impli
 
 ## Other
 
-These scriptures use similar terminology but appear to be describing events at a different time. The scriptures above focus on periods of destruction before the Second Coming. These scriptures relate to the actual moment of Christ's coming, the Millenium, or his death.
+These scriptures use similar terminology but appear to be describing events at a different time. The scriptures above focus on periods of destruction before the Second Coming. Many of these scriptures relate to the actual moment of Christ's coming, the Millenium, or his death. I've also noted scriptures which related to the signs of the Second Coming but only mention the sun.
 
 - **Isaiah 24:23** - Then the moon shall be confounded, and the sun ashamed, when the Lord of hosts shall reign in mount Zion, and in Jerusalem, and before his ancients gloriously.
   - Speaking of the Millenium
@@ -42,8 +42,14 @@ These scriptures use similar terminology but appear to be describing events at a
   - Appears to be speaking of the Second Coming or Millenium.
 - **Ezekiel 32:7-8** - And when I shall put thee out, I will cover the heaven, and make the stars thereof dark; I will cover the sun with a cloud, and the moon shall not give her light. All the bright lights of heaven will I make dark over thee, and set darkness upon thy land, saith the Lord God.
   - This is Ezekiel prophesying the destruction of Egypt.
+- **Revelation 9:2** - And he opened the bottomless pit; and there arose a smoke out of the pit, as the smoke of a great furnace; and the sun and the air were darkened by reason of the smoke of the pit.
+  - This doesn't speak of the moon but it does say how the sun will be darkened in the last days.
+- **Revelation 16:8** - And the fourth angel poured out his vial upon the sun; and power was given unto him to scorch men with fire.
+  - The sun will be especially hot and powerful. Likely happens before being darkened.
 - **Revelation 21:23** - And the city had no need of the sun, neither of the moon, to shine in it: for the glory of God did lighten it, and the Lamb is the light thereof.
-  - Millenium
+  - City of Zion in the Millenium
+- **Revelation 22:5** - And there shall be no night there; and they need no candle, neither light of the sun; for the Lord God giveth them light: and they shall reign for ever and ever.
+  - City of Zion in the Millenium
 - **Helaman 14:20** - But behold, as I said unto you concerning another sign, a sign of his death, behold, in that day that he shall suffer death the sun shall be darkened and refuse to give his light unto you; and also the moon and the stars; and there shall be no light upon the face of the land, even from the time that he shall suffer death, for the space of three days, to the time that he shall rise again from the dead.
   - Samuel the Lamanite describes a sign of Christ's death.
 - **3 Nephi 8:22** - And there was not any light seen, neither fire, nor glimmer, neither the sun, nor the moon, nor the stars, for so great were the mists of darkness which were upon the face of the land.
@@ -73,3 +79,5 @@ These scriptures use similar terminology but appear to be describing events at a
 Is there a symbollic connection between these prophecies and the kingdoms of glory being described as the sun, the moon, and the stars?
 
 Different sides of the earth may see different signs. Only half the earth can see the sun at a time; only half can see the moon.
+
+Has this already been fulfilled? https://www.lds.org/general-conference/2001/10/living-in-the-fulness-of-times?lang=eng
