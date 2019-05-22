@@ -116,7 +116,7 @@ digraph Signs {
     # Revelation 11:15
     "Great earthquake" -> "7: seven thunders; mystery of God finished"
 
-    # Revelations 11:19
+    # Revelation 11:19
     "7: seven thunders; mystery of God finished" -> "Temple of God was opened"
     "7: seven thunders; mystery of God finished" -> "Lightenings, voices, thunderings"
     "7: seven thunders; mystery of God finished" -> "Great earthquake"
@@ -162,14 +162,14 @@ digraph Signs {
     "New Jerusalem" -> "Return of the City of Enoch"
   }
   
-  # Revelations 15-16
+  # Revelation 15-16
   subgraph sevenPlagues {
   	"1. Grievous sore" -> "2. Sea turned to blood" -> "3. Rivers and fountains turned to blood" -> "4. Men scorched with heat of the sun" -> "5. Kingdom of beast full of darkness" -> "6: Euphrates dried up" -> "7: seven thunders; mystery of God finished"
   	
-  	# Revelations 16:12-16
+  	# Revelation 16:12-16
     "6: Euphrates dried up" -> "Spirits of the devil gather kings of the earth" -> "All nations gathered against Israel"
     
-    # Revelations 16:16-21
+    # Revelation 16:16-21
     "All nations gathered against Israel" -> "7: seven thunders; mystery of God finished"
     "7: seven thunders; mystery of God finished" -> "Islands become one land"
     "7: seven thunders; mystery of God finished" -> "Great hailstorm"
@@ -200,11 +200,11 @@ digraph Signs {
   	"Times of the Gentiles" -> "Wars"
   	
   	# D&C 45:40-43
-  	"blood, fire, vapors of smoke" -> "Great Day of the Lord"
-  	"Sun darkened" -> "Great Day of the Lord"
-  	"Moon turned to blood" -> "Great Day of the Lord"
-  	"Stars fall from heaven" -> "Great Day of the Lord"
-  	"Jews gathered in Jerusalem" -> "Great Day of the Lord"
+  	"blood, fire, vapors of smoke" -> "Great day of the Lord"
+  	"Sun darkened" -> "Great day of the Lord"
+  	"Moon turned to blood" -> "Great day of the Lord"
+  	"Stars fall from heaven" -> "Great day of the Lord"
+  	"Jews gathered in Jerusalem" -> "Great day of the Lord"
   	
   	# D&C 45:44
   	"Jews gathered in Jerusalem" -> "Christ comes in the clouds"
@@ -416,6 +416,35 @@ digraph Signs {
 
   subgraph sunMoonStars {
 
+    # See also:
+      # section on Matthew 24 and JST Matthew above
+      # section on the sixth seal from Revelation 6
+      # section on the seventh seal from Revelation 8,9
+
+    # Joel 2:31
+    # Actions 2:20
+    "Sun darkened" -> "Great day of the Lord"
+    "Moon turned to blood" -> "Great day of the Lord"
+
+    # Joel 3:15
+    "Multitudes gathered in the valley of decision" -> "Sun darkened"
+    "Multitudes gathered in the valley of decision" -> "Moon darkened"
+    "Sun darkened" -> "Lord speak from Zion and Jerusalem"
+    "Moon darkened" -> "Lord speak from Zion and Jerusalem"
+    "Lord speak from Zion and Jerusalem" - "Heavens and earth shake"
+
+    # Mark 13:24
+    "Great tribulation on the Jews" -> "Sun darkened"
+    "Great tribulation on the Jews" -> "Moon darkened"
+    "Great tribulation on the Jews" -> "Stars fall from heaven"
+    "Great tribulation on the Jews" -> "Heavens shake"
+    "Sun darkened" -> "Christ comes in the clouds"
+    "Moon darkened" -> "Christ comes in the clouds"
+    "Stars fall from heaven" -> "Christ comes in the clouds"
+    "Heavens shake" -> "Christ comes in the clouds"
+
+
+
     # D&C 34:7-9
     "Sun darkened" -> "Christ comes in the clouds"
     "Moon turned to blood" -> "Christ comes in the clouds"
@@ -432,7 +461,7 @@ digraph Signs {
   
   # D&C 133:18,56
   # D&C 84:2
-  # Revelations 14:1
+  # Revelation 14:1
   "New Jerusalem" -> "Christ stands on Mount Zion"
   "Sealing of the 144,000" -> "Christ stands on Mount Zion"
   
@@ -448,7 +477,7 @@ digraph Signs {
   "Face of the earth changed" -> "Angel sounds his trump"
 
   # 2 Nephi 12:19-21
-  "Great Day of the Lord" -> "Great earthquake"
+  "Great day of the Lord" -> "Great earthquake"
   
   # Track "time of the Gentiles"; D&C 45
   # https://www.lds.org/scriptures/dc-testament/dc/45
