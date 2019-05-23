@@ -31,6 +31,8 @@ as the "Angel sounds his trump?"
 
 * What is the relationship, in terms of timing, between the Burning and the Great earthquake?
 
+* What is the "great day of the Lord?" Is it the same as "Christ comes in the clouds?"
+
 # Resolved Questions
 
 * Is the quickening of saints to meet Christ in the clouds the same as the morning of
