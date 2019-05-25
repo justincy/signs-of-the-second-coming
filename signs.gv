@@ -483,6 +483,10 @@ digraph Signs {
 
   # 2 Nephi 12:19-21
   "Great day of the Lord" -> "Great earthquake"
+
+  # Malachi 4:5
+  "Restoration" -> "Elijah appears"
+  "Elijah appears" -> "Great day of the Lord"
   
   # Track "time of the Gentiles"; D&C 45
   # https://www.lds.org/scriptures/dc-testament/dc/45

@@ -13,4 +13,6 @@ digraph {
 
   # D&C 34:7-8
   "Great day of the Lord" -> "Christ comes in the clouds"
+
+  "Second Coming" -> "Christ comes in the clouds"
 }

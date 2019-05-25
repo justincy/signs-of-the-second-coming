@@ -220,10 +220,10 @@ class Graph {
     const searchNode = this.getNode(search);
     const replaceNode = this.getNode(replace);
     if (!searchNode) {
-      throw new Error(`The node "${search}" does not exist in the graph"`);
+      throw new Error(`The node "${search}" does not exist in the graph`);
     }
     if (!replaceNode) {
-      throw new Error(`The node "${replace}" does not exist in the graph"`);
+      throw new Error(`The node "${replace}" does not exist in the graph`);
     }
 
     // Merge search into replace
