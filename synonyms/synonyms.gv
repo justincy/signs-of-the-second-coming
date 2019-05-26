@@ -15,4 +15,8 @@ digraph {
   "Great day of the Lord" -> "Christ comes in the clouds"
 
   "Second Coming" -> "Christ comes in the clouds"
+
+  "Lord utter his voice out of heaven" -> "Lord utter his voice"
+
+  "Multitudes gathered in the valley of decision" -> "All nations gathered against Israel"
 }

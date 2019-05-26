@@ -23,17 +23,17 @@ digraph Signs {
     "Columbus" -> "Discovering of America"
     
     # 1 Nephi 13:14
-    "Discovering of America" -> "Scattering of Lehi's Seed"
+    "Discovering of America" -> "Scattering of Lehi's seed"
     
     # 1 Nephi 22:7-8
-    "Discovering of America" -> "Mighty nation raised up" -> "Scattering of Lehi's Seed"
+    "Discovering of America" -> "Mighty nation raised up" -> "Scattering of Lehi's seed"
     "Mighty nation raised up" -> "Restoration"
     
     # 1 Nephi 15:13
-    "Restoration" -> "Fullness of the gospel preached to Lehi's Seed"
+    "Restoration" -> "Fullness of the gospel preached to Lehi's seed"
     
     # 1 Nephi 15:17
-    "Scattering of Lehi's Seed" -> "Fullness of the gospel preached to Lehi's Seed";
+    "Scattering of Lehi's seed" -> "Fullness of the gospel preached to Lehi's seed"
   }
   
   # Revelation 6
@@ -233,7 +233,6 @@ digraph Signs {
   # D&C 29:13-19
   subgraph dc29 {
     # D&C 29:13
-    # D&C 43:18
     "Angel sounds his trump" -> "Great earthquake"
     "Angel sounds his trump" -> "Morning of the First Resurrection"
     
@@ -429,12 +428,13 @@ digraph Signs {
     "Sun darkened" -> "Great day of the Lord"
     "Moon turned to blood" -> "Great day of the Lord"
 
-    # Joel 3:15
+    # Joel 3:14-16
     "Multitudes gathered in the valley of decision" -> "Sun darkened"
     "Multitudes gathered in the valley of decision" -> "Moon darkened"
     "Sun darkened" -> "Lord speaks from Zion and Jerusalem"
     "Moon darkened" -> "Lord speaks from Zion and Jerusalem"
-    "Lord speaks from Zion and Jerusalem" -> "Heavens and earth shake"
+    "Lord speaks from Zion and Jerusalem" -> "Heavens shake"
+    "Lord speaks from Zion and Jerusalem" -> "Earthquakes"
 
     # Mark 13:24
     "Great tribulation of the Jews" -> "Sun darkened"
@@ -456,6 +456,38 @@ digraph Signs {
     # Isaiah 13:10
     # This passage of scripture doesn't give enough context to 
     # put any signs in order. It's just listing different signs.
+  }
+
+  subgraph raptureResurrection {
+    # See also:
+      # Section on D&C 45
+      # Section on D&C 29
+      # Section on D&C 88
+
+    # 1 Thessalonians 4:16-17
+    "Rapture" -> "Christ comes in the clouds"
+    "Morning of the First Resurrection" -> "Christ comes in the clouds"
+  }
+
+  subgraph heavensShake {
+    # See also many other verses previously listed.
+    # Search this file for "Heavens shake"
+
+    # Moses 7:60-61
+    "Sun darkened" -> "Christ comes in the clouds"
+    "Moon darkened" -> "Christ comes in the clouds"
+    "Heavens shake" -> "Christ comes in the clouds"
+    "Darkness shall cover the earth" -> "Christ comes in the clouds"
+    "Earthquakes" -> "Christ comes in the clouds"
+
+    # 2 Peter 3:10
+
+    # D&C 43:18
+    "Lord utter his voice out of heaven" -> "Heavens shake"
+    "Lord utter his voice out of heaven" -> "Earthquakes"
+    "Lord utter his voice out of heaven" -> "Trump of God shall sound"
+    "Trump of God shall sound" -> "Morning of the First Resurrection"
+
   }
   
   # Luke 21:25-28
