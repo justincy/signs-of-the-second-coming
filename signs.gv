@@ -248,7 +248,9 @@ digraph Signs {
   subgraph burning {
 
     # D&C 101:23-25
-    "Curtain of heaven unfolded as a scroll" -> "Burning" -> "All things become new"
+    "Curtain of heaven unfolded as a scroll" -> "Face of the Lord unveiled"
+    "Face of the Lord unveiled" -> "Burning"
+    "Burning" -> "All things become new"
 
     # D&C 63:54
     # 2 Nephi 30:10
@@ -338,11 +340,11 @@ digraph Signs {
     # "Great tribulation" -> "Heavens shake"
 
     # Matthew 24:30
-    # "Sun darkened" -> "Sign of the Son of man"
-    # "Moon darkened" -> "Sign of the Son of man"
-    # "Stars fall from heaven" -> "Sign of the Son of man"
-    # "Heavens shake" -> "Sign of the Son of man"
-    # "Sign of the Son of man" -> "Christ comes in the clouds"
+    # "Sun darkened" -> "Sign of the Son of Man"
+    # "Moon darkened" -> "Sign of the Son of Man"
+    # "Stars fall from heaven" -> "Sign of the Son of Man"
+    # "Heavens shake" -> "Sign of the Son of Man"
+    # "Sign of the Son of Man" -> "Christ comes in the clouds"
 
     # Matthew 24:31
     # "Christ comes in the clouds" -> "Gathering of the elect"
@@ -519,6 +521,21 @@ digraph Signs {
   # Malachi 4:5
   "Restoration" -> "Elijah appears"
   "Elijah appears" -> "Great day of the Lord"
+
+  # Teachings of the Prophet Joseph Smith; p286-287
+  "Jews gathered in Jerusalem" -> "Temple in Jerusalem rebuilt"
+  "Temple in Jerusalem rebuilt" -> "Waters from temple heal the Dead Sea"
+  "Waters from temple heal the Dead Sea" -> "Sign of the Son of Man"
+  "Wars" -> "Sign of the Son of Man"
+  "Signs in the heavens" -> "Sign of the Son of Man"
+  "Sun darkened" -> "Sign of the Son of Man"
+  "Moon turned to blood" -> "Sign of the Son of Man"
+  "Earthquakes" -> "Sign of the Son of Man"
+  "Seas heaving beyond their bounds" -> "Sign of the Son of Man"
+
+  # Supper of the Great God
+  # Ezekial 39
+  # Revelation 19:17-18
   
   # Track "time of the Gentiles"; D&C 45
   # https://www.lds.org/scriptures/dc-testament/dc/45
