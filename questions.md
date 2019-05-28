@@ -1,8 +1,5 @@
 # Open Questions
 
-* When is the burning? Does it occurr as the heavens are opened and Christ is revealed 
-and he comes down with the saints?
-
 * What is the interpretation of the natural disasters in the sixth seal? Are they 
 concurrent with the restoration, before it, or after it?
  
@@ -13,10 +10,6 @@ concurrent with the restoration, before it, or after it?
 * When is the temple built in Jerusalem?
  
 * When do the islands become one land?
-
-* Does the burning happen right after the unrolling and his presence is on the whole earth?
-Revelations says the heaven is unrolled as a scroll in the sixth seal, but Christ returns
-in the seventh seal.
 
 * Is the seventh angel in the seventh seal (seven thunders; mystery of God finished) the same
 as the "Angel sounds his trump?"
@@ -59,3 +52,11 @@ Or is it a separate event?
     and immediately preceeds Christ coming in the clouds.
 
     See D&C 88:95-97 and JST Matthew 1:36
+
+* When is the burning? Does it happen right after the unrolling and his presence is on the
+whole earth? Revelations says the heaven is unrolled as a scroll in the sixth seal, but 
+Christ returns in the seventh seal.
+
+    D&C 101:23-25 makes it clear that it is Christ's presence, after his face is unveiled,
+    that burns the corrubtible and wicked things of the earth. So it happens when heaven
+    is unrolled and Christ is revealed.
