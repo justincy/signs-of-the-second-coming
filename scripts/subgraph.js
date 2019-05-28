@@ -12,6 +12,9 @@ const args = require('yargs')
     description: 'sign',
     demandOption: true
   })
+  .option('g', {
+    description: 'graph'
+  })
   .argv;
 
 const signs = args.s;
@@ -25,7 +28,7 @@ run().catch(e => {
  */
 async function run() {
   // Construct the graph
-  const graph = await utils.loadGraph('signs.gv');
+  const graph = await utils.loadGraph(args.g ? args.g : 'signs.gv');
 
   // Reconstruct subgraph for only the signs we're interested in
   const subgraph = graph.subgraph(signs);
