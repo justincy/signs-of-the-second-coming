@@ -276,7 +276,9 @@ digraph Signs {
     "Thunderings, lightenings, tempests, tsunamis" -> "Great sign in heaven"
     
     # D&C 88:95-97
-    "Great sign in heaven" -> "Silence for half an hour" -> "Curtain of heaven unfolded as a scroll" -> "Face of the Lord unveiled"
+    "Great sign in heaven" -> "Silence for half an hour" 
+    "Silence for half an hour" -> "Curtain of heaven unfolded as a scroll"
+    "Curtain of heaven unfolded as a scroll" -> "Face of the Lord unveiled"
     "Face of the Lord unveiled" -> "Morning of the First Resurrection"
     "Face of the Lord unveiled" -> "Rapture"
     "Morning of the First Resurrection" -> "Christ comes in the clouds"

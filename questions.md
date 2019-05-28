@@ -14,18 +14,9 @@ concurrent with the restoration, before it, or after it?
  
 * When do the islands become one land?
 
-* What is the "sign of the Son of Man?" Is it Christ coming in the clouds? Or the unrolling
-of heaven as a scroll? Or something else?
-
-    Teachings of the Prophet Joseph Smith, p287: "But what will the world do? They will say
-    it is a planet, a comet, etc. But the Son of Man will come as the sign of the coming of
-    the Son of Man, which will be as a light of the morning coming out of the east.
-
-* Does Christ come in the clouds immediately after the heaven is unrolled as a scroll?
-I.e. does it open so that he can return? Or is it a separate event?
-Does the burning happen right after the unrolling and his presence is on the whole earth?
-Revelations says the heaven is unrolled as a scroll in the sixth seal, but Christ
-returns in the seventh seal.
+* Does the burning happen right after the unrolling and his presence is on the whole earth?
+Revelations says the heaven is unrolled as a scroll in the sixth seal, but Christ returns
+in the seventh seal.
 
 * Is the seventh angel in the seventh seal (seven thunders; mystery of God finished) the same
 as the "Angel sounds his trump?"
@@ -54,3 +45,17 @@ from the four quarters of the earth" all the same thing?
 * What is the "great day of the Lord?" Is it the same as "Christ comes in the clouds?"
 
     Yes.
+
+* What is the "sign of the Son of Man?" Is it Christ coming in the clouds? Or the unrolling
+of heaven as a scroll? Or something else? Does Christ come in the clouds immediately after 
+the heaven is unrolled as a scroll? In other words, is heavan unrolled so that he can return?
+Or is it a separate event?
+
+    Teachings of the Prophet Joseph Smith, p287: "But what will the world do? They will say
+    it is a planet, a comet, etc. But the Son of Man will come as the sign of the coming of
+    the Son of Man, which will be as a light of the morning coming out of the east.
+
+    I believe that the sign of the Son of Man immediately follows heaving being unrollend
+    and immediately preceeds Christ coming in the clouds.
+
+    See D&C 88:95-97 and JST Matthew 1:36
