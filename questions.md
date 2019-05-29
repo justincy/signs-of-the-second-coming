@@ -49,7 +49,7 @@ Or is it a separate event?
     the Son of Man, which will be as a light of the morning coming out of the east.
 
     I believe that the sign of the Son of Man immediately follows heaving being unrollend
-    and immediately preceeds Christ coming in the clouds.
+    and immediately precedes Christ coming in the clouds.
 
     See D&C 88:95-97 and JST Matthew 1:36
 

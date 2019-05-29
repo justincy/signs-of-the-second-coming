@@ -1,296 +1,51 @@
 digraph Signs {
     
-  subgraph restoration {
-    label="Restoration"
-    
-    # Revelation 12
-    "Apostasy" -> "Restoration"
+  ##
+  #
+  # OT
+  #
+  ##
+
+  # Zechariah 14
+  "All nations gathered against Israel" -> "Half of the city is captive" -> "Christ stands on Mount of Olives" -> "Mount of Olives splits" -> "Christ reigns as King"
   
-    "Restoration" -> "Gospel preached to all the world"
-    "Restoration" -> "Gathering at Adam-Ondi-Ahman"
-    
-    # 1 Nephi 15:19, 19:15
-    # Restoration of the Jews
-    "Restoration" -> "Gathering of Israel" -> "Second Coming"
-  }
+  # Zechariah 14:12
+  "All nations gathered against Israel" -> "Flesh fall off their bones and eyes fall out"
   
-  subgraph americas {
-    label="Americas"
+  # Zechariah 14:5
+  "Mount of Olives splits" -> "Christ comes in the clouds"
     
-    "Lehi's family in America" -> "Destruction of the Nephites" -> "Discovering of America"
-  
-    # 1 Nephi 13:12
-    "Columbus" -> "Discovering of America"
+  # Ezekial 38:18-23
+  # Gog and Magog is concurrent with the seventh seal and seven angels pouring destruction
+  "All nations gathered against Israel" -> "Great hailstorm"
+  "All nations gathered against Israel" -> "Great earthquake"
+  "All nations gathered against Israel" -> "Overflowing rain"
+  "All nations gathered against Israel" -> "Pestilence"
     
-    # 1 Nephi 13:14
-    "Discovering of America" -> "Scattering of Lehi's seed"
-    
-    # 1 Nephi 22:7-8
-    "Discovering of America" -> "Mighty nation raised up" -> "Scattering of Lehi's seed"
-    "Mighty nation raised up" -> "Restoration"
-    
-    # 1 Nephi 15:13
-    "Restoration" -> "Fullness of the gospel preached to Lehi's seed"
-    
-    # 1 Nephi 15:17
-    "Scattering of Lehi's seed" -> "Fullness of the gospel preached to Lehi's seed"
-  }
-  
-  # Revelation 6
-  subgraph sixthSeal {
-  	label="Sixth Seal"
-  	
-  	# Revelation 6:12-14
-  	"Opening of the Sixth Seal" -> "Great earthquake"
-  	"Opening of the Sixth Seal" -> "Sun darkened"
-  	"Opening of the Sixth Seal" -> "Moon turned to blood"
-  	"Opening of the Sixth Seal" -> "Stars fall from heaven"
-  	"Opening of the Sixth Seal" -> "Curtain of heaven unfolded as a scroll"
-  	"Opening of the Sixth Seal" -> "Every mountain and island moved"
-  	
-  	# Revelation 7:2
-  	# D&C 77:9
-  	"Opening of the Sixth Seal" -> "Restoration"
-  	
-  	# Revelation 7:3-4
-  	"Restoration" -> "Sealing of the 144,000"
-  }
-  
-  # Revelation 8
-  # Revelation 9
-  subgraph seventhSeal {
-  	label="Seventh Seal: Seven angels"
-  	
-  	"Opening of the Sixth Seal" -> "Opening of the Seventh Seal"
-  	"Sealing of the 144,000" -> "Opening of the Seventh Seal"
-  	
-  	# Revelation 8:1
-  	"Opening of the Seventh Seal" -> "Silence in heavens for half an hour"
-  	
-  	# Revelation 8:5
-  	"Silence in heavens for half an hour" -> "Thunderings, Lightenings, Earthquake"
-  	
-  	# Revelation 8:7 - first angel
-  	"Thunderings, Lightenings, Earthquake" -> "1: hail, fire, blood"
-  	
-  	# Revelation 8:8 - second angel
-  	"1: hail, fire, blood" -> "2: third part of sea becomes blood"
-  	
-  	# Revelation 8:10 - third angel
-  	"2: third part of sea becomes blood" -> "3: great star falls from heaven causing wormwood"
-  	
-  	# Revelation 8:12 - fourth angel
-  	"3: great star falls from heaven causing wormwood" -> "4: third part of sun, moon, stars smitten"
-  	
-  	# Revelation 9:1-12 - fifth angel
-  	"4: third part of sun, moon, stars smitten" -> "5: smoke and tormenting locusts"
-  	
-  	# Revelation 9:13-21 - sixth angel
-  	"5: smoke and tormenting locusts" -> "6: four horsemen kill third of men"
-  	
-  	# Revelation 10 - seventh angel
-  	"6: four horsemen kill third of men" -> "7: seven thunders; mystery of God finished"
-  }
-  
-  # Revelation 11
-  subgraph twoWitnesses {
-    label="Two witnesses in Jerusalem"
-  
-    # Revelation 11:2
-    # The Gentiles tread Jerusalem for 42 months which is the length of time
-    # that the witnesses will prophecy for (1260 days). Zechariah and Ezekial
-    # speak of all nations being gathered against Israel. We know from
-    # Revelation that this is concurrent with the two witnesses.
-    "All nations gathered against Israel" -> "Two witnesses prophecy"
-    
-    # Revelation 11:3; 11:7
-    "Two witnesses prophecy" -> "Two witnesses die"
-    
-    # Revelation 11:11
-    "Two witnesses die" -> "Two witnesses resurrected"
-    
-    # Revelation 11:13
-    # Earthquake destroys tenth of Jerusalem; 7,000 men die
-    "Two witnesses resurrected" -> "Great earthquake"	
-    
-    # Revelation 11:15
-    "Great earthquake" -> "7: seven thunders; mystery of God finished"
+  # Ezekial 39
+  "All nations gathered against Israel" -> "Gog and Magog defeated" -> "Israel burns enemy weapons for seven years" -> "Israel will spoil their enemies"
 
-    # Revelation 11:19
-    "7: seven thunders; mystery of God finished" -> "Temple of God was opened"
-    "7: seven thunders; mystery of God finished" -> "Lightenings, voices, thunderings"
-    "7: seven thunders; mystery of God finished" -> "Great earthquake"
-    "7: seven thunders; mystery of God finished" -> "Great hailstorm"
-  }
-  
-  subgraph armageddon {
-    label="Armageddon"
+  # Joel 2:31
+  "Sun darkened" -> "Great day of the Lord"
+  "Moon turned to blood" -> "Great day of the Lord"
 
-    "Jews gathered in Jerusalem" -> "All nations gathered against Israel"
-    
-    # Revelation 16
-    # Armageddon
-    "All nations gathered against Israel" -> "7: seven thunders; mystery of God finished" -> "Great earthquake"
-      
-    # Zechariah 14
-    "All nations gathered against Israel" -> "Half of the city is captive" -> "Christ stands on Mount of Olives" -> "Mount of Olives splits" -> "Christ reigns as King"
-    
-    # Zechariah 14:12
-    "All nations gathered against Israel" -> "Flesh fall off their bones and eyes fall out"
-    
-    # Zechariah 14:5
-    "Mount of Olives splits" -> "Christ comes in the clouds"
-      
-    # Ezekial 38:18-23
-    # Gog and Magog is concurrent with the seventh seal and seven angels pouring destruction
-    "All nations gathered against Israel" -> "Great hailstorm"
-    "All nations gathered against Israel" -> "Great earthquake"
-    "All nations gathered against Israel" -> "Overflowing rain"
-    "All nations gathered against Israel" -> "Pestilence"
-      
-    # Ezekial 39
-    "All nations gathered against Israel" -> "Gog and Magog defeated" -> "Israel burns enemy weapons for seven years" -> "Israel will spoil their enemies"
-  }
-  
-  subgraph newJerusalem {
-    # 3 Nephi 20:22
-    # 3 Nephi 21:23-25
-    # Ether 13:8
-    "Lehi's family in America" -> "New Jerusalem" -> "Gentiles help gather God's people" -> "Christ comes in the clouds"
-      
-    # Moses 7:63-64
-    "New Jerusalem" -> "Return of the City of Enoch"
-  }
-  
-  # Revelation 15-16
-  subgraph sevenPlagues {
-  	"1. Grievous sore" -> "2. Sea turned to blood" -> "3. Rivers and fountains turned to blood" -> "4. Men scorched with heat of the sun" -> "5. Kingdom of beast full of darkness" -> "6: Euphrates dried up" -> "7: seven thunders; mystery of God finished"
-  	
-  	# Revelation 16:12-16
-    "6: Euphrates dried up" -> "Spirits of the devil gather kings of the earth" -> "All nations gathered against Israel"
-    
-    # Revelation 16:16-21
-    "All nations gathered against Israel" -> "7: seven thunders; mystery of God finished"
-    "7: seven thunders; mystery of God finished" -> "Islands become one land"
-    "7: seven thunders; mystery of God finished" -> "Great hailstorm"
-  }
-  
-  # D&C 45:24-59
-  subgraph dc45 {
-  
-  	# D&C 45:24-25
-  	"Remnant scattered among all nations" -> "Times of the Gentiles" -> "Jews gathered in Jerusalem"
-  	
-  	# D&C 45:26-27
-  	"Times of the Gentiles" -> "Wars"
-  	"Times of the Gentiles" -> "the whole earth in commotion"
-  	# "Times of the Gentiles" -> "men's hearts shall fail them"
-  	# "Times of the Gentiles" -> "shall say that Christ delayeth his coming"
-  	# "Times of the Gentiles" -> "love of men wax cold"
-  	# "Times of the Gentiles" -> "iniquity shall abound"
-  	
-  	# D&C 45:28-30
-  	"Times of the Gentiles" -> "Restoration"
-  	
-  	# D&C 45:31-33
-  	"Times of the Gentiles" -> "overflowing scourge, desolating sickness"
-  	"Times of the Gentiles" -> "men will curse God and die"
-  	"Times of the Gentiles" -> "Earthquakes"
-  	"Times of the Gentiles" -> "many desolations"
-  	"Times of the Gentiles" -> "Wars"
-  	
-  	# D&C 45:40-43
-  	"blood, fire, vapors of smoke" -> "Great day of the Lord"
-  	"Sun darkened" -> "Great day of the Lord"
-  	"Moon turned to blood" -> "Great day of the Lord"
-  	"Stars fall from heaven" -> "Great day of the Lord"
-  	"Jews gathered in Jerusalem" -> "Great day of the Lord"
-  	
-  	# D&C 45:44
-  	"Jews gathered in Jerusalem" -> "Christ comes in the clouds"
-  	
-  	# D&C 45:45-49
-  	"Angel sounds his trump" -> "Morning of the First Resurrection" -> "Arm of the Lord shall fall"
-  	"Angel sounds his trump" -> "saints come from four quarters of the earth" -> "Arm of the Lord shall fall"
-  	"Arm of the Lord shall fall" -> "Christ stands on Mount of Olives" -> "Mount of Olives splits" -> "Great earthquake"
-  	"Christ stands on Mount of Olives" -> "Heavens shake"
-  	"Christ stands on Mount of Olives" -> "Lord utter his voice" -> "Burning"
-  	
-  	# D&C 45:51-53
-  	"Mount of Olives splits" -> "Jews recognize Christ"
-  	
-  	# D&C 45:54
-  	"Burning" -> "Heathen nations redeemed"
-  	"Burning" -> "First resurrection"
-  	"Burning" -> "Satan shall be bound"
+  # Joel 3:14-16
+  "Multitudes gathered in the valley of decision" -> "Sun darkened"
+  "Multitudes gathered in the valley of decision" -> "Moon darkened"
+  "Sun darkened" -> "Lord speaks from Zion and Jerusalem"
+  "Moon darkened" -> "Lord speaks from Zion and Jerusalem"
+  "Lord speaks from Zion and Jerusalem" -> "Heavens shake"
+  "Lord speaks from Zion and Jerusalem" -> "Earthquakes"
 
-    # TODO: Resolve this; it was my first understanding of the ordering in D&C 45.
-    # Is it correct?
-    # D&C 45:39-50
-    # "Christ comes in the clouds" -> "First resurrection" -> "Christ stands on Mount of Olives" -> "Mount of Olives splits" -> "Burning"
-  }
+  # Malachi 4:5
+  "Restoration" -> "Elijah appears"
+  "Elijah appears" -> "Great day of the Lord"
 
-  # D&C 29:13-19
-  subgraph dc29 {
-    # D&C 29:13
-    "Angel sounds his trump" -> "Great earthquake"
-    "Angel sounds his trump" -> "Morning of the First Resurrection"
-    
-    # D&C 29:14-19
-    "Sun darkened" -> "Angel sounds his trump"
-    "Moon turned to blood" -> "Angel sounds his trump"
-    "Stars fall from heaven" -> "Angel sounds his trump"
-    "Great hailstorm" -> "Angel sounds his trump"
-    "Flies eat flesh and cause maggots" -> "Angel sounds his trump"
-    "Flesh fall off their bones and eyes fall out" -> "Angel sounds his trump"
-  }
-
-  subgraph burning {
-
-    # D&C 101:23-25
-    "Curtain of heaven unfolded as a scroll" -> "Face of the Lord unveiled"
-    "Face of the Lord unveiled" -> "Burning"
-    "Burning" -> "All things become new"
-
-    # D&C 63:54
-    # 2 Nephi 30:10
-    "Restoration" -> "Great division" -> "Burning"
-
-    # 2 Nephi 30:15-18
-    "Burning" -> "All things revealed"
-
-    # D&C 64:23-24
-    "Christ comes in the clouds" -> "Burning"
-
-    # Matthew 13:39-40
-  }
-
-  # D&C 88
-  subgraph dc88 {
-
-    # D&C 88:87-93
-    "Earthquakes" -> "Great sign in heaven"
-    "Sun darkened" -> "Great sign in heaven"
-    "Moon turned to blood" -> "Great sign in heaven"
-    "Stars fall from heaven" -> "Great sign in heaven"
-    "Thunderings, lightenings, tempests, tsunamis" -> "Great sign in heaven"
-    
-    # D&C 88:95-97
-    "Great sign in heaven" -> "Silence for half an hour" 
-    "Silence for half an hour" -> "Curtain of heaven unfolded as a scroll"
-    "Curtain of heaven unfolded as a scroll" -> "Face of the Lord unveiled"
-    "Face of the Lord unveiled" -> "Morning of the First Resurrection"
-    "Face of the Lord unveiled" -> "Rapture"
-    "Morning of the First Resurrection" -> "Christ comes in the clouds"
-    "Rapture" -> "Christ comes in the clouds"
-  }
-
-  # Millenium
-  subgraph millenium {
-
-    # D&C 76:63
-    "Christ comes in the clouds" -> "Christ reigns as King"
-  }
+  ##
+  #
+  # NT
+  #
+  ##
 
   # Matthew 24
   # JST Matthew 1
@@ -377,6 +132,390 @@ digraph Signs {
     "Angels sound a trumpet" -> "Gathering of the remainder of the elect" -> "Christ comes in the clouds"
   }
 
+  # Mark 13:24
+  "Great tribulation of the Jews" -> "Sun darkened"
+  "Great tribulation of the Jews" -> "Moon darkened"
+  "Great tribulation of the Jews" -> "Stars fall from heaven"
+  "Great tribulation of the Jews" -> "Heavens shake"
+  "Sun darkened" -> "Christ comes in the clouds"
+  "Moon darkened" -> "Christ comes in the clouds"
+  "Stars fall from heaven" -> "Christ comes in the clouds"
+  "Heavens shake" -> "Christ comes in the clouds"
+
+  # Luke 21:25-28
+  "Signs in the heavens" -> "Christ comes in the clouds"
+
+  # Acts 2:20
+  "Sun darkened" -> "Great day of the Lord"
+  "Moon turned to blood" -> "Great day of the Lord"
+
+  # 1 Thessalonians 4:16-17
+  "Rapture" -> "Christ comes in the clouds"
+  "Morning of the First Resurrection" -> "Christ comes in the clouds"
+
+  # Revelation 6
+  subgraph sixthSeal {
+  	label="Sixth Seal"
+  	
+  	# Revelation 6:12-14
+  	"Opening of the Sixth Seal" -> "Great earthquake"
+  	"Opening of the Sixth Seal" -> "Sun darkened"
+  	"Opening of the Sixth Seal" -> "Moon turned to blood"
+  	"Opening of the Sixth Seal" -> "Stars fall from heaven"
+  	"Opening of the Sixth Seal" -> "Curtain of heaven unfolded as a scroll"
+  	"Opening of the Sixth Seal" -> "Every mountain and island moved"
+  	
+  	# Revelation 7:2
+  	# D&C 77:9
+  	"Opening of the Sixth Seal" -> "Restoration"
+  	
+  	# Revelation 7:3-4
+  	"Restoration" -> "Sealing of the 144,000"
+  }
+  
+  # Revelation 8
+  # Revelation 9
+  subgraph seventhSeal {
+  	label="Seventh Seal: Seven angels"
+  	
+  	"Opening of the Sixth Seal" -> "Opening of the Seventh Seal"
+  	"Sealing of the 144,000" -> "Opening of the Seventh Seal"
+  	
+  	# Revelation 8:1
+  	"Opening of the Seventh Seal" -> "Silence in heavens for half an hour"
+  	
+  	# Revelation 8:5
+  	"Silence in heavens for half an hour" -> "Thunderings, Lightenings, Earthquake"
+  	
+  	# Revelation 8:7 - first angel
+  	"Thunderings, Lightenings, Earthquake" -> "1: hail, fire, blood"
+  	
+  	# Revelation 8:8 - second angel
+  	"1: hail, fire, blood" -> "2: third part of sea becomes blood"
+  	
+  	# Revelation 8:10 - third angel
+  	"2: third part of sea becomes blood" -> "3: great star falls from heaven causing wormwood"
+  	
+  	# Revelation 8:12 - fourth angel
+  	"3: great star falls from heaven causing wormwood" -> "4: third part of sun, moon, stars smitten"
+  	
+  	# Revelation 9:1-12 - fifth angel
+  	"4: third part of sun, moon, stars smitten" -> "5: smoke and tormenting locusts"
+  	
+  	# Revelation 9:13-21 - sixth angel
+  	"5: smoke and tormenting locusts" -> "6: four horsemen kill third of men"
+  	
+  	# Revelation 10 - seventh angel
+  	"6: four horsemen kill third of men" -> "7: seven thunders; mystery of God finished"
+  }
+  
+  # Revelation 11
+  subgraph twoWitnesses {
+    label="Two witnesses in Jerusalem"
+  
+    # Revelation 11:2
+    # The Gentiles tread Jerusalem for 42 months which is the length of time
+    # that the witnesses will prophecy for (1260 days). Zechariah and Ezekial
+    # speak of all nations being gathered against Israel. We know from
+    # Revelation that this is concurrent with the two witnesses.
+    "All nations gathered against Israel" -> "Two witnesses prophecy"
+    
+    # Revelation 11:3; 11:7
+    "Two witnesses prophecy" -> "Two witnesses die"
+    
+    # Revelation 11:11
+    "Two witnesses die" -> "Two witnesses resurrected"
+    
+    # Revelation 11:13
+    # Earthquake destroys tenth of Jerusalem; 7,000 men die
+    "Two witnesses resurrected" -> "Great earthquake"	
+    
+    # Revelation 11:15
+    "Great earthquake" -> "7: seven thunders; mystery of God finished"
+
+    # Revelation 11:19
+    "7: seven thunders; mystery of God finished" -> "Temple of God was opened"
+    "7: seven thunders; mystery of God finished" -> "Lightenings, voices, thunderings"
+    "7: seven thunders; mystery of God finished" -> "Great earthquake"
+    "7: seven thunders; mystery of God finished" -> "Great hailstorm"
+  }
+
+  # Revelation 12
+  "Apostasy" -> "Restoration"
+  
+  # Revelation 15-16
+  subgraph sevenPlagues {
+  	"1. Grievous sore" -> "2. Sea turned to blood" -> "3. Rivers and fountains turned to blood" -> "4. Men scorched with heat of the sun" -> "5. Kingdom of beast full of darkness" -> "6: Euphrates dried up" -> "7: seven thunders; mystery of God finished"
+  	
+  	# Revelation 16:12-16
+    "6: Euphrates dried up" -> "Spirits of the devil gather kings of the earth" -> "All nations gathered against Israel"
+    
+    # Revelation 16:16-21
+    "All nations gathered against Israel" -> "7: seven thunders; mystery of God finished"
+    "7: seven thunders; mystery of God finished" -> "Islands become one land"
+    "7: seven thunders; mystery of God finished" -> "Great hailstorm"
+  }
+
+  # Revelation 16
+  "All nations gathered against Israel" -> "7: seven thunders; mystery of God finished" -> "Great earthquake"
+
+  ##
+  #
+  # BoM
+  #
+  ##
+
+  subgraph americas {
+    label="Americas"
+    
+    "Lehi's family in America" -> "Destruction of the Nephites" -> "Discovering of America"
+  
+    # 1 Nephi 13:12
+    "Columbus" -> "Discovering of America"
+    
+    # 1 Nephi 13:14
+    "Discovering of America" -> "Scattering of Lehi's seed"
+    
+    # 1 Nephi 22:7-8
+    "Discovering of America" -> "Mighty nation raised up" -> "Scattering of Lehi's seed"
+    "Mighty nation raised up" -> "Restoration"
+    
+    # 1 Nephi 15:13
+    "Restoration" -> "Fullness of the gospel preached to Lehi's seed"
+    
+    # 1 Nephi 15:17
+    "Scattering of Lehi's seed" -> "Fullness of the gospel preached to Lehi's seed"
+  }
+
+  # 1 Nephi 15:19, 19:15
+  "Restoration" -> "Gathering of Israel" -> "Second Coming"
+
+  # 2 Nephi 12:19-21
+  "Great day of the Lord" -> "Great earthquake"
+
+  # 2 Nephi 30:10
+  "Restoration" -> "Great division" -> "Burning"
+
+  # 2 Nephi 30:15-18
+  "Burning" -> "All things revealed"
+
+  # 3 Nephi 20:22
+  # 3 Nephi 21:23-25
+  # Ether 13:8
+  "Lehi's family in America" -> "New Jerusalem" -> "Gentiles help gather God's people" -> "Christ comes in the clouds"
+
+  ##
+  #
+  # D&C
+  #
+  ##
+
+  # D&C 29:13-19
+  subgraph dc29 {
+    # D&C 29:13
+    "Angel sounds his trump" -> "Great earthquake"
+    "Angel sounds his trump" -> "Morning of the First Resurrection"
+    
+    # D&C 29:14-19
+    "Sun darkened" -> "Angel sounds his trump"
+    "Moon turned to blood" -> "Angel sounds his trump"
+    "Stars fall from heaven" -> "Angel sounds his trump"
+    "Great hailstorm" -> "Angel sounds his trump"
+    "Flies eat flesh and cause maggots" -> "Angel sounds his trump"
+    "Flesh fall off their bones and eyes fall out" -> "Angel sounds his trump"
+  }
+
+  # D&C 34:7-9
+  "Sun darkened" -> "Christ comes in the clouds"
+  "Moon turned to blood" -> "Christ comes in the clouds"
+  "Stars refuse their light" -> "Christ comes in the clouds"
+  "Stars fall from heaven" -> "Christ comes in the clouds"
+
+  # D&C 43:18
+  "Lord utter his voice out of heaven" -> "Heavens shake"
+  "Lord utter his voice out of heaven" -> "Earthquakes"
+  "Lord utter his voice out of heaven" -> "Trump of God shall sound"
+  "Trump of God shall sound" -> "Morning of the First Resurrection"
+
+  # D&C 45:24-59
+  subgraph dc45 {
+  
+  	# D&C 45:24-25
+  	"Remnant scattered among all nations" -> "Times of the Gentiles" -> "Jews gathered in Jerusalem"
+  	
+  	# D&C 45:26-27
+  	"Times of the Gentiles" -> "Wars"
+  	"Times of the Gentiles" -> "the whole earth in commotion"
+  	# "Times of the Gentiles" -> "men's hearts shall fail them"
+  	# "Times of the Gentiles" -> "shall say that Christ delayeth his coming"
+  	# "Times of the Gentiles" -> "love of men wax cold"
+  	# "Times of the Gentiles" -> "iniquity shall abound"
+  	
+  	# D&C 45:28-30
+  	"Times of the Gentiles" -> "Restoration"
+  	
+  	# D&C 45:31-33
+  	"Times of the Gentiles" -> "overflowing scourge, desolating sickness"
+  	"Times of the Gentiles" -> "men will curse God and die"
+  	"Times of the Gentiles" -> "Earthquakes"
+  	"Times of the Gentiles" -> "many desolations"
+  	"Times of the Gentiles" -> "Wars"
+  	
+  	# D&C 45:40-43
+  	"blood, fire, vapors of smoke" -> "Great day of the Lord"
+  	"Sun darkened" -> "Great day of the Lord"
+  	"Moon turned to blood" -> "Great day of the Lord"
+  	"Stars fall from heaven" -> "Great day of the Lord"
+  	"Jews gathered in Jerusalem" -> "Great day of the Lord"
+  	
+  	# D&C 45:44
+  	"Jews gathered in Jerusalem" -> "Christ comes in the clouds"
+  	
+  	# D&C 45:45-49
+  	"Angel sounds his trump" -> "Morning of the First Resurrection" -> "Arm of the Lord shall fall"
+  	"Angel sounds his trump" -> "saints come from four quarters of the earth" -> "Arm of the Lord shall fall"
+  	"Arm of the Lord shall fall" -> "Christ stands on Mount of Olives" -> "Mount of Olives splits" -> "Great earthquake"
+  	"Christ stands on Mount of Olives" -> "Heavens shake"
+  	"Christ stands on Mount of Olives" -> "Lord utter his voice" -> "Burning"
+  	
+  	# D&C 45:51-53
+  	"Mount of Olives splits" -> "Jews recognize Christ"
+  	
+  	# D&C 45:54
+  	"Burning" -> "Heathen nations redeemed"
+  	"Burning" -> "First resurrection"
+  	"Burning" -> "Satan shall be bound"
+
+    # TODO: Resolve this; it was my first understanding of the ordering in D&C 45.
+    # Is it correct?
+    # D&C 45:39-50
+    # "Christ comes in the clouds" -> "First resurrection" -> "Christ stands on Mount of Olives" -> "Mount of Olives splits" -> "Burning"
+  }
+
+  # D&C 49:23
+  "Heavens shake" -> "Angel sounds his trump"
+  "Earthquakes" -> "Angel sounds his trump"
+  "Face of the earth changed" -> "Angel sounds his trump"
+
+  # D&C 63:33-34
+  "Wars" -> "Christ comes in the clouds"
+
+  # D&C 63:54
+  "Restoration" -> "Great division" -> "Burning"
+
+  # D&C 64:23-24
+  "Christ comes in the clouds" -> "Burning"
+
+  # D&C 76:63
+  "Christ comes in the clouds" -> "Christ reigns as King"
+
+  # D&C 88
+  subgraph dc88 {
+
+    # D&C 88:87-93
+    "Earthquakes" -> "Great sign in heaven"
+    "Sun darkened" -> "Great sign in heaven"
+    "Moon turned to blood" -> "Great sign in heaven"
+    "Stars fall from heaven" -> "Great sign in heaven"
+    "Thunderings, lightenings, tempests, tsunamis" -> "Great sign in heaven"
+    
+    # D&C 88:95-97
+    "Great sign in heaven" -> "Silence for half an hour" 
+    "Silence for half an hour" -> "Curtain of heaven unfolded as a scroll"
+    "Curtain of heaven unfolded as a scroll" -> "Face of the Lord unveiled"
+    "Face of the Lord unveiled" -> "Morning of the First Resurrection"
+    "Face of the Lord unveiled" -> "Rapture"
+    "Morning of the First Resurrection" -> "Christ comes in the clouds"
+    "Rapture" -> "Christ comes in the clouds"
+  }
+
+  # D&C 101:23-25
+  "Curtain of heaven unfolded as a scroll" -> "Face of the Lord unveiled"
+  "Face of the Lord unveiled" -> "Burning"
+  "Burning" -> "All things become new"
+
+  # D&C 133:23-24
+  "Islands become one land"
+
+  ##
+  #
+  # PoGP
+  #
+  ##
+
+  # Moses 7:60-61
+  "Sun darkened" -> "Christ comes in the clouds"
+  "Moon darkened" -> "Christ comes in the clouds"
+  "Heavens shake" -> "Christ comes in the clouds"
+  "Darkness shall cover the earth" -> "Christ comes in the clouds"
+  "Earthquakes" -> "Christ comes in the clouds"
+
+  # Moses 7:63-64
+  "New Jerusalem" -> "Return of the City of Enoch"
+
+  ##
+  #
+  # Other
+  #
+  ##
+
+  # Teachings of the Prophet Joseph Smith; p286-287
+  "Jews gathered in Jerusalem" -> "Temple in Jerusalem rebuilt"
+  "Temple in Jerusalem rebuilt" -> "Waters from temple heal the Dead Sea"
+  "Waters from temple heal the Dead Sea" -> "Sign of the Son of Man"
+  "Wars" -> "Sign of the Son of Man"
+  "Signs in the heavens" -> "Sign of the Son of Man"
+  "Sun darkened" -> "Sign of the Son of Man"
+  "Moon turned to blood" -> "Sign of the Son of Man"
+  "Earthquakes" -> "Sign of the Son of Man"
+  "Seas heaving beyond their bounds" -> "Sign of the Son of Man"
+
+  # https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng
+  "Two witnesses die" -> "Half of the city is captive"
+  "Mount of Olives splits" -> "Gog and Magog defeated"
+
+  ##
+  #
+  # TODO
+  #
+  ##
+
+  ## Split these up
+  # D&C 133:18,56
+  # D&C 84:2
+  # Revelation 14:1
+  "New Jerusalem" -> "Christ stands on Mount Zion"
+  "Sealing of the 144,000" -> "Christ stands on Mount Zion"
+
+  # Find references for this
+  subgraph restoration {
+    "Restoration" -> "Gospel preached to all the world"
+    "Restoration" -> "Gathering at Adam-Ondi-Ahman"
+  }
+  
+  # Find references for this
+  subgraph armageddon {
+    label="Armageddon"
+    "Jews gathered in Jerusalem" -> "All nations gathered against Israel"
+  }
+
+  # Matthew 13:39-40
+  # Burning
+
+  # Supper of the Great God
+  # Ezekial 39
+  # Revelation 19:17-18
+
+  # 2 Peter 3:10
+
+  # Isaiah 13:10
+  # 2 Nephi 23:10
+  # This passage of scripture doesn't give enough context to 
+  # put any signs in order. It's just listing different signs.
+  
+  # Track "time of the Gentiles"; D&C 45
+  # https://www.lds.org/scriptures/dc-testament/dc/45
+
   # Is the "gathering of God's people," "the gathering of the elect," and "the gathering of saints
   # from the four quarters of the earth" all the same thing? If not, then how are they different?
   # Do the gatherings happen in the same place? I.e. to Zion or their own lands?
@@ -416,139 +555,10 @@ digraph Signs {
     ## Jersualem of old? The gathering is of those who were scattered
 
   }
-
-  subgraph sunMoonStars {
-
-    # See also:
-      # section on Matthew 24 and JST Matthew above
-      # section on the sixth seal from Revelation 6
-      # section on the seventh seal from Revelation 8,9
-      # section on D&C 29
-      # section on D&C 45
-      # section on D&C 88
-
-    # Joel 2:31
-    # Acts 2:20
-    "Sun darkened" -> "Great day of the Lord"
-    "Moon turned to blood" -> "Great day of the Lord"
-
-    # Joel 3:14-16
-    "Multitudes gathered in the valley of decision" -> "Sun darkened"
-    "Multitudes gathered in the valley of decision" -> "Moon darkened"
-    "Sun darkened" -> "Lord speaks from Zion and Jerusalem"
-    "Moon darkened" -> "Lord speaks from Zion and Jerusalem"
-    "Lord speaks from Zion and Jerusalem" -> "Heavens shake"
-    "Lord speaks from Zion and Jerusalem" -> "Earthquakes"
-
-    # Mark 13:24
-    "Great tribulation of the Jews" -> "Sun darkened"
-    "Great tribulation of the Jews" -> "Moon darkened"
-    "Great tribulation of the Jews" -> "Stars fall from heaven"
-    "Great tribulation of the Jews" -> "Heavens shake"
-    "Sun darkened" -> "Christ comes in the clouds"
-    "Moon darkened" -> "Christ comes in the clouds"
-    "Stars fall from heaven" -> "Christ comes in the clouds"
-    "Heavens shake" -> "Christ comes in the clouds"
-
-    # D&C 34:7-9
-    "Sun darkened" -> "Christ comes in the clouds"
-    "Moon turned to blood" -> "Christ comes in the clouds"
-    "Stars refuse their light" -> "Christ comes in the clouds"
-    "Stars fall from heaven" -> "Christ comes in the clouds"
-
-    # 2 Nephi 23:10
-    # Isaiah 13:10
-    # This passage of scripture doesn't give enough context to 
-    # put any signs in order. It's just listing different signs.
-  }
-
-  subgraph raptureResurrection {
-    # See also:
-      # Section on D&C 45
-      # Section on D&C 29
-      # Section on D&C 88
-
-    # 1 Thessalonians 4:16-17
-    "Rapture" -> "Christ comes in the clouds"
-    "Morning of the First Resurrection" -> "Christ comes in the clouds"
-  }
-
-  subgraph heavensShake {
-    # See also many other verses previously listed.
-    # Search this file for "Heavens shake"
-
-    # Moses 7:60-61
-    "Sun darkened" -> "Christ comes in the clouds"
-    "Moon darkened" -> "Christ comes in the clouds"
-    "Heavens shake" -> "Christ comes in the clouds"
-    "Darkness shall cover the earth" -> "Christ comes in the clouds"
-    "Earthquakes" -> "Christ comes in the clouds"
-
-    # 2 Peter 3:10
-
-    # D&C 43:18
-    "Lord utter his voice out of heaven" -> "Heavens shake"
-    "Lord utter his voice out of heaven" -> "Earthquakes"
-    "Lord utter his voice out of heaven" -> "Trump of God shall sound"
-    "Trump of God shall sound" -> "Morning of the First Resurrection"
-
-  }
-  
-  # Luke 21:25-28
-  "Signs in the heavens" -> "Christ comes in the clouds"
-  
-  # Revelation 1:7
-  "Christ comes in the clouds"
-  
-  # D&C 133:18,56
-  # D&C 84:2
-  # Revelation 14:1
-  "New Jerusalem" -> "Christ stands on Mount Zion"
-  "Sealing of the 144,000" -> "Christ stands on Mount Zion"
-  
-  # D&C 133:23-24
-  "Islands become one land"
-  
-  # D&C 63:33-34
-  "Wars" -> "Christ comes in the clouds"
-
-  # D&C 49:23
-  "Heavens shake" -> "Angel sounds his trump"
-  "Earthquakes" -> "Angel sounds his trump"
-  "Face of the earth changed" -> "Angel sounds his trump"
-
-  # 2 Nephi 12:19-21
-  "Great day of the Lord" -> "Great earthquake"
-
-  # Malachi 4:5
-  "Restoration" -> "Elijah appears"
-  "Elijah appears" -> "Great day of the Lord"
-
-  # Teachings of the Prophet Joseph Smith; p286-287
-  "Jews gathered in Jerusalem" -> "Temple in Jerusalem rebuilt"
-  "Temple in Jerusalem rebuilt" -> "Waters from temple heal the Dead Sea"
-  "Waters from temple heal the Dead Sea" -> "Sign of the Son of Man"
-  "Wars" -> "Sign of the Son of Man"
-  "Signs in the heavens" -> "Sign of the Son of Man"
-  "Sun darkened" -> "Sign of the Son of Man"
-  "Moon turned to blood" -> "Sign of the Son of Man"
-  "Earthquakes" -> "Sign of the Son of Man"
-  "Seas heaving beyond their bounds" -> "Sign of the Son of Man"
-
-  # Supper of the Great God
-  # Ezekial 39
-  # Revelation 19:17-18
-  
-  # Track "time of the Gentiles"; D&C 45
-  # https://www.lds.org/scriptures/dc-testament/dc/45
   
   #
   # Manuals
   #
-  
-  # https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng
-  "Two witnesses die" -> "Half of the city is captive"
-  "Mount of Olives splits" -> "Gog and Magog defeated"
   
   # https://www.lds.org/manual/doctrines-of-the-gospel-student-manual/36-second-coming?lang=eng
 }
