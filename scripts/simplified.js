@@ -12,7 +12,7 @@ run().catch(e => {
  */
 async function run() {
   // Construct the graph
-  const fullGraph = await utils.loadGraph('signs.gv');
+  const fullGraph = await utils.loadGraph('graphs/signs.gv');
 
   // Load the list of synonyms
   const synonyms = await utils.loadGraph('synonyms/synonyms.gv')
@@ -23,5 +23,5 @@ async function run() {
   })
 
   // Output the modified graph
-  utils.writeGraph('simplified.gv', fullGraph);
+  utils.writeGraph('graphs/simplified.gv', fullGraph);
 }

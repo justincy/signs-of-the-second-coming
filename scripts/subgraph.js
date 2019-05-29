@@ -13,7 +13,8 @@ const args = require('yargs')
     demandOption: true
   })
   .option('g', {
-    description: 'graph'
+    description: 'graph',
+    default: 'graphs/signs.gv'
   })
   .argv;
 
@@ -28,11 +29,11 @@ run().catch(e => {
  */
 async function run() {
   // Construct the graph
-  const graph = await utils.loadGraph(args.g ? args.g : 'signs.gv');
+  const graph = await utils.loadGraph(args.g);
 
   // Reconstruct subgraph for only the signs we're interested in
   const subgraph = graph.subgraph(signs);
 
   // Output subgraph
-  utils.writeGraph('subgraph.gv', subgraph);
+  utils.writeGraph('graphs/subgraph.gv', subgraph);
 }
