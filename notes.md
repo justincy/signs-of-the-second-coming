@@ -13,3 +13,11 @@ of a lack of clarity, potential misunderstanding, or concurrent events.
 
 Unfortunately, I don't yet have a way to denote that events are concurrent. The only thing I've thought
 of is to have concurrent events point to each other: "a -> b" and "b -> a".
+
+Study the separation of the wheat from the tares before the burning.
+
+I'd like to create an interactive website for exploring the signs. When clicking on a sign, it would show
+a side panel that lists related scriptures, perhaps a description, and display a subgraph showing all signs
+before and after the selected sign. Would use an SVG output of the graph. Will probably need a build process
+for assembling the scripture list. Could do it client-side on demand for starters, maybe. Could also try
+rendering with d3.js; maybe the layout would be more natural.
