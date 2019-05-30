@@ -21,5 +21,10 @@ digraph {
   "Multitudes gathered in the valley of decision" -> "All nations gathered against Israel"
 
   # D&C 84:2
-  "Christ stands on Mount Zion" -> "Christ visits New Jerusalem"
+  # "Christ visits New Jerusalem" doesn't exist in the graph so the script blows up.
+  # I just want to rename it, because "Christ visits New Jerusalem" is easier to
+  # understand than "Christ stands on Mount Zion". Not everyone knows what
+  # Mount Zion is, and they may confuse it with the prophecy about Christ standing
+  # on the Mount of Olives.
+  # "Christ stands on Mount Zion" -> "Christ visits New Jerusalem"
 }
