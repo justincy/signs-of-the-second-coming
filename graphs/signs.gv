@@ -242,6 +242,9 @@ digraph Signs {
 
   # Revelation 12
   "Apostasy" -> "Restoration"
+
+  # Revelation 14:1
+  "Sealing of the 144,000" -> "Christ stands on Mount Zion"
   
   # Revelation 15-16
   subgraph sevenPlagues {
@@ -409,6 +412,10 @@ digraph Signs {
   # D&C 76:63
   "Christ comes in the clouds" -> "Christ reigns as King"
 
+  # D&C 84:2
+  # Mount Zion is New Jerusalem; it has to be built before Christ can visit
+  "New Jerusalem" -> "Christ stands on Mount Zion"
+
   # D&C 88
   subgraph dc88 {
 
@@ -434,8 +441,17 @@ digraph Signs {
   "Face of the Lord unveiled" -> "Burning"
   "Burning" -> "All things become new"
 
+  # D&C 116
+  "Restoration" -> "Gathering at Adam-Ondi-Ahman"
+
+  # D&C 133:18
+  "Sealing of the 144,000" -> "Christ stands on Mount Zion"
+
   # D&C 133:23-24
   "Islands become one land"
+
+  # D&C 133:56
+  "Morning of the First Resurrection" -> "Christ stands on Mount Zion"
 
   ##
   #
@@ -476,28 +492,23 @@ digraph Signs {
 
   ##
   #
-  # TODO
+  # Assumptions
   #
   ##
 
-  ## Split these up
-  # D&C 133:18,56
-  # D&C 84:2
-  # Revelation 14:1
-  "New Jerusalem" -> "Christ stands on Mount Zion"
-  "Sealing of the 144,000" -> "Christ stands on Mount Zion"
+  # All nations cannot gather against Israel until Israel is gathered itself,
+  # and that gather has already occurred in Jerusalem (as prophecied).
+  "Jews gathered in Jerusalem" -> "All nations gathered against Israel"
 
-  # Find references for this
-  subgraph restoration {
-    "Restoration" -> "Gospel preached to all the world"
-    "Restoration" -> "Gathering at Adam-Ondi-Ahman"
-  }
-  
-  # Find references for this
-  subgraph armageddon {
-    label="Armageddon"
-    "Jews gathered in Jerusalem" -> "All nations gathered against Israel"
-  }
+  # The gospel cannot be preached to all the world until it has been restored
+  # and a people have been established to do the preaching.
+  "Restoration" -> "Gospel preached to all the world"
+
+  ##
+  #
+  # TODO
+  #
+  ##
 
   # Matthew 13:39-40
   # Burning

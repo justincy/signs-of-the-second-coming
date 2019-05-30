@@ -19,4 +19,7 @@ digraph {
   "Lord utter his voice out of heaven" -> "Lord utter his voice"
 
   "Multitudes gathered in the valley of decision" -> "All nations gathered against Israel"
+
+  # D&C 84:2
+  "Christ stands on Mount Zion" -> "Christ visits New Jerusalem"
 }
