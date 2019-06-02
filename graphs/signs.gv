@@ -305,7 +305,9 @@ digraph Signs {
   # 3 Nephi 20:22
   # 3 Nephi 21:23-25
   # Ether 13:8
-  "Lehi's family in America" -> "New Jerusalem" -> "Gentiles help gather God's people" -> "Christ comes in the clouds"
+  "Lehi's family in America" -> "New Jerusalem" 
+  "New Jerusalem" -> "Gentiles help gather God's people" 
+  "Gentiles help gather God's people" -> "Christ comes in the clouds"
 
   ##
   #
@@ -335,9 +337,9 @@ digraph Signs {
   "Stars fall from heaven" -> "Christ comes in the clouds"
 
   # D&C 43:18
-  "Lord utter his voice out of heaven" -> "Heavens shake"
-  "Lord utter his voice out of heaven" -> "Earthquakes"
-  "Lord utter his voice out of heaven" -> "Trump of God shall sound"
+  "Lord utters his voice out of heaven" -> "Heavens shake"
+  "Lord utters his voice out of heaven" -> "Earthquakes"
+  "Lord utters his voice out of heaven" -> "Trump of God shall sound"
   "Trump of God shall sound" -> "Morning of the First Resurrection"
 
   # D&C 45:24-59
@@ -376,10 +378,10 @@ digraph Signs {
   	
   	# D&C 45:45-49
   	"Angel sounds his trump" -> "Morning of the First Resurrection" -> "Arm of the Lord shall fall"
-  	"Angel sounds his trump" -> "saints come from four quarters of the earth" -> "Arm of the Lord shall fall"
+  	"Angel sounds his trump" -> "Saints come from four quarters of the earth" -> "Arm of the Lord shall fall"
   	"Arm of the Lord shall fall" -> "Christ stands on Mount of Olives" -> "Mount of Olives splits" -> "Great earthquake"
   	"Christ stands on Mount of Olives" -> "Heavens shake"
-  	"Christ stands on Mount of Olives" -> "Lord utter his voice" -> "Burning"
+  	"Christ stands on Mount of Olives" -> "Lord utters his voice" -> "Burning"
   	
   	# D&C 45:51-53
   	"Mount of Olives splits" -> "Jews recognize Christ"

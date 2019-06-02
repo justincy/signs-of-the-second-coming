@@ -16,7 +16,8 @@ digraph {
 
   "Second Coming" -> "Christ comes in the clouds"
 
-  "Lord utter his voice out of heaven" -> "Lord utter his voice"
+  "Lord utters his voice out of heaven" -> "Lord utters his voice"
+  "Lord utters his voice" -> "Lord speaks from Zion and Jerusalem"
 
   "Multitudes gathered in the valley of decision" -> "All nations gathered against Israel"
 
