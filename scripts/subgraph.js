@@ -14,7 +14,7 @@ const args = require('yargs')
   })
   .option('g', {
     description: 'graph',
-    default: 'graphs/signs.gv'
+    default: 'graphs/simplified.gv'
   })
   .argv;
 

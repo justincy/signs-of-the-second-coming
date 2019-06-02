@@ -6,5 +6,6 @@
 
 # Possibilities
 
-* "Heavens shake" and "Stars fall from heaven"
+* "Heavens shake", "Stars fall from heaven", "Stars refuse their light"
 * "Temple of God was opened" and "Curtain of heaven unfolded as a scroll"
+* "Angel sounds his trump", "Trump of God shall sound", "7: seven thunders; mystery of God finished", "Angels sound a trumpet"
