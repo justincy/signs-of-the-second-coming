@@ -1,5 +1,7 @@
 # Open Questions
 
+* Is "Great tribulation of the Jews" the same as "All nations gathered against Israel?"
+
 * What is the interpretation of the natural disasters in the sixth seal? Are they 
 concurrent with the restoration, before it, or after it?
  
