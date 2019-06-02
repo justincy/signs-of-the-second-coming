@@ -1,7 +1,5 @@
 # Open Questions
 
-* Is "Great tribulation of the Jews" the same as "All nations gathered against Israel?"
-
 * What is the interpretation of the natural disasters in the sixth seal? Are they 
 concurrent with the restoration, before it, or after it?
  
@@ -62,3 +60,7 @@ Christ returns in the seventh seal.
     D&C 101:23-25 makes it clear that it is Christ's presence, after his face is unveiled,
     that burns the corrubtible and wicked things of the earth. So it happens when heaven
     is unrolled and Christ is revealed.
+
+* Is "Great tribulation of the Jews" the same as "All nations gathered against Israel?"
+
+    Yes. See the [synonym notes](synonyms/jews-tribulation.md) about this.

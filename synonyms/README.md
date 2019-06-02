@@ -7,3 +7,5 @@
 # Possibilities
 
 * "Heavens shake" and "Stars fall from heaven"
+* "Temple of God was opened" and "Curtain of heaven unfolded as a scroll"
+* "Lord utter his voice" and "Lord speaks from Zion and Jerusalem"
