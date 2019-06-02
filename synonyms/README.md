@@ -9,3 +9,4 @@
 * "Heavens shake", "Stars fall from heaven", "Stars refuse their light"
 * "Temple of God was opened" and "Curtain of heaven unfolded as a scroll"
 * "Angel sounds his trump", "Trump of God shall sound", "7: seven thunders; mystery of God finished", "Angels sound a trumpet"
+* "Gentiles help gather God's people", "Gathering of the elect", "Gathering of Israel", "Gathering of the remainder of the elect", "Gather elect from four quarters of the earth", "Saints come from four quarters of the earth"

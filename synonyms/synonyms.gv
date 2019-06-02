@@ -30,4 +30,6 @@ digraph {
   # "Christ stands on Mount Zion" -> "Christ visits New Jerusalem"
 
   "Great tribulation of the Jews" -> "All nations gathered against Israel"
+
+  "Gather elect from four quarters of the earth" -> "Gathering of the elect"
 }
