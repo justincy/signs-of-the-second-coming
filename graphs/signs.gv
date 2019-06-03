@@ -328,7 +328,7 @@ digraph Signs {
   "Gospel preached to remnant of Israel" -> "Gathering of Israel"
 
   # 3 Nephi 16:7-10
-  "Times of the Gentiles" -> "Gentiles sin against the gospel"
+  "Times of the Gentiles fulfilled" -> "Gentiles sin against the gospel"
   "Gentiles sin against the gospel" -> "Gathering of Israel"
 
   # 3 Nephi 20:11
@@ -391,26 +391,27 @@ digraph Signs {
   subgraph dc45 {
   
   	# D&C 45:24-25
-  	"Remnant scattered among all nations" -> "Times of the Gentiles"
-    "Times of the Gentiles" -> "Jews gathered in Jerusalem"
+  	"Jews scattered" -> "Jews gathered in Jerusalem"
+    "Jews gathered in Jerusalem" -> "Times of the Gentiles fulfilled"
   	
   	# D&C 45:26-27
-  	"Times of the Gentiles" -> "Wars"
-  	"Times of the Gentiles" -> "Whole earth in commotion"
-  	# "Times of the Gentiles" -> "Men's hearts shall fail them"
-  	# "Times of the Gentiles" -> "Shall say that Christ delayeth his coming"
-  	# "Times of the Gentiles" -> "Love of men wax cold"
-  	# "Times of the Gentiles" -> "Iniquity shall abound"
+  	"Times of the Gentiles fulfilled" -> "Wars"
+  	"Times of the Gentiles fulfilled" -> "Whole earth in commotion"
+  	"Times of the Gentiles fulfilled" -> "Men's hearts shall fail them"
+  	"Times of the Gentiles fulfilled" -> "Shall say that Christ delayeth his coming"
+  	"Times of the Gentiles fulfilled" -> "Love of men wax cold"
+  	"Times of the Gentiles fulfilled" -> "Iniquity shall abound"
   	
   	# D&C 45:28-30
-  	"Times of the Gentiles" -> "Restoration"
+  	"Times of the Gentiles begins" -> "Restoration"
+    "Restoration" -> "Times of the Gentiles fulfilled"
   	
   	# D&C 45:31-33
-  	"Times of the Gentiles" -> "Overflowing scourge, desolating sickness"
-  	"Times of the Gentiles" -> "Men will curse God and die"
-  	"Times of the Gentiles" -> "Earthquakes"
-  	"Times of the Gentiles" -> "Many desolations"
-  	"Times of the Gentiles" -> "Wars"
+  	"Times of the Gentiles fulfilled" -> "Overflowing scourge, desolating sickness"
+  	"Times of the Gentiles fulfilled" -> "Men will curse God and die"
+  	"Times of the Gentiles fulfilled" -> "Earthquakes"
+  	"Times of the Gentiles fulfilled" -> "Many desolations"
+  	"Times of the Gentiles fulfilled" -> "Wars"
   	
   	# D&C 45:40-43
   	"Blood, fire, vapors of smoke" -> "Great day of the Lord"
@@ -554,6 +555,9 @@ digraph Signs {
   # Assumptions
   #
   ##
+
+  # Israel was scattered before the Jews were scattered
+  "Scattering of Israel" -> "Jews scattered"
 
   # All nations cannot gather against Israel until Israel is gathered itself,
   # and that gather has already occurred in Jerusalem (as prophecied).
