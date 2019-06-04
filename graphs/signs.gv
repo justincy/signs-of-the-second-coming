@@ -414,21 +414,29 @@ digraph Signs {
   	"Times of the Gentiles fulfilled" -> "Wars"
   	
   	# D&C 45:40-43
-  	"Blood, fire, vapors of smoke" -> "Great day of the Lord"
+  	"Blood" -> "Great day of the Lord"
+  	"Fire" -> "Great day of the Lord"
+  	"Vapors of smoke" -> "Great day of the Lord"
   	"Sun darkened" -> "Great day of the Lord"
   	"Moon turned to blood" -> "Great day of the Lord"
   	"Stars fall from heaven" -> "Great day of the Lord"
   	"Jews gathered in Jerusalem" -> "Great day of the Lord"
   	
-  	# D&C 45:44
-  	"Jews gathered in Jerusalem" -> "Christ comes in the clouds"
-  	
-  	# D&C 45:45-49
-  	"Angel sounds his trump" -> "Morning of the First Resurrection" -> "Arm of the Lord shall fall"
-  	"Angel sounds his trump" -> "Saints come from four quarters of the earth" -> "Arm of the Lord shall fall"
-  	"Arm of the Lord shall fall" -> "Christ stands on Mount of Olives" -> "Mount of Olives splits" -> "Great earthquake"
+  	# D&C 45:45-46
+    # When it says in verse 46 that "the saints shall come from the four quarters of the earth"
+    # I believe it's speaking of the same saints from verse 45 that will be resurrected.
+  	"Angel sounds his trump" -> "Morning of the First Resurrection"
+    "Morning of the First Resurrection" -> "Arm of the Lord shall fall"
+
+  	# D&C 45:47-48
+  	"Arm of the Lord shall fall" -> "Christ stands on Mount of Olives"
+    "Christ stands on Mount of Olives" -> "Mount of Olives splits"
+    "Mount of Olives splits" -> "Great earthquake"
   	"Christ stands on Mount of Olives" -> "Heavens shake"
-  	"Christ stands on Mount of Olives" -> "Lord utters his voice" -> "Burning"
+
+    # D&C 45:49-50
+  	"Christ stands on Mount of Olives" -> "Lord utters his voice"
+    "Lord utters his voice" -> "Burning"
   	
   	# D&C 45:51-53
   	"Mount of Olives splits" -> "Jews recognize Christ"
@@ -437,11 +445,6 @@ digraph Signs {
   	"Burning" -> "Heathen nations redeemed"
   	"Burning" -> "First resurrection"
   	"Burning" -> "Satan shall be bound"
-
-    # TODO: Resolve this; it was my first understanding of the ordering in D&C 45.
-    # Is it correct?
-    # D&C 45:39-50
-    # "Christ comes in the clouds" -> "First resurrection" -> "Christ stands on Mount of Olives" -> "Mount of Olives splits" -> "Burning"
   }
 
   # D&C 49:23

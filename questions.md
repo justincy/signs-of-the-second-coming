@@ -1,5 +1,7 @@
 # Open Questions
 
+* What is "arm of the Lord shall fall"? Is it the same as the great day of the Lord?
+
 * What is the interpretation of the natural disasters in the sixth seal? Are they 
 concurrent with the restoration, before it, or after it?
  
