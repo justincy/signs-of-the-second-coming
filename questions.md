@@ -2,6 +2,26 @@
 
 * What is "arm of the Lord shall fall"? Is it the same as the great day of the Lord?
 
+    The phrase "arm of the Lord shall fall" is only used in D&C 45. In some ways it
+    seems to indicate the beginning of the end, however it says that the morning of
+    the first resurrection will occur before the arm of the Lord falls. Perhaps its
+    just a way to describe the beginning of the judgement. D&C 45:47 says, "Then 
+    shall the arm of the Lord fall upon the nations." Everything after that seems to
+    focus on judgements upon the wicked.
+
+    Seomthing I can't reconcile is how it says the morning of the first resurrection
+    will happen before the arm of the Lord shall fall while Christ standing upon the
+    Mount of Olives will happen afterwards. Everything else I read indicates that
+    Christ standing upon the Mount of Olives would be first while the morning of the
+    first recurrection will occur when Christ comes in the clouds which is after He
+    stands on the Mount of Olives.
+
+    I must admit that I haven't established a strong relationship between the timing
+    of Christ standing on the Mount of Olives and Christ coming in the clouds.
+
+    For now, I've commented out "Arm of the Lord shall fall" because it greatly
+    simplifies the graph and I'm not confident in my understanding of it.
+
 * What is the interpretation of the natural disasters in the sixth seal? Are they 
 concurrent with the restoration, before it, or after it?
  

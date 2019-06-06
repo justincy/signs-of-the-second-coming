@@ -426,10 +426,10 @@ digraph Signs {
     # When it says in verse 46 that "the saints shall come from the four quarters of the earth"
     # I believe it's speaking of the same saints from verse 45 that will be resurrected.
   	"Angel sounds his trump" -> "Morning of the First Resurrection"
-    "Morning of the First Resurrection" -> "Arm of the Lord shall fall"
+    # "Morning of the First Resurrection" -> "Arm of the Lord shall fall"
 
   	# D&C 45:47-48
-  	"Arm of the Lord shall fall" -> "Christ stands on Mount of Olives"
+  	# "Arm of the Lord shall fall" -> "Christ stands on Mount of Olives"
     "Christ stands on Mount of Olives" -> "Mount of Olives splits"
     "Mount of Olives splits" -> "Great earthquake"
   	"Christ stands on Mount of Olives" -> "Heavens shake"
@@ -569,6 +569,8 @@ digraph Signs {
   # The gospel cannot be preached to all the world until it has been restored
   # and a people have been established to do the preaching.
   "Restoration" -> "Gospel preached to all the world"
+
+  "Gathering at Adam-Ondi-Ahman" -> "Christ comes in the clouds"
 
   ##
   #
