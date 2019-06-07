@@ -21,3 +21,5 @@ a side panel that lists related scriptures, perhaps a description, and display a
 before and after the selected sign. Would use an SVG output of the graph. Will probably need a build process
 for assembling the scripture list. Could do it client-side on demand for starters, maybe. Could also try
 rendering with d3.js; maybe the layout would be more natural.
+
+Build with [graphviz](http://www.graphviz.org/).

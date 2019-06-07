@@ -12,5 +12,8 @@
   "homepage": "https://github.com/justincy/signs-of-the-second-coming#readme",
   "dependencies": {
     "yargs": "^12.0.2"
+  },
+  "scripts": {
+    "build": "dot -Tsvg -o public/simplified.svg graphs/simplified.gv"
   }
 }
