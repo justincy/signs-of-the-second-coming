@@ -14,6 +14,6 @@
     "yargs": "^12.0.2"
   },
   "scripts": {
-    "build": "dot -Tsvg -o public/simplified.svg graphs/simplified.gv"
+    "build": "dot -Tsvg -o public/simplified.svg graphs/simplified.gv && cat public/header.html public/simplified.svg public/footer.html > public/index.html"
   }
 }

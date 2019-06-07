@@ -1,3 +1,11 @@
-ellipse:hover {
-  stroke: blue !important;
+/* Force a fill on nodes so that mouse interactions work in the empty background space of nodes */
+g.node ellipse {
+  fill: #ffffff;
+  transition: all 0.25s ease-out;
+}
+
+/* Hover interaction on nodes */
+g.node:hover ellipse {
+  stroke: blue;
+  stroke-width: 2;
 }

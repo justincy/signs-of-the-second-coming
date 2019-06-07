@@ -2,3 +2,4 @@
 node_modules
 graphs/subgraph.gv
 public/*.svg
+public/index.html
