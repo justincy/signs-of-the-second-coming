@@ -472,6 +472,10 @@ digraph Signs {
   # Mount Zion is New Jerusalem; it has to be built before Christ can visit
   "New Jerusalem" -> "Christ stands on Mount Zion"
 
+  # D&C 86:7
+  "Gathering of the wheat" -> "Tares bound in bundles"
+  "Tares bound in bundles" -> "Burning"
+
   # D&C 88
   subgraph dc88 {
 

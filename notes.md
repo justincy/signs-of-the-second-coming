@@ -16,10 +16,12 @@ of is to have concurrent events point to each other: "a -> b" and "b -> a".
 
 Study the separation of the wheat from the tares before the burning.
 
+Study Joel 2 in detail.
+
 I'd like to create an interactive website for exploring the signs. When clicking on a sign, it would show
 a side panel that lists related scriptures, perhaps a description, and display a subgraph showing all signs
 before and after the selected sign. Would use an SVG output of the graph. Will probably need a build process
 for assembling the scripture list. Could do it client-side on demand for starters, maybe. Could also try
 rendering with d3.js; maybe the layout would be more natural.
 
-Build with [graphviz](http://www.graphviz.org/).
+I need to turn this into a database so that I can add any number of different annotations (notes, categories, priorities, time periods, etc) and quickly generate different views on demand. How will I do this?
