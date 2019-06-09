@@ -25,3 +25,18 @@ for assembling the scripture list. Could do it client-side on demand for starter
 rendering with d3.js; maybe the layout would be more natural.
 
 I need to turn this into a database so that I can add any number of different annotations (notes, categories, priorities, time periods, etc) and quickly generate different views on demand. How will I do this?
+
+I presently appreciate using git and having a history and easy diffs when I make changes. One concern with
+using a database is losing history and diffs. Is that important? It is to me. I appreciate being able to
+review it and the possibility of backtracking. I could do daily dumps. Or I could just build in a history.
+Record changes in a change table while keeping a separate history of current values. Would I have a history
+table for each canonical table or one generic history table? The generic table would be more technically
+difficult to implement but easier to maintain. It's more work to maintain multiple history tables.
+
+I guess I just have in my mind a relational implementation of the history log. But it doesn't have to be.
+The canonical data could be relational while the history log could be a no-sql document table.
+
+Another alternative is to automatically generate regular backups.
+
+But I'm not sure I need that yet. My first goal is just to add the scripture refs to the site. I don't need 
+the DB until I start adding additional annotations.
