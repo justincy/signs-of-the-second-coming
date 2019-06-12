@@ -480,20 +480,34 @@ digraph Signs {
   subgraph dc88 {
 
     # D&C 88:87-93
-    "Earthquakes" -> "Great sign in heaven"
-    "Sun darkened" -> "Great sign in heaven"
-    "Moon turned to blood" -> "Great sign in heaven"
-    "Stars fall from heaven" -> "Great sign in heaven"
-    "Thunderings, lightenings, tempests, tsunamis" -> "Great sign in heaven"
+    "Restoration" -> "Gospel preached to the Gentiles"
+    "Gospel preached to the Gentiles" -> "Earthquakes" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Sun darkened" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Moon turned to blood" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Stars fall from heaven" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Thunderings and lightenings" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Tempests" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Tsunamis" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Men's hearts shall fail them" -> "Great sign in heaven"
     
+    # D&C 88:94
+    "Tares bound in bundles" -> "Silence for half an hour"
+
     # D&C 88:95-97
     "Great sign in heaven" -> "Silence for half an hour" 
     "Silence for half an hour" -> "Curtain of heaven unfolded as a scroll"
     "Curtain of heaven unfolded as a scroll" -> "Face of the Lord unveiled"
-    "Face of the Lord unveiled" -> "Morning of the First Resurrection"
-    "Face of the Lord unveiled" -> "Rapture"
+    "Curtain of heaven unfolded as a scroll" -> "Morning of the First Resurrection"
+    "Curtain of heaven unfolded as a scroll" -> "Rapture"
+    "Face of the Lord unveiled" -> "Christ comes in the clouds"
     "Morning of the First Resurrection" -> "Christ comes in the clouds"
     "Rapture" -> "Christ comes in the clouds"
+
+    # D&C 88:99
+    "Christ comes in the clouds" -> "Redemption of Terrestrial spirits"
+
+    # D&C 88:100
+    "Redemption of Terrestrial spirits" -> "Redemption of Telestial spirits"
   }
 
   # D&C 101:23-25
