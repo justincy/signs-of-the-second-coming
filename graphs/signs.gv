@@ -480,20 +480,65 @@ digraph Signs {
   subgraph dc88 {
 
     # D&C 88:87-93
-    "Earthquakes" -> "Great sign in heaven"
-    "Sun darkened" -> "Great sign in heaven"
-    "Moon turned to blood" -> "Great sign in heaven"
-    "Stars fall from heaven" -> "Great sign in heaven"
-    "Thunderings, lightenings, tempests, tsunamis" -> "Great sign in heaven"
+    "Restoration" -> "Gospel preached to the Gentiles"
+    "Gospel preached to the Gentiles" -> "Earthquakes" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Sun darkened" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Moon turned to blood" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Stars fall from heaven" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Thunderings and lightenings" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Tempests" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Tsunamis" -> "Great sign in heaven"
+    "Gospel preached to the Gentiles" -> "Men's hearts shall fail them" -> "Great sign in heaven"
     
+    # D&C 88:94
+    "Tares bound in bundles" -> "Silence for half an hour"
+
     # D&C 88:95-97
     "Great sign in heaven" -> "Silence for half an hour" 
     "Silence for half an hour" -> "Curtain of heaven unfolded as a scroll"
     "Curtain of heaven unfolded as a scroll" -> "Face of the Lord unveiled"
-    "Face of the Lord unveiled" -> "Morning of the First Resurrection"
-    "Face of the Lord unveiled" -> "Rapture"
+    "Curtain of heaven unfolded as a scroll" -> "Morning of the First Resurrection"
+    "Curtain of heaven unfolded as a scroll" -> "Rapture"
+    "Face of the Lord unveiled" -> "Christ comes in the clouds"
     "Morning of the First Resurrection" -> "Christ comes in the clouds"
     "Rapture" -> "Christ comes in the clouds"
+
+    # D&C 88:99
+    "Christ comes in the clouds" -> "Second trump: Redemption of Terrestrial spirits"
+
+    # D&C 88:100
+    "Second trump: Redemption of Terrestrial spirits" -> "Third trump: Redemption of Telestial spirits"
+
+    # D&C 88:102
+    "Third trump: Redemption of Telestial spirits" -> "Fourth trump: Sons of perdition"
+
+    # D&C 88:103-104
+    "Fourth trump: Sons of perdition" -> "Fifth trump: Angel committeth the everlasting gospel"
+    "Fifth trump: Angel committeth the everlasting gospel" -> "Every ear ear; every knee bow; every tongue confess"
+
+    # D&C 88:105
+    "Every ear ear; every knee bow; every tongue confess" -> "Sixth trump: she is fallen"
+
+    # D&C 88:106
+    "Sixth trump: she is fallen" -> "Seventh trump: It is finished"
+
+    # D&C 88:107
+    "Seventh trump: It is finished" -> "Angels crowned with glory"
+    "Seventh trump: It is finished" -> "Saints receive their inheritance"
+
+    # D&C 88:108-110
+    "Angels crowned with glory" -> "Secret acts of men revealed"
+    "Saints receive their inheritance" -> "Secret acts of men revealed"
+
+    # D&C 88:110
+    "Secret acts of men revealed" -> "Satan bound for 1000 years"
+
+    # D&C 88:111-115
+    "Satan bound for 1000 years" -> "Satan loosed for a little season"
+    "Satan loosed for a little season" -> "Satan gathers his armies"
+    "Satan loosed for a little season" -> "Michael gathers his armies"
+    "Satan gathers his armies" -> "Satan is defeated and cast away"
+    "Michael gathers his armies" -> "Satan is defeated and cast away"
   }
 
   # D&C 101:23-25
