@@ -449,11 +449,6 @@ digraph Signs {
   }
 
   # D&C 49:23
-  # The verse actually says that the reverse of what I have here: that the angel will sound
-  # his trump first.
-  # "Heavens shake" -> "Angel sounds his trump"
-  # "Earthquakes" -> "Angel sounds his trump"
-  # "Face of the earth changed" -> "Angel sounds his trump"
   "Angel sounds a trump" -> "Heavens shake"
   "Angel sounds a trump" -> "Earthquakes"
   "Angel sounds a trump" -> "Face of the earth changed"
