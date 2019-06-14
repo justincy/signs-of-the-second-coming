@@ -356,7 +356,8 @@ digraph Signs {
     "Restoration" -> "Gathering of the elect"
 
     # D&C 29:13
-    "Angel sounds his trump" -> "Great earthquake"
+    # I'm not sure that this is the great earthquake, perhaps just a earthquake
+    # "Angel sounds his trump" -> "Great earthquake"
     "Angel sounds his trump" -> "Morning of the First Resurrection"
     
     # D&C 29:14-19
@@ -448,9 +449,14 @@ digraph Signs {
   }
 
   # D&C 49:23
-  "Heavens shake" -> "Angel sounds his trump"
-  "Earthquakes" -> "Angel sounds his trump"
-  "Face of the earth changed" -> "Angel sounds his trump"
+  # The verse actually says that the reverse of what I have here: that the angel will sound
+  # his trump first.
+  # "Heavens shake" -> "Angel sounds his trump"
+  # "Earthquakes" -> "Angel sounds his trump"
+  # "Face of the earth changed" -> "Angel sounds his trump"
+  "Angel sounds a trump" -> "Heavens shake"
+  "Angel sounds a trump" -> "Earthquakes"
+  "Angel sounds a trump" -> "Face of the earth changed"
 
   # D&C 63:33-34
   "Wars" -> "Christ comes in the clouds"
