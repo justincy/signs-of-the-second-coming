@@ -504,10 +504,41 @@ digraph Signs {
     "Rapture" -> "Christ comes in the clouds"
 
     # D&C 88:99
-    "Christ comes in the clouds" -> "Redemption of Terrestrial spirits"
+    "Christ comes in the clouds" -> "Second trump: Redemption of Terrestrial spirits"
 
     # D&C 88:100
-    "Redemption of Terrestrial spirits" -> "Redemption of Telestial spirits"
+    "Second trump: Redemption of Terrestrial spirits" -> "Third trump: Redemption of Telestial spirits"
+
+    # D&C 88:102
+    "Third trump: Redemption of Telestial spirits" -> "Fourth trump: Sons of perdition"
+
+    # D&C 88:103-104
+    "Fourth trump: Sons of perdition" -> "Fifth trump: Angel committeth the everlasting gospel"
+    "Fifth trump: Angel committeth the everlasting gospel" -> "Every ear ear; every knee bow; every tongue confess"
+
+    # D&C 88:105
+    "Every ear ear; every knee bow; every tongue confess" -> "Sixth trump: she is fallen"
+
+    # D&C 88:106
+    "Sixth trump: she is fallen" -> "Seventh trump: It is finished"
+
+    # D&C 88:107
+    "Seventh trump: It is finished" -> "Angels crowned with glory"
+    "Seventh trump: It is finished" -> "Saints receive their inheritance"
+
+    # D&C 88:108-110
+    "Angels crowned with glory" -> "Secret acts of men revealed"
+    "Saints receive their inheritance" -> "Secret acts of men revealed"
+
+    # D&C 88:110
+    "Secret acts of men revealed" -> "Satan bound for 1000 years"
+
+    # D&C 88:111-115
+    "Satan bound for 1000 years" -> "Satan loosed for a little season"
+    "Satan loosed for a little season" -> "Satan gathers his armies"
+    "Satan loosed for a little season" -> "Michael gathers his armies"
+    "Satan gathers his armies" -> "Satan is defeated and cast away"
+    "Michael gathers his armies" -> "Satan is defeated and cast away"
   }
 
   # D&C 101:23-25

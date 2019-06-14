@@ -1,3 +1,7 @@
+I need to review "Angel sounds his trump" to decide whether all instances are describing the same event.
+Thes scriptures describe many different instances of an angel sounding a trump. I may have incorrectly
+assume that single instances of it were all the same.
+
 I want to make the simplified graph more understandable. I realized that many signs are not in strict
 order. What I mean is, sometimes they point to things which happen a few steps later and skip signs
 between them. For example, many signs point to "Christ comes in the clouds" because it's the actual
@@ -14,8 +18,6 @@ of a lack of clarity, potential misunderstanding, or concurrent events.
 Unfortunately, I don't yet have a way to denote that events are concurrent. The only thing I've thought
 of is to have concurrent events point to each other: "a -> b" and "b -> a".
 
-Study the separation of the wheat from the tares before the burning.
-
 Study Joel 2 in detail.
 
 I'd like to create an interactive website for exploring the signs. When clicking on a sign, it would show
@@ -24,7 +26,11 @@ before and after the selected sign. Would use an SVG output of the graph. Will p
 for assembling the scripture list. Could do it client-side on demand for starters, maybe. Could also try
 rendering with d3.js; maybe the layout would be more natural.
 
-I need to turn this into a database so that I can add any number of different annotations (notes, categories, priorities, time periods, etc) and quickly generate different views on demand. How will I do this?
+I think I can simplify situations where a -> b -> c and a -> c by removing a -> c. That would remove many lines.
+
+## Database
+
+I feel the the need to turn this into a database so that I can add any number of different annotations (notes, categories, priorities, time periods, etc) and quickly generate different views on demand. How will I do this?
 
 I presently appreciate using git and having a history and easy diffs when I make changes. One concern with
 using a database is losing history and diffs. Is that important? It is to me. I appreciate being able to
