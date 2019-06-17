@@ -15,7 +15,7 @@ function readFile(filename) {
 module.exports = {
 
   /**
-   * Load an parse the graph. Returns an object with each sign as a key
+   * Load and parse the graph. Returns an object with each sign as a key
    * and the values being a list of signs that come before and after.
    * { sign => {before: [], after: []}}
    * 
@@ -51,6 +51,65 @@ module.exports = {
       }
     });
     return graph;
+  },
+
+  /**
+   * Load the graph file and parse it to extract the scripture refs.
+   * 
+   * @param {String} filename 
+   */
+  loadRefs: async function (filename) {
+    const lines = (await readFile(filename)).split('\n');
+    const data = {
+      signs: {},
+      edges: {}
+    }
+    let trimmedLine;
+    let lastRef;
+    let pair;
+
+    // Iterate over all lines
+    lines.forEach(function processLine(line) {
+
+      trimmedLine = line.trim();
+
+      // Skip lines that start with a #
+      if (trimmedLine.indexOf('##') === 0) {
+        return;
+      }
+
+      // Save reference to the scripture ref
+      if (trimmedLine.indexOf('#') === 0) {
+        lastRef = trimmedLine.replace('# ', '');
+        return;
+      }
+
+      // Split into a list of signs
+      parts = line.split('->').map(p => p.trim());
+
+      // Only process lines with sign relationships
+      if (parts.length > 1) {
+
+        // Remove quotes
+        parts = parts.map(p => p.replace(/"/g, ''));
+
+        // Save the data, for both nodes and edges
+        parts.forEach(sign => {
+          if (!data.signs[sign]) {
+            data.signs[sign] = [];
+          }
+          data.signs[sign].push(lastRef);
+        })
+        for (let i = 0; i < parts.length - 1; i++) {
+          pair = `${parts[i]}->${parts[i + 1]}`
+          if (!data.edges[pair]) {
+            data.edges[pair] = [];
+          }
+          data.edges[pair].push(lastRef);
+        }
+      }
+    });
+    return data;
   },
 
   /**
