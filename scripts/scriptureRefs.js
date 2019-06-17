@@ -15,10 +15,7 @@ run().catch(e => {
  */
 async function run() {
   // Load the data
-  const data = await utils.loadRefs('graphs/signs.gv');
+  const graph = await utils.loadGraph('graphs/signs.gv');
 
-  // Output to a file
-  fs.writeFile('public/scriptureRefs.json', JSON.stringify(data, null, 2), 'utf8', () => {
-    //
-  });
+  utils.writeRefs('public/scriptureRefs.json', graph);
 }

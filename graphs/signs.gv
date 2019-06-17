@@ -291,6 +291,7 @@ digraph Signs {
   subgraph americas {
     label="Americas"
     
+    # Assumption
     "Lehi's family in America" -> "Destruction of the Nephites" -> "Discovering of America"
   
     # 1 Nephi 13:12

@@ -26,47 +26,8 @@ module.exports = {
     const lines = (await readFile(filename)).split('\n');
     const graph = new Graph();
     let parts;
-
-    // Iterate over all lines
-    lines.forEach(function processLine(line) {
-
-      // Skip lines that start with a #
-      if (line.trim().indexOf('#') === 0) {
-        return;
-      }
-
-      // Split into a list of signs
-      parts = line.split('->').map(p => p.trim());
-
-      // Only process lines with sign relationships
-      if (parts.length > 1) {
-
-        // Remove quotes
-        parts = parts.map(p => p.replace(/"/g, ''));
-
-        // Add parts to the graph
-        for (let i = 0; i < parts.length - 1; i++) {
-          graph.addPair(parts[i], parts[i + 1])
-        }
-      }
-    });
-    return graph;
-  },
-
-  /**
-   * Load the graph file and parse it to extract the scripture refs.
-   * 
-   * @param {String} filename 
-   */
-  loadRefs: async function (filename) {
-    const lines = (await readFile(filename)).split('\n');
-    const data = {
-      signs: {},
-      edges: {}
-    }
-    let trimmedLine;
     let lastRef;
-    let pair;
+    let trimmedLine;
 
     // Iterate over all lines
     lines.forEach(function processLine(line) {
@@ -93,23 +54,13 @@ module.exports = {
         // Remove quotes
         parts = parts.map(p => p.replace(/"/g, ''));
 
-        // Save the data, for both nodes and edges
-        parts.forEach(sign => {
-          if (!data.signs[sign]) {
-            data.signs[sign] = [];
-          }
-          data.signs[sign].push(lastRef);
-        })
+        // Add parts to the graph
         for (let i = 0; i < parts.length - 1; i++) {
-          pair = `${parts[i]}->${parts[i + 1]}`
-          if (!data.edges[pair]) {
-            data.edges[pair] = [];
-          }
-          data.edges[pair].push(lastRef);
+          graph.addPair(parts[i], parts[i + 1], lastRef);
         }
       }
     });
-    return data;
+    return graph;
   },
 
   /**
@@ -130,6 +81,24 @@ module.exports = {
       file.write(`\n\t"${pair[0]}" -> "${pair[1]}"`);
     });
     file.end('\n}');
+  },
+
+  /**
+   * Write the scripture references of a graph to a file
+   * 
+   * @param {string} filename Output filename
+   * @param {object} graph
+   */
+  writeRefs: function (filename, graph) {
+    const data = {
+      nodes: {}
+    };
+
+    graph.getNodes().forEach(node => {
+      data.nodes[node.value] = [...node.refs];
+    });
+
+    fs.writeFileSync(filename, JSON.stringify(data, null, 2), 'utf8');
   }
 
 }
