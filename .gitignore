@@ -4,3 +4,4 @@ graphs/subgraph.gv
 public/*.svg
 public/*Refs.json
 public/index.html
+package-lock.json
