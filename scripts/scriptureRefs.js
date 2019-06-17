@@ -4,7 +4,6 @@
  * contains only the extracted nodes and edges.
  */
 const utils = require('./lib/utils.js');
-const fs = require('fs');
 
 run().catch(e => {
   console.error(e);

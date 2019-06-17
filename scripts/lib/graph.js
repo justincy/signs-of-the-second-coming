@@ -55,6 +55,7 @@ class Node {
   merge(node) {
     this.before = new Set([...this.before, ...node.before]);
     this.after = new Set([...this.after, ...node.after]);
+    this.refs = new Set([...this.refs, ...node.refs]);
   }
 
   /**
