@@ -314,9 +314,33 @@ digraph Signs {
   # 1 Nephi 15:19, 19:15
   "Restoration" -> "Gathering of Israel" -> "Second Coming"
 
+  # 1 Nephi 22:3
+  "Lehi's family in America" -> "House of Israel scattered"
+
+  # 1 Nephi 22:4
+  "Scattering of the ten tribes" -> "Lehi's family in America"
+
+  # 1 Nephi 22:6
+  "House of Israel scattered" -> "Restoration"
+  "Restoration" -> "Gathering of Israel"
+
+  # 1 Nephi 22:7
+  "House of Israel scattered" -> "Mighty nation raised up"
+  "Mighty nation raised up" -> "Scattering of Lehi's seed"
+
+  # 1 Nephi 22:8
+  "Scattering of Lehi's seed" -> "Restoration"
+
+  # 1 Nephi 22:11-22
+  "Restoration" -> "Gathering of Israel"
+
   # 2 Nephi 10:6-8
-  "Scattering of Israel" -> "Israel believes in Christ"
-  "Israel believes in Christ" -> "Gathering of Israel"
+  ## This seems to imply that the Jews would believe in Christ before being
+  ## gathered again in Jerusalem, but that's clearly not true. Maybe I'm
+  ## confusing the Jews and the House of Israel? The scriptures sometimes
+  ## use those interchangeably.
+  "Scattering of the Jews" -> "Jews believe in Christ"
+  "Jews believe in Christ" -> "Gathering of the Jews"
 
   # 2 Nephi 12:19-21
   "Great day of the Lord" -> "Great earthquake"
@@ -332,9 +356,8 @@ digraph Signs {
   "Restoration" -> "Gathering of Israel"
 
   # 3 Nephi 16:4-5
-  "Scattering of Israel" -> "Gospel preached to remnant of Israel"
-  "Restoration" -> "Gospel preached to remnant of Israel"
-  "Gospel preached to remnant of Israel" -> "Gathering of Israel"
+  "Scattering of the Jews" -> "Restoration"
+  "Restoration" -> "Gathering of Israel"
 
   # 3 Nephi 16:7-10
   "Times of the Gentiles fulfilled" -> "Gentiles sin against the gospel"
@@ -620,7 +643,7 @@ digraph Signs {
 
   # Assumption
   ## Israel was scattered before the Jews were scattered
-  "Scattering of Israel" -> "Jews scattered"
+  "Scattering of the ten tribes" -> "Jews scattered"
 
   # Assumption
   ## All nations cannot gather against Israel until Israel is gathered itself,
