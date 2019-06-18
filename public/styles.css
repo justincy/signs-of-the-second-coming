@@ -9,3 +9,26 @@ g.node:hover ellipse {
   stroke: blue;
   stroke-width: 2;
 }
+
+/* Scripture references container */
+#refs-wrapper {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  padding: 1em;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+#refs-container {
+  margin: auto;
+  max-width: 600px;
+}
+
+#refs-container > * {
+  margin: 0;
+}
+
+#refs-content {
+  margin-top: 1em;
+}

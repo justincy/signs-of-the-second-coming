@@ -12,6 +12,9 @@ class Node {
 
     // A set of node values that this node points to
     this.after = new Set();
+
+    // A set of scripture references
+    this.refs = new Set();
   }
 
   addBefore(value) {
@@ -19,7 +22,11 @@ class Node {
   }
 
   addAfter(value) {
-    this.after.add(value)
+    this.after.add(value);
+  }
+
+  addRef(ref) {
+    this.refs.add(ref);
   }
 
   /**
@@ -48,6 +55,7 @@ class Node {
   merge(node) {
     this.before = new Set([...this.before, ...node.before]);
     this.after = new Set([...this.after, ...node.after]);
+    this.refs = new Set([...this.refs, ...node.refs]);
   }
 
   /**
@@ -116,10 +124,13 @@ class Graph {
    * 
    * @param {string} first 
    * @param {string} second 
+   * @param {string} ref Scripture reference
    */
-  addPair(first, second) {
+  addPair(first, second, ref) {
     this.addAfter(first, second);
     this.addBefore(second, first);
+    this.getNode(first).addRef(ref);
+    this.getNode(second).addRef(ref);
   }
 
   /**

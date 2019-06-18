@@ -11,9 +11,14 @@
   },
   "homepage": "https://github.com/justincy/signs-of-the-second-coming#readme",
   "dependencies": {
+    "http-server": "^0.11.1",
     "yargs": "^12.0.2"
   },
   "scripts": {
-    "build": "dot -Tsvg -o public/simplified.svg graphs/simplified.gv && cat public/header.html public/simplified.svg public/footer.html > public/index.html"
+    "run": "http-server public",
+    "build": "node scripts/build.js && npm run build:full-svg && npm run build:simplified-svg && npm run build:site",
+    "build:full-svg": "dot -Tsvg -o public/full.svg graphs/signs.gv",
+    "build:simplified-svg": "dot -Tsvg -o public/simplified.svg graphs/simplified.gv",
+    "build:site": "cat public/header.html public/simplified.svg public/footer.html > public/index.html"
   }
 }

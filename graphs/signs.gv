@@ -14,8 +14,9 @@ digraph Signs {
 
   # Jeremiah 29:14
   "Jews scattered" -> "Jews gathered in Jerusalem"
+
   # Ezekial 38:18-23
-  # Gog and Magog is concurrent with the seventh seal and seven angels pouring destruction
+  ## Gog and Magog is concurrent with the seventh seal and seven angels pouring destruction
   "All nations gathered against Israel" -> "Great hailstorm"
   "All nations gathered against Israel" -> "Great earthquake"
   "All nations gathered against Israel" -> "Overflowing rain"
@@ -199,25 +200,32 @@ digraph Signs {
   	# Revelation 8:5
   	"Silence in heavens for half an hour" -> "Thunderings, Lightenings, Earthquake"
   	
-  	# Revelation 8:7 - first angel
+  	# Revelation 8:7
+    ## First angel
   	"Thunderings, Lightenings, Earthquake" -> "1: hail, fire, blood"
   	
-  	# Revelation 8:8 - second angel
+  	# Revelation 8:8
+    ## Second angel
   	"1: hail, fire, blood" -> "2: third part of sea becomes blood"
   	
-  	# Revelation 8:10 - third angel
+  	# Revelation 8:10
+    ## Third angel
   	"2: third part of sea becomes blood" -> "3: great star falls from heaven causing wormwood"
   	
-  	# Revelation 8:12 - fourth angel
+  	# Revelation 8:12
+    ## Fourth angel
   	"3: great star falls from heaven causing wormwood" -> "4: third part of sun, moon, stars smitten"
   	
-  	# Revelation 9:1-12 - fifth angel
+  	# Revelation 9:1-12
+    ## Fifth angel
   	"4: third part of sun, moon, stars smitten" -> "5: smoke and tormenting locusts"
   	
-  	# Revelation 9:13-21 - sixth angel
+  	# Revelation 9:13-21
+    ## Sixth angel
   	"5: smoke and tormenting locusts" -> "6: four horsemen kill third of men"
   	
-  	# Revelation 10 - seventh angel
+  	# Revelation 10
+    ## Seventh angel
   	"6: four horsemen kill third of men" -> "7: seven thunders; mystery of God finished"
   }
   
@@ -226,10 +234,10 @@ digraph Signs {
     label="Two witnesses in Jerusalem"
   
     # Revelation 11:2
-    # The Gentiles tread Jerusalem for 42 months which is the length of time
-    # that the witnesses will prophecy for (1260 days). Zechariah and Ezekial
-    # speak of all nations being gathered against Israel. We know from
-    # Revelation that this is concurrent with the two witnesses.
+    ## The Gentiles tread Jerusalem for 42 months which is the length of time
+    ## that the witnesses will prophecy for (1260 days). Zechariah and Ezekial
+    ## speak of all nations being gathered against Israel. We know from
+    ## Revelation that this is concurrent with the two witnesses.
     "All nations gathered against Israel" -> "Two witnesses prophecy"
     
     # Revelation 11:3; 11:7
@@ -239,7 +247,7 @@ digraph Signs {
     "Two witnesses die" -> "Two witnesses resurrected"
     
     # Revelation 11:13
-    # Earthquake destroys tenth of Jerusalem; 7,000 men die
+    ## Earthquake destroys tenth of Jerusalem; 7,000 men die
     "Two witnesses resurrected" -> "Great earthquake"	
     
     # Revelation 11:15
@@ -283,6 +291,7 @@ digraph Signs {
   subgraph americas {
     label="Americas"
     
+    # Assumption
     "Lehi's family in America" -> "Destruction of the Nephites" -> "Discovering of America"
   
     # 1 Nephi 13:12
@@ -356,8 +365,8 @@ digraph Signs {
     "Restoration" -> "Gathering of the elect"
 
     # D&C 29:13
-    # I'm not sure that this is the great earthquake, perhaps just a earthquake
-    # "Angel sounds his trump" -> "Great earthquake"
+    ## I'm not sure that this is the great earthquake, perhaps just a earthquake
+    ## "Angel sounds his trump" -> "Great earthquake"
     "Angel sounds his trump" -> "Morning of the First Resurrection"
     
     # D&C 29:14-19
@@ -424,13 +433,13 @@ digraph Signs {
   	"Jews gathered in Jerusalem" -> "Great day of the Lord"
   	
   	# D&C 45:45-46
-    # When it says in verse 46 that "the saints shall come from the four quarters of the earth"
-    # I believe it's speaking of the same saints from verse 45 that will be resurrected.
+    ## When it says in verse 46 that "the saints shall come from the four quarters of the earth"
+    ## I believe it's speaking of the same saints from verse 45 that will be resurrected.
   	"Angel sounds his trump" -> "Morning of the First Resurrection"
-    # "Morning of the First Resurrection" -> "Arm of the Lord shall fall"
+    ## "Morning of the First Resurrection" -> "Arm of the Lord shall fall"
 
   	# D&C 45:47-48
-  	# "Arm of the Lord shall fall" -> "Christ stands on Mount of Olives"
+  	## "Arm of the Lord shall fall" -> "Christ stands on Mount of Olives"
     "Christ stands on Mount of Olives" -> "Mount of Olives splits"
     "Mount of Olives splits" -> "Great earthquake"
   	"Christ stands on Mount of Olives" -> "Heavens shake"
@@ -470,7 +479,7 @@ digraph Signs {
   "Jews gathered in Jerusalem" -> "Two witnesses prophecy"
 
   # D&C 84:2
-  # Mount Zion is New Jerusalem; it has to be built before Christ can visit
+  ## Mount Zion is New Jerusalem; it has to be built before Christ can visit
   "New Jerusalem" -> "Christ stands on Mount Zion"
 
   # D&C 86:7
@@ -609,17 +618,21 @@ digraph Signs {
   #
   ##
 
-  # Israel was scattered before the Jews were scattered
+  # Assumption
+  ## Israel was scattered before the Jews were scattered
   "Scattering of Israel" -> "Jews scattered"
 
-  # All nations cannot gather against Israel until Israel is gathered itself,
-  # and that gather has already occurred in Jerusalem (as prophecied).
+  # Assumption
+  ## All nations cannot gather against Israel until Israel is gathered itself,
+  ## and that gather has already occurred in Jerusalem (as prophecied).
   "Jews gathered in Jerusalem" -> "All nations gathered against Israel"
 
-  # The gospel cannot be preached to all the world until it has been restored
-  # and a people have been established to do the preaching.
+  # Assumption
+  ## The gospel cannot be preached to all the world until it has been restored
+  ## and a people have been established to do the preaching.
   "Restoration" -> "Gospel preached to all the world"
 
+  # Assumption
   "Gathering at Adam-Ondi-Ahman" -> "Christ comes in the clouds"
 
   ##
