@@ -1,3 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#svg-container {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+#svg-container svg {
+  width: 100%;
+  height: 100%;
+}
+
 /* Force a fill on nodes so that mouse interactions work in the empty background space of nodes */
 g.node ellipse {
   fill: #ffffff;
@@ -9,14 +31,14 @@ g.node:hover ellipse {
   stroke: blue;
   stroke-width: 2;
 }
+g.node:hover > * {
+  cursor: pointer;
+}
 
 /* Scripture references container */
 #refs-wrapper {
-  position: fixed;
-  bottom: 0;
   border-top: 1px solid #ccc;
   padding: 1em;
-  width: 100%;
   background-color: #fafafa;
 }
 
