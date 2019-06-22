@@ -7,10 +7,8 @@ tool or a local [VS Code plugin](https://marketplace.visualstudio.com/items?item
 
 I maintain a complete list of signs that I try not to add any interpretation to.
 
-![Signs chart](img/signs.png)
-
 I also maintain a list of synonyms which I use to generate a simplified version of the graph.
 
-![Simplified chart](img/simplified.png)
-
 I have a list of [questions](questions.md) regarding my current analysis and notes on various [synonyms](./synonyms).
+
+I generate a static website with [Hugo](https://gohugo.io/) that is deployed at https://www.greatdayofthelord.org/.
