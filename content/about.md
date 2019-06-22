@@ -1,6 +1,7 @@
 ---
 title: "About"
 type: "page"
+menu: "main"
 ---
 
 This page is the product of an ongoing study about the signs of the times.
