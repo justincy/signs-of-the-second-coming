@@ -16,8 +16,8 @@
   },
   "scripts": {
     "start": "hugo server -D",
-    "build": "echo \"before node\" && node scripts/build.js && echo \"before npm run build\" && npm run build:svgs && echo \"before hugo\" && hugo",
-    "build:svgs": "npm run build:full-svg && npm run build:simplified-svg",
+    "build": "node scripts/build.js && npm run build:svgs && hugo",
+    "build:svgs": "mkdir -p svg && npm run build:full-svg && npm run build:simplified-svg",
     "build:full-svg": "dot -Tsvg -o svg/full.svg signs/signs.gv",
     "build:simplified-svg": "dot -Tsvg -o svg/simplified.svg signs/simplified.gv"
   }
