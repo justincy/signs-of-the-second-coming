@@ -1,1 +1,1 @@
-Exploring the order of the signs of the second coming of Jesus Christ.
+Exploring the order of the signs of the Second Coming of Jesus Christ.

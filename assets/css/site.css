@@ -19,3 +19,8 @@ main {
 .bg-brown {
   background-color: #9d7f52;
 }
+
+pre {
+  background-color: #e9e8de;
+  color: #333;
+}
