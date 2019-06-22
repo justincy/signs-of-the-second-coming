@@ -14,8 +14,8 @@ run().catch(e => {
  */
 async function run() {
   // Process the full graph
-  const fullGraph = await utils.loadGraph('graphs/signs.gv');
-  utils.writeRefs('public/fullRefs.json', fullGraph);
+  const fullGraph = await utils.loadGraph('signs/signs.gv');
+  utils.writeRefs('assets/graphs/fullRefs.json', fullGraph);
 
   //
   // Simplified graph
@@ -30,6 +30,6 @@ async function run() {
   })
 
   // Output the modified graph
-  utils.writeGraph('graphs/simplified.gv', fullGraph);
-  utils.writeRefs('public/simplifiedRefs.json', fullGraph);
+  utils.writeGraph('signs/simplified.gv', fullGraph);
+  utils.writeRefs('assets/graphs/simplifiedRefs.json', fullGraph);
 }
