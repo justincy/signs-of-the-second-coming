@@ -2,6 +2,7 @@ baseURL = "https://www.greatdayofthelord.org/"
 languageCode = "en-us"
 title = "Great Day of the Lord"
 theme = "ananke"
+assetsDir = "assets"
 
 [params]
   background_color_class = "bg-blue"

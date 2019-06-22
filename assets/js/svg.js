@@ -27,7 +27,7 @@
 
   const refsTitle = document.querySelector('#refs-title');
   const refsContent = document.querySelector('#refs-content');
-  const refsPromise = fetch(`${graphName}Refs.json`).then(response => response.json());
+  const refsPromise = fetch(refsUrl).then(response => response.json());
   
   Array.from(document.querySelectorAll('#svg-container g.node')).forEach(group => {
     group.addEventListener('click', () => {
