@@ -10,6 +10,14 @@ body {
   margin: 0;
 }
 
+.pb7 {
+  padding-bottom: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
 #svg-container {
   flex-grow: 1;
   overflow: hidden;

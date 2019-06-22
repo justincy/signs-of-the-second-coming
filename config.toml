@@ -6,3 +6,4 @@ assetsDir = "assets"
 
 [params]
   background_color_class = "bg-blue"
+  custom_css = ["css/custom.css"]
