@@ -15,10 +15,13 @@
     "yargs": "^12.0.2"
   },
   "scripts": {
-    "run": "http-server public",
-    "build": "node scripts/build.js && npm run build:full-svg && npm run build:simplified-svg && npm run build:site",
-    "build:full-svg": "dot -Tsvg -o public/full.svg graphs/signs.gv",
-    "build:simplified-svg": "dot -Tsvg -o public/simplified.svg graphs/simplified.gv",
-    "build:site": "cat public/header.html public/simplified.svg public/footer.html > public/index.html"
+    "start": "hugo server -D",
+    "build:local": "npm run build:graphs && hugo",
+    "build:prod": "npm run build:graphs && hugo --gc --minify",
+    "build:preview": "npm run build:graphs && hugo --gc --minify -b $DEPLOY_PRIME_URL",
+    "build:graphs": "node scripts/build.js && npm run build:svgs",
+    "build:svgs": "mkdir -p svg && npm run build:full-svg && npm run build:simplified-svg",
+    "build:full-svg": "dot -Tsvg -o svg/full.svg signs/signs.gv",
+    "build:simplified-svg": "dot -Tsvg -o svg/simplified.svg signs/simplified.gv"
   }
 }

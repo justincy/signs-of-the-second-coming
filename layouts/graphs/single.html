@@ -1,0 +1,23 @@
+{{ define "main" }}
+  {{ $stylesheet := resources.Get "css/svg.css" | fingerprint }}
+  <link href="{{ relURL $stylesheet.Permalink }}" rel="stylesheet">
+  <div id="svg-container">
+    {{ readFile (printf "svg/%s.svg" .Params.name) | safeHTML }}
+  </div>
+  <div id="refs-wrapper">
+    <div id="refs-container">
+      <h5 id="refs-title">Scripture References</h5>
+      <p id="refs-content">Click on a sign to see the scripture references that support it.</p>
+    </div>
+  </div>
+{{ end }}
+{{ define "footer" }}
+  <script src="https://unpkg.com/svg-pan-zoom@3.6.0/dist/svg-pan-zoom.min.js"></script>
+  {{ $refs := resources.Get (printf "graphs/%sRefs.json" .Params.name) | fingerprint }}
+  <script>
+    const graphName = '{{ .Params.name }}';
+    const refsUrl = '{{ $refs.Permalink | relURL }}';
+  </script>
+  {{ $js := resources.Get "js/svg.js" | fingerprint }}
+  <script type="text/javascript" src="{{ $js.Permalink | relURL }}"></script>
+{{ end }}
