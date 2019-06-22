@@ -7,3 +7,9 @@ I don't want to manually modify the full signs.gv graph; I want that to represen
 closely as possible without interpretation.
 
 Study Joel 2 in detail.
+
+Review the rest of 1 Nephi 22. Nephi doesn't explicitly state
+a -> b relationships among all the signs, but he does seem to discuss
+them in an order that matches other verses. We'll need to see if they
+line up, or if we just wait until we can associate scriptures with
+signs even when there's no relationship.

@@ -172,11 +172,12 @@ digraph Signs {
   	
   	# Revelation 6:12-14
   	"Opening of the Sixth Seal" -> "Great earthquake"
-  	"Opening of the Sixth Seal" -> "Sun darkened"
+  	"Opening of the Sixth Seal" -> "Sun turned blacked"
   	"Opening of the Sixth Seal" -> "Moon turned to blood"
   	"Opening of the Sixth Seal" -> "Stars fall from heaven"
-  	"Opening of the Sixth Seal" -> "Curtain of heaven unfolded as a scroll"
+  	"Opening of the Sixth Seal" -> "Heaven departed as a scroll"
   	"Opening of the Sixth Seal" -> "Every mountain and island moved"
+  	"Opening of the Sixth Seal" -> "Men hide themselves"
   	
   	# Revelation 7:2
   	# D&C 77:9
@@ -331,8 +332,10 @@ digraph Signs {
   # 1 Nephi 22:8
   "Scattering of Lehi's seed" -> "Restoration"
 
-  # 1 Nephi 22:11-22
+  # 1 Nephi 22:11-12
   "Restoration" -> "Gathering of Israel"
+
+  ## TODO: review the rest of 1 Nephi 22.
 
   # 2 Nephi 10:6-8
   ## This seems to imply that the Jews would believe in Christ before being
