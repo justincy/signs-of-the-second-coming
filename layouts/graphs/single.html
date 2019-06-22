@@ -15,5 +15,5 @@
     const refsUrl = '{{ $refs.Permalink }}';
   </script>
   {{ $js := resources.Get "js/svg.js" | fingerprint }}
-  <script type="text/javascript" src="{{ $js.Permalink }}"></script>
+  <script type="text/javascript" src="{{ $js.Permalink | relURL }}"></script>
 {{ end }}
