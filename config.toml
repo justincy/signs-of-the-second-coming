@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Great Day of the Lord"
 theme = "ananke"
 assetsDir = "assets"
+googleAnalytics = "UA-123-45"
 
 [params]
   background_color_class = "bg-blue"
