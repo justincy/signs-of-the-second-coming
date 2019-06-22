@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ $stylesheet := resources.Get "css/svg.css" | fingerprint }}
+  <link href="{{ relURL $stylesheet.Permalink }}" rel="stylesheet">
   <div id="svg-container">
     {{ readFile (printf "svg/%s.svg" .Params.name) | safeHTML }}
   </div>
