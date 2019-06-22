@@ -20,6 +20,10 @@ main {
   background-color: #9d7f52;
 }
 
+.bg-beige {
+  background-color: #e9e8de;
+}
+
 pre {
   background-color: #e9e8de;
   color: #333;
