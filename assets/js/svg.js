@@ -5,12 +5,6 @@
    */
   const svg = document.querySelector('#svg-container svg');
 
-  // Having the width and height on the SVG messes with the zoom and pan
-  // calculations so we remove it and just set it to the container size
-  // via CSS.
-  svg.width = '';
-  svg.height = '';
-  
   window.svg = svgPanZoom(svg, {
     minZoom: 1,
     maxZoom: 6,

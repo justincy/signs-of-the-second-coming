@@ -8,6 +8,8 @@
       <p id="refs-content">Click on a sign to see the scripture references that support it.</p>
     </div>
   </div>
+{{ end }}
+{{ define "footer" }}
   <script src="https://unpkg.com/svg-pan-zoom@3.6.0/dist/svg-pan-zoom.min.js"></script>
   {{ $refs := resources.Get (printf "graphs/%sRefs.json" .Params.name) | fingerprint }}
   <script>
