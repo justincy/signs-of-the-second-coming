@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-signs
+signs/*.gv
 !signs/signs.gv
 public
 package-lock.json
