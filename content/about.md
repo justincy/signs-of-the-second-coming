@@ -1,7 +1,9 @@
 ---
 title: "About"
 type: "page"
-menu: "main"
+menu:
+  main:
+    weight: 3
 ---
 
 This page is the product of an ongoing study about the signs of the times.
