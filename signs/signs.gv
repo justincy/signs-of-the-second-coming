@@ -550,10 +550,10 @@ digraph Signs {
 
     # D&C 88:103-104
     "Fourth trump: Sons of perdition" -> "Fifth trump: Angel committeth the everlasting gospel"
-    "Fifth trump: Angel committeth the everlasting gospel" -> "Every ear ear; every knee bow; every tongue confess"
+    "Fifth trump: Angel committeth the everlasting gospel" -> "Every ear hear; every knee bow; every tongue confess"
 
     # D&C 88:105
-    "Every ear ear; every knee bow; every tongue confess" -> "Sixth trump: she is fallen"
+    "Every ear hear; every knee bow; every tongue confess" -> "Sixth trump: she is fallen"
 
     # D&C 88:106
     "Sixth trump: she is fallen" -> "Seventh trump: It is finished"

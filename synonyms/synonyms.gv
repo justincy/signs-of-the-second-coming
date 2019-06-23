@@ -36,4 +36,8 @@ digraph {
   "Heaven departed as a scroll" -> "Curtain of heaven unfolded as a scroll"
 
   "Sun turned blacked" -> "Sun darkened"
+
+  "Seas heaving beyond their bounds" -> "Tsunamis"
+
+  "Secret acts of men revealed" -> "All things revealed"
 }
