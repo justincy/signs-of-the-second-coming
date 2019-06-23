@@ -479,7 +479,7 @@ digraph Signs {
   	
   	# D&C 45:54
   	"Burning" -> "Heathen nations redeemed"
-  	"Burning" -> "First resurrection"
+  	"Burning" -> "Afternoon of the First Resurrection"
   	"Burning" -> "Satan shall be bound"
   }
 
@@ -660,6 +660,9 @@ digraph Signs {
 
   # Assumption
   "Gathering at Adam-Ondi-Ahman" -> "Christ comes in the clouds"
+
+  # Assumption
+  "Morning of the First Resurrection" -> "Afternoon of the First Resurrection"
 
   ##
   #
