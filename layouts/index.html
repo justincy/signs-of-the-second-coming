@@ -5,31 +5,29 @@
   {{ $img := resources.Get "img/signs.png" | fingerprint }}
   <img class="center mw7" src="{{ $img.Permalink }}" />
   <section class="center mw6-m mv4">
-    <a href="/charts/full">
-      <article class="fl w-50-ns pa2">
-        <div class="br3 hidden ba b--black-10">
-          <h1 class="f5 bg-near-white br3 br--top black-60 mv0 pv2 ph3 bg-beige">Full Chart</h1>
-          <div class="pa3 bt b--black-10">
-            <p class="f6 f5-ns lh-copy measure black">
-              The most uninterpreted version of the signs chart.
-              It contains duplicate lines and doesn't merge synonyms.
-            </p>
-          </div>
+    <article class="fl w-50-ns pa2">
+      <div class="br3 hidden ba b--black-10">
+        <h1 class="f5 bg-near-white br3 br--top black-60 mv0 pv2 ph3 bg-beige">Full Chart</h1>
+        <div class="pa3 bt b--black-10">
+          <p class="f6 f5-ns lh-copy measure black">
+            The most uninterpreted version of the signs chart.
+            It contains duplicate lines and doesn't merge synonyms.
+          </p>
+          <p><a href="/charts/full">View the chart</a></p>
         </div>
-      </article>
-    </a>
-    <a href="/charts/simplified">
-      <article class="fl w-50-ns pa2">
-          <div class="br3 hidden ba b--black-10">
-          <h1 class="f5 bg-near-white br3 br--top black-60 mv0 pv2 ph3 bg-beige">Simplified Chart</h1>
-          <div class="pa3 bt b--black-10">
-            <p class="f6 f5-ns lh-copy measure black">
-              A simplified version of the chart which removes duplicate
-              lines and merges synonyms.
-            </p>
-          </div>
+      </div>
+    </article>
+    <article class="fl w-50-ns pa2">
+      <div class="br3 hidden ba b--black-10">
+        <h1 class="f5 bg-near-white br3 br--top black-60 mv0 pv2 ph3 bg-beige">Simplified Chart</h1>
+        <div class="pa3 bt b--black-10">
+          <p class="f6 f5-ns lh-copy measure black">
+            A simplified version of the chart which removes duplicate
+            lines and merges synonyms.
+          </p>
+          <p><a href="/charts/simplified">View the chart</a></p>
         </div>
-      </article>
-    </a>
+      </div>
+    </article>
   </section>
 {{ end }}
