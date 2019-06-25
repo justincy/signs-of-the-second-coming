@@ -11,3 +11,5 @@ line up, or if we just wait until we can associate scriptures with
 signs even when there's no relationship.
 
 Consider gathering of the wheat as a synonym for gathering of Israel or gathering of the elect.
+
+Review D&C 87.

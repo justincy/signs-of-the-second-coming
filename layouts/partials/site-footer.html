@@ -1,9 +1,12 @@
 <footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa1" role="contentinfo">
     <div class="flex justify-between">
-    <a class="hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
-      &copy; {{ now.Format "2006" }} {{ .Site.Title }}
-    </a>
-      <div>{{ partial "social-follow.html" . }}</div>
+      <a class="hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
+        &copy; {{ now.Format "2006" }} {{ .Site.Title }}
+      </a>
+      <div>
+        <a class="hover-white no-underline white-70 dn dib-ns pv2 ph3" href="mailto:feedback@greatdayofthelord.org">Feedback</a>
+        <a class="hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://github.com/justincy/signs-of-the-second-coming/blob/master/README.md" target="_blank">Contribute</a>
+      </div>
     </div>
   </footer>
   
