@@ -1,10 +1,10 @@
 {{ define "main" }}
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+  <article class="ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
     {{ .Content }}
   </article>
   {{ $img := resources.Get "img/signs.png" | fingerprint }}
-  <img class="center mw7" src="{{ $img.Permalink }}" />
-  <section class="center mw6-m mv4">
+  <img class="db center mw7" src="{{ $img.Permalink }}" />
+  <section class="center mw6-m mv4 cf">
     <article class="fl w-50-ns pa2">
       <div class="br3 hidden ba b--black-10">
         <h1 class="f5 bg-near-white br3 br--top black-60 mv0 pv2 ph3 bg-beige">Full Chart</h1>
