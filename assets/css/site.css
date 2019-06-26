@@ -9,4 +9,5 @@
 pre {
   background-color: #e9e8de;
   color: #333;
+  overflow: auto;
 }
