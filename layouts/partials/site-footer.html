@@ -1,12 +1,31 @@
 <footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa1" role="contentinfo">
-    <div class="flex justify-between">
-      <a class="hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
-        &copy; {{ now.Format "2006" }} {{ .Site.Title }}
-      </a>
-      <div>
-        <a class="hover-white no-underline white-70 dn dib-ns pv2 ph3" href="mailto:feedback@greatdayofthelord.org">Feedback</a>
-        <a class="hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://github.com/justincy/signs-of-the-second-coming/blob/master/README.md" target="_blank">Contribute</a>
-      </div>
+  <div class="flex justify-between">
+    <a class="hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
+      &copy; {{ now.Format "2006" }} {{ .Site.Title }}
+    </a>
+    <div>
+      <a class="hover-white no-underline white-70 dn dib-ns pv2 ph3" href="mailto:feedback@greatdayofthelord.org" id="feedback-link">Feedback</a>
+      <a class="hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://github.com/justincy/signs-of-the-second-coming/blob/master/README.md" target="_blank">Contribute</a>
     </div>
-  </footer>
+  </div>
+</footer>
+<script type="text/javascript">
+  window.doorbellOptions = {
+    id: "10590",
+    appKey: "rETbokaXrn1w9caf2BPFgkebM60IGYLPfkLmEOi6jLNG4Kpf3SI3rfcs8oQV0e62",
+    hideButton: true
+  };
+  (function(w, d, t) {
+    var hasLoaded = false;
+    function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/'+window.doorbellOptions['id']+'?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
+    if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
+    if (d.readyState == 'complete') { l(); }
+  }(window, document, 'script'));
+  document.getElementById('feedback-link').addEventListener('click', function(){
+    if(doorbell){
+      event.preventDefault();
+      doorbell.show();
+    }
+  });
+</script>
   
