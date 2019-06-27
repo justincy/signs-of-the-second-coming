@@ -7,3 +7,4 @@ package-lock.json
 svg
 resources
 assets/graphs
+data/references.json
