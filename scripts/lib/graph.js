@@ -30,7 +30,7 @@ class Graph {
    * 
    * @returns {array} list of pairs
    */
-  allPairs() {
+  getAllPairs() {
     const pairs = new Set();
     this.getNodes().forEach((node) => {
       node.getPairs().forEach((pair) => {
@@ -158,10 +158,10 @@ class Graph {
       throw new Error(`The node "${replace}" does not exist in the graph`);
     }
 
-    // Merge search into replace
+    // Merge search into replace and remove search from the graph
     replaceNode.merge(searchNode);
     this.removeNode(searchNode);
-      
+    
     // In all nodes, replace all references of search with replace
     this.nodes.forEach(node => {
       node.replace(search, replace);
