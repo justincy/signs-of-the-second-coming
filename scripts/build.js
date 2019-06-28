@@ -6,6 +6,7 @@
 const utils = require('./lib/utils.js');
 const fs = require('fs');
 const refsDir = 'assets/graphs';
+const dataDir = 'data';
 
 run().catch(e => {
   console.error(e);
@@ -16,14 +17,23 @@ run().catch(e => {
  */
 async function run() {
 
-  // Make sure the assets/graphs directory exists
+  // Make sure directories exist
   if (!fs.existsSync(refsDir)){
     fs.mkdirSync(refsDir);
   }
+  if (!fs.existsSync(dataDir)){
+    fs.mkdirSync(dataDir);
+  }
+
+  // Parse the graph
+  const groups = await utils.parseGraph('signs/signs.gv');
 
   // Process the full graph
-  const fullGraph = await utils.loadGraph('signs/signs.gv');
-  utils.writeRefs(`${refsDir}/fullRefs.json`, fullGraph);
+  const fullGraph = utils.buildGraph(groups);
+  utils.writeSignRefs(`${refsDir}/fullRefs.json`, fullGraph);
+
+  // Create data/references.json
+  fs.writeFileSync(`${dataDir}/references.json`, JSON.stringify(groups, null, 2), 'utf-8')
 
   //
   // Simplified graph
@@ -39,5 +49,5 @@ async function run() {
 
   // Output the modified graph
   utils.writeGraph('signs/simplified.gv', fullGraph);
-  utils.writeRefs(`${refsDir}/simplifiedRefs.json`, fullGraph);
+  utils.writeSignRefs(`${refsDir}/simplifiedRefs.json`, fullGraph);
 }

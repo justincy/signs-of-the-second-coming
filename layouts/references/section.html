@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <div class="cf pv2 ph2 ph3-ns mw7 center">
+    <p>This is a list of all the scriptures used in this analysis and the signs which we extracted from them.</p>
+    {{ range $group := $.Site.Data.references }}
+      {{ range $i, $signs := $group.signs }}
+        <div class="cf bb b--black-20">
+          <div class="fl w-third pa2 fw6" style="word-break: break-word">
+            {{ if eq $i 0 }}
+              {{ $group.reference }}
+            {{ end }}
+          </div>
+          <div class="fl w-third pa2">{{ index $signs 0 }}</div>
+          <div class="fl w-third pa2">{{ index $signs 1 }}</div>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

@@ -15,18 +15,27 @@ function readFile(filename) {
 module.exports = {
 
   /**
-   * Load and parse the graph. Returns an object with each sign as a key
-   * and the values being a list of signs that come before and after.
-   * { sign => {before: [], after: []}}
+   * Parse a graph file. Returns an object in the following format:
    * 
-   * @param {String} filename name of the file to load
-   * @returns {object} graph
+   * [
+   *      {
+   *          reference: 'D&C 88',
+   *          signs: [
+   *              ['a', 'b'],
+   *              ['b', 'c']
+   *          ]
+   *      }
+   *  ]
+   * 
+   * @param {string} filename name of the graph file to parse
+   * @return {array} list of {reference,signs} groups
    */
-  loadGraph: async function (filename) {
+  parseGraph: async function (filename) {
     const lines = (await readFile(filename)).split('\n');
-    const graph = new Graph();
+    const groups = [];
+
     let parts;
-    let lastRef;
+    let currentGroup;
     let trimmedLine;
 
     // Iterate over all lines
@@ -39,9 +48,19 @@ module.exports = {
         return;
       }
 
-      // Save reference to the scripture ref
+      // New scripture ref; create new group
       if (trimmedLine.indexOf('#') === 0) {
-        lastRef = trimmedLine.replace('# ', '');
+
+        // If the previous group had any signs, add it to the list of groups
+        if (currentGroup && currentGroup.signs.length) {
+          groups.push(currentGroup);
+        }
+
+        // Create the new group
+        currentGroup = {
+          reference: trimmedLine.replace('# ', ''),
+          signs: []
+        };
         return;
       }
 
@@ -54,13 +73,46 @@ module.exports = {
         // Remove quotes
         parts = parts.map(p => p.replace(/"/g, ''));
 
-        // Add parts to the graph
+        // Add signs to the group
         for (let i = 0; i < parts.length - 1; i++) {
-          graph.addPair(parts[i], parts[i + 1], lastRef);
+          currentGroup.signs.push([parts[i], parts[i + 1]]);
         }
       }
     });
+
+    // Save the last group
+    if (currentGroup.signs.length) {
+      groups.push(currentGroup)
+    }
+
+    return groups;
+  },
+
+  /**
+   * Build a graph from a parsed graph object
+   * 
+   * @param {array} groups parsed graph 
+   * @returns {object} graph
+   */
+  buildGraph: function (groups) {
+    const graph = new Graph();
+    groups.forEach((group) => {
+      group.signs.forEach((signs) => {
+        graph.addPair(signs[0], signs[1], group.reference);
+      })
+    });
     return graph;
+  },
+
+  /**
+   * Load and parse the graph.
+   * 
+   * @param {String} filename name of the file to load
+   * @returns {object} graph
+   */
+  loadGraph: async function (filename) {
+    const groups = await this.parseGraph(filename);
+    return this.buildGraph(groups);
   },
 
   /**
@@ -89,7 +141,7 @@ module.exports = {
    * @param {string} filename Output filename
    * @param {object} graph
    */
-  writeRefs: function (filename, graph) {
+  writeSignRefs: function (filename, graph) {
     const data = {
       nodes: {}
     };
@@ -99,6 +151,17 @@ module.exports = {
     });
 
     fs.writeFileSync(filename, JSON.stringify(data, null, 2), 'utf8');
+  },
+
+  /**
+   * Write the list of all scripture references and the signs
+   * that were extracted from them.
+   * 
+   * @param {string} filename Output filename
+   * @param {object} data
+   */
+  writeRefsList: function (filename, data) {
+    fs.writeFileSync(filename, JSON.stringify(data, null, 2), 'utf-8');
   }
 
 }
