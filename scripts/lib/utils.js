@@ -88,42 +88,14 @@ module.exports = {
    * @returns {object} graph
    */
   loadGraph: async function (filename) {
-    const lines = (await readFile(filename)).split('\n');
+    const groups = await this.parseGraph(filename);
     const graph = new Graph();
-    let parts;
-    let lastRef;
-    let trimmedLine;
-
-    // Iterate over all lines
-    lines.forEach(function processLine(line) {
-
-      trimmedLine = line.trim();
-
-      // Skip lines that start with a #
-      if (trimmedLine.indexOf('##') === 0) {
-        return;
-      }
-
-      // Save reference to the scripture ref
-      if (trimmedLine.indexOf('#') === 0) {
-        lastRef = trimmedLine.replace('# ', '');
-        return;
-      }
-
-      // Split into a list of signs
-      parts = line.split('->').map(p => p.trim());
-
-      // Only process lines with sign relationships
-      if (parts.length > 1) {
-
-        // Remove quotes
-        parts = parts.map(p => p.replace(/"/g, ''));
-
-        // Add parts to the graph
-        for (let i = 0; i < parts.length - 1; i++) {
-          graph.addPair(parts[i], parts[i + 1], lastRef);
+    groups.forEach((group) => {
+      group.signs.forEach((signs) => {
+        for (let i = 0; i < signs.length - 1; i++) {
+          graph.addPair(signs[i], signs[i + 1], group.reference);
         }
-      }
+      })
     });
     return graph;
   },
