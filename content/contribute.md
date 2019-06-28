@@ -30,7 +30,7 @@ find signs that seem similar. You may also review a [list of possibilities](http
 
 The charts help visualize the complexity of the data, and even though we generate a simplified carth, it still
 isn't simple enough. We have a list of [existing ideas](https://github.com/justincy/signs-of-the-second-coming/issues) for enhancing the existing charts or creating new visualizations. You could help us brianstorm additional
-ideas or implement our current ideas.
+ideas or help implement our current ideas.
 
 ## How to Send Your Contributions
 
