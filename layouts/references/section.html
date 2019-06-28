@@ -4,7 +4,7 @@
     {{ range $group := $.Site.Data.references }}
       {{ range $i, $signs := $group.signs }}
         <div class="cf bb b--black-20">
-          <div class="fl w-third pa2 fw6" style="word-break: break-all">
+          <div class="fl w-third pa2 fw6" style="word-break: break-word">
             {{ if eq $i 0 }}
               {{ $group.reference }}
             {{ end }}
