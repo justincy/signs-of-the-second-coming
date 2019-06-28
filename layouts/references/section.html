@@ -1,13 +1,13 @@
 {{ define "main" }}
 <div class="cf pv2 ph2 ph3-ns mw7 center">
     <p>This is a list of all the scriptures used in this analysis and the signs which we extracted from them.</p>
-    <div class="fl w-third pa2 fw6 bb b--black-20">Scripture</div>
-    <div class="fl w-third pa2 fw6 bb b--black-20">First Sign</div>
-    <div class="fl w-third pa2 fw6 bb b--black-20">Second Sign</div>
+    <div class="fl w-third pa2 bb b--black-20 fw6">Scripture</div>
+    <div class="fl w-third pa2 bb b--black-20 fw6">First Sign</div>
+    <div class="fl w-third pa2 bb b--black-20 fw6">Second Sign</div>
     {{ range $.Site.Data.references }}
-    <div class="fl w-third pa2">{{ .scripture }}</div>
-    <div class="fl w-third pa2">{{ .first }}</div>
-    <div class="fl w-third pa2">{{ .second }}</div>
+    <div class="fl w-third pa2 bb b--black-20">{{ .scripture }}</div>
+    <div class="fl w-third pa2 bb b--black-20">{{ .first }}</div>
+    <div class="fl w-third pa2 bb b--black-20">{{ .second }}</div>
     {{ end }}
   </div>
 {{ end }}

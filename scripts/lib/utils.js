@@ -15,9 +15,74 @@ function readFile(filename) {
 module.exports = {
 
   /**
-   * Load and parse the graph. Returns an object with each sign as a key
-   * and the values being a list of signs that come before and after.
-   * { sign => {before: [], after: []}}
+   * Parse a graph file. Returns an object in the following format:
+   * 
+   * [
+   *      {
+   *          reference: 'D&C 88',
+   *          signs: [
+   *              ['a', 'b'],
+   *              ['b', 'c']
+   *          ]
+   *      }
+   *  ]
+   * 
+   * @param {string} filename name of the graph file to parse
+   * @return {array} list of {reference,signs} groups
+   */
+  parseGraph: async function (filename) {
+    const lines = (await readFile(filename)).split('\n');
+    const groups = [];
+
+    let parts;
+    let currentGroup;
+    let trimmedLine;
+
+    // Iterate over all lines
+    lines.forEach(function processLine(line) {
+
+      trimmedLine = line.trim();
+
+      // Skip lines that start with a #
+      if (trimmedLine.indexOf('##') === 0) {
+        return;
+      }
+
+      // New scripture ref; create new group
+      if (trimmedLine.indexOf('#') === 0) {
+
+        // If the previous group had any signs, add it to the list of groups
+        if (currentGroup && currentGroup.signs.length) {
+          groups.push(currentGroup);
+        }
+
+        // Create the new group
+        currentGroup = {
+          reference: trimmedLine.replace('# ', ''),
+          signs: []
+        };
+        return;
+      }
+
+      // Split into a list of signs
+      parts = line.split('->').map(p => p.trim());
+
+      // Only process lines with sign relationships
+      if (parts.length > 1) {
+
+        // Remove quotes
+        parts = parts.map(p => p.replace(/"/g, ''));
+
+        // Add signs to the group
+        currentGroup.signs.push(parts);
+      }
+    });
+
+    return groups;
+  },
+
+  /**
+   * Load and parse the graph.
    * 
    * @param {String} filename name of the file to load
    * @returns {object} graph
