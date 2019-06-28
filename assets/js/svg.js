@@ -88,6 +88,6 @@
   async function showRefs(sign) {
     const refData = await refsPromise;
     refsTitle.textContent = sign;
-    refsContent.textContent = refData.nodes[sign].join(', ');
+    refsContent.textContent = refData.nodes[sign].join('; ');
   }
 })();
