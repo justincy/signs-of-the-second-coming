@@ -15,7 +15,7 @@ I would love to have help with this analysis!
 
 I haven't analyzed all scriptures which mention signs of the Second Coming and I don't claim that my current 
 analysis is without error. You could help by analyzing additional scriptures or reviewing the scriptures I
-have already analyzed. The [full list of signs](signs/signs.gv) is annotated with scripture references and is ordered according to the common ordering of scriptures (OT, NT, BoM, D&C, PoGP).
+have already analyzed. The [full list of signs](/references/) is annotated with scripture references and is ordered according to the common ordering of scriptures (OT, NT, BoM, D&C, PoGP).
 
 There are two methods I have found helpful for analyzing scriptures:
 
