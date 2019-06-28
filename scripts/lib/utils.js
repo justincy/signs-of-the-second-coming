@@ -80,6 +80,11 @@ module.exports = {
       }
     });
 
+    // Save the last group
+    if (currentGroup.signs.length) {
+      groups.push(currentGroup)
+    }
+
     return groups;
   },
 
