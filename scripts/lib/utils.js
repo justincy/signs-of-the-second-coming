@@ -74,11 +74,29 @@ module.exports = {
         parts = parts.map(p => p.replace(/"/g, ''));
 
         // Add signs to the group
-        currentGroup.signs.push(parts);
+        for (let i = 0; i < parts.length - 1; i++) {
+          currentGroup.signs.push([parts[i], parts[i + 1]]);
+        }
       }
     });
 
     return groups;
+  },
+
+  /**
+   * Build a graph from a parsed graph object
+   * 
+   * @param {array} groups parsed graph 
+   * @returns {object} graph
+   */
+  buildGraph: function (groups) {
+    const graph = new Graph();
+    groups.forEach((group) => {
+      group.signs.forEach((signs) => {
+        graph.addPair(signs[0], signs[1], group.reference);
+      })
+    });
+    return graph;
   },
 
   /**
@@ -89,15 +107,7 @@ module.exports = {
    */
   loadGraph: async function (filename) {
     const groups = await this.parseGraph(filename);
-    const graph = new Graph();
-    groups.forEach((group) => {
-      group.signs.forEach((signs) => {
-        for (let i = 0; i < signs.length - 1; i++) {
-          graph.addPair(signs[i], signs[i + 1], group.reference);
-        }
-      })
-    });
-    return graph;
+    return this.buildGraph(groups);
   },
 
   /**
@@ -126,7 +136,7 @@ module.exports = {
    * @param {string} filename Output filename
    * @param {object} graph
    */
-  writeRefs: function (filename, graph) {
+  writeSignRefs: function (filename, graph) {
     const data = {
       nodes: {}
     };
@@ -136,6 +146,17 @@ module.exports = {
     });
 
     fs.writeFileSync(filename, JSON.stringify(data, null, 2), 'utf8');
+  },
+
+  /**
+   * Write the list of all scripture references and the signs
+   * that were extracted from them.
+   * 
+   * @param {string} filename Output filename
+   * @param {object} data
+   */
+  writeRefsList: function (filename, data) {
+    fs.writeFileSync(filename, JSON.stringify(data, null, 2), 'utf-8');
   }
 
 }
