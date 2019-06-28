@@ -1,25 +1,18 @@
 {{ define "main" }}
   <div class="cf pv2 ph2 ph3-ns mw7 center">
     <p>This is a list of all the scriptures used in this analysis and the signs which we extracted from them.</p>
-    <table class="f6 w-100 mw8 center" cellspacing="0">
-      <tr>
-        <th class="pa2 bb b--black-20 fw6">Scripture</th>
-        <th class="pa2 bb b--black-20 fw6">First Sign</th>
-        <th class="pa2 bb b--black-20 fw6">Second Sign</th>
-      </tr>
-      {{ range $group := $.Site.Data.references }}
-        {{ range $i, $signs := $group.signs }}
-          <tr>
-            <td class="pa2 bb b--black-20">
-              {{ if eq $i 0 }}
-                {{ $group.reference }}
-              {{ end }}
-            </td>
-            <td class="pa2 bb b--black-20">{{ index $signs 0 }}</td>
-            <td class="pa2 bb b--black-20">{{ index $signs 1 }}</td>
-          </tr>
-        {{ end }}
+    {{ range $group := $.Site.Data.references }}
+      {{ range $i, $signs := $group.signs }}
+        <div class="cf bb b--black-20">
+          <div class="fl w-third pa2 fw6" style="word-break: break-all">
+            {{ if eq $i 0 }}
+              {{ $group.reference }}
+            {{ end }}
+          </div>
+          <div class="fl w-third pa2">{{ index $signs 0 }}</div>
+          <div class="fl w-third pa2">{{ index $signs 1 }}</div>
+        </div>
       {{ end }}
-    </table>
+    {{ end }}
   </div>
 {{ end }}
