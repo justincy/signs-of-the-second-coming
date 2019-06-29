@@ -10,8 +10,8 @@ describe('Node', function () {
 
   it('getPairs', () => {
     const node = new Node('b');
-    node.addParent('a');
-    node.addChild('c');
+    node.addParent(new Node('a'));
+    node.addChild(new Node('c'));
     expect(node.getPairs()).to.deep.equal([
       ['a', 'b'],
       ['b', 'c']
@@ -43,11 +43,13 @@ describe('Node', function () {
   });
 
   it('replace', () => {
-    const node = new Node('b');
-    node.addParent('a');
-    node.addChild('c');
-    node.replace('c', 'd')
-    expect(node.getPairs()).to.deep.equal([
+    const a = new Node('a');
+    const b = new Node('b');
+    const c = new Node('c');
+    b.addParent(a);
+    b.addChild(c);
+    b.replace(c, new Node('d'));
+    expect(b.getPairs()).to.deep.equal([
       ['a', 'b'],
       ['b', 'd']
     ]);

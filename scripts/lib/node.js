@@ -2,17 +2,19 @@ class Node {
 
   constructor(value) {
     this.value = value;
-    this.parents = new Set();
-    this.children = new Set();
+    this.parents = new Map();
+    this.children = new Map();
     this.refs = new Set();
   }
 
-  addParent(value) {
-    this.parents.add(value);
+  addParent(node) {
+    node = ensureNode(node);
+    this.parents.set(node.value, node);
   }
 
-  addChild(value) {
-    this.children.add(value);
+  addChild(node) {
+    node = ensureNode(node);
+    this.children.set(node.value, node);
   }
 
   addRef(ref) {
@@ -30,10 +32,10 @@ class Node {
   getPairs() {
     const pairs = [];
     this.parents.forEach(parent => {
-      pairs.push([parent, this.value]);
+      pairs.push([parent.value, this.value]);
     });
     this.children.forEach(child => {
-      pairs.push([this.value, child])
+      pairs.push([this.value, child.value])
     });
     return pairs;
   }
@@ -45,8 +47,8 @@ class Node {
    * @param {Node} node
    */
   merge(node) {
-    this.parents = new Set([...this.parents, ...node.parents]);
-    this.children = new Set([...this.children, ...node.children]);
+    this.parents = new Map([...this.parents, ...node.parents]);
+    this.children = new Map([...this.children, ...node.children]);
     this.refs = new Set([...this.refs, ...node.refs]);
   }
 
@@ -54,22 +56,36 @@ class Node {
    * Replace parents and children refs to the search value
    * with the replace value.
    * 
-   * @param {string} search
-   * @param {sring} replace
+   * @param {node} search
+   * @param {node} replace
    */
   replace(search, replace) {
-    if (this.value !== replace) {
-      if (this.parents.has(search)) {
-        this.parents.delete(search);
-        this.parents.add(replace);
+    search = ensureNode(search);
+    replace = ensureNode(replace);
+    if (this.value !== replace.value) {
+      if (this.parents.has(search.value)) {
+        this.parents.delete(search.value);
+        this.parents.set(replace.value, replace);
       }
-      if (this.children.has(search)) {
-        this.children.delete(search);
-        this.children.add(replace);
+      if (this.children.has(search.value)) {
+        this.children.delete(search.value);
+        this.children.set(replace.value, replace);
       }
     }
   }
 
+}
+
+/**
+ * If the given value is a node, return it.
+ * Otherwise create and return a new node with
+ * the given value.
+ */
+function ensureNode(value) {
+  if (value instanceof Node) {
+    return value;
+  }
+  return new Node(value);
 }
 
 module.exports = Node;
