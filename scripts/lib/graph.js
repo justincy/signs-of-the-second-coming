@@ -75,7 +75,7 @@ class Graph {
    * @param {string} parent 
    */
   addParent(value, parent) {
-    this.getOrCreateNode(value).addParent(parent);
+    this.getOrCreateNode(value).addParent(this.getOrCreateNode(parent));
   }
 
   /**
@@ -85,7 +85,7 @@ class Graph {
    * @param {string} child 
    */
   addChild(value, child) {
-    this.getOrCreateNode(value).addChild(child);
+    this.getOrCreateNode(value).addChild(this.getOrCreateNode(child));
   }
 
   /**
@@ -176,13 +176,19 @@ class Graph {
    * c is reachable from a via b.
    */
   simplifyDescendants() {
-    // for each node
+    let descendants;
     this.nodes.forEach(node => {
-      // calculate deep descendants; be sure to avoid cycles
-
-      // if any immediate descendant is also a deep descendant, 
-      // remove the edge pointing to the immediate descendant
-    })
+      descendants = node.getDeepDescendants();
+      // If any child is also a deep descendant, 
+      // remove the edge pointing to the child
+      descendants.forEach(descendant => {
+        if (node.children.has(descendant.value)) {
+          console.log(`removing ${node.value}->${descendant.value}`);
+          node.children.delete(descendant.value);
+          descendant.parents.delete(node.value);
+        }
+      });
+    });
   }
 
 }

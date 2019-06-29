@@ -92,6 +92,19 @@ class Node {
     return descendants;
   }
 
+  /**
+   * Calculate deep descendants. This does not include children.
+   * 
+   * @return {Map} Deep descendants of this node
+   */
+  getDeepDescendants() {
+    let descendants = new Map();
+    this.children.forEach((child) => {
+      descendants = new Map([...descendants, ...child.getDescendants()]);
+    });
+    return descendants;
+  }
+
 }
 
 /**

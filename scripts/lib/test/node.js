@@ -93,4 +93,37 @@ describe('Node', function () {
 
   });
 
+  describe('getDeepDescendants', () => {
+    
+    it('basic', () => {
+      const a = new Node('a');
+      const b = new Node('b');
+      a.addChild(b);
+      b.addChild('c');
+      a.addChild('c');
+      const descendants = a.getDeepDescendants();
+      expect(descendants.size).to.equal(1);
+      expect(descendants.has('c')).to.be.true;
+    });
+
+    it('handles cycles', () => {
+      const a = new Node('a');
+      const b = new Node('b');
+      const c = new Node('c');
+      const e = new Node('e');
+      a.addChild(b);
+      a.addChild(c);
+      b.addChild('d');
+      c.addChild(e);
+      e.addChild(b);
+      const descendants = a.getDeepDescendants();
+      expect(descendants.size).to.equal(3);
+      expect(descendants.has('d')).to.be.true;
+      expect(descendants.has('e')).to.be.true;
+      // b is included because e -> b
+      expect(descendants.has('b')).to.be.true;
+    });
+
+  });
+
 });

@@ -157,4 +157,22 @@ describe('Graph', function () {
     ])
   });
 
+  it('simplifyDescendants', () => {
+    graph.addPair('a', 'b');
+    graph.addPair('b', 'c');
+    graph.addPair('a', 'c');
+    const a = graph.getNode('a');
+    const b = graph.getNode('b');
+    expect(a.children.size).to.equal(2);
+    expect(a.children.has('b')).to.be.true;
+    expect(a.children.has('c')).to.be.true;
+    expect(b.children.size).to.equal(1);
+    expect(b.children.has('c')).to.be.true;
+    expect(a.children.get('b')).to.equal(b);
+    graph.simplifyDescendants();
+    expect(a.children.size).to.equal(1);
+    expect(a.children.has('b')).to.be.true;
+    expect(a.children.has('c')).to.be.false;
+  });
+
 });
