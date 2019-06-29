@@ -48,8 +48,8 @@ class Graph {
    * @param {string} ref Scripture reference
    */
   addPair(first, second, ref) {
-    this.addAfter(first, second);
-    this.addBefore(second, first);
+    this.addChild(first, second);
+    this.addParent(second, first);
     this.getNode(first).addRef(ref);
     this.getNode(second).addRef(ref);
   }
@@ -70,22 +70,22 @@ class Graph {
   }
 
   /**
-   * Register the pair of {before -> value}
+   * Register the pair of {parent -> value}
    * @param {string} value 
-   * @param {string} before 
+   * @param {string} parent 
    */
-  addBefore(value, before) {
-    this.getOrCreateNode(value).addBefore(before);
+  addParent(value, parent) {
+    this.getOrCreateNode(value).addParent(parent);
   }
 
   /**
-   * Register the pair of {value -> after}
+   * Register the pair of {value -> child}
    * 
    * @param {string} value 
-   * @param {string} after 
+   * @param {string} child 
    */
-  addAfter(value, after) {
-    this.getOrCreateNode(value).addAfter(after);
+  addChild(value, child) {
+    this.getOrCreateNode(value).addChild(child);
   }
 
   /**

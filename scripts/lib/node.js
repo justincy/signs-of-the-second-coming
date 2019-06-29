@@ -2,23 +2,17 @@ class Node {
 
   constructor(value) {
     this.value = value;
-
-    // A set of node values that point to this node
-    this.before = new Set();
-
-    // A set of node values that this node points to
-    this.after = new Set();
-
-    // A set of scripture references
+    this.parents = new Set();
+    this.children = new Set();
     this.refs = new Set();
   }
 
-  addBefore(value) {
-    this.before.add(value);
+  addParent(value) {
+    this.parents.add(value);
   }
 
-  addAfter(value) {
-    this.after.add(value);
+  addChild(value) {
+    this.children.add(value);
   }
 
   addRef(ref) {
@@ -29,35 +23,35 @@ class Node {
 
   /**
    * Return a list of all node pairs for this node in the
-   * form [[before, value], [value, after], ...].
+   * form [[parent, value], [value, child], ...].
    * 
    * @return {array}
    */
   getPairs() {
     const pairs = [];
-    this.before.forEach(before => {
-      pairs.push([before, this.value]);
+    this.parents.forEach(parent => {
+      pairs.push([parent, this.value]);
     });
-    this.after.forEach(after => {
-      pairs.push([this.value, after])
+    this.children.forEach(child => {
+      pairs.push([this.value, child])
     });
     return pairs;
   }
 
   /**
    * Merge the given node into this node by merging
-   * the before and after sets.
+   * the parents and children sets.
    * 
    * @param {Node} node
    */
   merge(node) {
-    this.before = new Set([...this.before, ...node.before]);
-    this.after = new Set([...this.after, ...node.after]);
+    this.parents = new Set([...this.parents, ...node.parents]);
+    this.children = new Set([...this.children, ...node.children]);
     this.refs = new Set([...this.refs, ...node.refs]);
   }
 
   /**
-   * Replace before and after refs to the search value
+   * Replace parents and children refs to the search value
    * with the replace value.
    * 
    * @param {string} search
@@ -65,13 +59,13 @@ class Node {
    */
   replace(search, replace) {
     if (this.value !== replace) {
-      if (this.before.has(search)) {
-        this.before.delete(search);
-        this.before.add(replace);
+      if (this.parents.has(search)) {
+        this.parents.delete(search);
+        this.parents.add(replace);
       }
-      if (this.after.has(search)) {
-        this.after.delete(search);
-        this.after.add(replace);
+      if (this.children.has(search)) {
+        this.children.delete(search);
+        this.children.add(replace);
       }
     }
   }

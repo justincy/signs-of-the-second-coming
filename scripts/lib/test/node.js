@@ -10,8 +10,8 @@ describe('Node', function () {
 
   it('getPairs', () => {
     const node = new Node('b');
-    node.addBefore('a');
-    node.addAfter('c');
+    node.addParent('a');
+    node.addChild('c');
     expect(node.getPairs()).to.deep.equal([
       ['a', 'b'],
       ['b', 'c']
@@ -20,15 +20,15 @@ describe('Node', function () {
 
   it('merge', () => {
     const sourceNode = new Node('b');
-    sourceNode.addBefore('a');
-    sourceNode.addAfter('c');
+    sourceNode.addParent('a');
+    sourceNode.addChild('c');
     expect(sourceNode.getPairs()).to.deep.equal([
       ['a', 'b'],
       ['b', 'c']
     ]);
     const mergeNode = new Node('2');
-    mergeNode.addBefore('1');
-    mergeNode.addAfter('3');
+    mergeNode.addParent('1');
+    mergeNode.addChild('3');
     expect(mergeNode.getPairs()).to.deep.equal([
       ['1', '2'],
       ['2', '3']
@@ -44,8 +44,8 @@ describe('Node', function () {
 
   it('replace', () => {
     const node = new Node('b');
-    node.addBefore('a');
-    node.addAfter('c');
+    node.addParent('a');
+    node.addChild('c');
     node.replace('c', 'd')
     expect(node.getPairs()).to.deep.equal([
       ['a', 'b'],
