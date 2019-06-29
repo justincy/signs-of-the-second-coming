@@ -100,7 +100,11 @@ class Node {
   getDeepDescendants() {
     let descendants = new Map();
     this.children.forEach((child) => {
-      descendants = new Map([...descendants, ...child.getDescendants()]);
+      descendants = new Map([
+        ...descendants,
+        // Send this node to children as seen so that we can stop cycles as they come back to this node
+        ...child.getDescendants(new Map([[this.value, this]]))
+      ]);
     });
     return descendants;
   }

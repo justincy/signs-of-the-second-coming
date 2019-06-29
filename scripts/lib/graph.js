@@ -183,7 +183,7 @@ class Graph {
       // remove the edge pointing to the child
       descendants.forEach(descendant => {
         if (node.children.has(descendant.value)) {
-          console.log(`removing ${node.value}->${descendant.value}`);
+          console.log(`removing ${node.value} -> ${descendant.value}`);
           node.children.delete(descendant.value);
           descendant.parents.delete(node.value);
         }
