@@ -74,6 +74,24 @@ class Node {
     }
   }
 
+  /**
+   * Calculate this node's descendants, including children.
+   * 
+   * @param {Map} nodesSeen Map of nodes previously seen
+   * @return {Map} Descendants of this node
+   */
+  getDescendants(nodesSeen = new Map()) {
+    nodesSeen.set(this.value, this);
+    let descendants = new Map();
+    this.children.forEach((child) => {
+      if (!nodesSeen.has(child.value)) {
+        descendants.set(child.value, child);
+        descendants = new Map([...descendants, ...child.getDescendants(nodesSeen)]);
+      }
+    });
+    return descendants;
+  }
+
 }
 
 /**

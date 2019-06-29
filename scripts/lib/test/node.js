@@ -55,4 +55,42 @@ describe('Node', function () {
     ]);
   });
 
+  describe('getDescendants', () => {
+
+    it('basic calculation', () => {
+      const a = new Node('a');
+      const b = new Node('b');
+      const c = new Node('c');
+      a.addChild(b);
+      a.addChild(c);
+      b.addChild('d');
+      c.addChild('e');
+      const descendants = a.getDescendants();
+      expect(descendants.size).to.equal(4);
+      expect(descendants.has('b')).to.be.true;
+      expect(descendants.has('c')).to.be.true;
+      expect(descendants.has('d')).to.be.true;
+      expect(descendants.has('e')).to.be.true;
+    });
+
+    it('avoids cycles', () => {
+      const a = new Node('a');
+      const b = new Node('b');
+      const c = new Node('c');
+      const e = new Node('e');
+      a.addChild(b);
+      a.addChild(c);
+      b.addChild('d');
+      c.addChild(e);
+      e.addChild(b)
+      const descendants = a.getDescendants();
+      expect(descendants.size).to.equal(4);
+      expect(descendants.has('b')).to.be.true;
+      expect(descendants.has('c')).to.be.true;
+      expect(descendants.has('d')).to.be.true;
+      expect(descendants.has('e')).to.be.true;
+    });
+
+  });
+
 });
