@@ -123,7 +123,7 @@ module.exports = {
    */
   writeGraph: function (filename, subgraph) {
     // Construct a set of {x -> y} pairs so that we dedup
-    const allPairs = subgraph.allPairs();
+    const allPairs = subgraph.getAllPairs();
 
     // Write to a file
     const file = fs.createWriteStream(filename);

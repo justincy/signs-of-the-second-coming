@@ -43,9 +43,11 @@ async function run() {
   const synonyms = await utils.loadGraph('synonyms/synonyms.gv')
 
   // Simplify the graph by collapsing synonyms
-  synonyms.allPairs().forEach(synonym => {
+  synonyms.getAllPairs().forEach(synonym => {
     fullGraph.replace(synonym[0], synonym[1])
-  })
+  });
+
+  fullGraph.simplifyDescendants();
 
   // Output the modified graph
   utils.writeGraph('signs/simplified.gv', fullGraph);

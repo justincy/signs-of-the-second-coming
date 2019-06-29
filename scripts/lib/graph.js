@@ -1,84 +1,5 @@
-/**
- * Helper for managing a graph
- */
+const Node = require('./node.js');
 
-class Node {
-
-  constructor(value) {
-    this.value = value;
-
-    // A set of node values that point to this node
-    this.before = new Set();
-
-    // A set of node values that this node points to
-    this.after = new Set();
-
-    // A set of scripture references
-    this.refs = new Set();
-  }
-
-  addBefore(value) {
-    this.before.add(value);
-  }
-
-  addAfter(value) {
-    this.after.add(value);
-  }
-
-  addRef(ref) {
-    this.refs.add(ref);
-  }
-
-  /**
-   * Return a list of all node pairs for this node in the
-   * form [[before, value], [value, after], ...].
-   * 
-   * @return {array}
-   */
-  getPairs() {
-    const pairs = [];
-    this.before.forEach(before => {
-      pairs.push([before, this.value]);
-    });
-    this.after.forEach(after => {
-      pairs.push([this.value, after])
-    });
-    return pairs;
-  }
-
-  /**
-   * Merge the given node into this node by merging
-   * the before and after sets.
-   * 
-   * @param {Node} node
-   */
-  merge(node) {
-    this.before = new Set([...this.before, ...node.before]);
-    this.after = new Set([...this.after, ...node.after]);
-    this.refs = new Set([...this.refs, ...node.refs]);
-  }
-
-  /**
-   * Replace before and after refs to the search value
-   * with the replace value.
-   * 
-   * @param {string} search
-   * @param {sring} replace
-   */
-  replace(search, replace) {
-    if (this.value !== replace) {
-      if (this.before.has(search)) {
-        this.before.delete(search);
-        this.before.add(replace);
-      }
-      if (this.after.has(search)) {
-        this.after.delete(search);
-        this.after.add(replace);
-      }
-    }
-  }
-
-}
 class Graph {
 
   constructor() {
@@ -109,7 +30,7 @@ class Graph {
    * 
    * @returns {array} list of pairs
    */
-  allPairs() {
+  getAllPairs() {
     const pairs = new Set();
     this.getNodes().forEach((node) => {
       node.getPairs().forEach((pair) => {
@@ -127,8 +48,8 @@ class Graph {
    * @param {string} ref Scripture reference
    */
   addPair(first, second, ref) {
-    this.addAfter(first, second);
-    this.addBefore(second, first);
+    this.addChild(first, second);
+    this.addParent(second, first);
     this.getNode(first).addRef(ref);
     this.getNode(second).addRef(ref);
   }
@@ -149,22 +70,22 @@ class Graph {
   }
 
   /**
-   * Register the pair of {before -> value}
+   * Register the pair of {parent -> value}
    * @param {string} value 
-   * @param {string} before 
+   * @param {string} parent 
    */
-  addBefore(value, before) {
-    this.getOrCreateNode(value).addBefore(before);
+  addParent(value, parent) {
+    this.getOrCreateNode(value).addParent(this.getOrCreateNode(parent));
   }
 
   /**
-   * Register the pair of {value -> after}
+   * Register the pair of {value -> child}
    * 
    * @param {string} value 
-   * @param {string} after 
+   * @param {string} child 
    */
-  addAfter(value, after) {
-    this.getOrCreateNode(value).addAfter(after);
+  addChild(value, child) {
+    this.getOrCreateNode(value).addChild(this.getOrCreateNode(child));
   }
 
   /**
@@ -237,13 +158,36 @@ class Graph {
       throw new Error(`The node "${replace}" does not exist in the graph`);
     }
 
-    // Merge search into replace
+    // Merge search into replace and remove search from the graph
     replaceNode.merge(searchNode);
     this.removeNode(searchNode);
-      
+    
     // In all nodes, replace all references of search with replace
     this.nodes.forEach(node => {
       node.replace(search, replace);
+    });
+  }
+
+  /**
+   * Simplify the graph by removing edges between nodes when there is a
+   * longer path available between them. 
+   * 
+   * Example: a->b and b->c and a->c. The edge a->c will be removed because
+   * c is reachable from a via b.
+   */
+  simplifyDescendants() {
+    let descendants;
+    this.nodes.forEach(node => {
+      descendants = node.getDeepDescendants();
+      // If any child is also a deep descendant, 
+      // remove the edge pointing to the child
+      descendants.forEach(descendant => {
+        if (node.children.has(descendant.value)) {
+          console.log(`removing ${node.value} -> ${descendant.value}`);
+          node.children.delete(descendant.value);
+          descendant.parents.delete(node.value);
+        }
+      });
     });
   }
 
