@@ -81,12 +81,80 @@ describe('Graph', function () {
     expect(graph.getNodes()).to.have.lengthOf(1)
   });
 
-  it('removeNode');
+  it('removeNode', () => {
+    const node = new Node('a');
+    graph.addNode(node);
+    graph.addNode(new Node('b'));
+    expect(graph.getNodes()).to.have.lengthOf(2);
+    expect(graph.getNode('a')).to.equal(node);
+    graph.removeNode(node);
+    expect(graph.getNodes()).to.have.lengthOf(1);
+    expect(graph.getNode('a')).to.not.exist;
+  });
 
-  it('hasNode');
+  it('hasNode', () => {
+    expect(graph.hasNode('a')).to.be.false;
+    const node = new Node('a');
+    graph.addNode(node);
+    expect(graph.hasNode(node)).to.be.true;
+  });
 
-  it('subgraph');
+  describe('subgraph', () => {
 
-  it('replace');
+    it('single value', () => {
+      graph.addPair('0', 'a');
+      graph.addPair('a', 'b');
+      graph.addPair('b', 'c');
+      graph.addPair('b', 'd');
+      graph.addPair('d', 'e');
+      const subgraph = graph.subgraph(['b']);
+      // We don't create nodes for edges to keep it simple
+      expect(subgraph.getNodes()).to.have.lengthOf(1);
+      expect(subgraph.getAllPairs()).to.deep.equal([
+        ['a', 'b'],
+        ['b', 'c'],
+        ['b', 'd']
+      ]);
+    });
+
+    it('multiple values', () => {
+      graph.addPair('0', 'a');
+      graph.addPair('a', 'b');
+      graph.addPair('b', 'c');
+      graph.addPair('b', 'd');
+      graph.addPair('d', 'e');
+      const subgraph = graph.subgraph(['a', 'b']);
+      // We don't create nodes for edges to keep it simple
+      expect(subgraph.getNodes()).to.have.lengthOf(2);
+      expect(subgraph.getAllPairs()).to.deep.equal([
+        ['0', 'a'],
+        ['a', 'b'],
+        ['b', 'c'],
+        ['b', 'd']
+      ]);
+    });
+
+  });
+
+  it('replace', () => {
+    graph.addPair('a', 'c')
+    graph.addPair('b', 'c')
+    graph.addPair('c', 'd')
+    graph.addPair('d', 'e')
+    expect(graph.getNodes()).to.have.lengthOf(5)
+    expect(graph.getAllPairs()).to.deep.equal([
+      ['a', 'c'],
+      ['b', 'c'],
+      ['c', 'd'],
+      ['d', 'e']
+    ])
+    graph.replace('b', 'a')
+    expect(graph.getNodes()).to.have.lengthOf(4)
+    expect(graph.getAllPairs()).to.deep.equal([
+      ['a', 'c'],
+      ['c', 'd'],
+      ['d', 'e']
+    ])
+  });
 
 });

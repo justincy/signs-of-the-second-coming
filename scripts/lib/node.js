@@ -22,7 +22,9 @@ class Node {
   }
 
   addRef(ref) {
-    this.refs.add(ref);
+    if (ref) {
+      this.refs.add(ref);
+    }
   }
 
   /**
