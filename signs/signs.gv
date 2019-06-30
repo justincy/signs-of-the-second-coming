@@ -255,7 +255,7 @@ digraph Signs {
     "Great earthquake" -> "7: seven thunders; mystery of God finished"
 
     # Revelation 11:19
-    "7: seven thunders; mystery of God finished" -> "Temple of God was opened"
+    "7: seven thunders; mystery of God finished" -> "Temple of God opened"
     "7: seven thunders; mystery of God finished" -> "Lightenings, voices, thunderings"
     "7: seven thunders; mystery of God finished" -> "Great earthquake"
     "7: seven thunders; mystery of God finished" -> "Great hailstorm"
