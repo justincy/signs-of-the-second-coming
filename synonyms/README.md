@@ -4,6 +4,7 @@
 2. ["Christ comes in the clouds," "Great sign in heaven," and "Sign of the Son of Man"](great-sign.md)
 3. ["Great tribulation of the Jews" and "All nations gathered against Israel"](jews-tribulation.md)
 4. [Great earthquakes](great-earthquake.md)
+5. [Hail, fire, and blood](hail-fire-blood.md)
 
 # Possibilities
 
