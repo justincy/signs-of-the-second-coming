@@ -15,14 +15,15 @@ digraph Signs {
   # Jeremiah 29:14
   "Jews scattered" -> "Jews gathered in Jerusalem"
 
-  # Ezekial 38:18-23
+  # Ezekiel 38:18-23
   ## Gog and Magog is concurrent with the seventh seal and seven angels pouring destruction
   "All nations gathered against Israel" -> "Great hailstorm"
-  "All nations gathered against Israel" -> "Great earthquake"
+  "All nations gathered against Israel" -> "Great earthquake in Israel"
   "All nations gathered against Israel" -> "Overflowing rain"
   "All nations gathered against Israel" -> "Pestilence"
+  "All nations gathered against Israel" -> "Fire"
     
-  # Ezekial 39
+  # Ezekiel 39
   "All nations gathered against Israel" -> "Gog and Magog defeated" -> "Israel burns enemy weapons for seven years" -> "Israel will spoil their enemies"
 
   # Joel 2:31
@@ -199,11 +200,11 @@ digraph Signs {
   	"Opening of the Seventh Seal" -> "Silence in heavens for half an hour"
   	
   	# Revelation 8:5
-  	"Silence in heavens for half an hour" -> "Thunderings, Lightenings, Earthquake"
+  	"Silence in heavens for half an hour" -> "Voices, Thunderings, Lightenings, Earthquake"
   	
   	# Revelation 8:7
     ## First angel
-  	"Thunderings, Lightenings, Earthquake" -> "1: hail, fire, blood"
+  	"Voices, Thunderings, Lightenings, Earthquake" -> "1: hail, fire, blood"
   	
   	# Revelation 8:8
     ## Second angel
@@ -236,7 +237,7 @@ digraph Signs {
   
     # Revelation 11:2
     ## The Gentiles tread Jerusalem for 42 months which is the length of time
-    ## that the witnesses will prophecy for (1260 days). Zechariah and Ezekial
+    ## that the witnesses will prophecy for (1260 days). Zechariah and Ezekiel
     ## speak of all nations being gathered against Israel. We know from
     ## Revelation that this is concurrent with the two witnesses.
     "All nations gathered against Israel" -> "Two witnesses prophecy"
@@ -249,15 +250,15 @@ digraph Signs {
     
     # Revelation 11:13
     ## Earthquake destroys tenth of Jerusalem; 7,000 men die
-    "Two witnesses resurrected" -> "Great earthquake"	
+    "Two witnesses resurrected" -> "Great earthquake in Israel"	
     
     # Revelation 11:15
-    "Great earthquake" -> "7: seven thunders; mystery of God finished"
+    "Great earthquake in Israel" -> "7: seven thunders; mystery of God finished"
 
     # Revelation 11:19
     "7: seven thunders; mystery of God finished" -> "Temple of God opened"
     "7: seven thunders; mystery of God finished" -> "Lightenings, voices, thunderings"
-    "7: seven thunders; mystery of God finished" -> "Great earthquake"
+    "7: seven thunders; mystery of God finished" -> "Earthquake"
     "7: seven thunders; mystery of God finished" -> "Great hailstorm"
   }
 
@@ -278,10 +279,8 @@ digraph Signs {
     "All nations gathered against Israel" -> "7: seven thunders; mystery of God finished"
     "7: seven thunders; mystery of God finished" -> "Islands become one land"
     "7: seven thunders; mystery of God finished" -> "Great hailstorm"
+    "7: seven thunders; mystery of God finished" -> "Great earthquake"
   }
-
-  # Revelation 16
-  "All nations gathered against Israel" -> "7: seven thunders; mystery of God finished" -> "Great earthquake"
 
   ##
   #
@@ -674,7 +673,7 @@ digraph Signs {
   # Burning
 
   # Supper of the Great God
-  # Ezekial 39
+  # Ezekiel 39
   # Revelation 19:17-18
 
   # 2 Peter 3:10
