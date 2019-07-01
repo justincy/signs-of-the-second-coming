@@ -17,14 +17,16 @@ digraph Signs {
 
   # Ezekiel 38:18-23
   ## Gog and Magog is concurrent with the seventh seal and seven angels pouring destruction
-  "All nations gathered against Israel" -> "Great hailstorm"
+  "All nations gathered against Israel" -> "Hail"
   "All nations gathered against Israel" -> "Great earthquake in Israel"
   "All nations gathered against Israel" -> "Overflowing rain"
   "All nations gathered against Israel" -> "Pestilence"
   "All nations gathered against Israel" -> "Fire"
     
   # Ezekiel 39
-  "All nations gathered against Israel" -> "Gog and Magog defeated" -> "Israel burns enemy weapons for seven years" -> "Israel will spoil their enemies"
+  "All nations gathered against Israel" -> "Gog and Magog defeated"
+  "Gog and Magog defeated" -> "Israel burns enemy weapons for seven years"
+  "Israel burns enemy weapons for seven years" -> "Israel will spoil their enemies"
 
   # Joel 2:31
   "Sun darkened" -> "Great day of the Lord"
@@ -204,31 +206,31 @@ digraph Signs {
   	
   	# Revelation 8:7
     ## First angel
-  	"Voices, Thunderings, Lightenings, Earthquake" -> "1: hail, fire, blood"
+  	"Voices, Thunderings, Lightenings, Earthquake" -> "1: Hail, fire, blood"
   	
   	# Revelation 8:8
     ## Second angel
-  	"1: hail, fire, blood" -> "2: third part of sea becomes blood"
+  	"1: Hail, fire, blood" -> "2: Third part of sea becomes blood"
   	
   	# Revelation 8:10
     ## Third angel
-  	"2: third part of sea becomes blood" -> "3: great star falls from heaven causing wormwood"
+  	"2: Third part of sea becomes blood" -> "3: Great star falls from heaven causing wormwood"
   	
   	# Revelation 8:12
     ## Fourth angel
-  	"3: great star falls from heaven causing wormwood" -> "4: third part of sun, moon, stars smitten"
+  	"3: Great star falls from heaven causing wormwood" -> "4: Third part of sun, moon, stars smitten"
   	
   	# Revelation 9:1-12
     ## Fifth angel
-  	"4: third part of sun, moon, stars smitten" -> "5: smoke and tormenting locusts"
+  	"4: Third part of sun, moon, stars smitten" -> "5: Smoke and tormenting locusts"
   	
   	# Revelation 9:13-21
     ## Sixth angel
-  	"5: smoke and tormenting locusts" -> "6: four horsemen kill third of men"
+  	"5: Smoke and tormenting locusts" -> "6: Four horsemen kill third of men"
   	
   	# Revelation 10
     ## Seventh angel
-  	"6: four horsemen kill third of men" -> "7: seven thunders; mystery of God finished"
+  	"6: Four horsemen kill third of men" -> "7: Seven thunders; mystery of God finished"
   }
   
   # Revelation 11
@@ -253,13 +255,13 @@ digraph Signs {
     "Two witnesses resurrected" -> "Great earthquake in Israel"	
     
     # Revelation 11:15
-    "Great earthquake in Israel" -> "7: seven thunders; mystery of God finished"
+    "Great earthquake in Israel" -> "7: Seven thunders; mystery of God finished"
 
     # Revelation 11:19
-    "7: seven thunders; mystery of God finished" -> "Temple of God opened"
-    "7: seven thunders; mystery of God finished" -> "Lightenings, voices, thunderings"
-    "7: seven thunders; mystery of God finished" -> "Earthquake"
-    "7: seven thunders; mystery of God finished" -> "Great hailstorm"
+    "7: Seven thunders; mystery of God finished" -> "Temple of God opened"
+    "7: Seven thunders; mystery of God finished" -> "Lightenings, voices, thunderings"
+    "7: Seven thunders; mystery of God finished" -> "Earthquake"
+    "7: Seven thunders; mystery of God finished" -> "Great hail"
   }
 
   # Revelation 12
@@ -270,16 +272,22 @@ digraph Signs {
   
   # Revelation 15-16
   subgraph sevenPlagues {
-  	"1. Grievous sore" -> "2. Sea turned to blood" -> "3. Rivers and fountains turned to blood" -> "4. Men scorched with heat of the sun" -> "5. Kingdom of beast full of darkness" -> "6: Euphrates dried up" -> "7: seven thunders; mystery of God finished"
+  	"1. Grievous sore" -> "2. Sea turned to blood"
+    "2. Sea turned to blood"-> "3. Rivers and fountains turned to blood" 
+    "3. Rivers and fountains turned to blood" -> "4. Men scorched with heat of the sun"
+    "4. Men scorched with heat of the sun" -> "5. Kingdom of beast full of darkness"
+    "5. Kingdom of beast full of darkness" -> "6: Euphrates dried up"
+    "6: Euphrates dried up" -> "7: Seven thunders; mystery of God finished"
   	
   	# Revelation 16:12-16
-    "6: Euphrates dried up" -> "Spirits of the devil gather kings of the earth" -> "All nations gathered against Israel"
+    "6: Euphrates dried up" -> "Spirits of the devil gather kings of the earth"
+    "Spirits of the devil gather kings of the earth" -> "All nations gathered against Israel"
     
     # Revelation 16:16-21
-    "All nations gathered against Israel" -> "7: seven thunders; mystery of God finished"
-    "7: seven thunders; mystery of God finished" -> "Islands become one land"
-    "7: seven thunders; mystery of God finished" -> "Great hailstorm"
-    "7: seven thunders; mystery of God finished" -> "Great earthquake"
+    "All nations gathered against Israel" -> "7: Seven thunders; mystery of God finished"
+    "7: Seven thunders; mystery of God finished" -> "Islands become one land"
+    "7: Seven thunders; mystery of God finished" -> "Great hail"
+    "7: Seven thunders; mystery of God finished" -> "Great earthquake"
   }
 
   ##
