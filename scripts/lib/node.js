@@ -1,3 +1,5 @@
+const debug = require('debug')('Node');
+
 class Node {
 
   constructor(value) {
@@ -8,19 +10,29 @@ class Node {
   }
 
   addParent(node) {
-    node = ensureNode(node);
-    this.parents.set(node.value, node);
+    if (node !== this) {
+      this.parents.set(node.value, node);
+    }
   }
 
   addChild(node) {
-    node = ensureNode(node);
-    this.children.set(node.value, node);
+    if (node !== this) {
+      this.children.set(node.value, node);
+    }
   }
 
   addRef(ref) {
     if (ref) {
       this.refs.add(ref);
     }
+  }
+
+  removeParent(node) {
+    this.parents.delete(node.value);
+  }
+
+  removeChild(node) {
+    this.children.delete(node.value);
   }
 
   /**
@@ -47,8 +59,17 @@ class Node {
    * @param {Node} node
    */
   merge(node) {
-    this.parents = new Map([...this.parents, ...node.parents]);
-    this.children = new Map([...this.children, ...node.children]);
+    debug(`merging "${node.value}" into "${this.value}"`);
+    node.parents.forEach(parent => {
+      this.addParent(parent);
+      parent.removeChild(node);
+      parent.addChild(this);
+    });
+    node.children.forEach(child => {
+      this.addChild(child);
+      child.removeParent(node);
+      child.addParent(this);
+    });
     this.refs = new Set([...this.refs, ...node.refs]);
   }
 
@@ -60,8 +81,7 @@ class Node {
    * @param {node} replace
    */
   replace(search, replace) {
-    search = ensureNode(search);
-    replace = ensureNode(replace);
+    debug(`"${this.value}": replacing "${search}" with "${replace}"`)
     if (this.value !== replace.value) {
       if (this.parents.has(search.value)) {
         this.parents.delete(search.value);
@@ -109,18 +129,6 @@ class Node {
     return descendants;
   }
 
-}
-
-/**
- * If the given value is a node, return it.
- * Otherwise create and return a new node with
- * the given value.
- */
-function ensureNode(value) {
-  if (value instanceof Node) {
-    return value;
-  }
-  return new Node(value);
 }
 
 module.exports = Node;

@@ -8,6 +8,8 @@ const fs = require('fs');
 const refsDir = 'assets/graphs';
 const dataDir = 'data';
 
+const signGroups = require('../signs/groups.json');
+
 run().catch(e => {
   console.error(e);
 });
@@ -26,14 +28,14 @@ async function run() {
   }
 
   // Parse the graph
-  const groups = await utils.parseGraph('signs/signs.gv');
+  const referenceGroups = await utils.parseGraph('signs/signs.gv');
 
   // Process the full graph
-  const fullGraph = utils.buildGraph(groups);
+  const fullGraph = utils.buildGraph(referenceGroups);
   utils.writeSignRefs(`${refsDir}/fullRefs.json`, fullGraph);
 
   // Create data/references.json
-  fs.writeFileSync(`${dataDir}/references.json`, JSON.stringify(groups, null, 2), 'utf-8')
+  fs.writeFileSync(`${dataDir}/references.json`, JSON.stringify(referenceGroups, null, 2), 'utf-8')
 
   //
   // Simplified graph
@@ -48,6 +50,14 @@ async function run() {
   });
 
   fullGraph.simplifyDescendants();
+
+  // Process groups
+  signGroups.forEach(({ name, members }) => {
+    members.forEach(member => {
+      // Merge all members into the group node
+      fullGraph.replace(member, name);
+    });
+  });
 
   // Output the modified graph
   utils.writeGraph('signs/simplified.gv', fullGraph);

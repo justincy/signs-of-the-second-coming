@@ -1,4 +1,5 @@
 const Node = require('./node.js');
+const debug = require('debug')('Graph');
 
 class Graph {
 
@@ -106,6 +107,7 @@ class Graph {
    * @param {Node} node 
    */
   removeNode(node) {
+    debug(`removing ${node.value}`);
     // Remove node from the node list
     this.nodes = this.nodes.filter((existingNode) => {
       return existingNode !== node;
@@ -161,11 +163,6 @@ class Graph {
     // Merge search into replace and remove search from the graph
     replaceNode.merge(searchNode);
     this.removeNode(searchNode);
-    
-    // In all nodes, replace all references of search with replace
-    this.nodes.forEach(node => {
-      node.replace(search, replace);
-    });
   }
 
   /**

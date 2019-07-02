@@ -20,15 +20,15 @@ describe('Node', function () {
 
   it('merge', () => {
     const sourceNode = new Node('b');
-    sourceNode.addParent('a');
-    sourceNode.addChild('c');
+    sourceNode.addParent(new Node('a'));
+    sourceNode.addChild(new Node('c'));
     expect(sourceNode.getPairs()).to.deep.equal([
       ['a', 'b'],
       ['b', 'c']
     ]);
     const mergeNode = new Node('2');
-    mergeNode.addParent('1');
-    mergeNode.addChild('3');
+    mergeNode.addParent(new Node('1'));
+    mergeNode.addChild(new Node('3'));
     expect(mergeNode.getPairs()).to.deep.equal([
       ['1', '2'],
       ['2', '3']
@@ -63,8 +63,8 @@ describe('Node', function () {
       const c = new Node('c');
       a.addChild(b);
       a.addChild(c);
-      b.addChild('d');
-      c.addChild('e');
+      b.addChild(new Node('d'));
+      c.addChild(new Node('e'));
       const descendants = a.getDescendants();
       expect(descendants.size).to.equal(4);
       expect(descendants.has('b')).to.be.true;
@@ -80,7 +80,7 @@ describe('Node', function () {
       const e = new Node('e');
       a.addChild(b);
       a.addChild(c);
-      b.addChild('d');
+      b.addChild(new Node('d'));
       c.addChild(e);
       e.addChild(b)
       const descendants = a.getDescendants();
@@ -99,8 +99,8 @@ describe('Node', function () {
       const a = new Node('a');
       const b = new Node('b');
       a.addChild(b);
-      b.addChild('c');
-      a.addChild('c');
+      b.addChild(new Node('c'));
+      a.addChild(new Node('c'));
       const descendants = a.getDeepDescendants();
       expect(descendants.size).to.equal(1);
       expect(descendants.has('c')).to.be.true;
@@ -113,7 +113,7 @@ describe('Node', function () {
       const e = new Node('e');
       a.addChild(b);
       a.addChild(c);
-      b.addChild('d');
+      b.addChild(new Node('d'));
       c.addChild(e);
       e.addChild(b);
       const descendants = a.getDeepDescendants();
