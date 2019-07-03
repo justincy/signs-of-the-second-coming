@@ -52,4 +52,8 @@ digraph {
   "Great division" -> "Gathering of the wheat"
 
   "Face of the Lord unveiled" -> "Temple of God opened"
+
+  "House of Israel scattered" -> "Scattering of Israel"
+  "Scattering of the Jews" -> "Scattering of Israel"
+  "Scattering of the ten tribes" -> "Scattering of Israel"
 }

@@ -53,6 +53,8 @@ async function run() {
 
   // Process groups
   signGroups.forEach(({ name, members }) => {
+    // Create the group node if it doesn't exist
+    fullGraph.getOrCreateNode(name);
     members.forEach(member => {
       // Merge all members into the group node
       fullGraph.replace(member, name);
