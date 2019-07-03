@@ -13,3 +13,5 @@ signs even when there's no relationship.
 Consider gathering of the wheat as a synonym for gathering of Israel or gathering of the elect.
 
 Review D&C 87.
+
+It seems likely that all natural/physical signs occur before and end with the Sign of the Son of Man.
