@@ -49,8 +49,6 @@ async function run() {
     fullGraph.replace(synonym[0], synonym[1])
   });
 
-  fullGraph.simplifyDescendants();
-
   // Process groups
   signGroups.forEach(({ name, members }) => {
     // Create the group node if it doesn't exist
@@ -60,6 +58,8 @@ async function run() {
       fullGraph.replace(member, name);
     });
   });
+
+  fullGraph.simplifyDescendants();
 
   // Output the modified graph
   utils.writeGraph('signs/simplified.gv', fullGraph);
