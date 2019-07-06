@@ -6,9 +6,9 @@
       "Men will curse God and die",
       "Many desolations",
       "Overflowing scourge, desolating sickness",
-      "Whole earth in commotion",
       "Shall say that Christ delayeth his coming",
-      "Love of men wax cold"
+      "Love of men wax cold",
+      "Gentiles sin against the gospel"
     ]
   },
   {
@@ -80,6 +80,38 @@
       "Sun darkened",
       "Moon darkened",
       "Moon turned to blood"
+    ]
+  },
+  {
+    "name": "Whole earth in commotion",
+    "members": [
+      "Thunderings and lightenings",
+      "Tempests",
+      "Tsunamis",
+      "Darkness",
+      "Stars fall from heaven",
+      "Earthquakes",
+      "Signs in the heavens",
+      "Heavens shake",
+      "Great earthquake",
+      "Lightenings, voices, thunderings",
+      "Great hail",
+      "Earthquake",
+      "Blood",
+      "Fire",
+      "Vapors of smoke",
+      "Hail",
+      "Pestilence",
+      "Great hailstorm",
+      "Flies eat flesh and cause maggots",
+      "Overflowing rain"
+    ]
+  },
+  {
+    "name": "Face of the earth changed",
+    "members": [
+      "Every mountain and island moved",
+      "Islands become one land"
     ]
   }
 ]
