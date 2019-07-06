@@ -352,9 +352,6 @@ digraph Signs {
   "Scattering of the Jews" -> "Jews believe in Christ"
   "Jews believe in Christ" -> "Gathering of the Jews"
 
-  # 2 Nephi 12:19-21
-  "Great day of the Lord" -> "Great earthquake"
-
   # 2 Nephi 30:10
   "Restoration" -> "Great division" -> "Burning"
 
@@ -474,7 +471,7 @@ digraph Signs {
   	# D&C 45:47-48
   	## "Arm of the Lord shall fall" -> "Christ stands on Mount of Olives"
     "Christ stands on Mount of Olives" -> "Mount of Olives splits"
-    "Mount of Olives splits" -> "Great earthquake"
+    "Mount of Olives splits" -> "Earthquake"
   	"Christ stands on Mount of Olives" -> "Heavens shake"
 
     # D&C 45:49-50
