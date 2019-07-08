@@ -11,8 +11,9 @@
 digraph {
   "Great sign in heaven" -> "Sign of the Son of Man"
 
-  # D&C 34:7-8
-  "Great day of the Lord" -> "Christ comes in the clouds"
+  ## D&C 34:7-8
+  ## I've turned this into a group
+  ## "Great day of the Lord" -> "Christ comes in the clouds"
 
   "Second Coming" -> "Christ comes in the clouds"
 
