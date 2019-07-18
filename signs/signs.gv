@@ -173,7 +173,7 @@ digraph Signs {
   subgraph sixthSeal {
   	label="Sixth Seal"
   	
-  	# Revelation 6:12-14
+  	# Revelation 6:12-17
   	"Opening of the Sixth Seal" -> "Great earthquake"
   	"Opening of the Sixth Seal" -> "Sun turned blacked"
   	"Opening of the Sixth Seal" -> "Moon turned to blood"
@@ -273,7 +273,7 @@ digraph Signs {
   # Revelation 15-16
   subgraph sevenPlagues {
   	"1. Grievous sore" -> "2. Sea turned to blood"
-    "2. Sea turned to blood"-> "3. Rivers and fountains turned to blood" 
+    "2. Sea turned to blood" -> "3. Rivers and fountains turned to blood" 
     "3. Rivers and fountains turned to blood" -> "4. Men scorched with heat of the sun"
     "4. Men scorched with heat of the sun" -> "5. Kingdom of beast full of darkness"
     "5. Kingdom of beast full of darkness" -> "6: Euphrates dried up"
