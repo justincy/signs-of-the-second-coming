@@ -165,6 +165,9 @@ digraph Signs {
   "Sun darkened" -> "Great day of the Lord"
   "Moon turned to blood" -> "Great day of the Lord"
 
+  # Romans 11:25
+  "Fulness of the Gentiles" -> "Gathering of Israel"
+
   # 1 Thessalonians 4:16-17
   "Rapture" -> "Christ comes in the clouds"
   "Morning of the First Resurrection" -> "Christ comes in the clouds"
@@ -308,15 +311,15 @@ digraph Signs {
     # 1 Nephi 13:14
     "Discovering of America" -> "Scattering of Lehi's seed"
     
-    # 1 Nephi 22:7-8
-    "Discovering of America" -> "Mighty nation raised up" -> "Scattering of Lehi's seed"
-    "Mighty nation raised up" -> "Restoration"
-    
     # 1 Nephi 15:13
-    "Restoration" -> "Fullness of the gospel preached to Lehi's seed"
+    "Fulness of the Gentiles" -> "Fullness of the gospel preached to Lehi's seed"
     
     # 1 Nephi 15:17
     "Scattering of Lehi's seed" -> "Fullness of the gospel preached to Lehi's seed"
+
+    # 1 Nephi 22:7-8
+    "Discovering of America" -> "Mighty nation raised up" -> "Scattering of Lehi's seed"
+    "Mighty nation raised up" -> "Restoration"
   }
 
   # 1 Nephi 15:19, 19:15
@@ -363,8 +366,8 @@ digraph Signs {
   "Restoration" -> "Gathering of Israel"
 
   # 3 Nephi 16:4-5
-  "Scattering of the Jews" -> "Restoration"
-  "Restoration" -> "Gathering of Israel"
+  "Scattering of the Jews" -> "Fulness of the Gentiles"
+  "Fulness of the Gentiles" -> "Gathering of Israel"
 
   # 3 Nephi 16:7-10
   "Times of the Gentiles fulfilled" -> "Gentiles sin against the gospel"
@@ -688,9 +691,6 @@ digraph Signs {
   # This passage of scripture doesn't give enough context to 
   # put any signs in order. It's just listing different signs.
   
-  # Track "time of the Gentiles"; D&C 45
-  # https://www.lds.org/scriptures/dc-testament/dc/45
-
   # Study the separation of the wheat from the tares
 
   # https://www.lds.org/manual/doctrines-of-the-gospel-student-manual/36-second-coming?lang=eng
