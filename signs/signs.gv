@@ -7,7 +7,7 @@ digraph Signs {
   ##
 
   # Isaiah 49:22
-  "Restoration" -> "Gathering of Israel"
+  "Standard is setup" -> "Gathering of Israel"
 
   # Jeremiah 23:3
   "Scattering of Israel" -> "Gathering of Israel"
@@ -53,7 +53,6 @@ digraph Signs {
   "Mount of Olives splits" -> "Christ comes in the clouds"
 
   # Malachi 4:5
-  "Restoration" -> "Elijah appears"
   "Elijah appears" -> "Great day of the Lord"
 
   ##
@@ -267,9 +266,6 @@ digraph Signs {
     "7: Seven thunders; mystery of God finished" -> "Great hail"
   }
 
-  # Revelation 12
-  "Apostasy" -> "Restoration"
-
   # Revelation 14:1
   "Sealing of the 144,000" -> "Christ stands on Mount Zion"
   
@@ -299,31 +295,20 @@ digraph Signs {
   #
   ##
 
-  subgraph americas {
-    label="Americas"
-    
-    # Assumption
-    "Lehi's family in America" -> "Destruction of the Nephites" -> "Discovering of America"
+  # Assumption
+  "Lehi's family in America" -> "Destruction of the Nephites" -> "Discovering of America"
+
+  # 1 Nephi 13:12
+  "Columbus" -> "Discovering of America"
   
-    # 1 Nephi 13:12
-    "Columbus" -> "Discovering of America"
-    
-    # 1 Nephi 13:14
-    "Discovering of America" -> "Scattering of Lehi's seed"
-    
-    # 1 Nephi 15:13
-    "Fulness of the Gentiles" -> "Fullness of the gospel preached to Lehi's seed"
-    
-    # 1 Nephi 15:17
-    "Scattering of Lehi's seed" -> "Fullness of the gospel preached to Lehi's seed"
-
-    # 1 Nephi 22:7-8
-    "Discovering of America" -> "Mighty nation raised up" -> "Scattering of Lehi's seed"
-    "Mighty nation raised up" -> "Restoration"
-  }
-
-  # 1 Nephi 15:19, 19:15
-  "Restoration" -> "Gathering of Israel" -> "Second Coming"
+  # 1 Nephi 13:14
+  "Discovering of America" -> "Scattering of Lehi's seed"
+  
+  # 1 Nephi 15:13
+  "Fulness of the Gentiles" -> "Fullness of the gospel preached to Lehi's seed"
+  
+  # 1 Nephi 15:17
+  "Scattering of Lehi's seed" -> "Fullness of the gospel preached to Lehi's seed"
 
   # 1 Nephi 22:3
   "Lehi's family in America" -> "House of Israel scattered"
@@ -332,18 +317,15 @@ digraph Signs {
   "Scattering of the ten tribes" -> "Lehi's family in America"
 
   # 1 Nephi 22:6
-  "House of Israel scattered" -> "Restoration"
-  "Restoration" -> "Gathering of Israel"
+  "House of Israel scattered" -> "Lord lifts his hand upon the Gentiles"
+  "Lord lifts his hand upon the Gentiles" -> "Gathering of Israel"
 
   # 1 Nephi 22:7
   "House of Israel scattered" -> "Mighty nation raised up"
   "Mighty nation raised up" -> "Scattering of Lehi's seed"
 
   # 1 Nephi 22:8
-  "Scattering of Lehi's seed" -> "Restoration"
-
-  # 1 Nephi 22:11-12
-  "Restoration" -> "Gathering of Israel"
+  "Scattering of Lehi's seed" -> "Marvelous work among the Gentiles"
 
   ## TODO: review the rest of 1 Nephi 22.
 
@@ -670,4 +652,10 @@ digraph Signs {
 
   # Assumption
   "Morning of the First Resurrection" -> "Afternoon of the First Resurrection"
+
+  # Assumption
+  "Discovering of America" -> "Mighty nation raised up"
+
+  # Assumption
+  "Restoration" -> "Elijah appears"
 }
