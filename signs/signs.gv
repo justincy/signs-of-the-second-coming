@@ -367,10 +367,12 @@ digraph Signs {
   #
   ##
 
-  # D&C 29:13-19
   subgraph dc29 {
     # D&C 29:7
     "Restoration" -> "Gathering of the elect"
+
+    # D&C 29:9
+    "Gathering of the elect" -> "Burning"
 
     # D&C 29:13
     ## I'm not sure that this is the great earthquake, perhaps just a earthquake
