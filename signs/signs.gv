@@ -186,10 +186,10 @@ digraph Signs {
   	
   	# Revelation 7:2
   	# D&C 77:9
-  	"Opening of the Sixth Seal" -> "Restoration"
+  	"Opening of the Sixth Seal" -> "Restoration" -> "Elias"
   	
   	# Revelation 7:3-4
-  	"Restoration" -> "Sealing of the 144,000"
+  	"Elias" -> "Sealing of the 144,000"
   }
   
   # Revelation 8
@@ -337,15 +337,11 @@ digraph Signs {
   "Scattering of the Jews" -> "Jews believe in Christ"
   "Jews believe in Christ" -> "Gathering of the Jews"
 
-  # 2 Nephi 30:10
+  # 2 Nephi 30:8,10
   "Restoration" -> "Great division" -> "Burning"
 
   # 2 Nephi 30:15-18
   "Burning" -> "All things revealed"
-
-  # 3 Nephi 5:21-26
-  "Restoration" -> "Gospel preached to remnant of Joseph"
-  "Restoration" -> "Gathering of Israel"
 
   # 3 Nephi 16:4-5
   "Scattering of the Jews" -> "Fulness of the Gentiles"
@@ -357,9 +353,6 @@ digraph Signs {
 
   # 3 Nephi 20:11
   "Words of Isaiah fulfilled" -> "Gathering of Israel"
-
-  # 3 Nephi 20:13
-  "Restoration" -> "Gathering of Israel"
 
   # 3 Nephi 20:22
   # 3 Nephi 21:23-25
