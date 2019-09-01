@@ -123,29 +123,29 @@ digraph Signs {
     # Matthew 24:31
     # "Christ comes in the clouds" -> "Gathering of the elect"
 
-    # JST M 1:18,22
+    # JST Matt 1:18,22
     "Great tribulation of the Jews" -> "False Christs and false prophets"
 
-    # JST M 1:23
+    # JST Matt 1:23
     "Great tribulation of the Jews" -> "Wars"
 
-    # JST M 1:31
+    # JST Matt 1:31
     "Gospel preached to all the world" -> "Destruction of the wicked"
 
-    # JST M 1:33
+    # JST Matt 1:33
     "Great tribulation of the Jews" -> "Sun darkened"
     "Great tribulation of the Jews" -> "Moon darkened"
     "Great tribulation of the Jews" -> "Stars fall from heaven"
     "Great tribulation of the Jews" -> "Heavens shake"
 
-    # JST M 1:36
+    # JST Matt 1:36
     "Sun darkened" -> "Sign of the Son of Man"
     "Moon darkened" -> "Sign of the Son of Man"
     "Stars fall from heaven" -> "Sign of the Son of Man"
     "Heavens shake" -> "Sign of the Son of Man"
     "Sign of the Son of Man" -> "Christ comes in the clouds"
 
-    # JST M 1:37
+    # JST Matt 1:37
     "Angels sound a trumpet" -> "Gathering of the remainder of the elect"
     "Gathering of the remainder of the elect" -> "Christ comes in the clouds"
   }

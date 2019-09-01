@@ -340,7 +340,30 @@
     {
       path: 'dc-testament/dc',
       name: 'D&C'
-    }
+    },
+    //
+    // Pearl of Great Price
+    //
+    {
+      path: 'pgp/moses',
+      name: 'Moses'
+    },
+    {
+      path: 'pgp/abr',
+      name: 'Abraham'
+    },
+    {
+      path: 'pgp/js-m',
+      name: 'JST Matt'
+    },
+    {
+      path: 'pgp/js-h',
+      name: 'JS History'
+    },
+    {
+      path: 'pgp/a-of-f',
+      name: 'Articles of Faith'
+    },
   ];
 
   // Generate regex for each book
