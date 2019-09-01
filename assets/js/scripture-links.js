@@ -164,6 +164,110 @@
     // NT
     //
     {
+      path: 'nt/matt',
+      name: 'Matthew'
+    },
+    {
+      path: 'nt/mark',
+      name: 'Mark'
+    },
+    {
+      path: 'nt/luke',
+      name: 'Luke'
+    },
+    {
+      path: 'nt/john',
+      name: 'John'
+    },
+    {
+      path: 'nt/acts',
+      name: 'Acts'
+    },
+    {
+      path: 'nt/rom',
+      name: 'Romans'
+    },
+    {
+      path: 'nt/1-cor',
+      name: '1 Corinthians'
+    },
+    {
+      path: 'nt/2-cor',
+      name: '2 Corinthians'
+    },
+    {
+      path: 'nt/gal',
+      name: 'Galatians'
+    },
+    {
+      path: 'nt/eph',
+      name: 'Ephesians'
+    },
+    {
+      path: 'nt/philip',
+      name: 'Philippians'
+    },
+    {
+      path: 'nt/col',
+      name: 'Colossians'
+    },
+    {
+      path: 'nt/1-thes',
+      name: '1 Thessalonians'
+    },
+    {
+      path: 'nt/2-thes',
+      name: '2 Thessalonians'
+    },
+    {
+      path: 'nt/1-tim',
+      name: '1 Timothy'
+    },
+    {
+      path: 'nt/2-tim',
+      name: '2 Timothy'
+    },
+    {
+      path: 'nt/titus',
+      name: 'Titus'
+    },
+    {
+      path: 'nt/philem',
+      name: 'Philemon'
+    },
+    {
+      path: 'nt/heb',
+      name: 'Hebrews'
+    },
+    {
+      path: 'nt/james',
+      name: 'James'
+    },
+    {
+      path: 'nt/1-pet',
+      name: '1 Peter'
+    },
+    {
+      path: 'nt/2-pet',
+      name: '2 Peter'
+    },
+    {
+      path: 'nt/1-jn',
+      name: '1 John'
+    },
+    {
+      path: 'nt/2-jn',
+      name: '2 John'
+    },
+    {
+      path: 'nt/3-jn',
+      name: '3 John'
+    },
+    {
+      path: 'nt/jude',
+      name: 'Jude'
+    },
+    {
       path: 'nt/rev',
       name: 'Revelation'
     },
