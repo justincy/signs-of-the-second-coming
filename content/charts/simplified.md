@@ -5,5 +5,5 @@ name: simplified
 description: "A simplified version of the chart which removes duplicate lines and merges synonyms."
 menu:
   main:
-    weight: 2
+    weight: 1
 ---

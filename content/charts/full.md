@@ -5,5 +5,5 @@ name: full
 description: "The most uninterpreted version of the signs chart. It contains duplicate lines and doesn't merge synonyms."
 menu:
   main:
-    weight: 1
+    weight: 2
 ---
