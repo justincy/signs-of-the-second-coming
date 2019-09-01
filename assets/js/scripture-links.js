@@ -274,7 +274,66 @@
     //
     // Book of Mormom
     //
-
+    {
+      path: 'bofm/1-ne',
+      name: '1 Nephi'
+    },
+    {
+      path: 'bofm/2-ne',
+      name: '2 Nephi'
+    },
+    {
+      path: 'bofm/jacob',
+      name: 'Jacob'
+    },
+    {
+      path: 'bofm/enos',
+      name: 'Enos'
+    },
+    {
+      path: 'bofm/jarom',
+      name: 'Jarom'
+    },
+    {
+      path: 'bofm/omni',
+      name: 'Omni'
+    },
+    {
+      path: 'bofm/w-of-m',
+      name: 'Words of Mormon'
+    },
+    {
+      path: 'bofm/mosiah',
+      name: 'Mosiah'
+    },
+    {
+      path: 'bofm/alma',
+      name: 'Alma'
+    },
+    {
+      path: 'bofm/hel',
+      name: 'Helaman'
+    },
+    {
+      path: 'bofm/3-ne',
+      name: '3 Nephi'
+    },
+    {
+      path: 'bofm/4-ne',
+      name: '4 Nephi'
+    },
+    {
+      path: 'bofm/morm',
+      name: 'Mormon'
+    },
+    {
+      path: 'bofm/ether',
+      name: 'Ether'
+    },
+    {
+      path: 'bofm/moro',
+      name: 'Moroni'
+    },
     //
     // Doctrine and Covenants
     //
