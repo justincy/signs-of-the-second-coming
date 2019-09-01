@@ -94,6 +94,10 @@
   async function showRefs(sign) {
     const refData = await refsPromise;
     refsTitle.textContent = sign;
-    refsContent.textContent = refData.nodes[sign].join('; ');
+    let refsText = refData.nodes[sign].join('; ');
+    console.log(refsText)
+    refsText = window.ScriptureLinks.addLinks(refsText)
+    console.log(refsText)
+    refsContent.innerHTML = refsText;
   }
-})();
+}());
