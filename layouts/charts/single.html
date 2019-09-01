@@ -21,6 +21,8 @@
     const graphName = '{{ .Params.name }}';
     const refsUrl = '{{ $refs.Permalink | relURL }}';
   </script>
+  {{ $js := resources.Get "js/scripture-links.js" | fingerprint }}
+  <script type="text/javascript" src="{{ $js.Permalink | relURL }}"></script>
   {{ $js := resources.Get "js/svg.js" | fingerprint }}
   <script type="text/javascript" src="{{ $js.Permalink | relURL }}"></script>
 {{ end }}
