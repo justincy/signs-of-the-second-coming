@@ -1,10 +1,16 @@
 (function () {
 
+  const svg = document.querySelector('#svg-container svg');
+
+  // Remove the empty title tag
+  const title = svg.querySelector('title')
+  if (title) {
+    title.remove()
+  }
+
   /**
    * Setup zooming and panning
    */
-  const svg = document.querySelector('#svg-container svg');
-
   window.svg = svgPanZoom(svg, {
     minZoom: 1,
     maxZoom: 6,
