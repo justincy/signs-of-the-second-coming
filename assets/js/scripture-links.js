@@ -1,0 +1,231 @@
+(function () {
+
+  const books = [
+    //
+    // OT
+    //
+    {
+      path: 'ot/gen',
+      name: 'Genesis'
+    },
+    {
+      path: 'ot/ex',
+      name: 'Exodus'
+    },
+    {
+      path: 'ot/lev',
+      name: 'Leviticus'
+    },
+    {
+      path: 'ot/num',
+      name: 'Numbers'
+    },
+    {
+      path: 'ot/josh',
+      name: 'Joshua'
+    },
+    {
+      path: 'ot/judg',
+      name: 'Judges'
+    },
+    {
+      path: 'ot/ruth',
+      name: 'Ruth'
+    },
+    {
+      path: 'ot/isa',
+      name: 'Isaiah'
+    },
+    {
+      path: 'ot/1-sam',
+      name: '1 Samuel'
+    },
+    {
+      path: 'ot/2-sam',
+      name: '2 Samuel'
+    },
+    {
+      path: 'ot/1-kgs',
+      name: '1 Kings'
+    },
+    {
+      path: 'ot/2-kgs',
+      name: '2 Kings'
+    },
+    {
+      path: 'ot/1-chr',
+      name: '1 Chronicles'
+    },
+    {
+      path: 'ot/2-chr',
+      name: '2 Chronicles'
+    },
+    {
+      path: 'ot/ezra',
+      name: 'Ezra'
+    },
+    {
+      path: 'ot/neh',
+      name: 'Nehemiah'
+    },
+    {
+      path: 'ot/esth',
+      name: 'Esther'
+    },
+    {
+      path: 'ot/job',
+      name: 'Job'
+    },
+    {
+      path: 'ot/ps',
+      name: 'Psalm'
+    },
+    {
+      path: 'ot/prov',
+      name: 'Proverbs'
+    },
+    {
+      path: 'ot/eccl',
+      name: 'Ecclesiastes'
+    },
+    {
+      path: 'ot/song',
+      name: 'Song of Solomon'
+    },
+    {
+      path: 'ot/isa',
+      name: 'Isaiah'
+    },
+    {
+      path: 'ot/jer',
+      name: 'Jeremiah'
+    },
+    {
+      path: 'ot/lam',
+      name: 'Lamentations'
+    },
+    {
+      path: 'ot/ezek',
+      name: 'Ezekiel'
+    },
+    {
+      path: 'ot/dan',
+      name: 'Daniel'
+    },
+    {
+      path: 'ot/hodea',
+      name: 'Hosea'
+    },
+    {
+      path: 'ot/joel',
+      name: 'Joel'
+    },
+    {
+      path: 'ot/amos',
+      name: 'Amos'
+    },
+    {
+      path: 'ot/obad',
+      name: 'Obadiah'
+    },
+    {
+      path: 'ot/jonah',
+      name: 'Jonah'
+    },
+    {
+      path: 'ot/micah',
+      name: 'Micah'
+    },
+    {
+      path: 'ot/nahum',
+      name: 'Nahum'
+    },
+    {
+      path: 'ot/hab',
+      name: 'Habakkuk'
+    },
+    {
+      path: 'ot/seph',
+      name: 'Zephania'
+    },
+    {
+      path: 'ot/hag',
+      name: 'Haggai'
+    },
+    {
+      path: 'ot/zech',
+      name: 'Zechariah'
+    },
+    {
+      path: 'ot/mal',
+      name: 'Malachi'
+    },
+    //
+    // NT
+    //
+    {
+      path: 'nt/rev',
+      name: 'Revelation'
+    },
+    //
+    // Book of Mormom
+    //
+
+    //
+    // Doctrine and Covenants
+    //
+    {
+      path: 'dc-testament/dc',
+      name: 'D&C'
+    }
+  ];
+
+  // Generate regex for each book
+  books.forEach((book) => {
+    book.regex = new RegExp(`${book.name} (\\w+)(:((\\w+)(-\\w+)?))?`, 'gm')
+  })
+
+  window.ScriptureLinks = {
+
+    /**
+     * Scans the given text for scripture references, 
+     * then turns them into links to the scriptures
+     * at churchofjesuschrist.org
+     * 
+     * @param {String} searchText Text to process
+     * @returns {String}
+     */
+    addLinks: function (searchText) {
+      let matches = [], url, matchText, chapter, verses, firstVerse;
+      // Find all matches before processing so that our modifications
+      // don't interfere with regex evaluation
+      books.forEach((book) => {
+        while ((match = book.regex.exec(searchText)) !== null) {
+          match.book = book;
+          matches.push(match);
+        }
+      })
+      matches.forEach((match) => {
+        matchText = match[0]
+        chapter = match[1]
+        verses = match[3]
+        firstVerse = match[4]
+        url = constructUrl(match.book, chapter, verses, firstVerse)
+        searchText = searchText.replace(matchText, `<a href="${url}" target="_blank">${matchText}</a>`)
+      })
+      return searchText;
+    }
+
+  };
+
+  function constructUrl(book, chapter, verses, firstVerse) {
+    if (verses && firstVerse)
+      return `https://www.churchofjesuschrist.org/study/scriptures/${book.path}/${chapter}.${verses}?lang=eng#p${firstVerse}`
+    else if (verses) {
+      return `https://www.churchofjesuschrist.org/study/scriptures/${book.path}/${chapter}.${verses}?lang=eng`
+    } else {
+      return `https://www.churchofjesuschrist.org/study/scriptures/${book.path}/${chapter}?lang=eng`
+    }
+  }
+
+}());
