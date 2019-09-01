@@ -15,8 +15,6 @@ digraph {
   ## I've turned this into a group
   ## "Great day of the Lord" -> "Christ comes in the clouds"
 
-  "Second Coming" -> "Christ comes in the clouds"
-
   "Lord utters his voice out of heaven" -> "Lord utters his voice"
   "Lord utters his voice" -> "Lord speaks from Zion and Jerusalem"
 
@@ -62,4 +60,10 @@ digraph {
   "Marvelous work among the Gentiles" -> "Restoration"
   "Lord lifts his hand upon the Gentiles" -> "Restoration"
   "Standard is setup" -> "Restoration"
+
+  "Gentiles are Nursing Parents" -> "Gathering of Israel"
+  "Remnant gathered out of all countries" -> "Gathering of Israel"
+  "All Israel is saved" -> "Gathering of Israel"
+  "Fulness of the gospel brought to the house of Israel" -> "Gathering of Israel"
+  "Recover the house of Israel" -> "Gathering of Israel"
 }

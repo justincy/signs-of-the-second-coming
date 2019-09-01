@@ -1,16 +1,19 @@
 digraph Signs {
-  #     
+  
   ##
   #
   # OT
   #
   ##
 
-  # Isaiah 49:22
-  "Standard is setup" -> "Gathering of Israel"
+  # Isaiah 10:20-21
+  "Restoration" -> "Remnant shall return to God"
+
+  # Isaiah 49:22-23
+  "Standard is setup" -> "Gentiles are Nursing Parents"
 
   # Jeremiah 23:3
-  "Scattering of Israel" -> "Gathering of Israel"
+  "Scattering of Israel" -> "Remnant gathered out of all countries"
 
   # Jeremiah 29:14
   "Jews scattered" -> "Jews gathered in Jerusalem"
@@ -164,8 +167,8 @@ digraph Signs {
   "Sun darkened" -> "Great day of the Lord"
   "Moon turned to blood" -> "Great day of the Lord"
 
-  # Romans 11:25
-  "Fulness of the Gentiles" -> "Gathering of Israel"
+  # Romans 11:25-26
+  "Fulness of the Gentiles" -> "All Israel is saved"
 
   # 1 Thessalonians 4:16-17
   "Rapture" -> "Christ comes in the clouds"
@@ -310,6 +313,9 @@ digraph Signs {
   # 1 Nephi 15:17
   "Scattering of Lehi's seed" -> "Fullness of the gospel preached to Lehi's seed"
 
+  # 1 Nephi 21:22-23
+  "Standard is setup" -> "Gentiles are Nursing Parents"
+
   # 1 Nephi 22:3
   "Lehi's family in America" -> "House of Israel scattered"
 
@@ -318,7 +324,7 @@ digraph Signs {
 
   # 1 Nephi 22:6
   "House of Israel scattered" -> "Lord lifts his hand upon the Gentiles"
-  "Lord lifts his hand upon the Gentiles" -> "Gathering of Israel"
+  "Lord lifts his hand upon the Gentiles" -> "Gentiles are Nursing Parents"
 
   # 1 Nephi 22:7
   "House of Israel scattered" -> "Mighty nation raised up"
@@ -329,6 +335,9 @@ digraph Signs {
 
   ## TODO: review the rest of 1 Nephi 22.
 
+  # 2 Nephi 6-7
+  "Standard is setup" -> "Gentiles are Nursing Parents"
+
   # 2 Nephi 10:6-8
   ## This seems to imply that the Jews would believe in Christ before being
   ## gathered again in Jerusalem, but that's clearly not true. Maybe I'm
@@ -336,6 +345,14 @@ digraph Signs {
   ## use those interchangeably.
   "Scattering of the Jews" -> "Jews believe in Christ"
   "Jews believe in Christ" -> "Gathering of the Jews"
+
+  # 1 Nephi 22:9
+  ## "Gentiles are Nursing Parents"
+  ## 1 Nephi 22:8 explains that the Gentiles bringing the restored gospel
+  ## to the tribes of Israel is likened to Israel being carried in the arms
+  ## of the Gentiles. Maybe I should change "Gentiles are Nursing Parents"
+  ## to "Carried in the arms and upon the shoulders of the Gentiles".
+  ## This also implies that it's not a physical gathering.
 
   # 2 Nephi 30:8,10
   "Restoration" -> "Great division" -> "Burning"
@@ -349,10 +366,9 @@ digraph Signs {
 
   # 3 Nephi 16:7-10
   "Times of the Gentiles fulfilled" -> "Gentiles sin against the gospel"
-  "Gentiles sin against the gospel" -> "Gathering of Israel"
 
-  # 3 Nephi 20:11
-  "Words of Isaiah fulfilled" -> "Gathering of Israel"
+  # 3 Nephi 16:10-12
+  "Gentiles sin against the gospel" -> "Fulness of the gospel brought to the house of Israel"
 
   # 3 Nephi 20:22
   # 3 Nephi 21:23-25
@@ -398,8 +414,8 @@ digraph Signs {
   "Stars fall from heaven" -> "Christ comes in the clouds"
 
   # D&C 39:11
-  "Restoration" -> "Gospel preached to all the world"
-  "Gospel preached to all the world" -> "Gathering of Israel"
+  "Restoration" -> "Preach the fulness of the gospel"
+  "Preach the fulness of the gospel" -> "Recover the house of Israel"
 
   # D&C 43:18
   "Lord utters his voice out of heaven" -> "Heavens shake"
@@ -570,7 +586,12 @@ digraph Signs {
   "Restoration" -> "Gathering at Adam-Ondi-Ahman"
 
   # D&C 133:7-8
-  "Restoration" -> "Gathering of Israel"
+  "Restoration" -> "Elders sent unto the nations"
+  "Elders sent unto the nations" -> "Elders sent unto the Gentiles"
+  "Elders sent unto the Gentiles" -> "Elders sent unto the Jews"
+
+  # D&C 133:10
+  "Elders sent unto the Jews" -> "Great day of the Lord"
 
   # D&C 133:18
   "Sealing of the 144,000" -> "Christ stands on Mount Zion"
