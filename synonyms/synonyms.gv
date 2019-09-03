@@ -66,4 +66,6 @@ digraph {
   "All Israel is saved" -> "Gathering of Israel"
   "Fulness of the gospel brought to the house of Israel" -> "Gathering of Israel"
   "Recover the house of Israel" -> "Gathering of Israel"
+
+  "Christ shall reign over all flesh" -> "Christ reigns as King"
 }

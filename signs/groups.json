@@ -126,10 +126,7 @@
       "Pestilence",
       "Great hailstorm",
       "Flies eat flesh and cause maggots",
-      "Overflowing rain",
-      "Face of the earth changed",
-      "Every mountain and island moved",
-      "Islands become one land"
+      "Overflowing rain"
     ]
   },
   { 
@@ -159,6 +156,23 @@
     "members": [
       "Gathering of the wheat",
       "Tares bound in bundles"
+    ]
+  },
+  {
+    "name": "Lost ten tribes return",
+    "members": [
+      "Those in the north countries shall come in remembrance before the Lord",
+      "A highway shall be cast up in the ocean",
+      "Those in the north countries shall bring their rich treasures to Ephraim",
+      "Those in the north countries shall be crowned with glory by Ephraim"
+    ]
+  },
+  {
+    "name": "Islands become one land",
+    "members": [
+      "Face of the earth changed",
+      "Every mountain and island moved",
+      "Mountains broken down"
     ]
   }
 ]

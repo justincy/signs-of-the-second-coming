@@ -187,8 +187,7 @@ digraph Signs {
   	"Opening of the Sixth Seal" -> "Every mountain and island moved"
   	"Opening of the Sixth Seal" -> "Men hide themselves"
   	
-  	# Revelation 7:2
-  	# D&C 77:9
+  	# Revelation 7:2, D&C 77:9
   	"Opening of the Sixth Seal" -> "Restoration" -> "Elias"
   	
   	# Revelation 7:3-4
@@ -596,8 +595,26 @@ digraph Signs {
   # D&C 133:18
   "Sealing of the 144,000" -> "Christ stands on Mount Zion"
 
-  # D&C 133:23-24
-  "Islands become one land"
+  # D&C 133:21-22
+  "Lord speaks from Zion and Jerusalem" -> "Mountains broken down"
+
+  # D&C 133:23
+  "Lord speaks from Zion and Jerusalem" -> "Ocean driven back into the north countries" -> "Islands become one land"
+
+  # D&C 133:25
+  "Islands become one land" -> "Christ shall reign over all flesh"
+
+  # D&C 133:26
+  "Christ shall reign over all flesh" -> "Those in the north countries shall come in remembrance before the Lord"
+
+  # D&C 133:27
+  "Those in the north countries shall come in remembrance before the Lord" -> "A highway shall be cast up in the ocean"
+
+  # D&C 133:30
+  "A highway shall be cast up in the ocean" -> "Those in the north countries shall bring their rich treasures to Ephraim"
+
+  # D&C 133:32
+  "Those in the north countries shall bring their rich treasures to Ephraim" -> "Those in the north countries shall be crowned with glory by Ephraim"
 
   # D&C 133:56
   "Morning of the First Resurrection" -> "Christ stands on Mount Zion"
