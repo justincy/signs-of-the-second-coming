@@ -68,4 +68,6 @@ digraph {
   "Recover the house of Israel" -> "Gathering of Israel"
 
   "Christ shall reign over all flesh" -> "Christ reigns as King"
+  "Jerusalem the throne of the Lord" -> "Christ reigns as King"
+  "All nations gathered unto Jerusalem" -> "Christ reigns as King"
 }

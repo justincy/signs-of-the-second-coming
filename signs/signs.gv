@@ -12,8 +12,15 @@ digraph Signs {
   # Isaiah 49:22-23
   "Standard is setup" -> "Gentiles are Nursing Parents"
 
+  # Jeremiah 3:17-18
+  "Jerusalem the throne of the Lord" -> "Judah and Israel come together out of the land of the north"
+  "All nations gathered unto Jerusalem" -> "Judah and Israel come together out of the land of the north"
+
   # Jeremiah 23:3
   "Scattering of Israel" -> "Remnant gathered out of all countries"
+
+  # Jeremiah 23:5
+  "Christ reigns as King" -> "Israel brough out of the north, and all countries"
 
   # Jeremiah 29:14
   "Jews scattered" -> "Jews gathered in Jerusalem"
