@@ -95,9 +95,7 @@
     const refData = await refsPromise;
     refsTitle.textContent = sign;
     let refsText = refData.nodes[sign].join('; ');
-    console.log(refsText)
     refsText = window.ScriptureLinks.addLinks(refsText)
-    console.log(refsText)
     refsContent.innerHTML = refsText;
   }
 }());
