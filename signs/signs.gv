@@ -153,8 +153,7 @@ digraph Signs {
     "Sign of the Son of Man" -> "Christ comes in the clouds"
 
     # JST Matt 1:37
-    "Angels sound a trumpet" -> "Gathering of the remainder of the elect"
-    "Gathering of the remainder of the elect" -> "Christ comes in the clouds"
+    "Son of Man shall come" -> "Angels gather the remainder of the elect"
   }
 
   # Mark 13:24

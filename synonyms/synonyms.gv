@@ -11,14 +11,13 @@
 digraph {
   "Great sign in heaven" -> "Sign of the Son of Man"
 
-  ## D&C 34:7-8
-  ## I've turned this into a group
-  ## "Great day of the Lord" -> "Christ comes in the clouds"
+  "Son of Man shall come" -> "Christ comes in the clouds"
 
   "Lord utters his voice out of heaven" -> "Lord utters his voice"
   "Lord utters his voice" -> "Lord speaks from Zion and Jerusalem"
 
   "Multitudes gathered in the valley of decision" -> "All nations gathered against Israel"
+  "Great tribulation of the Jews" -> "All nations gathered against Israel"
 
   # D&C 84:2
   # "Christ visits New Jerusalem" doesn't exist in the graph so the script blows up.
@@ -27,8 +26,6 @@ digraph {
   # Mount Zion is, and they may confuse it with the prophecy about Christ standing
   # on the Mount of Olives.
   # "Christ stands on Mount Zion" -> "Christ visits New Jerusalem"
-
-  "Great tribulation of the Jews" -> "All nations gathered against Israel"
 
   "Gather elect from four quarters of the earth" -> "Gathering of the elect"
 
@@ -70,4 +67,6 @@ digraph {
   "Christ shall reign over all flesh" -> "Christ reigns as King"
   "Jerusalem the throne of the Lord" -> "Christ reigns as King"
   "All nations gathered unto Jerusalem" -> "Christ reigns as King"
+
+  "Preach the fulness of the gospel" -> "Gospel preached to all the world"
 }
