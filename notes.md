@@ -1,7 +1,3 @@
-I need to review "Angel sounds his trump" to decide whether all instances are describing the same event.
-Thes scriptures describe many different instances of an angel sounding a trump. I may have incorrectly
-assume that single instances of it were all the same.
-
 Study Joel 2 in detail.
 
 Review the rest of 1 Nephi 22. Nephi doesn't explicitly state
@@ -18,9 +14,6 @@ Review D&C 87.
 It seems likely that all natural/physical signs occur before and end with the Sign of the Son of Man.
 
 Review 2 Nephi 6 & 12
-
-The word "Restoration" likely isn't used in the Book of Mormon. Review instances of it in the graph
-and replace with other scriptural phrases which are synonyms for the restoration.
 
 # TODO
 
