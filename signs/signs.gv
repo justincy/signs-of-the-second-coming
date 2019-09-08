@@ -666,6 +666,12 @@ digraph Signs {
   "Two witnesses die" -> "Half of the city is captive"
   "Mount of Olives splits" -> "Gog and Magog defeated"
 
+  # The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578
+  "Gathering at Adam-Ondi-Ahman" -> "Christ comes in the clouds"
+  "Gathering at Adam-Ondi-Ahman" -> "Christ stands on Mount of Olives"
+  "Gathering at Adam-Ondi-Ahman" -> "Christ stands on Mount Zion"
+  "Gathering at Adam-Ondi-Ahman" -> "Lord speaks from Zion and Jerusalem"
+
   ##
   #
   # Assumptions
@@ -685,9 +691,6 @@ digraph Signs {
   ## The gospel cannot be preached to all the world until it has been restored
   ## and a people have been established to do the preaching.
   "Restoration" -> "Gospel preached to all the world"
-
-  # Assumption
-  "Gathering at Adam-Ondi-Ahman" -> "Christ comes in the clouds"
 
   # Assumption
   "Morning of the First Resurrection" -> "Afternoon of the First Resurrection"
