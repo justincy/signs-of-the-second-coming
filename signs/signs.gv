@@ -375,12 +375,15 @@ digraph Signs {
   # 3 Nephi 16:10-12
   "Gentiles sin against the gospel" -> "Fulness of the gospel brought to the house of Israel"
 
-  # 3 Nephi 20:22
-  # 3 Nephi 21:23-25
-  # Ether 13:8
+  # 3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8
   "Lehi's family in America" -> "New Jerusalem" 
   "New Jerusalem" -> "Gentiles help gather God's people" 
   "Gentiles help gather God's people" -> "Christ comes in the clouds"
+
+  # 3 Nephi 21:26-29
+  ## Is it talking about the restoration and gathering of Israel
+  ## or second coming and restoration of the lost tribes?
+  ## I'm leaning towards the latter.
 
   ##
   #
