@@ -1,5 +1,5 @@
 import fs from 'fs';
-import Graph from './graph.js';
+import Graph from './graph';
 
 type Group = {
   reference: string;
@@ -7,6 +7,7 @@ type Group = {
 }
 
 function readFile(filename): Promise<string> {
+  console.log('readFile:', filename);
   return new Promise((resolve, reject) => {
     fs.readFile(filename, (error, data) => {
       if (error) {
@@ -98,6 +99,6 @@ export function buildGraph(groups: Group[]): Graph {
  * Load and parse the graph.
  */
 export async function loadGraph(filename: string): Promise<Graph> {
-  const groups = await this.parseGraph(filename);
-  return this.buildGraph(groups);
+  const groups = await parseGraph(filename);
+  return buildGraph(groups);
 }
