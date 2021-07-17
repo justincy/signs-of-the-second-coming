@@ -3,8 +3,4 @@ node_modules
 signs/*.gv
 !signs/signs.gv
 public
-package-lock.json
-svg
-resources
-assets/graphs
-data/references.json
+.next

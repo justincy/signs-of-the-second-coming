@@ -1,6 +1,6 @@
 {
   "name": "signs-of-the-second-coming",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Exploring the order of the signs of the Second Coming of Christ as mentioned in scripture.",
   "repository": {
     "type": "git",
@@ -11,24 +11,14 @@
   },
   "homepage": "https://github.com/justincy/signs-of-the-second-coming#readme",
   "dependencies": {
-    "debug": "^4.1.1",
-    "http-server": "^0.11.1",
-    "yargs": "^12.0.2"
-  },
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4"
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "scripts": {
-    "start": "hugo server -D",
-    "test": "mocha scripts/lib/test",
-    "test:watch": "mocha -w scripts/lib/test",
-    "build:local": "npm run build:graphs && hugo",
-    "build:prod": "npm run build:graphs && hugo --gc --minify",
-    "build:preview": "npm run build:graphs && hugo --gc --minify -b $DEPLOY_PRIME_URL",
-    "build:graphs": "node scripts/build.js && npm run build:svgs",
-    "build:svgs": "mkdir -p svg && npm run build:full-svg && npm run build:simplified-svg",
-    "build:full-svg": "dot -Tsvg -o svg/full.svg signs/signs.gv",
-    "build:simplified-svg": "dot -Tsvg -o svg/simplified.svg signs/simplified.gv"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   }
 }
