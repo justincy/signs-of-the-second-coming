@@ -1,4 +1,4 @@
-import signs from '../../data/signs';
+import signs from '../../data/signs.json';
 
 export function getSigns() {
   return [...signs];
