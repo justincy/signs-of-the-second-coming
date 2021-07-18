@@ -13,6 +13,9 @@ export default async function handler(req, res) {
       name: node.value,
       references: [...node.refs]
     })
+    // addRelationship({
+
+    // })
   })
 
   // Save
