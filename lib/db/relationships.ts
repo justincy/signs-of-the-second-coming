@@ -38,7 +38,9 @@ export function addReference(before: string, after: string, reference: string) {
   
   // If the relationship already exists, update the references
   if (relKeyExists(key)) {
-    index[key].push(reference);
+    if (!index[key].includes(reference)) {
+      index[key].push(reference);
+    }
   }
 
   // Otherwise, create a new relationship

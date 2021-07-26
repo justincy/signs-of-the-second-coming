@@ -16,11 +16,15 @@ export function getSigns(): Sign[] {
 }
 
 export function addSign(sign: Sign) {
+  // New sign
   if (!index[sign.name]) {
     signs.push(sign);
     index[sign.name] = sign;
-  } else {
-    index[sign.name].references.push(sign.references[0]);
+  } 
+  // We have an existing sign. Merge the two signs together.
+  else {
+    const dedupedRefs = new Set([...index[sign.name].references, ...sign.references]);
+    index[sign.name].references = [...dedupedRefs];
   }
 }
 
