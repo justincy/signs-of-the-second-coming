@@ -1,25 +1,30 @@
 import { resolve } from 'path';
-import { loadGraph } from "../../lib/graph/utils"
-import { addSign, save } from "../../lib/db/signs";
+import { parseGraph } from "../../lib/graph/import"
+import { addSign, save as saveSigns } from "../../lib/db/signs";
+import { addReference, save as saveRelationships } from "../../lib/db/relationships";
 
 export default async function handler(req, res) {
   // Load graph
-  const graph = await loadGraph(resolve('signs/signs.gv'));
+  const refGroups = await parseGraph(resolve('signs/signs.gv'));
 
   // Add signs
-  graph.getNodes().forEach(node => {
-    console.log(`Adding sign: ${node.value}`)
-    addSign({
-      name: node.value,
-      references: [...node.refs]
-    })
-    // addRelationship({
-
-    // })
+  refGroups.forEach(refGroup => {
+    refGroup.signs.forEach(([before, after]) => {
+      addSign({
+        name: before,
+        references: [refGroup.reference]
+      })
+      addSign({
+        name: after,
+        references: [refGroup.reference]
+      })
+      addReference(before, after, refGroup.reference)
+    });
   })
 
   // Save
-  save();
+  saveSigns();
+  saveRelationships();
 
   res.status(200).json({message: "ok"});
 }

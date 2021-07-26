@@ -1,5 +1,4 @@
 import fs from 'fs';
-import Graph from './graph';
 
 type Group = {
   reference: string;
@@ -77,28 +76,4 @@ export async function parseGraph(filename: string): Promise<Group[]> {
   }
 
   return groups;
-}
-
-/**
- * Build a graph from a parsed graph object
- * 
- * @param {array} groups parsed graph 
- * @returns {object} graph
- */
-export function buildGraph(groups: Group[]): Graph {
-  const graph = new Graph();
-  groups.forEach((group) => {
-    group.signs.forEach((signs) => {
-      graph.addPair(signs[0], signs[1], group.reference);
-    })
-  });
-  return graph;
-}
-
-/**
- * Load and parse the graph.
- */
-export async function loadGraph(filename: string): Promise<Graph> {
-  const groups = await parseGraph(filename);
-  return buildGraph(groups);
 }
