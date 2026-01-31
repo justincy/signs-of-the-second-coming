@@ -8,7 +8,8 @@ import {
   Popover,
   Paper,
   Chip,
-  Divider,
+  ToggleButtonGroup,
+  ToggleButton,
   Link as MuiLink,
 } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
@@ -17,9 +18,11 @@ import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
-import graphDataImport from '../data/graph-data.json';
+import graphDataFull from '../data/graph-data.json';
+import graphDataSimple from '../data/graph-data-simple.json';
 
 const MIN_ZOOM = 0.1;
 const MAX_ZOOM = 3;
@@ -29,6 +32,7 @@ interface SignDetail {
   name: string;
   references: string[];
   aliases: string[];
+  members?: string[];
   comesBefore: { sign: string; references: string[] }[];
   comesAfter: { sign: string; references: string[] }[];
 }
@@ -38,18 +42,23 @@ interface GraphData {
 }
 
 interface Props {
-  graphData: GraphData;
+  fullGraphData: GraphData;
+  simpleGraphData: GraphData;
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   return {
     props: {
-      graphData: graphDataImport as GraphData,
+      fullGraphData: graphDataFull as GraphData,
+      simpleGraphData: graphDataSimple as GraphData,
     },
   };
 };
 
-export default function Home({ graphData }: Props) {
+type GraphMode = 'full' | 'simple';
+
+export default function Home({ fullGraphData, simpleGraphData }: Props) {
+  const [graphMode, setGraphMode] = useState<GraphMode>('simple');
   const [zoom, setZoom] = useState(0.5);
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
@@ -60,13 +69,17 @@ export default function Home({ graphData }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const svgContainerRef = useRef<HTMLDivElement>(null);
 
+  const graphData = graphMode === 'full' ? fullGraphData : simpleGraphData;
+  const svgPath = graphMode === 'full' ? '/graph.svg' : '/graph-simple.svg';
+
   // Load SVG content
   useEffect(() => {
-    fetch('/graph.svg')
+    setSvgContent(''); // Clear while loading
+    fetch(svgPath)
       .then((res) => res.text())
       .then((svg) => setSvgContent(svg))
       .catch((err) => console.error('Failed to load SVG:', err));
-  }, []);
+  }, [svgPath]);
 
   // Attach event handlers to SVG nodes
   useEffect(() => {
@@ -76,7 +89,7 @@ export default function Home({ graphData }: Props) {
     const nodes = container.querySelectorAll('.node');
 
     const handleNodeClick = (e: Event) => {
-      const node = (e.currentTarget as Element);
+      const node = e.currentTarget as Element;
       const title = node.querySelector('title')?.textContent;
       if (title && graphData[title]) {
         setSelectedSign(graphData[title]);
@@ -125,6 +138,14 @@ export default function Home({ graphData }: Props) {
     };
   }, [svgContent, graphData]);
 
+  const handleGraphModeChange = (_: React.MouseEvent, newMode: GraphMode | null) => {
+    if (newMode) {
+      setGraphMode(newMode);
+      setSelectedSign(null);
+      setPopoverAnchor(null);
+    }
+  };
+
   const handleZoomIn = useCallback(() => {
     setZoom((z) => Math.min(MAX_ZOOM, z + ZOOM_STEP));
   }, []);
@@ -147,7 +168,6 @@ export default function Home({ graphData }: Props) {
 
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
     if (e.button !== 0) return;
-    // Don't start drag if clicking on a node
     if ((e.target as Element).closest('.node')) return;
 
     const container = containerRef.current;
@@ -225,6 +245,8 @@ export default function Home({ graphData }: Props) {
           alignItems: 'center',
           justifyContent: 'space-between',
           backgroundColor: 'background.paper',
+          flexWrap: 'wrap',
+          gap: 1,
         }}
       >
         <Box>
@@ -240,30 +262,52 @@ export default function Home({ graphData }: Props) {
           </Typography>
         </Box>
 
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-          <Typography
-            variant="body2"
-            sx={{ color: 'text.secondary', minWidth: 50, textAlign: 'right' }}
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+          {/* Graph mode toggle */}
+          <ToggleButtonGroup
+            value={graphMode}
+            exclusive
+            onChange={handleGraphModeChange}
+            size="small"
           >
-            {Math.round(zoom * 100)}%
-          </Typography>
-          <ButtonGroup size="small" variant="outlined">
-            <Tooltip title="Zoom out">
-              <IconButton onClick={handleZoomOut} disabled={zoom <= MIN_ZOOM} size="small">
-                <RemoveIcon fontSize="small" />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="Reset zoom">
-              <IconButton onClick={handleZoomReset} size="small">
-                <RestartAltIcon fontSize="small" />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="Zoom in">
-              <IconButton onClick={handleZoomIn} disabled={zoom >= MAX_ZOOM} size="small">
-                <AddIcon fontSize="small" />
-              </IconButton>
-            </Tooltip>
-          </ButtonGroup>
+            <ToggleButton value="simple">
+              <Tooltip title="Simplified (groups collapsed)">
+                <span>Simple</span>
+              </Tooltip>
+            </ToggleButton>
+            <ToggleButton value="full">
+              <Tooltip title="Full (all signs)">
+                <span>Full</span>
+              </Tooltip>
+            </ToggleButton>
+          </ToggleButtonGroup>
+
+          {/* Zoom controls */}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <Typography
+              variant="body2"
+              sx={{ color: 'text.secondary', minWidth: 50, textAlign: 'right' }}
+            >
+              {Math.round(zoom * 100)}%
+            </Typography>
+            <ButtonGroup size="small" variant="outlined">
+              <Tooltip title="Zoom out">
+                <IconButton onClick={handleZoomOut} disabled={zoom <= MIN_ZOOM} size="small">
+                  <RemoveIcon fontSize="small" />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="Reset zoom">
+                <IconButton onClick={handleZoomReset} size="small">
+                  <RestartAltIcon fontSize="small" />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="Zoom in">
+                <IconButton onClick={handleZoomIn} disabled={zoom >= MAX_ZOOM} size="small">
+                  <AddIcon fontSize="small" />
+                </IconButton>
+              </Tooltip>
+            </ButtonGroup>
+          </Box>
         </Box>
       </Box>
 
@@ -324,10 +368,23 @@ export default function Home({ graphData }: Props) {
               </IconButton>
             </Box>
 
-            {selectedSign.aliases.length > 0 && (
+            {selectedSign.aliases && selectedSign.aliases.length > 0 && (
               <Typography variant="body2" sx={{ color: 'text.secondary', mb: 1 }}>
                 Also known as: {selectedSign.aliases.join(', ')}
               </Typography>
+            )}
+
+            {selectedSign.members && selectedSign.members.length > 0 && (
+              <Box sx={{ mb: 2 }}>
+                <Typography variant="subtitle2" sx={{ mb: 0.5, display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                  <AccountTreeIcon fontSize="small" /> Group members
+                </Typography>
+                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+                  {selectedSign.members.map((member, i) => (
+                    <Chip key={i} label={member} size="small" variant="outlined" />
+                  ))}
+                </Box>
+              </Box>
             )}
 
             {selectedSign.references.length > 0 && (
