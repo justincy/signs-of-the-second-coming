@@ -27,7 +27,7 @@ const sections = [
     title: 'Synonyms',
     description: 'Manage duplicate sign mappings',
     href: '/synonyms',
-    ready: false,
+    ready: true,
   },
   {
     title: 'Groups',
