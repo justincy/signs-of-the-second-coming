@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
- * Generate a Graphviz DOT file and SVG from signs and relationships data.
+ * Generate a Graphviz DOT file, SVG, and sign details JSON from data.
  * 
  * Usage: node scripts/generate-graph.js
- * Output: public/graph.svg
+ * Output: public/graph.svg, public/graph-data.json
  */
 
 const fs = require('fs');
@@ -32,10 +32,32 @@ function resolve(name) {
   return name;
 }
 
-// Get all unique canonical sign names
-const canonicalSigns = new Set();
+// Build sign details map
+const signDetails = new Map();
+
+// Initialize with sign data
 for (const sign of signs) {
-  canonicalSigns.add(resolve(sign.name));
+  const canonical = resolve(sign.name);
+  if (!signDetails.has(canonical)) {
+    signDetails.set(canonical, {
+      name: canonical,
+      references: [],
+      aliases: [],
+      comesBefore: [], // {sign, references}
+      comesAfter: [],  // {sign, references}
+    });
+  }
+  const detail = signDetails.get(canonical);
+  // Add references from sign
+  for (const ref of sign.references) {
+    if (!detail.references.includes(ref)) {
+      detail.references.push(ref);
+    }
+  }
+  // Track aliases
+  if (sign.name !== canonical && !detail.aliases.includes(sign.name)) {
+    detail.aliases.push(sign.name);
+  }
 }
 
 // Build edges with resolved names, deduplicating
@@ -54,6 +76,41 @@ for (const rel of relationships) {
   edges.get(key).references.push(...rel.references);
 }
 
+// Add relationship data to sign details
+for (const { before, after, references } of edges.values()) {
+  // Ensure both signs exist in details
+  if (!signDetails.has(before)) {
+    signDetails.set(before, {
+      name: before,
+      references: [],
+      aliases: [],
+      comesBefore: [],
+      comesAfter: [],
+    });
+  }
+  if (!signDetails.has(after)) {
+    signDetails.set(after, {
+      name: after,
+      references: [],
+      aliases: [],
+      comesBefore: [],
+      comesAfter: [],
+    });
+  }
+
+  // "before" comes before "after"
+  signDetails.get(before).comesBefore.push({
+    sign: after,
+    references: [...new Set(references)],
+  });
+
+  // "after" comes after "before"
+  signDetails.get(after).comesAfter.push({
+    sign: before,
+    references: [...new Set(references)],
+  });
+}
+
 // Escape label for DOT format
 function escapeLabel(str) {
   return str.replace(/"/g, '\\"').replace(/\n/g, '\\n');
@@ -68,7 +125,7 @@ let dot = `digraph signs_of_the_second_coming {
 `;
 
 // Add nodes
-for (const name of canonicalSigns) {
+for (const name of signDetails.keys()) {
   dot += `  "${escapeLabel(name)}";\n`;
 }
 
@@ -81,7 +138,7 @@ for (const { before, after } of edges.values()) {
 
 dot += '}\n';
 
-// Write DOT file
+// Write files
 const publicDir = path.join(__dirname, '..', 'public');
 if (!fs.existsSync(publicDir)) {
   fs.mkdirSync(publicDir, { recursive: true });
@@ -89,6 +146,7 @@ if (!fs.existsSync(publicDir)) {
 
 const dotPath = path.join(publicDir, 'graph.dot');
 const svgPath = path.join(publicDir, 'graph.svg');
+const jsonPath = path.join(dataDir, 'graph-data.json');
 
 fs.writeFileSync(dotPath, dot);
 console.log(`Generated: ${dotPath}`);
@@ -103,8 +161,17 @@ try {
   process.exit(1);
 }
 
+// Convert signDetails map to object for JSON
+const graphData = {};
+for (const [name, detail] of signDetails) {
+  graphData[name] = detail;
+}
+
+fs.writeFileSync(jsonPath, JSON.stringify(graphData, null, 2));
+console.log(`Generated: ${jsonPath}`);
+
 // Stats
 console.log(`\nStats:`);
-console.log(`  Signs: ${canonicalSigns.size}`);
+console.log(`  Signs: ${signDetails.size}`);
 console.log(`  Relationships: ${edges.size}`);
 console.log(`  Synonyms applied: ${synonyms.length}`);
