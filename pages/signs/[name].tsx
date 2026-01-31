@@ -39,7 +39,7 @@ interface Props {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = Object.keys(graphData).map((name) => ({
-    params: { name: encodeURIComponent(name) },
+    params: { name },
   }));
 
   return {
@@ -49,7 +49,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-  const name = decodeURIComponent(params?.name as string);
+  const name = params?.name as string;
   const sign = (graphData as Record<string, SignDetail>)[name];
 
   if (!sign) {
