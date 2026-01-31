@@ -30,7 +30,10 @@
       "Lord lifts his hand upon the Gentiles",
       "Marvelous work among the Gentiles"
     ],
-    "members": [],
+    "members": [
+      "Elijah appears",
+      "Elias"
+    ],
     "comesBefore": [
       {
         "sign": "Remnant shall return to God",
@@ -695,7 +698,10 @@
       "https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng"
     ],
     "aliases": [],
-    "members": [],
+    "members": [
+      "Israel burns enemy weapons for seven years",
+      "Israel will spoil their enemies"
+    ],
     "comesBefore": [
       {
         "sign": "Israel burns enemy weapons for seven years",
@@ -852,7 +858,16 @@
       "D&C 133:10"
     ],
     "aliases": [],
-    "members": [],
+    "members": [
+      "Sign of the Son of Man",
+      "Christ comes in the clouds",
+      "Silence for half an hour",
+      "Curtain of heaven unfolded as a scroll",
+      "Temple of God opened",
+      "Burning",
+      "Rapture",
+      "Morning of the First Resurrection"
+    ],
     "comesBefore": [],
     "comesAfter": [
       {
@@ -2987,7 +3002,12 @@
       "D&C 133:25"
     ],
     "aliases": [],
-    "members": [],
+    "members": [
+      "Ocean driven back into the north countries",
+      "Face of the earth changed",
+      "Every mountain and island moved",
+      "Mountains broken down"
+    ],
     "comesBefore": [
       {
         "sign": "Christ reigns as King",
@@ -3350,7 +3370,16 @@
       "D&C 45:31-33"
     ],
     "aliases": [],
-    "members": [],
+    "members": [
+      "Iniquity shall abound",
+      "Men will curse God and die",
+      "Many desolations",
+      "Overflowing scourge, desolating sickness",
+      "Shall say that Christ delayeth his coming",
+      "Love of men wax cold",
+      "Gentiles sin against the gospel",
+      "Men's hearts shall fail them"
+    ],
     "comesBefore": [
       {
         "sign": "Gentiles sin against the gospel",
@@ -3709,7 +3738,28 @@
       "D&C 45:26-27"
     ],
     "aliases": [],
-    "members": [],
+    "members": [
+      "Thunderings and lightenings",
+      "Tempests",
+      "Tsunamis",
+      "Darkness",
+      "Stars fall from heaven",
+      "Earthquakes",
+      "Signs in the heavens",
+      "Heavens shake",
+      "Great earthquake",
+      "Lightenings, voices, thunderings",
+      "Great hail",
+      "Earthquake",
+      "Blood",
+      "Fire",
+      "Vapors of smoke",
+      "Hail",
+      "Pestilence",
+      "Great hailstorm",
+      "Flies eat flesh and cause maggots",
+      "Overflowing rain"
+    ],
     "comesBefore": [],
     "comesAfter": [
       {
@@ -4933,5 +4983,146 @@
         ]
       }
     ]
+  },
+  "Pre-Restoration": {
+    "name": "Pre-Restoration",
+    "references": [],
+    "aliases": [],
+    "members": [
+      "Lehi's family in America",
+      "Columbus",
+      "Destruction of the Nephites",
+      "Discovering of America",
+      "Mighty nation raised up",
+      "Scattering of Lehi's seed",
+      "Scattering of Israel"
+    ],
+    "comesBefore": [],
+    "comesAfter": []
+  },
+  "Millenium": {
+    "name": "Millenium",
+    "references": [],
+    "aliases": [],
+    "members": [
+      "Christ reigns as King",
+      "Heathen nations redeemed",
+      "All things become new",
+      "Second trump: Redemption of Terrestrial spirits",
+      "Third trump: Redemption of Telestial spirits",
+      "Fourth trump: Sons of perdition",
+      "Fifth trump: Angel committeth the everlasting gospel",
+      "Every ear hear; every knee bow; every tongue confess",
+      "Sixth trump: she is fallen",
+      "Seventh trump: It is finished",
+      "Angels crowned with glory",
+      "Saints receive their inheritance",
+      "All things revealed",
+      "Satan bound for 1000 years",
+      "Satan loosed for a little season",
+      "Satan gathers his armies",
+      "Michael gathers his armies",
+      "Satan is defeated and cast away"
+    ],
+    "comesBefore": [],
+    "comesAfter": []
+  },
+  "Gospel preached to the world": {
+    "name": "Gospel preached to the world",
+    "references": [],
+    "aliases": [],
+    "members": [
+      "Gospel preached to all the world",
+      "Truth sweeps earth as a flood",
+      "Fullness of the gospel preached to Lehi's seed",
+      "Gospel preached to the Gentiles",
+      "Elders sent unto the nations",
+      "Elders sent unto the Gentiles",
+      "Elders sent unto the Jews"
+    ],
+    "comesBefore": [],
+    "comesAfter": []
+  },
+  "Two witnesses prophecy, die, resurrected": {
+    "name": "Two witnesses prophecy, die, resurrected",
+    "references": [],
+    "aliases": [],
+    "members": [
+      "Two witnesses prophecy",
+      "Two witnesses die",
+      "Two witnesses resurrected"
+    ],
+    "comesBefore": [],
+    "comesAfter": []
+  },
+  "Darkness": {
+    "name": "Darkness",
+    "references": [],
+    "aliases": [],
+    "members": [
+      "Stars refuse their light",
+      "Darkness shall cover the earth",
+      "Sun darkened",
+      "Moon darkened",
+      "Moon turned to blood"
+    ],
+    "comesBefore": [],
+    "comesAfter": []
+  },
+  "Revelation 8-9: Six Trumpets": {
+    "name": "Revelation 8-9: Six Trumpets",
+    "references": [],
+    "aliases": [],
+    "members": [
+      "1: Hail, fire, blood",
+      "2: Third part of sea becomes blood",
+      "3: Great star falls from heaven causing wormwood",
+      "4: Third part of sun, moon, stars smitten",
+      "5: Smoke and tormenting locusts",
+      "6: Four horsemen kill third of men"
+    ],
+    "comesBefore": [],
+    "comesAfter": []
+  },
+  "Revelation 16: Plagues": {
+    "name": "Revelation 16: Plagues",
+    "references": [],
+    "aliases": [],
+    "members": [
+      "1. Grievous sore",
+      "2. Sea turned to blood",
+      "3. Rivers and fountains turned to blood",
+      "4. Men scorched with heat of the sun",
+      "5. Kingdom of beast full of darkness",
+      "6: Euphrates dried up"
+    ],
+    "comesBefore": [],
+    "comesAfter": []
+  },
+  "Wheat and Tares": {
+    "name": "Wheat and Tares",
+    "references": [],
+    "aliases": [],
+    "members": [
+      "Gathering of the wheat",
+      "Tares bound in bundles"
+    ],
+    "comesBefore": [],
+    "comesAfter": []
+  },
+  "Israel returns from the north": {
+    "name": "Israel returns from the north",
+    "references": [],
+    "aliases": [],
+    "members": [
+      "Those in the north countries shall come in remembrance before the Lord",
+      "A highway shall be cast up in the ocean",
+      "Those in the north countries shall bring their rich treasures to Ephraim",
+      "Those in the north countries shall be crowned with glory by Ephraim",
+      "Judah and Israel come together out of the land of the north",
+      "Israel brough out of the north, and all countries"
+    ],
+    "comesBefore": [],
+    "comesAfter": []
   }
 }

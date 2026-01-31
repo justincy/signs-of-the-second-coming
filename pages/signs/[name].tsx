@@ -99,6 +99,30 @@ export default function SignDetailPage({ sign }: Props) {
         </Typography>
       )}
 
+      {/* Group Members */}
+      {sign.members && sign.members.length > 0 && (
+        <Paper variant="outlined" sx={{ p: 3, mb: 3, backgroundColor: '#f5f5f5' }}>
+          <Typography variant="h6" sx={{ mb: 2 }}>
+            Group Members
+          </Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary', mb: 2 }}>
+            This sign represents a group of related events:
+          </Typography>
+          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+            {sign.members.map((member, i) => (
+              <Chip
+                key={i}
+                label={member}
+                component={Link}
+                href={`/signs/${encodeURIComponent(member)}`}
+                clickable
+                variant="outlined"
+              />
+            ))}
+          </Box>
+        </Paper>
+      )}
+
       {/* References */}
       {sign.references.length > 0 && (
         <Paper variant="outlined" sx={{ p: 3, mb: 3 }}>

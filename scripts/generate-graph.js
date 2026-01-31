@@ -108,25 +108,25 @@ function generateGraph(resolveFn, isSimplified = false) {
     }
   }
 
-  // If simplified, also add group members that might not be in signs
-  if (isSimplified) {
-    for (const group of groups) {
-      if (!signDetails.has(group.name)) {
-        signDetails.set(group.name, {
-          name: group.name,
-          references: [],
-          aliases: [],
-          members: [],
-          comesBefore: [],
-          comesAfter: [],
-        });
-      }
-      const detail = signDetails.get(group.name);
-      for (const member of group.members) {
-        const resolved = resolveSynonym(member);
-        if (!detail.members.includes(resolved)) {
-          detail.members.push(resolved);
-        }
+  // Add group members to signs that are also groups
+  // For simplified: groups are collapsed nodes
+  // For full: groups still show their members for context
+  for (const group of groups) {
+    if (!signDetails.has(group.name)) {
+      signDetails.set(group.name, {
+        name: group.name,
+        references: [],
+        aliases: [],
+        members: [],
+        comesBefore: [],
+        comesAfter: [],
+      });
+    }
+    const detail = signDetails.get(group.name);
+    for (const member of group.members) {
+      const resolved = resolveSynonym(member);
+      if (!detail.members.includes(resolved)) {
+        detail.members.push(resolved);
       }
     }
   }
