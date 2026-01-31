@@ -13,95 +13,85 @@ import {
   Button,
   TextField,
   Box,
+  Chip,
+  Tooltip,
 } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import SynonymDialog from '../components/SynonymDialog';
-import DeleteDialog from '../components/DeleteDialog';
-
-type Synonym = {
-  duplicate: string;
-  synonym: string;
-};
+import SignDialog from '../../components/SignDialog';
+import DeleteDialog from '../../components/DeleteDialog';
 
 type Sign = {
   name: string;
   references: string[];
 };
 
-export default function Synonyms() {
-  const [synonyms, setSynonyms] = useState<Synonym[]>([]);
-  const [allSigns, setAllSigns] = useState<string[]>([]);
+export default function Signs() {
+  const [signs, setSigns] = useState<Sign[]>([]);
   const [search, setSearch] = useState('');
   const [dialogOpen, setDialogOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
-  const [editingSynonym, setEditingSynonym] = useState<Synonym | null>(null);
-  const [deletingSynonym, setDeletingSynonym] = useState<Synonym | null>(null);
-
-  const fetchSynonyms = async () => {
-    const res = await fetch('/api/synonyms');
-    const data = await res.json();
-    setSynonyms(data);
-  };
+  const [editingSign, setEditingSign] = useState<Sign | null>(null);
+  const [deletingSign, setDeletingSign] = useState<Sign | null>(null);
 
   const fetchSigns = async () => {
     const res = await fetch('/api/signs');
-    const data: Sign[] = await res.json();
-    setAllSigns(data.map(s => s.name).sort());
+    const data = await res.json();
+    setSigns(data);
   };
 
   useEffect(() => {
-    fetchSynonyms();
     fetchSigns();
   }, []);
 
-  const filtered = synonyms.filter(s =>
-    s.duplicate.toLowerCase().includes(search.toLowerCase()) ||
-    s.synonym.toLowerCase().includes(search.toLowerCase())
+  const filtered = signs.filter(s =>
+    s.name.toLowerCase().includes(search.toLowerCase()) ||
+    s.references.some(r => r.toLowerCase().includes(search.toLowerCase()))
   );
 
   const handleAdd = () => {
-    setEditingSynonym(null);
+    setEditingSign(null);
     setDialogOpen(true);
   };
 
-  const handleEdit = (syn: Synonym) => {
-    setEditingSynonym(syn);
+  const handleEdit = (sign: Sign) => {
+    setEditingSign(sign);
     setDialogOpen(true);
   };
 
-  const handleDelete = (syn: Synonym) => {
-    setDeletingSynonym(syn);
+  const handleDelete = (sign: Sign) => {
+    setDeletingSign(sign);
     setDeleteOpen(true);
   };
 
-  const handleSave = async (syn: Synonym, originalDuplicate?: string) => {
-    if (originalDuplicate) {
-      await fetch(`/api/synonyms/${encodeURIComponent(originalDuplicate)}`, {
+  const handleSave = async (sign: Sign, originalName?: string) => {
+    if (originalName) {
+      // Update
+      await fetch(`/api/signs/${encodeURIComponent(originalName)}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(syn),
+        body: JSON.stringify(sign),
       });
     } else {
-      await fetch('/api/synonyms', {
+      // Create
+      await fetch('/api/signs', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(syn),
+        body: JSON.stringify(sign),
       });
     }
-    fetchSynonyms();
+    fetchSigns();
   };
 
   const handleConfirmDelete = async () => {
-    if (deletingSynonym) {
-      await fetch(`/api/synonyms/${encodeURIComponent(deletingSynonym.duplicate)}`, {
+    if (deletingSign) {
+      await fetch(`/api/signs/${encodeURIComponent(deletingSign.name)}`, {
         method: 'DELETE',
       });
       setDeleteOpen(false);
-      setDeletingSynonym(null);
-      fetchSynonyms();
+      setDeletingSign(null);
+      fetchSigns();
     }
   };
 
@@ -109,7 +99,7 @@ export default function Synonyms() {
     <Container maxWidth="lg" sx={{ pt: 3, pb: 3 }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
         <Typography variant="h4">
-          Synonyms
+          Signs
           <Box component="span" sx={{ color: 'text.secondary', ml: 1 }}>
             ({filtered.length})
           </Box>
@@ -120,19 +110,15 @@ export default function Synonyms() {
           startIcon={<AddIcon />}
           onClick={handleAdd}
         >
-          Add Synonym
+          Add Sign
         </Button>
       </Box>
-
-      <Typography variant="body2" color="textSecondary" sx={{ mb: 2 }}>
-        Synonyms map duplicate or alternate sign names to their canonical sign.
-      </Typography>
 
       <TextField
         sx={{ mb: 2, width: 300 }}
         variant="outlined"
         size="small"
-        placeholder="Search synonyms..."
+        placeholder="Search signs or references..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
@@ -141,25 +127,39 @@ export default function Synonyms() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Duplicate Name</TableCell>
-              <TableCell></TableCell>
-              <TableCell>Canonical Sign</TableCell>
+              <TableCell>Name</TableCell>
+              <TableCell>References</TableCell>
               <TableCell align="right">Actions</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {filtered.map((syn) => (
-              <TableRow key={syn.duplicate} hover>
-                <TableCell sx={{ color: 'text.secondary' }}>{syn.duplicate}</TableCell>
-                <TableCell sx={{ width: 40 }}>
-                  <ArrowForwardIcon fontSize="small" color="action" />
+            {filtered.map((sign) => (
+              <TableRow key={sign.name} hover>
+                <TableCell sx={{ fontWeight: 500 }}>{sign.name}</TableCell>
+                <TableCell sx={{ maxWidth: 400 }}>
+                  {sign.references.slice(0, 5).map((ref) => (
+                    <Tooltip key={ref} title={ref}>
+                      <Chip
+                        label={ref.length > 25 ? ref.slice(0, 25) + '...' : ref}
+                        size="small"
+                        sx={{ m: 0.25, maxWidth: 200 }}
+                      />
+                    </Tooltip>
+                  ))}
+                  {sign.references.length > 5 && (
+                    <Chip
+                      label={`+${sign.references.length - 5} more`}
+                      size="small"
+                      sx={{ m: 0.25 }}
+                      variant="outlined"
+                    />
+                  )}
                 </TableCell>
-                <TableCell sx={{ fontWeight: 500 }}>{syn.synonym}</TableCell>
                 <TableCell align="right">
-                  <IconButton size="small" onClick={() => handleEdit(syn)}>
+                  <IconButton size="small" onClick={() => handleEdit(sign)}>
                     <EditIcon fontSize="small" />
                   </IconButton>
-                  <IconButton size="small" onClick={() => handleDelete(syn)}>
+                  <IconButton size="small" onClick={() => handleDelete(sign)}>
                     <DeleteIcon fontSize="small" />
                   </IconButton>
                 </TableCell>
@@ -169,19 +169,18 @@ export default function Synonyms() {
         </Table>
       </TableContainer>
 
-      <SynonymDialog
+      <SignDialog
         open={dialogOpen}
         onClose={() => setDialogOpen(false)}
         onSave={handleSave}
-        synonym={editingSynonym}
-        allSigns={allSigns}
+        sign={editingSign}
       />
 
       <DeleteDialog
         open={deleteOpen}
         onClose={() => setDeleteOpen(false)}
         onConfirm={handleConfirmDelete}
-        signName={deletingSynonym?.duplicate || ''}
+        signName={deletingSign?.name || ''}
       />
     </Container>
   );

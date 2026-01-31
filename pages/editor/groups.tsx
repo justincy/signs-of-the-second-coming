@@ -19,8 +19,8 @@ import {
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
-import GroupDialog from '../components/GroupDialog';
-import DeleteDialog from '../components/DeleteDialog';
+import GroupDialog from '../../components/GroupDialog';
+import DeleteDialog from '../../components/DeleteDialog';
 
 type Group = {
   name: string;

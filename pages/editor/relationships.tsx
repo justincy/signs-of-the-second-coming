@@ -20,8 +20,8 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import RelationshipDialog from '../components/RelationshipDialog';
-import DeleteDialog from '../components/DeleteDialog';
+import RelationshipDialog from '../../components/RelationshipDialog';
+import DeleteDialog from '../../components/DeleteDialog';
 
 type Relationship = {
   before: string;
