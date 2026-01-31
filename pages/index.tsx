@@ -1,5 +1,5 @@
-import React, { useState, useRef, useCallback } from 'react';
-import { Box, IconButton, Paper, Typography, ButtonGroup, Tooltip } from '@mui/material';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
+import { Box, IconButton, Typography, ButtonGroup, Tooltip } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
@@ -11,6 +11,9 @@ const ZOOM_STEP = 0.2;
 
 export default function Home() {
   const [zoom, setZoom] = useState(0.5);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const [scrollStart, setScrollStart] = useState({ x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleZoomIn = useCallback(() => {
@@ -32,6 +35,51 @@ export default function Home() {
       setZoom((z) => Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, z + delta)));
     }
   }, []);
+
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    // Only left mouse button
+    if (e.button !== 0) return;
+    
+    const container = containerRef.current;
+    if (!container) return;
+
+    setIsDragging(true);
+    setDragStart({ x: e.clientX, y: e.clientY });
+    setScrollStart({ x: container.scrollLeft, y: container.scrollTop });
+  }, []);
+
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+    if (!isDragging) return;
+    
+    const container = containerRef.current;
+    if (!container) return;
+
+    const deltaX = e.clientX - dragStart.x;
+    const deltaY = e.clientY - dragStart.y;
+
+    container.scrollLeft = scrollStart.x - deltaX;
+    container.scrollTop = scrollStart.y - deltaY;
+  }, [isDragging, dragStart, scrollStart]);
+
+  const handleMouseUp = useCallback(() => {
+    setIsDragging(false);
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    setIsDragging(false);
+  }, []);
+
+  // Prevent text selection while dragging
+  useEffect(() => {
+    if (isDragging) {
+      document.body.style.userSelect = 'none';
+    } else {
+      document.body.style.userSelect = '';
+    }
+    return () => {
+      document.body.style.userSelect = '';
+    };
+  }, [isDragging]);
 
   return (
     <Box 
@@ -63,7 +111,7 @@ export default function Home() {
           <Typography variant="caption" sx={{ color: 'text.secondary' }}>
             <Link href="/signs" style={{ color: 'inherit' }}>View signs list</Link>
             {' · '}
-            Scroll to pan, Ctrl+scroll to zoom
+            Drag to pan, Ctrl+scroll to zoom
           </Typography>
         </Box>
 
@@ -96,21 +144,22 @@ export default function Home() {
       <Box 
         ref={containerRef}
         onWheel={handleWheel}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseLeave}
         sx={{ 
           flex: 1,
           overflow: 'auto',
           backgroundColor: '#f5f5f5',
-          cursor: 'grab',
-          '&:active': {
-            cursor: 'grabbing',
-          },
+          cursor: isDragging ? 'grabbing' : 'grab',
         }}
       >
         <Box
           sx={{
             transformOrigin: '0 0',
             transform: `scale(${zoom})`,
-            transition: 'transform 0.1s ease-out',
+            transition: isDragging ? 'none' : 'transform 0.1s ease-out',
             padding: 2,
           }}
         >
