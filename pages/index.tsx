@@ -62,9 +62,10 @@ type GraphMode = 'full' | 'simple';
 export default function Home({ fullGraphData, simpleGraphData }: Props) {
   const [graphMode, setGraphMode] = useState<GraphMode>('simple');
   const [zoom, setZoom] = useState(0.5);
+  const [pan, setPan] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
-  const [scrollStart, setScrollStart] = useState({ x: 0, y: 0 });
+  const [panStart, setPanStart] = useState({ x: 0, y: 0 });
   const [svgContent, setSvgContent] = useState<string>('');
   const [selectedSign, setSelectedSign] = useState<SignDetail | null>(null);
   const [popoverAnchor, setPopoverAnchor] = useState<{ x: number; y: number } | null>(null);
@@ -145,6 +146,7 @@ export default function Home({ fullGraphData, simpleGraphData }: Props) {
       setGraphMode(newMode);
       setSelectedSign(null);
       setPopoverAnchor(null);
+      setPan({ x: 0, y: 0 }); // Reset pan when switching graphs
     }
   };
 
@@ -158,6 +160,7 @@ export default function Home({ fullGraphData, simpleGraphData }: Props) {
 
   const handleZoomReset = useCallback(() => {
     setZoom(0.5);
+    setPan({ x: 0, y: 0 });
   }, []);
 
   const handleWheel = useCallback((e: React.WheelEvent) => {
@@ -172,28 +175,24 @@ export default function Home({ fullGraphData, simpleGraphData }: Props) {
     if (e.button !== 0) return;
     if ((e.target as Element).closest('.node')) return;
 
-    const container = containerRef.current;
-    if (!container) return;
-
     setIsDragging(true);
     setDragStart({ x: e.clientX, y: e.clientY });
-    setScrollStart({ x: container.scrollLeft, y: container.scrollTop });
-  }, []);
+    setPanStart({ x: pan.x, y: pan.y });
+  }, [pan]);
 
   const handleMouseMove = useCallback(
     (e: React.MouseEvent) => {
       if (!isDragging) return;
 
-      const container = containerRef.current;
-      if (!container) return;
-
       const deltaX = e.clientX - dragStart.x;
       const deltaY = e.clientY - dragStart.y;
 
-      container.scrollLeft = scrollStart.x - deltaX;
-      container.scrollTop = scrollStart.y - deltaY;
+      setPan({
+        x: panStart.x + deltaX,
+        y: panStart.y + deltaY,
+      });
     },
-    [isDragging, dragStart, scrollStart]
+    [isDragging, dragStart, panStart]
   );
 
   const handleMouseUp = useCallback(() => {
@@ -323,18 +322,18 @@ export default function Home({ fullGraphData, simpleGraphData }: Props) {
         onMouseLeave={handleMouseLeave}
         sx={{
           flex: 1,
-          overflow: 'auto',
+          overflow: 'hidden',
           backgroundColor: '#f5f5f5',
           cursor: isDragging ? 'grabbing' : 'grab',
+          position: 'relative',
         }}
       >
         <Box
           ref={svgContainerRef}
           sx={{
             transformOrigin: '0 0',
-            transform: `scale(${zoom})`,
+            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
             transition: isDragging ? 'none' : 'transform 0.1s ease-out',
-            padding: 2,
             '& svg': {
               display: 'block',
             },
