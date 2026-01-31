@@ -1,0 +1,4792 @@
+{
+  "Restoration": {
+    "name": "Restoration",
+    "references": [
+      "Isaiah 10:20-21",
+      "Revelation 7:2, D&C 77:9",
+      "2 Nephi 30:8,10",
+      "D&C 29:7",
+      "D&C 33:6",
+      "D&C 39:11",
+      "D&C 45:28-30",
+      "D&C 63:54",
+      "D&C 77:15",
+      "D&C 88:87-93",
+      "D&C 116",
+      "D&C 133:7-8",
+      "Assumption",
+      "Isaiah 49:22-23",
+      "1 Nephi 21:22-23",
+      "2 Nephi 6-7",
+      "Romans 11:25-26",
+      "1 Nephi 15:13",
+      "3 Nephi 16:4-5",
+      "1 Nephi 22:6",
+      "1 Nephi 22:8"
+    ],
+    "aliases": [
+      "Standard is setup",
+      "Fulness of the Gentiles",
+      "Lord lifts his hand upon the Gentiles",
+      "Marvelous work among the Gentiles"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Remnant shall return to God",
+        "references": [
+          "Isaiah 10:20-21"
+        ]
+      },
+      {
+        "sign": "Gathering of Israel",
+        "references": [
+          "Isaiah 49:22-23",
+          "1 Nephi 21:22-23",
+          "2 Nephi 6-7",
+          "Romans 11:25-26",
+          "1 Nephi 22:6",
+          "3 Nephi 16:4-5"
+        ]
+      },
+      {
+        "sign": "Elias",
+        "references": [
+          "Revelation 7:2, D&C 77:9"
+        ]
+      },
+      {
+        "sign": "Fullness of the gospel preached to Lehi's seed",
+        "references": [
+          "1 Nephi 15:13"
+        ]
+      },
+      {
+        "sign": "Gathering of the wheat",
+        "references": [
+          "2 Nephi 30:8,10",
+          "D&C 63:54"
+        ]
+      },
+      {
+        "sign": "Gathering of the elect",
+        "references": [
+          "D&C 29:7",
+          "D&C 33:6"
+        ]
+      },
+      {
+        "sign": "Gospel preached to all the world",
+        "references": [
+          "D&C 39:11",
+          "Assumption"
+        ]
+      },
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:28-30"
+        ]
+      },
+      {
+        "sign": "Jews gathered in Jerusalem",
+        "references": [
+          "D&C 77:15"
+        ]
+      },
+      {
+        "sign": "Gospel preached to the Gentiles",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Gathering at Adam-Ondi-Ahman",
+        "references": [
+          "D&C 116"
+        ]
+      },
+      {
+        "sign": "Elders sent unto the nations",
+        "references": [
+          "D&C 133:7-8"
+        ]
+      },
+      {
+        "sign": "Elijah appears",
+        "references": [
+          "Assumption"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Opening of the Sixth Seal",
+        "references": [
+          "Revelation 7:2, D&C 77:9"
+        ]
+      },
+      {
+        "sign": "Scattering of Israel",
+        "references": [
+          "1 Nephi 22:6",
+          "3 Nephi 16:4-5"
+        ]
+      },
+      {
+        "sign": "Scattering of Lehi's seed",
+        "references": [
+          "1 Nephi 22:8"
+        ]
+      },
+      {
+        "sign": "Times of the Gentiles begins",
+        "references": [
+          "D&C 45:28-30"
+        ]
+      }
+    ]
+  },
+  "Remnant shall return to God": {
+    "name": "Remnant shall return to God",
+    "references": [
+      "Isaiah 10:20-21"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "Isaiah 10:20-21"
+        ]
+      }
+    ]
+  },
+  "Gathering of Israel": {
+    "name": "Gathering of Israel",
+    "references": [
+      "Isaiah 49:22-23",
+      "1 Nephi 21:22-23",
+      "1 Nephi 22:6",
+      "2 Nephi 6-7",
+      "Jeremiah 23:3",
+      "Romans 11:25-26",
+      "3 Nephi 16:4-5",
+      "3 Nephi 16:10-12",
+      "D&C 39:11"
+    ],
+    "aliases": [
+      "Gentiles are Nursing Parents",
+      "Remnant gathered out of all countries",
+      "All Israel is saved",
+      "Fulness of the gospel brought to the house of Israel",
+      "Recover the house of Israel"
+    ],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "Isaiah 49:22-23",
+          "1 Nephi 21:22-23",
+          "2 Nephi 6-7",
+          "Romans 11:25-26",
+          "1 Nephi 22:6",
+          "3 Nephi 16:4-5"
+        ]
+      },
+      {
+        "sign": "Scattering of Israel",
+        "references": [
+          "Jeremiah 23:3"
+        ]
+      },
+      {
+        "sign": "Gentiles sin against the gospel",
+        "references": [
+          "3 Nephi 16:10-12"
+        ]
+      },
+      {
+        "sign": "Gospel preached to all the world",
+        "references": [
+          "D&C 39:11"
+        ]
+      }
+    ]
+  },
+  "Christ reigns as King": {
+    "name": "Christ reigns as King",
+    "references": [
+      "Jeremiah 3:17-18",
+      "Jeremiah 23:5",
+      "Zechariah 14",
+      "D&C 76:63",
+      "D&C 133:25",
+      "D&C 133:26"
+    ],
+    "aliases": [
+      "Jerusalem the throne of the Lord",
+      "All nations gathered unto Jerusalem",
+      "Christ shall reign over all flesh"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Judah and Israel come together out of the land of the north",
+        "references": [
+          "Jeremiah 3:17-18"
+        ]
+      },
+      {
+        "sign": "Israel brought out of the north, and all countries",
+        "references": [
+          "Jeremiah 23:5"
+        ]
+      },
+      {
+        "sign": "Those in the north countries shall come in remembrance before the Lord",
+        "references": [
+          "D&C 133:26"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Mount of Olives splits",
+        "references": [
+          "Zechariah 14"
+        ]
+      },
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "D&C 76:63"
+        ]
+      },
+      {
+        "sign": "Islands become one land",
+        "references": [
+          "D&C 133:25"
+        ]
+      }
+    ]
+  },
+  "Judah and Israel come together out of the land of the north": {
+    "name": "Judah and Israel come together out of the land of the north",
+    "references": [
+      "Jeremiah 3:17-18"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Christ reigns as King",
+        "references": [
+          "Jeremiah 3:17-18"
+        ]
+      }
+    ]
+  },
+  "Scattering of Israel": {
+    "name": "Scattering of Israel",
+    "references": [
+      "Jeremiah 23:3",
+      "Jeremiah 29:14",
+      "D&C 45:24-25",
+      "Assumption",
+      "1 Nephi 22:3",
+      "1 Nephi 22:6",
+      "1 Nephi 22:7",
+      "1 Nephi 22:4",
+      "2 Nephi 10:6-8",
+      "3 Nephi 16:4-5"
+    ],
+    "aliases": [
+      "Jews scattered",
+      "House of Israel scattered",
+      "Scattering of the ten tribes",
+      "Scattering of the Jews"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Gathering of Israel",
+        "references": [
+          "Jeremiah 23:3"
+        ]
+      },
+      {
+        "sign": "Jews gathered in Jerusalem",
+        "references": [
+          "Jeremiah 29:14",
+          "D&C 45:24-25"
+        ]
+      },
+      {
+        "sign": "Lehi's family in America",
+        "references": [
+          "1 Nephi 22:4"
+        ]
+      },
+      {
+        "sign": "Restoration",
+        "references": [
+          "1 Nephi 22:6",
+          "3 Nephi 16:4-5"
+        ]
+      },
+      {
+        "sign": "Mighty nation raised up",
+        "references": [
+          "1 Nephi 22:7"
+        ]
+      },
+      {
+        "sign": "Jews believe in Christ",
+        "references": [
+          "2 Nephi 10:6-8"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Lehi's family in America",
+        "references": [
+          "1 Nephi 22:3"
+        ]
+      }
+    ]
+  },
+  "Israel brought out of the north, and all countries": {
+    "name": "Israel brought out of the north, and all countries",
+    "references": [
+      "Jeremiah 23:5"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Christ reigns as King",
+        "references": [
+          "Jeremiah 23:5"
+        ]
+      }
+    ]
+  },
+  "Jews gathered in Jerusalem": {
+    "name": "Jews gathered in Jerusalem",
+    "references": [
+      "Jeremiah 29:14",
+      "D&C 45:24-25",
+      "D&C 45:40-43",
+      "D&C 77:15",
+      "Teachings of the Prophet Joseph Smith; p286-287",
+      "Assumption"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:24-25"
+        ]
+      },
+      {
+        "sign": "Great day of the Lord",
+        "references": [
+          "D&C 45:40-43"
+        ]
+      },
+      {
+        "sign": "Two witnesses prophecy",
+        "references": [
+          "D&C 77:15"
+        ]
+      },
+      {
+        "sign": "Temple in Jerusalem rebuilt",
+        "references": [
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      },
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Assumption"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Scattering of Israel",
+        "references": [
+          "Jeremiah 29:14",
+          "D&C 45:24-25"
+        ]
+      },
+      {
+        "sign": "Restoration",
+        "references": [
+          "D&C 77:15"
+        ]
+      }
+    ]
+  },
+  "All nations gathered against Israel": {
+    "name": "All nations gathered against Israel",
+    "references": [
+      "Ezekiel 38:18-23",
+      "Ezekiel 39",
+      "Zechariah 14",
+      "Zechariah 14:12",
+      "Revelation 11:2",
+      "Revelation 16:12-16",
+      "Revelation 16:16-21",
+      "Assumption",
+      "Joel 3:14-16",
+      "JST Matt 1:18,22",
+      "JST Matt 1:23",
+      "JST Matt 1:33",
+      "Mark 13:24"
+    ],
+    "aliases": [
+      "Multitudes gathered in the valley of decision",
+      "Great tribulation of the Jews"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Hail",
+        "references": [
+          "Ezekiel 38:18-23"
+        ]
+      },
+      {
+        "sign": "Great earthquake in Israel",
+        "references": [
+          "Ezekiel 38:18-23"
+        ]
+      },
+      {
+        "sign": "Overflowing rain",
+        "references": [
+          "Ezekiel 38:18-23"
+        ]
+      },
+      {
+        "sign": "Pestilence",
+        "references": [
+          "Ezekiel 38:18-23"
+        ]
+      },
+      {
+        "sign": "Fire",
+        "references": [
+          "Ezekiel 38:18-23"
+        ]
+      },
+      {
+        "sign": "Gog and Magog defeated",
+        "references": [
+          "Ezekiel 39"
+        ]
+      },
+      {
+        "sign": "Sun darkened",
+        "references": [
+          "Joel 3:14-16",
+          "JST Matt 1:33",
+          "Mark 13:24"
+        ]
+      },
+      {
+        "sign": "Moon darkened",
+        "references": [
+          "Joel 3:14-16",
+          "JST Matt 1:33",
+          "Mark 13:24"
+        ]
+      },
+      {
+        "sign": "Half of the city is captive",
+        "references": [
+          "Zechariah 14"
+        ]
+      },
+      {
+        "sign": "Flesh fall off their bones and eyes fall out",
+        "references": [
+          "Zechariah 14:12"
+        ]
+      },
+      {
+        "sign": "False Christs and false prophets",
+        "references": [
+          "JST Matt 1:18,22"
+        ]
+      },
+      {
+        "sign": "Wars",
+        "references": [
+          "JST Matt 1:23"
+        ]
+      },
+      {
+        "sign": "Stars fall from heaven",
+        "references": [
+          "JST Matt 1:33",
+          "Mark 13:24"
+        ]
+      },
+      {
+        "sign": "Heavens shake",
+        "references": [
+          "JST Matt 1:33",
+          "Mark 13:24"
+        ]
+      },
+      {
+        "sign": "Two witnesses prophecy",
+        "references": [
+          "Revelation 11:2"
+        ]
+      },
+      {
+        "sign": "7: Seven thunders; mystery of God finished",
+        "references": [
+          "Revelation 16:16-21"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Spirits of the devil gather kings of the earth",
+        "references": [
+          "Revelation 16:12-16"
+        ]
+      },
+      {
+        "sign": "Jews gathered in Jerusalem",
+        "references": [
+          "Assumption"
+        ]
+      }
+    ]
+  },
+  "Hail": {
+    "name": "Hail",
+    "references": [
+      "Ezekiel 38:18-23"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Ezekiel 38:18-23"
+        ]
+      }
+    ]
+  },
+  "Great earthquake in Israel": {
+    "name": "Great earthquake in Israel",
+    "references": [
+      "Ezekiel 38:18-23",
+      "Revelation 11:13",
+      "Revelation 11:15"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "7: Seven thunders; mystery of God finished",
+        "references": [
+          "Revelation 11:15"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Ezekiel 38:18-23"
+        ]
+      },
+      {
+        "sign": "Two witnesses resurrected",
+        "references": [
+          "Revelation 11:13"
+        ]
+      }
+    ]
+  },
+  "Overflowing rain": {
+    "name": "Overflowing rain",
+    "references": [
+      "Ezekiel 38:18-23"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Ezekiel 38:18-23"
+        ]
+      }
+    ]
+  },
+  "Pestilence": {
+    "name": "Pestilence",
+    "references": [
+      "Ezekiel 38:18-23"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Ezekiel 38:18-23"
+        ]
+      }
+    ]
+  },
+  "Fire": {
+    "name": "Fire",
+    "references": [
+      "Ezekiel 38:18-23",
+      "D&C 45:40-43"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Great day of the Lord",
+        "references": [
+          "D&C 45:40-43"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Ezekiel 38:18-23"
+        ]
+      }
+    ]
+  },
+  "Gog and Magog defeated": {
+    "name": "Gog and Magog defeated",
+    "references": [
+      "Ezekiel 39",
+      "https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Israel burns enemy weapons for seven years",
+        "references": [
+          "Ezekiel 39"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Ezekiel 39"
+        ]
+      },
+      {
+        "sign": "Mount of Olives splits",
+        "references": [
+          "https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng"
+        ]
+      }
+    ]
+  },
+  "Israel burns enemy weapons for seven years": {
+    "name": "Israel burns enemy weapons for seven years",
+    "references": [
+      "Ezekiel 39"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Israel will spoil their enemies",
+        "references": [
+          "Ezekiel 39"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Gog and Magog defeated",
+        "references": [
+          "Ezekiel 39"
+        ]
+      }
+    ]
+  },
+  "Israel will spoil their enemies": {
+    "name": "Israel will spoil their enemies",
+    "references": [
+      "Ezekiel 39"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Israel burns enemy weapons for seven years",
+        "references": [
+          "Ezekiel 39"
+        ]
+      }
+    ]
+  },
+  "Sun darkened": {
+    "name": "Sun darkened",
+    "references": [
+      "Joel 2:31",
+      "Joel 3:14-16",
+      "JST Matt 1:33",
+      "JST Matt 1:36",
+      "Mark 13:24",
+      "Acts 2:20",
+      "D&C 29:14-19",
+      "D&C 34:7-9",
+      "D&C 45:40-43",
+      "D&C 88:87-93",
+      "Moses 7:60-61",
+      "Teachings of the Prophet Joseph Smith; p286-287",
+      "Revelation 6:12-17"
+    ],
+    "aliases": [
+      "Sun turned blacked"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Great day of the Lord",
+        "references": [
+          "Joel 2:31",
+          "Acts 2:20",
+          "D&C 45:40-43"
+        ]
+      },
+      {
+        "sign": "Lord speaks from Zion and Jerusalem",
+        "references": [
+          "Joel 3:14-16"
+        ]
+      },
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "JST Matt 1:36",
+          "Teachings of the Prophet Joseph Smith; p286-287",
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "Mark 13:24",
+          "D&C 34:7-9",
+          "Moses 7:60-61"
+        ]
+      },
+      {
+        "sign": "Angel sounds his trump",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Joel 3:14-16",
+          "JST Matt 1:33",
+          "Mark 13:24"
+        ]
+      },
+      {
+        "sign": "Opening of the Sixth Seal",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Gospel preached to the Gentiles",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ]
+  },
+  "Great day of the Lord": {
+    "name": "Great day of the Lord",
+    "references": [
+      "Joel 2:31",
+      "Malachi 4:5",
+      "Acts 2:20",
+      "D&C 45:40-43",
+      "D&C 133:10"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Sun darkened",
+        "references": [
+          "Joel 2:31",
+          "Acts 2:20",
+          "D&C 45:40-43"
+        ]
+      },
+      {
+        "sign": "Moon turned to blood",
+        "references": [
+          "Joel 2:31",
+          "Acts 2:20",
+          "D&C 45:40-43"
+        ]
+      },
+      {
+        "sign": "Elijah appears",
+        "references": [
+          "Malachi 4:5"
+        ]
+      },
+      {
+        "sign": "Blood",
+        "references": [
+          "D&C 45:40-43"
+        ]
+      },
+      {
+        "sign": "Fire",
+        "references": [
+          "D&C 45:40-43"
+        ]
+      },
+      {
+        "sign": "Vapors of smoke",
+        "references": [
+          "D&C 45:40-43"
+        ]
+      },
+      {
+        "sign": "Stars fall from heaven",
+        "references": [
+          "D&C 45:40-43"
+        ]
+      },
+      {
+        "sign": "Jews gathered in Jerusalem",
+        "references": [
+          "D&C 45:40-43"
+        ]
+      },
+      {
+        "sign": "Elders sent unto the Jews",
+        "references": [
+          "D&C 133:10"
+        ]
+      }
+    ]
+  },
+  "Moon turned to blood": {
+    "name": "Moon turned to blood",
+    "references": [
+      "Joel 2:31",
+      "Acts 2:20",
+      "Revelation 6:12-17",
+      "D&C 29:14-19",
+      "D&C 34:7-9",
+      "D&C 45:40-43",
+      "D&C 88:87-93",
+      "Teachings of the Prophet Joseph Smith; p286-287"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Great day of the Lord",
+        "references": [
+          "Joel 2:31",
+          "Acts 2:20",
+          "D&C 45:40-43"
+        ]
+      },
+      {
+        "sign": "Angel sounds his trump",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      },
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "D&C 34:7-9"
+        ]
+      },
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "D&C 88:87-93",
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Opening of the Sixth Seal",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Gospel preached to the Gentiles",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ]
+  },
+  "Moon darkened": {
+    "name": "Moon darkened",
+    "references": [
+      "Joel 3:14-16",
+      "JST Matt 1:33",
+      "JST Matt 1:36",
+      "Mark 13:24",
+      "Moses 7:60-61"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Lord speaks from Zion and Jerusalem",
+        "references": [
+          "Joel 3:14-16"
+        ]
+      },
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "JST Matt 1:36"
+        ]
+      },
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "Mark 13:24",
+          "Moses 7:60-61"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Joel 3:14-16",
+          "JST Matt 1:33",
+          "Mark 13:24"
+        ]
+      }
+    ]
+  },
+  "Lord speaks from Zion and Jerusalem": {
+    "name": "Lord speaks from Zion and Jerusalem",
+    "references": [
+      "Joel 3:14-16",
+      "D&C 133:21-22",
+      "D&C 133:23",
+      "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578",
+      "D&C 43:18",
+      "D&C 45:49-50"
+    ],
+    "aliases": [
+      "Lord utters his voice out of heaven",
+      "Lord utters his voice"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Heavens shake",
+        "references": [
+          "Joel 3:14-16",
+          "D&C 43:18"
+        ]
+      },
+      {
+        "sign": "Earthquakes",
+        "references": [
+          "Joel 3:14-16",
+          "D&C 43:18"
+        ]
+      },
+      {
+        "sign": "Trump of God shall sound",
+        "references": [
+          "D&C 43:18"
+        ]
+      },
+      {
+        "sign": "Burning",
+        "references": [
+          "D&C 45:49-50"
+        ]
+      },
+      {
+        "sign": "Mountains broken down",
+        "references": [
+          "D&C 133:21-22"
+        ]
+      },
+      {
+        "sign": "Ocean driven back into the north countries",
+        "references": [
+          "D&C 133:23"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Sun darkened",
+        "references": [
+          "Joel 3:14-16"
+        ]
+      },
+      {
+        "sign": "Moon darkened",
+        "references": [
+          "Joel 3:14-16"
+        ]
+      },
+      {
+        "sign": "Christ stands on Mount of Olives",
+        "references": [
+          "D&C 45:49-50"
+        ]
+      },
+      {
+        "sign": "Gathering at Adam-Ondi-Ahman",
+        "references": [
+          "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+        ]
+      }
+    ]
+  },
+  "Heavens shake": {
+    "name": "Heavens shake",
+    "references": [
+      "Joel 3:14-16",
+      "JST Matt 1:33",
+      "JST Matt 1:36",
+      "Mark 13:24",
+      "D&C 43:18",
+      "D&C 45:47-48",
+      "D&C 49:23",
+      "Moses 7:60-61"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "JST Matt 1:36"
+        ]
+      },
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "Mark 13:24",
+          "Moses 7:60-61"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Lord speaks from Zion and Jerusalem",
+        "references": [
+          "Joel 3:14-16",
+          "D&C 43:18"
+        ]
+      },
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "JST Matt 1:33",
+          "Mark 13:24"
+        ]
+      },
+      {
+        "sign": "Christ stands on Mount of Olives",
+        "references": [
+          "D&C 45:47-48"
+        ]
+      },
+      {
+        "sign": "Angel sounds a trump",
+        "references": [
+          "D&C 49:23"
+        ]
+      }
+    ]
+  },
+  "Earthquakes": {
+    "name": "Earthquakes",
+    "references": [
+      "Joel 3:14-16",
+      "D&C 43:18",
+      "D&C 45:31-33",
+      "D&C 49:23",
+      "D&C 88:87-93",
+      "Moses 7:60-61",
+      "Teachings of the Prophet Joseph Smith; p286-287"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "D&C 88:87-93",
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      },
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "Moses 7:60-61"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Lord speaks from Zion and Jerusalem",
+        "references": [
+          "Joel 3:14-16",
+          "D&C 43:18"
+        ]
+      },
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:31-33"
+        ]
+      },
+      {
+        "sign": "Angel sounds a trump",
+        "references": [
+          "D&C 49:23"
+        ]
+      },
+      {
+        "sign": "Gospel preached to the Gentiles",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ]
+  },
+  "Half of the city is captive": {
+    "name": "Half of the city is captive",
+    "references": [
+      "Zechariah 14",
+      "https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ stands on Mount of Olives",
+        "references": [
+          "Zechariah 14"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Zechariah 14"
+        ]
+      },
+      {
+        "sign": "Two witnesses die",
+        "references": [
+          "https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng"
+        ]
+      }
+    ]
+  },
+  "Christ stands on Mount of Olives": {
+    "name": "Christ stands on Mount of Olives",
+    "references": [
+      "Zechariah 14",
+      "D&C 45:47-48",
+      "D&C 45:49-50",
+      "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Mount of Olives splits",
+        "references": [
+          "Zechariah 14",
+          "D&C 45:47-48"
+        ]
+      },
+      {
+        "sign": "Heavens shake",
+        "references": [
+          "D&C 45:47-48"
+        ]
+      },
+      {
+        "sign": "Lord speaks from Zion and Jerusalem",
+        "references": [
+          "D&C 45:49-50"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Half of the city is captive",
+        "references": [
+          "Zechariah 14"
+        ]
+      },
+      {
+        "sign": "Gathering at Adam-Ondi-Ahman",
+        "references": [
+          "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+        ]
+      }
+    ]
+  },
+  "Mount of Olives splits": {
+    "name": "Mount of Olives splits",
+    "references": [
+      "Zechariah 14",
+      "Zechariah 14:5",
+      "D&C 45:47-48",
+      "D&C 45:51-53",
+      "https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ reigns as King",
+        "references": [
+          "Zechariah 14"
+        ]
+      },
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "Zechariah 14:5"
+        ]
+      },
+      {
+        "sign": "Earthquake",
+        "references": [
+          "D&C 45:47-48"
+        ]
+      },
+      {
+        "sign": "Jews recognize Christ",
+        "references": [
+          "D&C 45:51-53"
+        ]
+      },
+      {
+        "sign": "Gog and Magog defeated",
+        "references": [
+          "https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Christ stands on Mount of Olives",
+        "references": [
+          "Zechariah 14",
+          "D&C 45:47-48"
+        ]
+      }
+    ]
+  },
+  "Flesh fall off their bones and eyes fall out": {
+    "name": "Flesh fall off their bones and eyes fall out",
+    "references": [
+      "Zechariah 14:12",
+      "D&C 29:14-19"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Angel sounds his trump",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Zechariah 14:12"
+        ]
+      }
+    ]
+  },
+  "Christ comes in the clouds": {
+    "name": "Christ comes in the clouds",
+    "references": [
+      "Zechariah 14:5",
+      "JST Matt 1:36",
+      "Mark 13:24",
+      "Luke 21:25-28",
+      "1 Thessalonians 4:16-17",
+      "3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8",
+      "D&C 34:7-9",
+      "D&C 63:33-34",
+      "D&C 64:23-24",
+      "D&C 76:63",
+      "D&C 88:95-97",
+      "D&C 88:99",
+      "Moses 7:60-61",
+      "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578",
+      "JST Matt 1:37"
+    ],
+    "aliases": [
+      "Son of Man shall come"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Angels gather the remainder of the elect",
+        "references": [
+          "JST Matt 1:37"
+        ]
+      },
+      {
+        "sign": "Burning",
+        "references": [
+          "D&C 64:23-24"
+        ]
+      },
+      {
+        "sign": "Christ reigns as King",
+        "references": [
+          "D&C 76:63"
+        ]
+      },
+      {
+        "sign": "Second trump: Redemption of Terrestrial spirits",
+        "references": [
+          "D&C 88:99"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Mount of Olives splits",
+        "references": [
+          "Zechariah 14:5"
+        ]
+      },
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "JST Matt 1:36"
+        ]
+      },
+      {
+        "sign": "Sun darkened",
+        "references": [
+          "Mark 13:24",
+          "D&C 34:7-9",
+          "Moses 7:60-61"
+        ]
+      },
+      {
+        "sign": "Moon darkened",
+        "references": [
+          "Mark 13:24",
+          "Moses 7:60-61"
+        ]
+      },
+      {
+        "sign": "Stars fall from heaven",
+        "references": [
+          "Mark 13:24",
+          "D&C 34:7-9"
+        ]
+      },
+      {
+        "sign": "Heavens shake",
+        "references": [
+          "Mark 13:24",
+          "Moses 7:60-61"
+        ]
+      },
+      {
+        "sign": "Signs in the heavens",
+        "references": [
+          "Luke 21:25-28"
+        ]
+      },
+      {
+        "sign": "Rapture",
+        "references": [
+          "1 Thessalonians 4:16-17",
+          "D&C 88:95-97"
+        ]
+      },
+      {
+        "sign": "Morning of the First Resurrection",
+        "references": [
+          "1 Thessalonians 4:16-17",
+          "D&C 88:95-97"
+        ]
+      },
+      {
+        "sign": "Gentiles help gather God's people",
+        "references": [
+          "3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8"
+        ]
+      },
+      {
+        "sign": "Moon turned to blood",
+        "references": [
+          "D&C 34:7-9"
+        ]
+      },
+      {
+        "sign": "Stars refuse their light",
+        "references": [
+          "D&C 34:7-9"
+        ]
+      },
+      {
+        "sign": "Wars",
+        "references": [
+          "D&C 63:33-34"
+        ]
+      },
+      {
+        "sign": "Temple of God opened",
+        "references": [
+          "D&C 88:95-97"
+        ]
+      },
+      {
+        "sign": "Darkness shall cover the earth",
+        "references": [
+          "Moses 7:60-61"
+        ]
+      },
+      {
+        "sign": "Earthquakes",
+        "references": [
+          "Moses 7:60-61"
+        ]
+      },
+      {
+        "sign": "Gathering at Adam-Ondi-Ahman",
+        "references": [
+          "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+        ]
+      }
+    ]
+  },
+  "Elijah appears": {
+    "name": "Elijah appears",
+    "references": [
+      "Malachi 4:5",
+      "Assumption"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Great day of the Lord",
+        "references": [
+          "Malachi 4:5"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "Assumption"
+        ]
+      }
+    ]
+  },
+  "False Christs and false prophets": {
+    "name": "False Christs and false prophets",
+    "references": [
+      "JST Matt 1:18,22"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "JST Matt 1:18,22"
+        ]
+      }
+    ]
+  },
+  "Wars": {
+    "name": "Wars",
+    "references": [
+      "JST Matt 1:23",
+      "D&C 45:26-27",
+      "D&C 45:31-33",
+      "D&C 63:33-34",
+      "Teachings of the Prophet Joseph Smith; p286-287"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "D&C 63:33-34"
+        ]
+      },
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "JST Matt 1:23"
+        ]
+      },
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:26-27",
+          "D&C 45:31-33"
+        ]
+      }
+    ]
+  },
+  "Gospel preached to all the world": {
+    "name": "Gospel preached to all the world",
+    "references": [
+      "JST Matt 1:31",
+      "Assumption",
+      "D&C 39:11"
+    ],
+    "aliases": [
+      "Preach the fulness of the gospel"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Burning",
+        "references": [
+          "JST Matt 1:31"
+        ]
+      },
+      {
+        "sign": "Gathering of Israel",
+        "references": [
+          "D&C 39:11"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "D&C 39:11",
+          "Assumption"
+        ]
+      }
+    ]
+  },
+  "Burning": {
+    "name": "Burning",
+    "references": [
+      "JST Matt 1:31",
+      "2 Nephi 30:8,10",
+      "2 Nephi 30:15-18",
+      "D&C 29:9",
+      "D&C 45:49-50",
+      "D&C 45:54",
+      "D&C 63:54",
+      "D&C 64:23-24",
+      "D&C 86:7",
+      "D&C 101:23-25"
+    ],
+    "aliases": [
+      "Destruction of the wicked"
+    ],
+    "comesBefore": [
+      {
+        "sign": "All things revealed",
+        "references": [
+          "2 Nephi 30:15-18"
+        ]
+      },
+      {
+        "sign": "Heathen nations redeemed",
+        "references": [
+          "D&C 45:54"
+        ]
+      },
+      {
+        "sign": "Second trump: Redemption of Terrestrial spirits",
+        "references": [
+          "D&C 45:54"
+        ]
+      },
+      {
+        "sign": "Satan bound for 1000 years",
+        "references": [
+          "D&C 45:54"
+        ]
+      },
+      {
+        "sign": "All things become new",
+        "references": [
+          "D&C 101:23-25"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Gospel preached to all the world",
+        "references": [
+          "JST Matt 1:31"
+        ]
+      },
+      {
+        "sign": "Gathering of the wheat",
+        "references": [
+          "2 Nephi 30:8,10",
+          "D&C 63:54"
+        ]
+      },
+      {
+        "sign": "Gathering of the elect",
+        "references": [
+          "D&C 29:9"
+        ]
+      },
+      {
+        "sign": "Lord speaks from Zion and Jerusalem",
+        "references": [
+          "D&C 45:49-50"
+        ]
+      },
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "D&C 64:23-24"
+        ]
+      },
+      {
+        "sign": "Tares bound in bundles",
+        "references": [
+          "D&C 86:7"
+        ]
+      },
+      {
+        "sign": "Temple of God opened",
+        "references": [
+          "D&C 101:23-25"
+        ]
+      }
+    ]
+  },
+  "Stars fall from heaven": {
+    "name": "Stars fall from heaven",
+    "references": [
+      "JST Matt 1:33",
+      "JST Matt 1:36",
+      "Mark 13:24",
+      "Revelation 6:12-17",
+      "D&C 29:14-19",
+      "D&C 34:7-9",
+      "D&C 45:40-43",
+      "D&C 88:87-93"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "JST Matt 1:36",
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "Mark 13:24",
+          "D&C 34:7-9"
+        ]
+      },
+      {
+        "sign": "Angel sounds his trump",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      },
+      {
+        "sign": "Great day of the Lord",
+        "references": [
+          "D&C 45:40-43"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "JST Matt 1:33",
+          "Mark 13:24"
+        ]
+      },
+      {
+        "sign": "Opening of the Sixth Seal",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Gospel preached to the Gentiles",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ]
+  },
+  "Sign of the Son of Man": {
+    "name": "Sign of the Son of Man",
+    "references": [
+      "JST Matt 1:36",
+      "Teachings of the Prophet Joseph Smith; p286-287",
+      "D&C 88:87-93",
+      "D&C 88:95-97"
+    ],
+    "aliases": [
+      "Great sign in heaven"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "JST Matt 1:36"
+        ]
+      },
+      {
+        "sign": "Silence for half an hour",
+        "references": [
+          "D&C 88:95-97"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Sun darkened",
+        "references": [
+          "JST Matt 1:36",
+          "Teachings of the Prophet Joseph Smith; p286-287",
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Moon darkened",
+        "references": [
+          "JST Matt 1:36"
+        ]
+      },
+      {
+        "sign": "Stars fall from heaven",
+        "references": [
+          "JST Matt 1:36",
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Heavens shake",
+        "references": [
+          "JST Matt 1:36"
+        ]
+      },
+      {
+        "sign": "Earthquakes",
+        "references": [
+          "D&C 88:87-93",
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      },
+      {
+        "sign": "Moon turned to blood",
+        "references": [
+          "D&C 88:87-93",
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      },
+      {
+        "sign": "Thunderings and lightenings",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Tempests",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Tsunamis",
+        "references": [
+          "D&C 88:87-93",
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      },
+      {
+        "sign": "Men's hearts shall fail them",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Waters from temple heal the Dead Sea",
+        "references": [
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      },
+      {
+        "sign": "Wars",
+        "references": [
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      },
+      {
+        "sign": "Signs in the heavens",
+        "references": [
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      }
+    ]
+  },
+  "Angels gather the remainder of the elect": {
+    "name": "Angels gather the remainder of the elect",
+    "references": [
+      "JST Matt 1:37"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "JST Matt 1:37"
+        ]
+      }
+    ]
+  },
+  "Signs in the heavens": {
+    "name": "Signs in the heavens",
+    "references": [
+      "Luke 21:25-28",
+      "Teachings of the Prophet Joseph Smith; p286-287"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "Luke 21:25-28"
+        ]
+      },
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Rapture": {
+    "name": "Rapture",
+    "references": [
+      "1 Thessalonians 4:16-17",
+      "D&C 88:95-97"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "1 Thessalonians 4:16-17",
+          "D&C 88:95-97"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Curtain of heaven unfolded as a scroll",
+        "references": [
+          "D&C 88:95-97"
+        ]
+      }
+    ]
+  },
+  "Morning of the First Resurrection": {
+    "name": "Morning of the First Resurrection",
+    "references": [
+      "1 Thessalonians 4:16-17",
+      "D&C 29:13",
+      "D&C 43:18",
+      "D&C 45:45-46",
+      "D&C 88:95-97",
+      "D&C 133:56",
+      "Assumption"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "1 Thessalonians 4:16-17",
+          "D&C 88:95-97"
+        ]
+      },
+      {
+        "sign": "Christ stands on Mount Zion",
+        "references": [
+          "D&C 133:56"
+        ]
+      },
+      {
+        "sign": "Second trump: Redemption of Terrestrial spirits",
+        "references": [
+          "Assumption"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Angel sounds his trump",
+        "references": [
+          "D&C 29:13",
+          "D&C 45:45-46"
+        ]
+      },
+      {
+        "sign": "Trump of God shall sound",
+        "references": [
+          "D&C 43:18"
+        ]
+      },
+      {
+        "sign": "Curtain of heaven unfolded as a scroll",
+        "references": [
+          "D&C 88:95-97"
+        ]
+      }
+    ]
+  },
+  "Opening of the Sixth Seal": {
+    "name": "Opening of the Sixth Seal",
+    "references": [
+      "Revelation 6:12-17",
+      "Revelation 7:2, D&C 77:9",
+      "Revelation 9"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Great earthquake",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Sun darkened",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Moon turned to blood",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Stars fall from heaven",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Curtain of heaven unfolded as a scroll",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Every mountain and island moved",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Men hide themselves",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Restoration",
+        "references": [
+          "Revelation 7:2, D&C 77:9"
+        ]
+      },
+      {
+        "sign": "Opening of the Seventh Seal",
+        "references": [
+          "Revelation 9"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Great earthquake": {
+    "name": "Great earthquake",
+    "references": [
+      "Revelation 6:12-17",
+      "Revelation 16:16-21"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Opening of the Sixth Seal",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "7: Seven thunders; mystery of God finished",
+        "references": [
+          "Revelation 16:16-21"
+        ]
+      }
+    ]
+  },
+  "Curtain of heaven unfolded as a scroll": {
+    "name": "Curtain of heaven unfolded as a scroll",
+    "references": [
+      "Revelation 6:12-17",
+      "D&C 88:95-97",
+      "D&C 101:23-25"
+    ],
+    "aliases": [
+      "Heaven departed as a scroll"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Temple of God opened",
+        "references": [
+          "D&C 88:95-97",
+          "D&C 101:23-25"
+        ]
+      },
+      {
+        "sign": "Morning of the First Resurrection",
+        "references": [
+          "D&C 88:95-97"
+        ]
+      },
+      {
+        "sign": "Rapture",
+        "references": [
+          "D&C 88:95-97"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Opening of the Sixth Seal",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      },
+      {
+        "sign": "Silence for half an hour",
+        "references": [
+          "D&C 88:95-97"
+        ]
+      }
+    ]
+  },
+  "Every mountain and island moved": {
+    "name": "Every mountain and island moved",
+    "references": [
+      "Revelation 6:12-17"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Opening of the Sixth Seal",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      }
+    ]
+  },
+  "Men hide themselves": {
+    "name": "Men hide themselves",
+    "references": [
+      "Revelation 6:12-17"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Opening of the Sixth Seal",
+        "references": [
+          "Revelation 6:12-17"
+        ]
+      }
+    ]
+  },
+  "Elias": {
+    "name": "Elias",
+    "references": [
+      "Revelation 7:2, D&C 77:9",
+      "Revelation 7:3-4"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Sealing of the 144,000",
+        "references": [
+          "Revelation 7:3-4"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "Revelation 7:2, D&C 77:9"
+        ]
+      }
+    ]
+  },
+  "Sealing of the 144,000": {
+    "name": "Sealing of the 144,000",
+    "references": [
+      "Revelation 7:3-4",
+      "Revelation 9",
+      "Revelation 14:1",
+      "D&C 133:18"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Opening of the Seventh Seal",
+        "references": [
+          "Revelation 9"
+        ]
+      },
+      {
+        "sign": "Christ stands on Mount Zion",
+        "references": [
+          "Revelation 14:1",
+          "D&C 133:18"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Elias",
+        "references": [
+          "Revelation 7:3-4"
+        ]
+      }
+    ]
+  },
+  "Opening of the Seventh Seal": {
+    "name": "Opening of the Seventh Seal",
+    "references": [
+      "Revelation 9",
+      "Revelation 8:1"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Silence in heavens for half an hour",
+        "references": [
+          "Revelation 8:1"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Opening of the Sixth Seal",
+        "references": [
+          "Revelation 9"
+        ]
+      },
+      {
+        "sign": "Sealing of the 144,000",
+        "references": [
+          "Revelation 9"
+        ]
+      }
+    ]
+  },
+  "Silence in heavens for half an hour": {
+    "name": "Silence in heavens for half an hour",
+    "references": [
+      "Revelation 8:1",
+      "Revelation 8:5"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Voices, Thunderings, Lightenings, Earthquake",
+        "references": [
+          "Revelation 8:5"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Opening of the Seventh Seal",
+        "references": [
+          "Revelation 8:1"
+        ]
+      }
+    ]
+  },
+  "Voices, Thunderings, Lightenings, Earthquake": {
+    "name": "Voices, Thunderings, Lightenings, Earthquake",
+    "references": [
+      "Revelation 8:5",
+      "Revelation 8:7"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "1: Hail, fire, blood",
+        "references": [
+          "Revelation 8:7"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Silence in heavens for half an hour",
+        "references": [
+          "Revelation 8:5"
+        ]
+      }
+    ]
+  },
+  "1: Hail, fire, blood": {
+    "name": "1: Hail, fire, blood",
+    "references": [
+      "Revelation 8:7",
+      "Revelation 8:8"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "2: Third part of sea becomes blood",
+        "references": [
+          "Revelation 8:8"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Voices, Thunderings, Lightenings, Earthquake",
+        "references": [
+          "Revelation 8:7"
+        ]
+      }
+    ]
+  },
+  "2: Third part of sea becomes blood": {
+    "name": "2: Third part of sea becomes blood",
+    "references": [
+      "Revelation 8:8",
+      "Revelation 8:10"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "3: Great star falls from heaven causing wormwood",
+        "references": [
+          "Revelation 8:10"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "1: Hail, fire, blood",
+        "references": [
+          "Revelation 8:8"
+        ]
+      }
+    ]
+  },
+  "3: Great star falls from heaven causing wormwood": {
+    "name": "3: Great star falls from heaven causing wormwood",
+    "references": [
+      "Revelation 8:10",
+      "Revelation 8:12"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "4: Third part of sun, moon, stars smitten",
+        "references": [
+          "Revelation 8:12"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "2: Third part of sea becomes blood",
+        "references": [
+          "Revelation 8:10"
+        ]
+      }
+    ]
+  },
+  "4: Third part of sun, moon, stars smitten": {
+    "name": "4: Third part of sun, moon, stars smitten",
+    "references": [
+      "Revelation 8:12",
+      "Revelation 9:1-12"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "5: Smoke and tormenting locusts",
+        "references": [
+          "Revelation 9:1-12"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "3: Great star falls from heaven causing wormwood",
+        "references": [
+          "Revelation 8:12"
+        ]
+      }
+    ]
+  },
+  "5: Smoke and tormenting locusts": {
+    "name": "5: Smoke and tormenting locusts",
+    "references": [
+      "Revelation 9:1-12",
+      "Revelation 9:13-21"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "6: Four horsemen kill third of men",
+        "references": [
+          "Revelation 9:13-21"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "4: Third part of sun, moon, stars smitten",
+        "references": [
+          "Revelation 9:1-12"
+        ]
+      }
+    ]
+  },
+  "6: Four horsemen kill third of men": {
+    "name": "6: Four horsemen kill third of men",
+    "references": [
+      "Revelation 9:13-21",
+      "Revelation 10"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "7: Seven thunders; mystery of God finished",
+        "references": [
+          "Revelation 10"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "5: Smoke and tormenting locusts",
+        "references": [
+          "Revelation 9:13-21"
+        ]
+      }
+    ]
+  },
+  "7: Seven thunders; mystery of God finished": {
+    "name": "7: Seven thunders; mystery of God finished",
+    "references": [
+      "Revelation 10",
+      "Revelation 11:15",
+      "Revelation 11:19",
+      "Revelation 15-16",
+      "Revelation 16:16-21"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Temple of God opened",
+        "references": [
+          "Revelation 11:19"
+        ]
+      },
+      {
+        "sign": "Lightenings, voices, thunderings",
+        "references": [
+          "Revelation 11:19"
+        ]
+      },
+      {
+        "sign": "Earthquake",
+        "references": [
+          "Revelation 11:19"
+        ]
+      },
+      {
+        "sign": "Great hail",
+        "references": [
+          "Revelation 11:19",
+          "Revelation 16:16-21"
+        ]
+      },
+      {
+        "sign": "Islands become one land",
+        "references": [
+          "Revelation 16:16-21"
+        ]
+      },
+      {
+        "sign": "Great earthquake",
+        "references": [
+          "Revelation 16:16-21"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "6: Four horsemen kill third of men",
+        "references": [
+          "Revelation 10"
+        ]
+      },
+      {
+        "sign": "Great earthquake in Israel",
+        "references": [
+          "Revelation 11:15"
+        ]
+      },
+      {
+        "sign": "6: Euphrates dried up",
+        "references": [
+          "Revelation 15-16"
+        ]
+      },
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Revelation 16:16-21"
+        ]
+      }
+    ]
+  },
+  "Two witnesses prophecy": {
+    "name": "Two witnesses prophecy",
+    "references": [
+      "Revelation 11:2",
+      "Revelation 11:3; 11:7",
+      "D&C 77:15"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Two witnesses die",
+        "references": [
+          "Revelation 11:3; 11:7"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Revelation 11:2"
+        ]
+      },
+      {
+        "sign": "Jews gathered in Jerusalem",
+        "references": [
+          "D&C 77:15"
+        ]
+      }
+    ]
+  },
+  "Two witnesses die": {
+    "name": "Two witnesses die",
+    "references": [
+      "Revelation 11:3; 11:7",
+      "Revelation 11:11",
+      "https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Two witnesses resurrected",
+        "references": [
+          "Revelation 11:11"
+        ]
+      },
+      {
+        "sign": "Half of the city is captive",
+        "references": [
+          "https://www.lds.org/manual/old-testament-student-manual-kings-malachi/enrichment-i?lang=eng"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Two witnesses prophecy",
+        "references": [
+          "Revelation 11:3; 11:7"
+        ]
+      }
+    ]
+  },
+  "Two witnesses resurrected": {
+    "name": "Two witnesses resurrected",
+    "references": [
+      "Revelation 11:11",
+      "Revelation 11:13"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Great earthquake in Israel",
+        "references": [
+          "Revelation 11:13"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Two witnesses die",
+        "references": [
+          "Revelation 11:11"
+        ]
+      }
+    ]
+  },
+  "Temple of God opened": {
+    "name": "Temple of God opened",
+    "references": [
+      "Revelation 11:19",
+      "D&C 88:95-97",
+      "D&C 101:23-25"
+    ],
+    "aliases": [
+      "Face of the Lord unveiled"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "D&C 88:95-97"
+        ]
+      },
+      {
+        "sign": "Burning",
+        "references": [
+          "D&C 101:23-25"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "7: Seven thunders; mystery of God finished",
+        "references": [
+          "Revelation 11:19"
+        ]
+      },
+      {
+        "sign": "Curtain of heaven unfolded as a scroll",
+        "references": [
+          "D&C 88:95-97",
+          "D&C 101:23-25"
+        ]
+      }
+    ]
+  },
+  "Lightenings, voices, thunderings": {
+    "name": "Lightenings, voices, thunderings",
+    "references": [
+      "Revelation 11:19"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "7: Seven thunders; mystery of God finished",
+        "references": [
+          "Revelation 11:19"
+        ]
+      }
+    ]
+  },
+  "Earthquake": {
+    "name": "Earthquake",
+    "references": [
+      "Revelation 11:19",
+      "D&C 45:47-48"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "7: Seven thunders; mystery of God finished",
+        "references": [
+          "Revelation 11:19"
+        ]
+      },
+      {
+        "sign": "Mount of Olives splits",
+        "references": [
+          "D&C 45:47-48"
+        ]
+      }
+    ]
+  },
+  "Great hail": {
+    "name": "Great hail",
+    "references": [
+      "Revelation 11:19",
+      "Revelation 16:16-21"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "7: Seven thunders; mystery of God finished",
+        "references": [
+          "Revelation 11:19",
+          "Revelation 16:16-21"
+        ]
+      }
+    ]
+  },
+  "Christ stands on Mount Zion": {
+    "name": "Christ stands on Mount Zion",
+    "references": [
+      "Revelation 14:1",
+      "D&C 84:2",
+      "D&C 133:18",
+      "D&C 133:56",
+      "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Sealing of the 144,000",
+        "references": [
+          "Revelation 14:1",
+          "D&C 133:18"
+        ]
+      },
+      {
+        "sign": "New Jerusalem",
+        "references": [
+          "D&C 84:2"
+        ]
+      },
+      {
+        "sign": "Morning of the First Resurrection",
+        "references": [
+          "D&C 133:56"
+        ]
+      },
+      {
+        "sign": "Gathering at Adam-Ondi-Ahman",
+        "references": [
+          "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+        ]
+      }
+    ]
+  },
+  "1. Grievous sore": {
+    "name": "1. Grievous sore",
+    "references": [
+      "Revelation 15-16"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "2. Sea turned to blood",
+        "references": [
+          "Revelation 15-16"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "2. Sea turned to blood": {
+    "name": "2. Sea turned to blood",
+    "references": [
+      "Revelation 15-16"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "3. Rivers and fountains turned to blood",
+        "references": [
+          "Revelation 15-16"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "1. Grievous sore",
+        "references": [
+          "Revelation 15-16"
+        ]
+      }
+    ]
+  },
+  "3. Rivers and fountains turned to blood": {
+    "name": "3. Rivers and fountains turned to blood",
+    "references": [
+      "Revelation 15-16"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "4. Men scorched with heat of the sun",
+        "references": [
+          "Revelation 15-16"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "2. Sea turned to blood",
+        "references": [
+          "Revelation 15-16"
+        ]
+      }
+    ]
+  },
+  "4. Men scorched with heat of the sun": {
+    "name": "4. Men scorched with heat of the sun",
+    "references": [
+      "Revelation 15-16"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "5. Kingdom of beast full of darkness",
+        "references": [
+          "Revelation 15-16"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "3. Rivers and fountains turned to blood",
+        "references": [
+          "Revelation 15-16"
+        ]
+      }
+    ]
+  },
+  "5. Kingdom of beast full of darkness": {
+    "name": "5. Kingdom of beast full of darkness",
+    "references": [
+      "Revelation 15-16"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "6: Euphrates dried up",
+        "references": [
+          "Revelation 15-16"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "4. Men scorched with heat of the sun",
+        "references": [
+          "Revelation 15-16"
+        ]
+      }
+    ]
+  },
+  "6: Euphrates dried up": {
+    "name": "6: Euphrates dried up",
+    "references": [
+      "Revelation 15-16",
+      "Revelation 16:12-16"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "7: Seven thunders; mystery of God finished",
+        "references": [
+          "Revelation 15-16"
+        ]
+      },
+      {
+        "sign": "Spirits of the devil gather kings of the earth",
+        "references": [
+          "Revelation 16:12-16"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "5. Kingdom of beast full of darkness",
+        "references": [
+          "Revelation 15-16"
+        ]
+      }
+    ]
+  },
+  "Spirits of the devil gather kings of the earth": {
+    "name": "Spirits of the devil gather kings of the earth",
+    "references": [
+      "Revelation 16:12-16"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "All nations gathered against Israel",
+        "references": [
+          "Revelation 16:12-16"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "6: Euphrates dried up",
+        "references": [
+          "Revelation 16:12-16"
+        ]
+      }
+    ]
+  },
+  "Islands become one land": {
+    "name": "Islands become one land",
+    "references": [
+      "Revelation 16:16-21",
+      "D&C 133:23",
+      "D&C 133:25"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ reigns as King",
+        "references": [
+          "D&C 133:25"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "7: Seven thunders; mystery of God finished",
+        "references": [
+          "Revelation 16:16-21"
+        ]
+      },
+      {
+        "sign": "Ocean driven back into the north countries",
+        "references": [
+          "D&C 133:23"
+        ]
+      }
+    ]
+  },
+  "Lehi's family in America": {
+    "name": "Lehi's family in America",
+    "references": [
+      "Assumption",
+      "1 Nephi 22:3",
+      "1 Nephi 22:4",
+      "3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Destruction of the Nephites",
+        "references": [
+          "Assumption"
+        ]
+      },
+      {
+        "sign": "Scattering of Israel",
+        "references": [
+          "1 Nephi 22:3"
+        ]
+      },
+      {
+        "sign": "New Jerusalem",
+        "references": [
+          "3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Scattering of Israel",
+        "references": [
+          "1 Nephi 22:4"
+        ]
+      }
+    ]
+  },
+  "Destruction of the Nephites": {
+    "name": "Destruction of the Nephites",
+    "references": [
+      "Assumption"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Discovering of America",
+        "references": [
+          "Assumption"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Lehi's family in America",
+        "references": [
+          "Assumption"
+        ]
+      }
+    ]
+  },
+  "Discovering of America": {
+    "name": "Discovering of America",
+    "references": [
+      "Assumption",
+      "1 Nephi 13:12",
+      "1 Nephi 13:14"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Scattering of Lehi's seed",
+        "references": [
+          "1 Nephi 13:14"
+        ]
+      },
+      {
+        "sign": "Mighty nation raised up",
+        "references": [
+          "Assumption"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Destruction of the Nephites",
+        "references": [
+          "Assumption"
+        ]
+      },
+      {
+        "sign": "Columbus",
+        "references": [
+          "1 Nephi 13:12"
+        ]
+      }
+    ]
+  },
+  "Columbus": {
+    "name": "Columbus",
+    "references": [
+      "1 Nephi 13:12"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Discovering of America",
+        "references": [
+          "1 Nephi 13:12"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Scattering of Lehi's seed": {
+    "name": "Scattering of Lehi's seed",
+    "references": [
+      "1 Nephi 13:14",
+      "1 Nephi 15:17",
+      "1 Nephi 22:7",
+      "1 Nephi 22:8"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Fullness of the gospel preached to Lehi's seed",
+        "references": [
+          "1 Nephi 15:17"
+        ]
+      },
+      {
+        "sign": "Restoration",
+        "references": [
+          "1 Nephi 22:8"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Discovering of America",
+        "references": [
+          "1 Nephi 13:14"
+        ]
+      },
+      {
+        "sign": "Mighty nation raised up",
+        "references": [
+          "1 Nephi 22:7"
+        ]
+      }
+    ]
+  },
+  "Fullness of the gospel preached to Lehi's seed": {
+    "name": "Fullness of the gospel preached to Lehi's seed",
+    "references": [
+      "1 Nephi 15:13",
+      "1 Nephi 15:17"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "1 Nephi 15:13"
+        ]
+      },
+      {
+        "sign": "Scattering of Lehi's seed",
+        "references": [
+          "1 Nephi 15:17"
+        ]
+      }
+    ]
+  },
+  "Mighty nation raised up": {
+    "name": "Mighty nation raised up",
+    "references": [
+      "1 Nephi 22:7",
+      "Assumption"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Scattering of Lehi's seed",
+        "references": [
+          "1 Nephi 22:7"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Scattering of Israel",
+        "references": [
+          "1 Nephi 22:7"
+        ]
+      },
+      {
+        "sign": "Discovering of America",
+        "references": [
+          "Assumption"
+        ]
+      }
+    ]
+  },
+  "Jews believe in Christ": {
+    "name": "Jews believe in Christ",
+    "references": [
+      "2 Nephi 10:6-8"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Gathering of the Jews",
+        "references": [
+          "2 Nephi 10:6-8"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Scattering of Israel",
+        "references": [
+          "2 Nephi 10:6-8"
+        ]
+      }
+    ]
+  },
+  "Gathering of the Jews": {
+    "name": "Gathering of the Jews",
+    "references": [
+      "2 Nephi 10:6-8"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Jews believe in Christ",
+        "references": [
+          "2 Nephi 10:6-8"
+        ]
+      }
+    ]
+  },
+  "Gathering of the wheat": {
+    "name": "Gathering of the wheat",
+    "references": [
+      "2 Nephi 30:8,10",
+      "D&C 63:54",
+      "D&C 86:7"
+    ],
+    "aliases": [
+      "Great division"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Burning",
+        "references": [
+          "2 Nephi 30:8,10",
+          "D&C 63:54"
+        ]
+      },
+      {
+        "sign": "Tares bound in bundles",
+        "references": [
+          "D&C 86:7"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "2 Nephi 30:8,10",
+          "D&C 63:54"
+        ]
+      }
+    ]
+  },
+  "All things revealed": {
+    "name": "All things revealed",
+    "references": [
+      "2 Nephi 30:15-18",
+      "D&C 88:108-110",
+      "D&C 88:110"
+    ],
+    "aliases": [
+      "Secret acts of men revealed"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Satan bound for 1000 years",
+        "references": [
+          "D&C 88:110"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Burning",
+        "references": [
+          "2 Nephi 30:15-18"
+        ]
+      },
+      {
+        "sign": "Angels crowned with glory",
+        "references": [
+          "D&C 88:108-110"
+        ]
+      },
+      {
+        "sign": "Saints receive their inheritance",
+        "references": [
+          "D&C 88:108-110"
+        ]
+      }
+    ]
+  },
+  "Times of the Gentiles fulfilled": {
+    "name": "Times of the Gentiles fulfilled",
+    "references": [
+      "3 Nephi 16:7-10",
+      "D&C 45:24-25",
+      "D&C 45:26-27",
+      "D&C 45:28-30",
+      "D&C 45:31-33"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Gentiles sin against the gospel",
+        "references": [
+          "3 Nephi 16:7-10"
+        ]
+      },
+      {
+        "sign": "Wars",
+        "references": [
+          "D&C 45:26-27",
+          "D&C 45:31-33"
+        ]
+      },
+      {
+        "sign": "Whole earth in commotion",
+        "references": [
+          "D&C 45:26-27"
+        ]
+      },
+      {
+        "sign": "Men's hearts shall fail them",
+        "references": [
+          "D&C 45:26-27"
+        ]
+      },
+      {
+        "sign": "Shall say that Christ delayeth his coming",
+        "references": [
+          "D&C 45:26-27"
+        ]
+      },
+      {
+        "sign": "Love of men wax cold",
+        "references": [
+          "D&C 45:26-27"
+        ]
+      },
+      {
+        "sign": "Iniquity shall abound",
+        "references": [
+          "D&C 45:26-27"
+        ]
+      },
+      {
+        "sign": "Overflowing scourge, desolating sickness",
+        "references": [
+          "D&C 45:31-33"
+        ]
+      },
+      {
+        "sign": "Men will curse God and die",
+        "references": [
+          "D&C 45:31-33"
+        ]
+      },
+      {
+        "sign": "Earthquakes",
+        "references": [
+          "D&C 45:31-33"
+        ]
+      },
+      {
+        "sign": "Many desolations",
+        "references": [
+          "D&C 45:31-33"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Jews gathered in Jerusalem",
+        "references": [
+          "D&C 45:24-25"
+        ]
+      },
+      {
+        "sign": "Restoration",
+        "references": [
+          "D&C 45:28-30"
+        ]
+      }
+    ]
+  },
+  "Gentiles sin against the gospel": {
+    "name": "Gentiles sin against the gospel",
+    "references": [
+      "3 Nephi 16:7-10",
+      "3 Nephi 16:10-12"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Gathering of Israel",
+        "references": [
+          "3 Nephi 16:10-12"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "3 Nephi 16:7-10"
+        ]
+      }
+    ]
+  },
+  "New Jerusalem": {
+    "name": "New Jerusalem",
+    "references": [
+      "3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8",
+      "D&C 84:2",
+      "Moses 7:62",
+      "Moses 7:63-64"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Gentiles help gather God's people",
+        "references": [
+          "3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8"
+        ]
+      },
+      {
+        "sign": "Christ stands on Mount Zion",
+        "references": [
+          "D&C 84:2"
+        ]
+      },
+      {
+        "sign": "Return of the City of Enoch",
+        "references": [
+          "Moses 7:63-64"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Lehi's family in America",
+        "references": [
+          "3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8"
+        ]
+      },
+      {
+        "sign": "Gathering of the elect",
+        "references": [
+          "Moses 7:62"
+        ]
+      }
+    ]
+  },
+  "Gentiles help gather God's people": {
+    "name": "Gentiles help gather God's people",
+    "references": [
+      "3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "New Jerusalem",
+        "references": [
+          "3 Nephi 20:22, 3 Nephi 21:23-25, Ether 13:8"
+        ]
+      }
+    ]
+  },
+  "Gathering of the elect": {
+    "name": "Gathering of the elect",
+    "references": [
+      "D&C 29:7",
+      "D&C 29:9",
+      "D&C 33:6",
+      "Moses 7:62"
+    ],
+    "aliases": [
+      "Gather elect from four quarters of the earth"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Burning",
+        "references": [
+          "D&C 29:9"
+        ]
+      },
+      {
+        "sign": "New Jerusalem",
+        "references": [
+          "Moses 7:62"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "D&C 29:7",
+          "D&C 33:6"
+        ]
+      },
+      {
+        "sign": "Truth sweeps earth as a flood",
+        "references": [
+          "Moses 7:62"
+        ]
+      }
+    ]
+  },
+  "Angel sounds his trump": {
+    "name": "Angel sounds his trump",
+    "references": [
+      "D&C 29:13",
+      "D&C 29:14-19",
+      "D&C 45:45-46"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Morning of the First Resurrection",
+        "references": [
+          "D&C 29:13",
+          "D&C 45:45-46"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Sun darkened",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      },
+      {
+        "sign": "Moon turned to blood",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      },
+      {
+        "sign": "Stars fall from heaven",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      },
+      {
+        "sign": "Great hailstorm",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      },
+      {
+        "sign": "Flies eat flesh and cause maggots",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      },
+      {
+        "sign": "Flesh fall off their bones and eyes fall out",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      }
+    ]
+  },
+  "Great hailstorm": {
+    "name": "Great hailstorm",
+    "references": [
+      "D&C 29:14-19"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Angel sounds his trump",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Flies eat flesh and cause maggots": {
+    "name": "Flies eat flesh and cause maggots",
+    "references": [
+      "D&C 29:14-19"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Angel sounds his trump",
+        "references": [
+          "D&C 29:14-19"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Stars refuse their light": {
+    "name": "Stars refuse their light",
+    "references": [
+      "D&C 34:7-9"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "D&C 34:7-9"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Trump of God shall sound": {
+    "name": "Trump of God shall sound",
+    "references": [
+      "D&C 43:18"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Morning of the First Resurrection",
+        "references": [
+          "D&C 43:18"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Lord speaks from Zion and Jerusalem",
+        "references": [
+          "D&C 43:18"
+        ]
+      }
+    ]
+  },
+  "Whole earth in commotion": {
+    "name": "Whole earth in commotion",
+    "references": [
+      "D&C 45:26-27"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:26-27"
+        ]
+      }
+    ]
+  },
+  "Men's hearts shall fail them": {
+    "name": "Men's hearts shall fail them",
+    "references": [
+      "D&C 45:26-27",
+      "D&C 88:87-93"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:26-27"
+        ]
+      },
+      {
+        "sign": "Gospel preached to the Gentiles",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ]
+  },
+  "Shall say that Christ delayeth his coming": {
+    "name": "Shall say that Christ delayeth his coming",
+    "references": [
+      "D&C 45:26-27"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:26-27"
+        ]
+      }
+    ]
+  },
+  "Love of men wax cold": {
+    "name": "Love of men wax cold",
+    "references": [
+      "D&C 45:26-27"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:26-27"
+        ]
+      }
+    ]
+  },
+  "Iniquity shall abound": {
+    "name": "Iniquity shall abound",
+    "references": [
+      "D&C 45:26-27"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:26-27"
+        ]
+      }
+    ]
+  },
+  "Times of the Gentiles begins": {
+    "name": "Times of the Gentiles begins",
+    "references": [
+      "D&C 45:28-30"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "D&C 45:28-30"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Overflowing scourge, desolating sickness": {
+    "name": "Overflowing scourge, desolating sickness",
+    "references": [
+      "D&C 45:31-33"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:31-33"
+        ]
+      }
+    ]
+  },
+  "Men will curse God and die": {
+    "name": "Men will curse God and die",
+    "references": [
+      "D&C 45:31-33"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:31-33"
+        ]
+      }
+    ]
+  },
+  "Many desolations": {
+    "name": "Many desolations",
+    "references": [
+      "D&C 45:31-33"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Times of the Gentiles fulfilled",
+        "references": [
+          "D&C 45:31-33"
+        ]
+      }
+    ]
+  },
+  "Blood": {
+    "name": "Blood",
+    "references": [
+      "D&C 45:40-43"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Great day of the Lord",
+        "references": [
+          "D&C 45:40-43"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Vapors of smoke": {
+    "name": "Vapors of smoke",
+    "references": [
+      "D&C 45:40-43"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Great day of the Lord",
+        "references": [
+          "D&C 45:40-43"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Jews recognize Christ": {
+    "name": "Jews recognize Christ",
+    "references": [
+      "D&C 45:51-53"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Mount of Olives splits",
+        "references": [
+          "D&C 45:51-53"
+        ]
+      }
+    ]
+  },
+  "Heathen nations redeemed": {
+    "name": "Heathen nations redeemed",
+    "references": [
+      "D&C 45:54"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Burning",
+        "references": [
+          "D&C 45:54"
+        ]
+      }
+    ]
+  },
+  "Second trump: Redemption of Terrestrial spirits": {
+    "name": "Second trump: Redemption of Terrestrial spirits",
+    "references": [
+      "D&C 45:54",
+      "Assumption",
+      "D&C 88:99",
+      "D&C 88:100"
+    ],
+    "aliases": [
+      "Afternoon of the First Resurrection"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Third trump: Redemption of Telestial spirits",
+        "references": [
+          "D&C 88:100"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Burning",
+        "references": [
+          "D&C 45:54"
+        ]
+      },
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "D&C 88:99"
+        ]
+      },
+      {
+        "sign": "Morning of the First Resurrection",
+        "references": [
+          "Assumption"
+        ]
+      }
+    ]
+  },
+  "Satan bound for 1000 years": {
+    "name": "Satan bound for 1000 years",
+    "references": [
+      "D&C 45:54",
+      "D&C 88:110",
+      "D&C 88:111-115"
+    ],
+    "aliases": [
+      "Satan shall be bound"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Satan loosed for a little season",
+        "references": [
+          "D&C 88:111-115"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Burning",
+        "references": [
+          "D&C 45:54"
+        ]
+      },
+      {
+        "sign": "All things revealed",
+        "references": [
+          "D&C 88:110"
+        ]
+      }
+    ]
+  },
+  "Angel sounds a trump": {
+    "name": "Angel sounds a trump",
+    "references": [
+      "D&C 49:23"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Heavens shake",
+        "references": [
+          "D&C 49:23"
+        ]
+      },
+      {
+        "sign": "Earthquakes",
+        "references": [
+          "D&C 49:23"
+        ]
+      },
+      {
+        "sign": "Face of the earth changed",
+        "references": [
+          "D&C 49:23"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Face of the earth changed": {
+    "name": "Face of the earth changed",
+    "references": [
+      "D&C 49:23"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Angel sounds a trump",
+        "references": [
+          "D&C 49:23"
+        ]
+      }
+    ]
+  },
+  "Tares bound in bundles": {
+    "name": "Tares bound in bundles",
+    "references": [
+      "D&C 86:7",
+      "D&C 88:94"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Burning",
+        "references": [
+          "D&C 86:7"
+        ]
+      },
+      {
+        "sign": "Silence for half an hour",
+        "references": [
+          "D&C 88:94"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Gathering of the wheat",
+        "references": [
+          "D&C 86:7"
+        ]
+      }
+    ]
+  },
+  "Gospel preached to the Gentiles": {
+    "name": "Gospel preached to the Gentiles",
+    "references": [
+      "D&C 88:87-93"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Earthquakes",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Sun darkened",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Moon turned to blood",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Stars fall from heaven",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Thunderings and lightenings",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Tempests",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Tsunamis",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      },
+      {
+        "sign": "Men's hearts shall fail them",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ]
+  },
+  "Thunderings and lightenings": {
+    "name": "Thunderings and lightenings",
+    "references": [
+      "D&C 88:87-93"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Gospel preached to the Gentiles",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ]
+  },
+  "Tempests": {
+    "name": "Tempests",
+    "references": [
+      "D&C 88:87-93"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Gospel preached to the Gentiles",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ]
+  },
+  "Tsunamis": {
+    "name": "Tsunamis",
+    "references": [
+      "D&C 88:87-93",
+      "Teachings of the Prophet Joseph Smith; p286-287"
+    ],
+    "aliases": [
+      "Seas heaving beyond their bounds"
+    ],
+    "comesBefore": [
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "D&C 88:87-93",
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Gospel preached to the Gentiles",
+        "references": [
+          "D&C 88:87-93"
+        ]
+      }
+    ]
+  },
+  "Silence for half an hour": {
+    "name": "Silence for half an hour",
+    "references": [
+      "D&C 88:94",
+      "D&C 88:95-97"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Curtain of heaven unfolded as a scroll",
+        "references": [
+          "D&C 88:95-97"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Tares bound in bundles",
+        "references": [
+          "D&C 88:94"
+        ]
+      },
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "D&C 88:95-97"
+        ]
+      }
+    ]
+  },
+  "Third trump: Redemption of Telestial spirits": {
+    "name": "Third trump: Redemption of Telestial spirits",
+    "references": [
+      "D&C 88:100",
+      "D&C 88:102"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Fourth trump: Sons of perdition",
+        "references": [
+          "D&C 88:102"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Second trump: Redemption of Terrestrial spirits",
+        "references": [
+          "D&C 88:100"
+        ]
+      }
+    ]
+  },
+  "Fourth trump: Sons of perdition": {
+    "name": "Fourth trump: Sons of perdition",
+    "references": [
+      "D&C 88:102",
+      "D&C 88:103-104"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Fifth trump: Angel committeth the everlasting gospel",
+        "references": [
+          "D&C 88:103-104"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Third trump: Redemption of Telestial spirits",
+        "references": [
+          "D&C 88:102"
+        ]
+      }
+    ]
+  },
+  "Fifth trump: Angel committeth the everlasting gospel": {
+    "name": "Fifth trump: Angel committeth the everlasting gospel",
+    "references": [
+      "D&C 88:103-104"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Every ear hear; every knee bow; every tongue confess",
+        "references": [
+          "D&C 88:103-104"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Fourth trump: Sons of perdition",
+        "references": [
+          "D&C 88:103-104"
+        ]
+      }
+    ]
+  },
+  "Every ear hear; every knee bow; every tongue confess": {
+    "name": "Every ear hear; every knee bow; every tongue confess",
+    "references": [
+      "D&C 88:103-104",
+      "D&C 88:105"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Sixth trump: she is fallen",
+        "references": [
+          "D&C 88:105"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Fifth trump: Angel committeth the everlasting gospel",
+        "references": [
+          "D&C 88:103-104"
+        ]
+      }
+    ]
+  },
+  "Sixth trump: she is fallen": {
+    "name": "Sixth trump: she is fallen",
+    "references": [
+      "D&C 88:105",
+      "D&C 88:106"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Seventh trump: It is finished",
+        "references": [
+          "D&C 88:106"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Every ear hear; every knee bow; every tongue confess",
+        "references": [
+          "D&C 88:105"
+        ]
+      }
+    ]
+  },
+  "Seventh trump: It is finished": {
+    "name": "Seventh trump: It is finished",
+    "references": [
+      "D&C 88:106",
+      "D&C 88:107"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Angels crowned with glory",
+        "references": [
+          "D&C 88:107"
+        ]
+      },
+      {
+        "sign": "Saints receive their inheritance",
+        "references": [
+          "D&C 88:107"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Sixth trump: she is fallen",
+        "references": [
+          "D&C 88:106"
+        ]
+      }
+    ]
+  },
+  "Angels crowned with glory": {
+    "name": "Angels crowned with glory",
+    "references": [
+      "D&C 88:107",
+      "D&C 88:108-110"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "All things revealed",
+        "references": [
+          "D&C 88:108-110"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Seventh trump: It is finished",
+        "references": [
+          "D&C 88:107"
+        ]
+      }
+    ]
+  },
+  "Saints receive their inheritance": {
+    "name": "Saints receive their inheritance",
+    "references": [
+      "D&C 88:107",
+      "D&C 88:108-110"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "All things revealed",
+        "references": [
+          "D&C 88:108-110"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Seventh trump: It is finished",
+        "references": [
+          "D&C 88:107"
+        ]
+      }
+    ]
+  },
+  "Satan loosed for a little season": {
+    "name": "Satan loosed for a little season",
+    "references": [
+      "D&C 88:111-115"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Satan gathers his armies",
+        "references": [
+          "D&C 88:111-115"
+        ]
+      },
+      {
+        "sign": "Michael gathers his armies",
+        "references": [
+          "D&C 88:111-115"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Satan bound for 1000 years",
+        "references": [
+          "D&C 88:111-115"
+        ]
+      }
+    ]
+  },
+  "Satan gathers his armies": {
+    "name": "Satan gathers his armies",
+    "references": [
+      "D&C 88:111-115"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Satan is defeated and cast away",
+        "references": [
+          "D&C 88:111-115"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Satan loosed for a little season",
+        "references": [
+          "D&C 88:111-115"
+        ]
+      }
+    ]
+  },
+  "Michael gathers his armies": {
+    "name": "Michael gathers his armies",
+    "references": [
+      "D&C 88:111-115"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Satan is defeated and cast away",
+        "references": [
+          "D&C 88:111-115"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Satan loosed for a little season",
+        "references": [
+          "D&C 88:111-115"
+        ]
+      }
+    ]
+  },
+  "Satan is defeated and cast away": {
+    "name": "Satan is defeated and cast away",
+    "references": [
+      "D&C 88:111-115"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Satan gathers his armies",
+        "references": [
+          "D&C 88:111-115"
+        ]
+      },
+      {
+        "sign": "Michael gathers his armies",
+        "references": [
+          "D&C 88:111-115"
+        ]
+      }
+    ]
+  },
+  "All things become new": {
+    "name": "All things become new",
+    "references": [
+      "D&C 101:23-25"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Burning",
+        "references": [
+          "D&C 101:23-25"
+        ]
+      }
+    ]
+  },
+  "Gathering at Adam-Ondi-Ahman": {
+    "name": "Gathering at Adam-Ondi-Ahman",
+    "references": [
+      "D&C 116",
+      "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+        ]
+      },
+      {
+        "sign": "Christ stands on Mount of Olives",
+        "references": [
+          "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+        ]
+      },
+      {
+        "sign": "Christ stands on Mount Zion",
+        "references": [
+          "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+        ]
+      },
+      {
+        "sign": "Lord speaks from Zion and Jerusalem",
+        "references": [
+          "The Millennial Messiah by Bruce R McConkie (Salt Lake City: Deseret Book, 1982), pp.578"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "D&C 116"
+        ]
+      }
+    ]
+  },
+  "Elders sent unto the nations": {
+    "name": "Elders sent unto the nations",
+    "references": [
+      "D&C 133:7-8"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Elders sent unto the Gentiles",
+        "references": [
+          "D&C 133:7-8"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Restoration",
+        "references": [
+          "D&C 133:7-8"
+        ]
+      }
+    ]
+  },
+  "Elders sent unto the Gentiles": {
+    "name": "Elders sent unto the Gentiles",
+    "references": [
+      "D&C 133:7-8"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Elders sent unto the Jews",
+        "references": [
+          "D&C 133:7-8"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Elders sent unto the nations",
+        "references": [
+          "D&C 133:7-8"
+        ]
+      }
+    ]
+  },
+  "Elders sent unto the Jews": {
+    "name": "Elders sent unto the Jews",
+    "references": [
+      "D&C 133:7-8",
+      "D&C 133:10"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Great day of the Lord",
+        "references": [
+          "D&C 133:10"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Elders sent unto the Gentiles",
+        "references": [
+          "D&C 133:7-8"
+        ]
+      }
+    ]
+  },
+  "Mountains broken down": {
+    "name": "Mountains broken down",
+    "references": [
+      "D&C 133:21-22"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Lord speaks from Zion and Jerusalem",
+        "references": [
+          "D&C 133:21-22"
+        ]
+      }
+    ]
+  },
+  "Ocean driven back into the north countries": {
+    "name": "Ocean driven back into the north countries",
+    "references": [
+      "D&C 133:23"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Islands become one land",
+        "references": [
+          "D&C 133:23"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Lord speaks from Zion and Jerusalem",
+        "references": [
+          "D&C 133:23"
+        ]
+      }
+    ]
+  },
+  "Those in the north countries shall come in remembrance before the Lord": {
+    "name": "Those in the north countries shall come in remembrance before the Lord",
+    "references": [
+      "D&C 133:26",
+      "D&C 133:27"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "A highway shall be cast up in the ocean",
+        "references": [
+          "D&C 133:27"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Christ reigns as King",
+        "references": [
+          "D&C 133:26"
+        ]
+      }
+    ]
+  },
+  "A highway shall be cast up in the ocean": {
+    "name": "A highway shall be cast up in the ocean",
+    "references": [
+      "D&C 133:27",
+      "D&C 133:30"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Those in the north countries shall bring their rich treasures to Ephraim",
+        "references": [
+          "D&C 133:30"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Those in the north countries shall come in remembrance before the Lord",
+        "references": [
+          "D&C 133:27"
+        ]
+      }
+    ]
+  },
+  "Those in the north countries shall bring their rich treasures to Ephraim": {
+    "name": "Those in the north countries shall bring their rich treasures to Ephraim",
+    "references": [
+      "D&C 133:30",
+      "D&C 133:32"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Those in the north countries shall be crowned with glory by Ephraim",
+        "references": [
+          "D&C 133:32"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "A highway shall be cast up in the ocean",
+        "references": [
+          "D&C 133:30"
+        ]
+      }
+    ]
+  },
+  "Those in the north countries shall be crowned with glory by Ephraim": {
+    "name": "Those in the north countries shall be crowned with glory by Ephraim",
+    "references": [
+      "D&C 133:32"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "Those in the north countries shall bring their rich treasures to Ephraim",
+        "references": [
+          "D&C 133:32"
+        ]
+      }
+    ]
+  },
+  "Darkness shall cover the earth": {
+    "name": "Darkness shall cover the earth",
+    "references": [
+      "Moses 7:60-61"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Christ comes in the clouds",
+        "references": [
+          "Moses 7:60-61"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Truth sweeps earth as a flood": {
+    "name": "Truth sweeps earth as a flood",
+    "references": [
+      "Moses 7:62"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Gathering of the elect",
+        "references": [
+          "Moses 7:62"
+        ]
+      }
+    ],
+    "comesAfter": []
+  },
+  "Return of the City of Enoch": {
+    "name": "Return of the City of Enoch",
+    "references": [
+      "Moses 7:63-64"
+    ],
+    "aliases": [],
+    "comesBefore": [],
+    "comesAfter": [
+      {
+        "sign": "New Jerusalem",
+        "references": [
+          "Moses 7:63-64"
+        ]
+      }
+    ]
+  },
+  "Temple in Jerusalem rebuilt": {
+    "name": "Temple in Jerusalem rebuilt",
+    "references": [
+      "Teachings of the Prophet Joseph Smith; p286-287"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Waters from temple heal the Dead Sea",
+        "references": [
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Jews gathered in Jerusalem",
+        "references": [
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      }
+    ]
+  },
+  "Waters from temple heal the Dead Sea": {
+    "name": "Waters from temple heal the Dead Sea",
+    "references": [
+      "Teachings of the Prophet Joseph Smith; p286-287"
+    ],
+    "aliases": [],
+    "comesBefore": [
+      {
+        "sign": "Sign of the Son of Man",
+        "references": [
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      }
+    ],
+    "comesAfter": [
+      {
+        "sign": "Temple in Jerusalem rebuilt",
+        "references": [
+          "Teachings of the Prophet Joseph Smith; p286-287"
+        ]
+      }
+    ]
+  }
+}
