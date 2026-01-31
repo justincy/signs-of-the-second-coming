@@ -2,6 +2,10 @@
 node_modules
 signs/*.gv
 !signs/signs.gv
-public
+# Generated graph files (but not logo/favicon)
+public/graph.svg
+public/graph.dot
+public/graph-simple.svg
+public/graph-simple.dot
 .next
 out

@@ -250,17 +250,24 @@ export default function Home({ fullGraphData, simpleGraphData }: Props) {
           gap: 1,
         }}
       >
-        <Box>
-          <Typography variant="h6" component="h1" sx={{ fontWeight: 600 }}>
-            Signs of the Second Coming
-          </Typography>
-          <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-            <Link href="/signs" style={{ color: 'inherit' }}>
-              View signs list
-            </Link>
-            {' · '}
-            Click a sign for details · Drag to pan · Ctrl+scroll to zoom
-          </Typography>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+          <img src="/logo.svg" alt="" width={36} height={36} />
+          <Box>
+            <Typography variant="h6" component="h1" sx={{ fontWeight: 600 }}>
+              Signs of the Second Coming
+            </Typography>
+            <Typography variant="caption" sx={{ color: 'text.secondary' }}>
+              <Link href="/signs" style={{ color: 'inherit' }}>
+                View signs list
+              </Link>
+              {' · '}
+              <Link href="/groups" style={{ color: 'inherit' }}>
+                Groups
+              </Link>
+              {' · '}
+              Drag to pan · Ctrl+scroll to zoom
+            </Typography>
+          </Box>
         </Box>
 
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
