@@ -35,9 +35,13 @@ for (const { duplicate, synonym } of synonyms) {
 
 // Build group map: member -> group name
 const groupMap = new Map();
+// Build reverse map: group name -> set of members (for marking sign membership)
+const groupMembersMap = new Map();
 for (const group of groups) {
+  groupMembersMap.set(group.name, new Set());
   for (const member of group.members) {
     groupMap.set(member, group.name);
+    groupMembersMap.get(group.name).add(member);
   }
 }
 
@@ -81,11 +85,18 @@ function generateGraph(resolveFn, isSimplified = false) {
         references: [],
         aliases: [],
         members: [], // For groups
+        memberOf: null, // Which group this sign belongs to
         comesBefore: [],
         comesAfter: [],
       });
     }
+    
     const detail = signDetails.get(canonical);
+    
+    // Check if this sign is a member of a group
+    if (!detail.memberOf && groupMap.has(canonical)) {
+      detail.memberOf = groupMap.get(canonical);
+    }
     
     // Add references from sign
     for (const ref of sign.references) {
@@ -155,6 +166,7 @@ function generateGraph(resolveFn, isSimplified = false) {
         references: [],
         aliases: [],
         members: [],
+        memberOf: groupMap.has(before) ? groupMap.get(before) : null,
         comesBefore: [],
         comesAfter: [],
       });
@@ -165,6 +177,7 @@ function generateGraph(resolveFn, isSimplified = false) {
         references: [],
         aliases: [],
         members: [],
+        memberOf: groupMap.has(after) ? groupMap.get(after) : null,
         comesBefore: [],
         comesAfter: [],
       });

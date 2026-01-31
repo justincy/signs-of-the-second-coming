@@ -34,6 +34,7 @@
       "Elijah appears",
       "Elias"
     ],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Remnant shall return to God",
@@ -157,6 +158,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -188,6 +190,7 @@
       "Recover the house of Israel"
     ],
     "members": [],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -237,6 +240,7 @@
       "Christ shall reign over all flesh"
     ],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Judah and Israel come together out of the land of the north",
@@ -285,6 +289,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Israel returns from the north",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -316,6 +321,7 @@
       "Scattering of the Jews"
     ],
     "members": [],
+    "memberOf": "Pre-Restoration",
     "comesBefore": [
       {
         "sign": "Gathering of Israel",
@@ -372,6 +378,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -394,6 +401,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Times of the Gentiles fulfilled",
@@ -464,6 +472,7 @@
       "Great tribulation of the Jews"
     ],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Hail",
@@ -590,6 +599,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -609,6 +619,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "7: Seven thunders; mystery of God finished",
@@ -639,6 +650,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -656,6 +668,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -674,6 +687,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Great day of the Lord",
@@ -702,6 +716,7 @@
       "Israel burns enemy weapons for seven years",
       "Israel will spoil their enemies"
     ],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Israel burns enemy weapons for seven years",
@@ -732,6 +747,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Gog and Magog defeated",
     "comesBefore": [
       {
         "sign": "Israel will spoil their enemies",
@@ -756,6 +772,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Gog and Magog defeated",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -787,6 +804,7 @@
       "Sun turned blacked"
     ],
     "members": [],
+    "memberOf": "Darkness",
     "comesBefore": [
       {
         "sign": "Great day of the Lord",
@@ -868,6 +886,7 @@
       "Rapture",
       "Morning of the First Resurrection"
     ],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -944,6 +963,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Darkness",
     "comesBefore": [
       {
         "sign": "Great day of the Lord",
@@ -999,6 +1019,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Darkness",
     "comesBefore": [
       {
         "sign": "Lord speaks from Zion and Jerusalem",
@@ -1046,6 +1067,7 @@
       "Lord utters his voice"
     ],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Heavens shake",
@@ -1127,6 +1149,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Sign of the Son of Man",
@@ -1184,6 +1207,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Sign of the Son of Man",
@@ -1235,6 +1259,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Christ stands on Mount of Olives",
@@ -1268,6 +1293,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Mount of Olives splits",
@@ -1315,6 +1341,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Christ reigns as King",
@@ -1365,6 +1392,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Angel sounds his trump",
@@ -1405,6 +1433,7 @@
       "Son of Man shall come"
     ],
     "members": [],
+    "memberOf": "Great day of the Lord",
     "comesBefore": [
       {
         "sign": "Angels gather the remainder of the elect",
@@ -1551,6 +1580,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Restoration",
     "comesBefore": [
       {
         "sign": "Great day of the Lord",
@@ -1575,6 +1605,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -1596,6 +1627,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Christ comes in the clouds",
@@ -1637,6 +1669,7 @@
       "Preach the fulness of the gospel"
     ],
     "members": [],
+    "memberOf": "Gospel preached to the world",
     "comesBefore": [
       {
         "sign": "Burning",
@@ -1679,6 +1712,7 @@
       "Destruction of the wicked"
     ],
     "members": [],
+    "memberOf": "Great day of the Lord",
     "comesBefore": [
       {
         "sign": "All things revealed",
@@ -1771,6 +1805,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Sign of the Son of Man",
@@ -1833,6 +1868,7 @@
       "Great sign in heaven"
     ],
     "members": [],
+    "memberOf": "Great day of the Lord",
     "comesBefore": [
       {
         "sign": "Christ comes in the clouds",
@@ -1941,6 +1977,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -1959,6 +1996,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Christ comes in the clouds",
@@ -1983,6 +2021,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Great day of the Lord",
     "comesBefore": [
       {
         "sign": "Christ comes in the clouds",
@@ -2014,6 +2053,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Great day of the Lord",
     "comesBefore": [
       {
         "sign": "Christ comes in the clouds",
@@ -2066,6 +2106,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Great earthquake",
@@ -2132,6 +2173,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -2159,6 +2201,7 @@
       "Heaven departed as a scroll"
     ],
     "members": [],
+    "memberOf": "Great day of the Lord",
     "comesBefore": [
       {
         "sign": "Temple of God opened",
@@ -2202,6 +2245,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Islands become one land",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -2219,6 +2263,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -2237,6 +2282,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Restoration",
     "comesBefore": [
       {
         "sign": "Sealing of the 144,000",
@@ -2264,6 +2310,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Opening of the Seventh Seal",
@@ -2296,6 +2343,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Silence in heavens for half an hour",
@@ -2327,6 +2375,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Voices, Thunderings, Lightenings, Earthquake",
@@ -2352,6 +2401,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "1: Hail, fire, blood",
@@ -2377,6 +2427,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 8-9: Six Trumpets",
     "comesBefore": [
       {
         "sign": "2: Third part of sea becomes blood",
@@ -2402,6 +2453,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 8-9: Six Trumpets",
     "comesBefore": [
       {
         "sign": "3: Great star falls from heaven causing wormwood",
@@ -2427,6 +2479,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 8-9: Six Trumpets",
     "comesBefore": [
       {
         "sign": "4: Third part of sun, moon, stars smitten",
@@ -2452,6 +2505,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 8-9: Six Trumpets",
     "comesBefore": [
       {
         "sign": "5: Smoke and tormenting locusts",
@@ -2477,6 +2531,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 8-9: Six Trumpets",
     "comesBefore": [
       {
         "sign": "6: Four horsemen kill third of men",
@@ -2502,6 +2557,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 8-9: Six Trumpets",
     "comesBefore": [
       {
         "sign": "7: Seven thunders; mystery of God finished",
@@ -2530,6 +2586,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Temple of God opened",
@@ -2605,6 +2662,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Two witnesses prophecy, die, resurrected",
     "comesBefore": [
       {
         "sign": "Two witnesses die",
@@ -2637,6 +2695,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Two witnesses prophecy, die, resurrected",
     "comesBefore": [
       {
         "sign": "Two witnesses resurrected",
@@ -2668,6 +2727,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Two witnesses prophecy, die, resurrected",
     "comesBefore": [
       {
         "sign": "Great earthquake in Israel",
@@ -2696,6 +2756,7 @@
       "Face of the Lord unveiled"
     ],
     "members": [],
+    "memberOf": "Great day of the Lord",
     "comesBefore": [
       {
         "sign": "Christ comes in the clouds",
@@ -2733,6 +2794,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -2751,6 +2813,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -2775,6 +2838,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -2797,6 +2861,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -2833,6 +2898,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 16: Plagues",
     "comesBefore": [
       {
         "sign": "2. Sea turned to blood",
@@ -2850,6 +2916,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 16: Plagues",
     "comesBefore": [
       {
         "sign": "3. Rivers and fountains turned to blood",
@@ -2874,6 +2941,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 16: Plagues",
     "comesBefore": [
       {
         "sign": "4. Men scorched with heat of the sun",
@@ -2898,6 +2966,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 16: Plagues",
     "comesBefore": [
       {
         "sign": "5. Kingdom of beast full of darkness",
@@ -2922,6 +2991,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 16: Plagues",
     "comesBefore": [
       {
         "sign": "6: Euphrates dried up",
@@ -2947,6 +3017,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Revelation 16: Plagues",
     "comesBefore": [
       {
         "sign": "7: Seven thunders; mystery of God finished",
@@ -2977,6 +3048,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "All nations gathered against Israel",
@@ -3008,6 +3080,7 @@
       "Every mountain and island moved",
       "Mountains broken down"
     ],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Christ reigns as King",
@@ -3041,6 +3114,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Pre-Restoration",
     "comesBefore": [
       {
         "sign": "Destruction of the Nephites",
@@ -3077,6 +3151,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Pre-Restoration",
     "comesBefore": [
       {
         "sign": "Discovering of America",
@@ -3103,6 +3178,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Pre-Restoration",
     "comesBefore": [
       {
         "sign": "Scattering of Lehi's seed",
@@ -3139,6 +3215,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Pre-Restoration",
     "comesBefore": [
       {
         "sign": "Discovering of America",
@@ -3159,6 +3236,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Pre-Restoration",
     "comesBefore": [
       {
         "sign": "Fullness of the gospel preached to Lehi's seed",
@@ -3196,6 +3274,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Gospel preached to the world",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -3220,6 +3299,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Pre-Restoration",
     "comesBefore": [
       {
         "sign": "Scattering of Lehi's seed",
@@ -3250,6 +3330,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Gathering of the Jews",
@@ -3274,6 +3355,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -3295,6 +3377,7 @@
       "Great division"
     ],
     "members": [],
+    "memberOf": "Wheat and Tares",
     "comesBefore": [
       {
         "sign": "Burning",
@@ -3331,6 +3414,7 @@
       "Secret acts of men revealed"
     ],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Satan bound for 1000 years",
@@ -3380,6 +3464,7 @@
       "Gentiles sin against the gospel",
       "Men's hearts shall fail them"
     ],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Gentiles sin against the gospel",
@@ -3472,6 +3557,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Times of the Gentiles fulfilled",
     "comesBefore": [
       {
         "sign": "Gathering of Israel",
@@ -3499,6 +3585,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Gentiles help gather God's people",
@@ -3541,6 +3628,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Christ comes in the clouds",
@@ -3570,6 +3658,7 @@
       "Gather elect from four quarters of the earth"
     ],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Burning",
@@ -3609,6 +3698,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Morning of the First Resurrection",
@@ -3664,6 +3754,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Angel sounds his trump",
@@ -3681,6 +3772,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Angel sounds his trump",
@@ -3698,6 +3790,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Darkness",
     "comesBefore": [
       {
         "sign": "Christ comes in the clouds",
@@ -3715,6 +3808,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Morning of the First Resurrection",
@@ -3760,6 +3854,7 @@
       "Flies eat flesh and cause maggots",
       "Overflowing rain"
     ],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -3778,6 +3873,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Times of the Gentiles fulfilled",
     "comesBefore": [
       {
         "sign": "Sign of the Son of Man",
@@ -3808,6 +3904,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Times of the Gentiles fulfilled",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -3825,6 +3922,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Times of the Gentiles fulfilled",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -3842,6 +3940,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Times of the Gentiles fulfilled",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -3859,6 +3958,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Restoration",
@@ -3876,6 +3976,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Times of the Gentiles fulfilled",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -3893,6 +3994,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Times of the Gentiles fulfilled",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -3910,6 +4012,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Times of the Gentiles fulfilled",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -3927,6 +4030,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Great day of the Lord",
@@ -3944,6 +4048,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Great day of the Lord",
@@ -3961,6 +4066,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -3978,6 +4084,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -4000,6 +4107,7 @@
       "Afternoon of the First Resurrection"
     ],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Third trump: Redemption of Telestial spirits",
@@ -4040,6 +4148,7 @@
       "Satan shall be bound"
     ],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Satan loosed for a little season",
@@ -4070,6 +4179,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Heavens shake",
@@ -4099,6 +4209,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Islands become one land",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -4117,6 +4228,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Wheat and Tares",
     "comesBefore": [
       {
         "sign": "Burning",
@@ -4147,6 +4259,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Gospel preached to the world",
     "comesBefore": [
       {
         "sign": "Earthquakes",
@@ -4213,6 +4326,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Sign of the Son of Man",
@@ -4237,6 +4351,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Sign of the Son of Man",
@@ -4264,6 +4379,7 @@
       "Seas heaving beyond their bounds"
     ],
     "members": [],
+    "memberOf": "Whole earth in commotion",
     "comesBefore": [
       {
         "sign": "Sign of the Son of Man",
@@ -4290,6 +4406,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Great day of the Lord",
     "comesBefore": [
       {
         "sign": "Curtain of heaven unfolded as a scroll",
@@ -4321,6 +4438,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Fourth trump: Sons of perdition",
@@ -4346,6 +4464,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Fifth trump: Angel committeth the everlasting gospel",
@@ -4370,6 +4489,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Every ear hear; every knee bow; every tongue confess",
@@ -4395,6 +4515,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Sixth trump: she is fallen",
@@ -4420,6 +4541,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Seventh trump: It is finished",
@@ -4445,6 +4567,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Angels crowned with glory",
@@ -4476,6 +4599,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "All things revealed",
@@ -4501,6 +4625,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "All things revealed",
@@ -4525,6 +4650,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Satan gathers his armies",
@@ -4555,6 +4681,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Satan is defeated and cast away",
@@ -4579,6 +4706,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [
       {
         "sign": "Satan is defeated and cast away",
@@ -4603,6 +4731,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -4626,6 +4755,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Millenium",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -4644,6 +4774,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Christ comes in the clouds",
@@ -4686,6 +4817,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Gospel preached to the world",
     "comesBefore": [
       {
         "sign": "Elders sent unto the Gentiles",
@@ -4710,6 +4842,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Gospel preached to the world",
     "comesBefore": [
       {
         "sign": "Elders sent unto the Jews",
@@ -4735,6 +4868,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Gospel preached to the world",
     "comesBefore": [
       {
         "sign": "Great day of the Lord",
@@ -4759,6 +4893,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Islands become one land",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -4776,6 +4911,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Islands become one land",
     "comesBefore": [
       {
         "sign": "Islands become one land",
@@ -4801,6 +4937,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Israel returns from the north",
     "comesBefore": [
       {
         "sign": "A highway shall be cast up in the ocean",
@@ -4826,6 +4963,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Israel returns from the north",
     "comesBefore": [
       {
         "sign": "Those in the north countries shall bring their rich treasures to Ephraim",
@@ -4851,6 +4989,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Israel returns from the north",
     "comesBefore": [
       {
         "sign": "Those in the north countries shall be crowned with glory by Ephraim",
@@ -4875,6 +5014,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Israel returns from the north",
     "comesBefore": [],
     "comesAfter": [
       {
@@ -4892,6 +5032,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Darkness",
     "comesBefore": [
       {
         "sign": "Christ comes in the clouds",
@@ -4909,6 +5050,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": "Gospel preached to the world",
     "comesBefore": [
       {
         "sign": "Gathering of the elect",
@@ -4926,6 +5068,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [],
     "comesAfter": [
       {
@@ -4943,6 +5086,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Waters from temple heal the Dead Sea",
@@ -4967,6 +5111,7 @@
     ],
     "aliases": [],
     "members": [],
+    "memberOf": null,
     "comesBefore": [
       {
         "sign": "Sign of the Son of Man",

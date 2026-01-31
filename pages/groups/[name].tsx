@@ -6,41 +6,42 @@ import {
   Chip,
   Paper,
   Breadcrumbs,
-  Divider,
   List,
   ListItem,
-  ListItemText,
-  ListItemIcon,
 } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import HomeIcon from '@mui/icons-material/Home';
 import Link from 'next/link';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import graphData from '../../data/graph-data.json';
+import graphDataSimple from '../../data/graph-data-simple.json';
+import groupsData from '../../data/groups.json';
 
 interface Relationship {
   sign: string;
   references: string[];
 }
 
-interface SignDetail {
+interface GroupDetail {
   name: string;
   references: string[];
-  aliases: string[];
-  members?: string[];
-  memberOf?: string | null;
+  members: string[];
   comesBefore: Relationship[];
   comesAfter: Relationship[];
 }
 
+interface Group {
+  name: string;
+  members: string[];
+}
+
 interface Props {
-  sign: SignDetail;
+  group: GroupDetail;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = Object.keys(graphData).map((name) => ({
-    params: { name },
+  const paths = (groupsData as Group[]).map((group) => ({
+    params: { name: group.name },
   }));
 
   return {
@@ -51,14 +52,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   const name = params?.name as string;
-  const sign = (graphData as Record<string, SignDetail>)[name];
+  const simpleData = graphDataSimple as Record<string, GroupDetail>;
+  const group = simpleData[name];
 
-  if (!sign) {
+  if (!group) {
     return { notFound: true };
   }
 
   return {
-    props: { sign },
+    props: { group },
   };
 };
 
@@ -73,7 +75,28 @@ function SignLink({ name }: { name: string }) {
   );
 }
 
-export default function SignDetailPage({ sign }: Props) {
+function GroupLink({ name }: { name: string }) {
+  return (
+    <Link 
+      href={`/groups/${encodeURIComponent(name)}`}
+      style={{ color: '#1976d2', textDecoration: 'none' }}
+    >
+      {name}
+    </Link>
+  );
+}
+
+export default function GroupDetailPage({ group }: Props) {
+  // Check if related signs are groups themselves
+  const groupNames = new Set((groupsData as Group[]).map(g => g.name));
+  
+  const renderRelationLink = (signName: string) => {
+    if (groupNames.has(signName)) {
+      return <GroupLink name={signName} />;
+    }
+    return <SignLink name={signName} />;
+  };
+
   return (
     <Container maxWidth="md" sx={{ pt: 4, pb: 4 }}>
       {/* Breadcrumbs */}
@@ -82,47 +105,48 @@ export default function SignDetailPage({ sign }: Props) {
           <HomeIcon sx={{ mr: 0.5 }} fontSize="small" />
           Graph
         </Link>
-        <Link href="/signs" style={{ color: 'inherit', textDecoration: 'none' }}>
-          Signs
+        <Link href="/groups" style={{ color: 'inherit', textDecoration: 'none' }}>
+          Groups
         </Link>
-        <Typography color="text.primary">{sign.name}</Typography>
+        <Typography color="text.primary">{group.name}</Typography>
       </Breadcrumbs>
 
       {/* Title */}
       <Typography variant="h3" sx={{ mb: 1, fontWeight: 600 }}>
-        {sign.name}
+        {group.name}
+      </Typography>
+      <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3 }}>
+        Group of {group.members.length} related signs
       </Typography>
 
-      {/* Aliases */}
-      {sign.aliases && sign.aliases.length > 0 && (
-        <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3 }}>
-          Also known as: {sign.aliases.join(', ')}
+      {/* Members */}
+      <Paper variant="outlined" sx={{ p: 3, mb: 3, backgroundColor: '#f5f5f5' }}>
+        <Typography variant="h6" sx={{ mb: 2 }}>
+          Members
         </Typography>
-      )}
-
-      {/* Part of Group */}
-      {sign.memberOf && (
-        <Paper variant="outlined" sx={{ p: 2, mb: 3, backgroundColor: '#e3f2fd' }}>
-          <Typography variant="body1">
-            Part of group:{' '}
-            <Link 
-              href={`/groups/${encodeURIComponent(sign.memberOf)}`}
-              style={{ color: '#1976d2', textDecoration: 'none', fontWeight: 500 }}
-            >
-              {sign.memberOf}
-            </Link>
-          </Typography>
-        </Paper>
-      )}
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+          {group.members.map((member, i) => (
+            <Chip
+              key={i}
+              label={member}
+              component={Link}
+              href={`/signs/${encodeURIComponent(member)}`}
+              clickable
+              variant="outlined"
+              sx={{ backgroundColor: 'white' }}
+            />
+          ))}
+        </Box>
+      </Paper>
 
       {/* References */}
-      {sign.references.length > 0 && (
+      {group.references.length > 0 && (
         <Paper variant="outlined" sx={{ p: 3, mb: 3 }}>
           <Typography variant="h6" sx={{ mb: 2 }}>
             Scripture References
           </Typography>
           <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
-            {sign.references.map((ref, i) => (
+            {group.references.map((ref, i) => (
               <Chip key={i} label={ref} variant="outlined" />
             ))}
           </Box>
@@ -130,19 +154,19 @@ export default function SignDetailPage({ sign }: Props) {
       )}
 
       {/* Comes After */}
-      {sign.comesAfter.length > 0 && (
+      {group.comesAfter.length > 0 && (
         <Paper variant="outlined" sx={{ p: 3, mb: 3 }}>
           <Typography variant="h6" sx={{ mb: 1, display: 'flex', alignItems: 'center', gap: 1 }}>
             <ArrowBackIcon /> Comes After
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', mb: 2 }}>
-            These signs occur before &quot;{sign.name}&quot;
+            This group occurs after these signs/groups
           </Typography>
           <List disablePadding>
-            {sign.comesAfter.map((rel, i) => (
+            {group.comesAfter.map((rel, i) => (
               <ListItem key={i} disablePadding sx={{ display: 'block', mb: 2 }}>
                 <Typography variant="subtitle1" sx={{ fontWeight: 500 }}>
-                  <SignLink name={rel.sign} />
+                  {renderRelationLink(rel.sign)}
                 </Typography>
                 {rel.references.length > 0 && (
                   <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mt: 0.5 }}>
@@ -158,19 +182,19 @@ export default function SignDetailPage({ sign }: Props) {
       )}
 
       {/* Comes Before */}
-      {sign.comesBefore.length > 0 && (
+      {group.comesBefore.length > 0 && (
         <Paper variant="outlined" sx={{ p: 3, mb: 3 }}>
           <Typography variant="h6" sx={{ mb: 1, display: 'flex', alignItems: 'center', gap: 1 }}>
             <ArrowForwardIcon /> Comes Before
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', mb: 2 }}>
-            These signs occur after &quot;{sign.name}&quot;
+            This group occurs before these signs/groups
           </Typography>
           <List disablePadding>
-            {sign.comesBefore.map((rel, i) => (
+            {group.comesBefore.map((rel, i) => (
               <ListItem key={i} disablePadding sx={{ display: 'block', mb: 2 }}>
                 <Typography variant="subtitle1" sx={{ fontWeight: 500 }}>
-                  <SignLink name={rel.sign} />
+                  {renderRelationLink(rel.sign)}
                 </Typography>
                 {rel.references.length > 0 && (
                   <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mt: 0.5 }}>
@@ -186,10 +210,10 @@ export default function SignDetailPage({ sign }: Props) {
       )}
 
       {/* No relationships */}
-      {sign.comesAfter.length === 0 && sign.comesBefore.length === 0 && (
+      {group.comesAfter.length === 0 && group.comesBefore.length === 0 && (
         <Paper variant="outlined" sx={{ p: 3 }}>
           <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-            No relationships have been defined for this sign yet.
+            No relationships have been defined for this group yet.
           </Typography>
         </Paper>
       )}
