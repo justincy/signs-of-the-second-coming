@@ -33,7 +33,7 @@ const sections = [
     title: 'Groups',
     description: 'Organize signs into logical clusters',
     href: '/groups',
-    ready: false,
+    ready: true,
   },
 ];
 
