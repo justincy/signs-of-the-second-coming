@@ -24,7 +24,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:static": "STATIC_EXPORT=1 next build",
+    "generate-graph": "node scripts/generate-graph.js",
+    "build:static": "npm run generate-graph && STATIC_EXPORT=1 next build",
     "start": "next start",
     "lint": "next lint"
   },
