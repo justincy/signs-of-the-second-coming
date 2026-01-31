@@ -10,24 +10,8 @@ import {
   Box,
   Typography,
   IconButton,
-} from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import CloseIcon from '@material-ui/icons/Close';
-
-const useStyles = makeStyles((theme) => ({
-  chip: {
-    margin: theme.spacing(0.5),
-  },
-  chipContainer: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(2),
-  },
-  refInput: {
-    marginTop: theme.spacing(2),
-  },
-}));
+} from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 
 type Sign = {
   name: string;
@@ -42,7 +26,6 @@ type Props = {
 };
 
 export default function SignDialog({ open, onClose, onSave, sign }: Props) {
-  const classes = useStyles();
   const [name, setName] = useState('');
   const [references, setReferences] = useState<string[]>([]);
   const [newRef, setNewRef] = useState('');
@@ -90,7 +73,7 @@ export default function SignDialog({ open, onClose, onSave, sign }: Props) {
         <IconButton
           aria-label="close"
           onClick={onClose}
-          style={{ position: 'absolute', right: 8, top: 8 }}
+          sx={{ position: 'absolute', right: 8, top: 8 }}
         >
           <CloseIcon />
         </IconButton>
@@ -105,11 +88,11 @@ export default function SignDialog({ open, onClose, onSave, sign }: Props) {
           onChange={(e) => setName(e.target.value)}
         />
         
-        <Typography variant="subtitle2" style={{ marginTop: 16 }}>
+        <Typography variant="subtitle2" sx={{ mt: 2 }}>
           Scripture References ({references.length})
         </Typography>
         
-        <Box className={classes.chipContainer}>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', mt: 1, mb: 2 }}>
           {references.length === 0 && (
             <Typography variant="body2" color="textSecondary">
               No references yet
@@ -120,14 +103,14 @@ export default function SignDialog({ open, onClose, onSave, sign }: Props) {
               key={ref}
               label={ref}
               onDelete={() => handleRemoveRef(ref)}
-              className={classes.chip}
+              sx={{ m: 0.5 }}
               size="small"
             />
           ))}
         </Box>
 
         <TextField
-          className={classes.refInput}
+          sx={{ mt: 2 }}
           margin="dense"
           label="Add Reference"
           placeholder="e.g., D&C 45:26-27"

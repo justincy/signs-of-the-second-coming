@@ -6,7 +6,7 @@ import {
   DialogActions,
   Button,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 
 type Props = {
   open: boolean;
@@ -23,7 +23,7 @@ export default function DeleteDialog({ open, onClose, onConfirm, signName }: Pro
         <Typography>
           Are you sure you want to delete <strong>{signName}</strong>?
         </Typography>
-        <Typography variant="body2" color="textSecondary" style={{ marginTop: 8 }}>
+        <Typography variant="body2" color="textSecondary" sx={{ mt: 1 }}>
           This will not automatically remove relationships involving this sign.
         </Typography>
       </DialogContent>

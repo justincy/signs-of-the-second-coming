@@ -15,40 +15,12 @@ import {
   Box,
   Chip,
   Tooltip,
-} from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import EditIcon from '@material-ui/icons/Edit';
-import DeleteIcon from '@material-ui/icons/Delete';
-import AddIcon from '@material-ui/icons/Add';
+} from '@mui/material';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+import AddIcon from '@mui/icons-material/Add';
 import SignDialog from '../components/SignDialog';
 import DeleteDialog from '../components/DeleteDialog';
-
-const useStyles = makeStyles((theme) => ({
-  header: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: theme.spacing(2),
-  },
-  search: {
-    marginBottom: theme.spacing(2),
-    width: 300,
-  },
-  chip: {
-    margin: theme.spacing(0.25),
-    maxWidth: 200,
-  },
-  refCell: {
-    maxWidth: 400,
-  },
-  nameCell: {
-    fontWeight: 500,
-  },
-  count: {
-    color: theme.palette.text.secondary,
-    marginLeft: theme.spacing(1),
-  },
-}));
 
 type Sign = {
   name: string;
@@ -56,7 +28,6 @@ type Sign = {
 };
 
 export default function Signs() {
-  const classes = useStyles();
   const [signs, setSigns] = useState<Sign[]>([]);
   const [search, setSearch] = useState('');
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -125,11 +96,13 @@ export default function Signs() {
   };
 
   return (
-    <Container maxWidth="lg" style={{ paddingTop: 24, paddingBottom: 24 }}>
-      <Box className={classes.header}>
+    <Container maxWidth="lg" sx={{ pt: 3, pb: 3 }}>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
         <Typography variant="h4">
           Signs
-          <span className={classes.count}>({filtered.length})</span>
+          <Box component="span" sx={{ color: 'text.secondary', ml: 1 }}>
+            ({filtered.length})
+          </Box>
         </Typography>
         <Button
           variant="contained"
@@ -142,7 +115,7 @@ export default function Signs() {
       </Box>
 
       <TextField
-        className={classes.search}
+        sx={{ mb: 2, width: 300 }}
         variant="outlined"
         size="small"
         placeholder="Search signs or references..."
@@ -162,14 +135,14 @@ export default function Signs() {
           <TableBody>
             {filtered.map((sign) => (
               <TableRow key={sign.name} hover>
-                <TableCell className={classes.nameCell}>{sign.name}</TableCell>
-                <TableCell className={classes.refCell}>
+                <TableCell sx={{ fontWeight: 500 }}>{sign.name}</TableCell>
+                <TableCell sx={{ maxWidth: 400 }}>
                   {sign.references.slice(0, 5).map((ref) => (
                     <Tooltip key={ref} title={ref}>
                       <Chip
                         label={ref.length > 25 ? ref.slice(0, 25) + '...' : ref}
                         size="small"
-                        className={classes.chip}
+                        sx={{ m: 0.25, maxWidth: 200 }}
                       />
                     </Tooltip>
                   ))}
@@ -177,7 +150,7 @@ export default function Signs() {
                     <Chip
                       label={`+${sign.references.length - 5} more`}
                       size="small"
-                      className={classes.chip}
+                      sx={{ m: 0.25 }}
                       variant="outlined"
                     />
                   )}
