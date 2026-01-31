@@ -203,6 +203,37 @@ export default function Home({ fullGraphData, simpleGraphData }: Props) {
     setIsDragging(false);
   }, []);
 
+  // Touch events for mobile
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    if ((e.target as Element).closest('.node')) return;
+    if (e.touches.length !== 1) return;
+
+    const touch = e.touches[0];
+    setIsDragging(true);
+    setDragStart({ x: touch.clientX, y: touch.clientY });
+    setPanStart({ x: pan.x, y: pan.y });
+  }, [pan]);
+
+  const handleTouchMove = useCallback(
+    (e: React.TouchEvent) => {
+      if (!isDragging || e.touches.length !== 1) return;
+
+      const touch = e.touches[0];
+      const deltaX = touch.clientX - dragStart.x;
+      const deltaY = touch.clientY - dragStart.y;
+
+      setPan({
+        x: panStart.x + deltaX,
+        y: panStart.y + deltaY,
+      });
+    },
+    [isDragging, dragStart, panStart]
+  );
+
+  const handleTouchEnd = useCallback(() => {
+    setIsDragging(false);
+  }, []);
+
   const handleClosePopover = () => {
     setSelectedSign(null);
     setPopoverAnchor(null);
@@ -327,12 +358,16 @@ export default function Home({ fullGraphData, simpleGraphData }: Props) {
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
         sx={{
           flex: 1,
           overflow: 'hidden',
           backgroundColor: '#f5f5f5',
           cursor: isDragging ? 'grabbing' : 'grab',
           position: 'relative',
+          touchAction: 'none', // Prevent browser handling of touch gestures
         }}
       >
         <Box
