@@ -21,7 +21,7 @@ const sections = [
     title: 'Relationships',
     description: 'Edit before/after relationships between signs',
     href: '/relationships',
-    ready: false,
+    ready: true,
   },
   {
     title: 'Synonyms',
