@@ -1,271 +1,91 @@
-import React, { useState, useRef, useCallback, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
   Box,
-  IconButton,
   Typography,
-  ButtonGroup,
-  Tooltip,
-  Popover,
+  FormControlLabel,
+  Checkbox,
   Paper,
-  Chip,
-  ToggleButtonGroup,
-  ToggleButton,
-  Link as MuiLink,
-  Button,
-  Divider,
 } from '@mui/material';
-import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
-import RestartAltIcon from '@mui/icons-material/RestartAlt';
-import CloseIcon from '@mui/icons-material/Close';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
-import graphDataFull from '../data/graph-data.json';
-import graphDataSimple from '../data/graph-data-simple.json';
+import dynamic from 'next/dynamic';
 
-const MIN_ZOOM = 0.1;
-const MAX_ZOOM = 3;
-const ZOOM_STEP = 0.2;
+import { transformGraphData, CytoscapeElements } from '../lib/graphTransformer';
 
-interface SignDetail {
+// Import raw data
+import signsData from '../data/signs.json';
+import relationshipsData from '../data/relationships.json';
+import groupsData from '../data/groups.json';
+import synonymsData from '../data/synonyms.json';
+
+// Dynamic import for Cytoscape (no SSR - it needs DOM)
+const CytoscapeGraph = dynamic(() => import('../components/CytoscapeGraph'), {
+  ssr: false,
+  loading: () => (
+    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+      <Typography>Loading graph...</Typography>
+    </Box>
+  ),
+});
+
+interface Sign {
   name: string;
   references: string[];
-  aliases: string[];
-  members?: string[];
-  comesBefore: { sign: string; references: string[] }[];
-  comesAfter: { sign: string; references: string[] }[];
 }
 
-interface GraphData {
-  [key: string]: SignDetail;
+interface Relationship {
+  before: string;
+  after: string;
+  references: string[];
+}
+
+interface Group {
+  name: string;
+  members: string[];
+}
+
+interface Synonym {
+  duplicate: string;
+  synonym: string;
 }
 
 interface Props {
-  fullGraphData: GraphData;
-  simpleGraphData: GraphData;
+  signs: Sign[];
+  relationships: Relationship[];
+  groups: Group[];
+  synonyms: Synonym[];
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   return {
     props: {
-      fullGraphData: graphDataFull as GraphData,
-      simpleGraphData: graphDataSimple as GraphData,
+      signs: signsData as Sign[],
+      relationships: relationshipsData as Relationship[],
+      groups: groupsData as Group[],
+      synonyms: synonymsData as Synonym[],
     },
   };
 };
 
-type GraphMode = 'full' | 'simple';
+export default function Home({ signs, relationships, groups, synonyms }: Props) {
+  const [collapseGroups, setCollapseGroups] = useState(true);
+  const [collapseSynonyms, setCollapseSynonyms] = useState(true);
 
-export default function Home({ fullGraphData, simpleGraphData }: Props) {
-  const [graphMode, setGraphMode] = useState<GraphMode>('simple');
-  const [zoom, setZoom] = useState(0.5);
-  const [pan, setPan] = useState({ x: 0, y: 0 });
-  const [isDragging, setIsDragging] = useState(false);
-  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
-  const [panStart, setPanStart] = useState({ x: 0, y: 0 });
-  const [svgContent, setSvgContent] = useState<string>('');
-  const [selectedSign, setSelectedSign] = useState<SignDetail | null>(null);
-  const [popoverAnchor, setPopoverAnchor] = useState<{ x: number; y: number } | null>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const svgContainerRef = useRef<HTMLDivElement>(null);
-
-  const graphData = graphMode === 'full' ? fullGraphData : simpleGraphData;
-  const svgPath = graphMode === 'full' ? '/graph.svg' : '/graph-simple.svg';
-
-  // Load SVG content
-  useEffect(() => {
-    setSvgContent(''); // Clear while loading
-    fetch(svgPath)
-      .then((res) => res.text())
-      .then((svg) => setSvgContent(svg))
-      .catch((err) => console.error('Failed to load SVG:', err));
-  }, [svgPath]);
-
-  // Attach event handlers to SVG nodes
-  useEffect(() => {
-    if (!svgContent || !svgContainerRef.current) return;
-
-    const container = svgContainerRef.current;
-    const nodes = container.querySelectorAll('.node');
-
-    const handleNodeClick = (e: Event) => {
-      const node = e.currentTarget as Element;
-      const title = node.querySelector('title')?.textContent;
-      if (title && graphData[title]) {
-        setSelectedSign(graphData[title]);
-        const rect = (node as Element).getBoundingClientRect();
-        setPopoverAnchor({
-          x: rect.left + rect.width / 2,
-          y: rect.top,
-        });
-      }
-    };
-
-    const handleNodeMouseEnter = (e: Event) => {
-      const node = e.currentTarget as Element;
-      const path = node.querySelector('path');
-      if (path) {
-        path.setAttribute('data-original-fill', path.getAttribute('fill') || '');
-        path.setAttribute('fill', '#bbdefb');
-        path.setAttribute('stroke', '#1976d2');
-        path.setAttribute('stroke-width', '2');
-      }
-    };
-
-    const handleNodeMouseLeave = (e: Event) => {
-      const node = e.currentTarget as Element;
-      const path = node.querySelector('path');
-      if (path) {
-        path.setAttribute('fill', path.getAttribute('data-original-fill') || '#f0f0f0');
-        path.setAttribute('stroke', 'black');
-        path.setAttribute('stroke-width', '1');
-      }
-    };
-
-    nodes.forEach((node) => {
-      node.addEventListener('click', handleNodeClick);
-      node.addEventListener('mouseenter', handleNodeMouseEnter);
-      node.addEventListener('mouseleave', handleNodeMouseLeave);
-      (node as HTMLElement).style.cursor = 'pointer';
+  // Transform data based on current options
+  const elements: CytoscapeElements = useMemo(() => {
+    return transformGraphData(signs, relationships, groups, synonyms, {
+      collapseGroups,
+      collapseSynonyms,
     });
+  }, [signs, relationships, groups, synonyms, collapseGroups, collapseSynonyms]);
 
-    return () => {
-      nodes.forEach((node) => {
-        node.removeEventListener('click', handleNodeClick);
-        node.removeEventListener('mouseenter', handleNodeMouseEnter);
-        node.removeEventListener('mouseleave', handleNodeMouseLeave);
-      });
-    };
-  }, [svgContent, graphData]);
-
-  const handleGraphModeChange = (_: React.MouseEvent, newMode: GraphMode | null) => {
-    if (newMode) {
-      setGraphMode(newMode);
-      setSelectedSign(null);
-      setPopoverAnchor(null);
-      setPan({ x: 0, y: 0 }); // Reset pan when switching graphs
-    }
-  };
-
-  const handleZoomIn = useCallback(() => {
-    setZoom((z) => Math.min(MAX_ZOOM, z + ZOOM_STEP));
-  }, []);
-
-  const handleZoomOut = useCallback(() => {
-    setZoom((z) => Math.max(MIN_ZOOM, z - ZOOM_STEP));
-  }, []);
-
-  const handleZoomReset = useCallback(() => {
-    setZoom(0.5);
-    setPan({ x: 0, y: 0 });
-  }, []);
-
-  const handleWheel = useCallback((e: React.WheelEvent) => {
-    if (e.ctrlKey || e.metaKey) {
-      e.preventDefault();
-      const delta = e.deltaY > 0 ? -ZOOM_STEP : ZOOM_STEP;
-      setZoom((z) => Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, z + delta)));
-    }
-  }, []);
-
-  const handleMouseDown = useCallback((e: React.MouseEvent) => {
-    if (e.button !== 0) return;
-    if ((e.target as Element).closest('.node')) return;
-
-    setIsDragging(true);
-    setDragStart({ x: e.clientX, y: e.clientY });
-    setPanStart({ x: pan.x, y: pan.y });
-  }, [pan]);
-
-  const handleMouseMove = useCallback(
-    (e: React.MouseEvent) => {
-      if (!isDragging) return;
-
-      const deltaX = e.clientX - dragStart.x;
-      const deltaY = e.clientY - dragStart.y;
-
-      setPan({
-        x: panStart.x + deltaX,
-        y: panStart.y + deltaY,
-      });
-    },
-    [isDragging, dragStart, panStart]
-  );
-
-  const handleMouseUp = useCallback(() => {
-    setIsDragging(false);
-  }, []);
-
-  const handleMouseLeave = useCallback(() => {
-    setIsDragging(false);
-  }, []);
-
-  // Touch events for mobile
-  const handleTouchStart = useCallback((e: React.TouchEvent) => {
-    if ((e.target as Element).closest('.node')) return;
-    if (e.touches.length !== 1) return;
-
-    const touch = e.touches[0];
-    setIsDragging(true);
-    setDragStart({ x: touch.clientX, y: touch.clientY });
-    setPanStart({ x: pan.x, y: pan.y });
-  }, [pan]);
-
-  const handleTouchMove = useCallback(
-    (e: React.TouchEvent) => {
-      if (!isDragging || e.touches.length !== 1) return;
-
-      const touch = e.touches[0];
-      const deltaX = touch.clientX - dragStart.x;
-      const deltaY = touch.clientY - dragStart.y;
-
-      setPan({
-        x: panStart.x + deltaX,
-        y: panStart.y + deltaY,
-      });
-    },
-    [isDragging, dragStart, panStart]
-  );
-
-  const handleTouchEnd = useCallback(() => {
-    setIsDragging(false);
-  }, []);
-
-  const handleClosePopover = () => {
-    setSelectedSign(null);
-    setPopoverAnchor(null);
-  };
-
-  const handleSignClick = (signName: string) => {
-    if (graphData[signName]) {
-      setSelectedSign(graphData[signName]);
-    }
-  };
-
-  useEffect(() => {
-    if (isDragging) {
-      document.body.style.userSelect = 'none';
-    } else {
-      document.body.style.userSelect = '';
-    }
-    return () => {
-      document.body.style.userSelect = '';
-    };
-  }, [isDragging]);
+  // Stats
+  const nodeCount = elements.nodes.length;
+  const edgeCount = elements.edges.length;
+  const groupCount = elements.nodes.filter(n => n.data.isGroup).length;
 
   return (
-    <Box
-      sx={{
-        height: '100vh',
-        width: '100vw',
-        display: 'flex',
-        flexDirection: 'column',
-        overflow: 'hidden',
-      }}
-    >
+    <Box sx={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
       {/* Header */}
       <Box
         sx={{
@@ -289,223 +109,48 @@ export default function Home({ fullGraphData, simpleGraphData }: Props) {
             </Typography>
             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
               <Link href="/signs" style={{ color: 'inherit' }}>
-                View signs list
+                Signs
               </Link>
               {' · '}
               <Link href="/groups" style={{ color: 'inherit' }}>
                 Groups
               </Link>
               {' · '}
-              Drag to pan · Ctrl+scroll to zoom
+              {nodeCount} nodes · {edgeCount} edges
+              {groupCount > 0 && ` · ${groupCount} groups`}
             </Typography>
           </Box>
         </Box>
 
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-          {/* Graph mode toggle */}
-          <ToggleButtonGroup
-            value={graphMode}
-            exclusive
-            onChange={handleGraphModeChange}
-            size="small"
-          >
-            <ToggleButton value="simple">
-              <Tooltip title="Simplified (groups collapsed)">
-                <span>Simple</span>
-              </Tooltip>
-            </ToggleButton>
-            <ToggleButton value="full">
-              <Tooltip title="Full (all signs)">
-                <span>Full</span>
-              </Tooltip>
-            </ToggleButton>
-          </ToggleButtonGroup>
-
-          {/* Zoom controls */}
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-            <Typography
-              variant="body2"
-              sx={{ color: 'text.secondary', minWidth: 50, textAlign: 'right' }}
-            >
-              {Math.round(zoom * 100)}%
-            </Typography>
-            <ButtonGroup size="small" variant="outlined">
-              <Tooltip title="Zoom out">
-                <IconButton onClick={handleZoomOut} disabled={zoom <= MIN_ZOOM} size="small">
-                  <RemoveIcon fontSize="small" />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="Reset zoom">
-                <IconButton onClick={handleZoomReset} size="small">
-                  <RestartAltIcon fontSize="small" />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="Zoom in">
-                <IconButton onClick={handleZoomIn} disabled={zoom >= MAX_ZOOM} size="small">
-                  <AddIcon fontSize="small" />
-                </IconButton>
-              </Tooltip>
-            </ButtonGroup>
-          </Box>
-        </Box>
+        {/* Options */}
+        <Paper variant="outlined" sx={{ px: 2, py: 0.5, display: 'flex', gap: 2 }}>
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={collapseGroups}
+                onChange={(e) => setCollapseGroups(e.target.checked)}
+                size="small"
+              />
+            }
+            label={<Typography variant="body2">Collapse Groups</Typography>}
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={collapseSynonyms}
+                onChange={(e) => setCollapseSynonyms(e.target.checked)}
+                size="small"
+              />
+            }
+            label={<Typography variant="body2">Collapse Synonyms</Typography>}
+          />
+        </Paper>
       </Box>
 
-      {/* Graph container */}
-      <Box
-        ref={containerRef}
-        onWheel={handleWheel}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseLeave}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-        sx={{
-          flex: 1,
-          overflow: 'hidden',
-          backgroundColor: '#f5f5f5',
-          cursor: isDragging ? 'grabbing' : 'grab',
-          position: 'relative',
-          touchAction: 'none', // Prevent browser handling of touch gestures
-        }}
-      >
-        <Box
-          ref={svgContainerRef}
-          sx={{
-            transformOrigin: '0 0',
-            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
-            transition: isDragging ? 'none' : 'transform 0.1s ease-out',
-            '& svg': {
-              display: 'block',
-            },
-          }}
-          dangerouslySetInnerHTML={{ __html: svgContent }}
-        />
+      {/* Graph */}
+      <Box sx={{ flex: 1, position: 'relative' }}>
+        <CytoscapeGraph elements={elements} />
       </Box>
-
-      {/* Sign detail popover */}
-      <Popover
-        open={Boolean(selectedSign && popoverAnchor)}
-        anchorReference="anchorPosition"
-        anchorPosition={popoverAnchor ? { top: popoverAnchor.y, left: popoverAnchor.x } : undefined}
-        onClose={handleClosePopover}
-        anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'center',
-        }}
-        transformOrigin={{
-          vertical: 'bottom',
-          horizontal: 'center',
-        }}
-        disableScrollLock
-      >
-        {selectedSign && (
-          <Paper sx={{ p: 2, maxWidth: 400, maxHeight: '60vh', overflow: 'auto' }}>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: 1 }}>
-              <Typography variant="h6" sx={{ fontWeight: 600, pr: 2 }}>
-                {selectedSign.name}
-              </Typography>
-              <IconButton size="small" onClick={handleClosePopover} sx={{ mt: -0.5, mr: -0.5 }}>
-                <CloseIcon fontSize="small" />
-              </IconButton>
-            </Box>
-
-            {selectedSign.aliases && selectedSign.aliases.length > 0 && (
-              <Typography variant="body2" sx={{ color: 'text.secondary', mb: 1 }}>
-                Also known as: {selectedSign.aliases.join(', ')}
-              </Typography>
-            )}
-
-            {selectedSign.members && selectedSign.members.length > 0 && (
-              <Box sx={{ mb: 2 }}>
-                <Typography variant="subtitle2" sx={{ mb: 0.5, display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                  <AccountTreeIcon fontSize="small" /> Group members
-                </Typography>
-                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
-                  {selectedSign.members.map((member, i) => (
-                    <Chip key={i} label={member} size="small" variant="outlined" />
-                  ))}
-                </Box>
-              </Box>
-            )}
-
-            {selectedSign.references.length > 0 && (
-              <Box sx={{ mb: 2 }}>
-                <Typography variant="subtitle2" sx={{ mb: 0.5 }}>
-                  References
-                </Typography>
-                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
-                  {selectedSign.references.map((ref, i) => (
-                    <Chip key={i} label={ref} size="small" variant="outlined" />
-                  ))}
-                </Box>
-              </Box>
-            )}
-
-            {selectedSign.comesAfter.length > 0 && (
-              <Box sx={{ mb: 2 }}>
-                <Typography variant="subtitle2" sx={{ mb: 0.5, display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                  <ArrowBackIcon fontSize="small" /> Comes after
-                </Typography>
-                {selectedSign.comesAfter.map((rel, i) => (
-                  <Box key={i} sx={{ mb: 1 }}>
-                    <MuiLink
-                      component="button"
-                      variant="body2"
-                      onClick={() => handleSignClick(rel.sign)}
-                      sx={{ textAlign: 'left' }}
-                    >
-                      {rel.sign}
-                    </MuiLink>
-                    {rel.references.length > 0 && (
-                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mt: 0.5 }}>
-                        {rel.references.map((ref, j) => (
-                          <Chip key={j} label={ref} size="small" sx={{ fontSize: '0.7rem', height: 20 }} />
-                        ))}
-                      </Box>
-                    )}
-                  </Box>
-                ))}
-              </Box>
-            )}
-
-            {selectedSign.comesBefore.length > 0 && (
-              <Box sx={{ mb: 2 }}>
-                <Typography variant="subtitle2" sx={{ mb: 0.5, display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                  <ArrowForwardIcon fontSize="small" /> Comes before
-                </Typography>
-                {selectedSign.comesBefore.map((rel, i) => (
-                  <Box key={i} sx={{ mb: 1 }}>
-                    <MuiLink
-                      component="button"
-                      variant="body2"
-                      onClick={() => handleSignClick(rel.sign)}
-                      sx={{ textAlign: 'left' }}
-                    >
-                      {rel.sign}
-                    </MuiLink>
-                    {rel.references.length > 0 && (
-                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mt: 0.5 }}>
-                        {rel.references.map((ref, j) => (
-                          <Chip key={j} label={ref} size="small" sx={{ fontSize: '0.7rem', height: 20 }} />
-                        ))}
-                      </Box>
-                    )}
-                  </Box>
-                ))}
-              </Box>
-            )}
-
-            <Divider sx={{ my: 2 }} />
-            <Link href={`/signs/${encodeURIComponent(selectedSign.name)}`} passHref legacyBehavior>
-              <Button variant="outlined" size="small" fullWidth>
-                View full details
-              </Button>
-            </Link>
-          </Paper>
-        )}
-      </Popover>
     </Box>
   );
 }
