@@ -11,6 +11,8 @@ import {
   ToggleButtonGroup,
   ToggleButton,
   Link as MuiLink,
+  Button,
+  Divider,
 } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -428,7 +430,7 @@ export default function Home({ fullGraphData, simpleGraphData }: Props) {
             )}
 
             {selectedSign.comesBefore.length > 0 && (
-              <Box>
+              <Box sx={{ mb: 2 }}>
                 <Typography variant="subtitle2" sx={{ mb: 0.5, display: 'flex', alignItems: 'center', gap: 0.5 }}>
                   <ArrowForwardIcon fontSize="small" /> Comes before
                 </Typography>
@@ -453,6 +455,13 @@ export default function Home({ fullGraphData, simpleGraphData }: Props) {
                 ))}
               </Box>
             )}
+
+            <Divider sx={{ my: 2 }} />
+            <Link href={`/signs/${encodeURIComponent(selectedSign.name)}`} passHref legacyBehavior>
+              <Button variant="outlined" size="small" fullWidth>
+                View full details
+              </Button>
+            </Link>
           </Paper>
         )}
       </Popover>
