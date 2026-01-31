@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Star with network connections -->
+  <!-- Network lines from center -->
+  <g stroke="#93C5FD" stroke-width="1.5" opacity="0.6">
+    <line x1="32" y1="32" x2="32" y2="6"/>
+    <line x1="32" y1="32" x2="8" y2="22"/>
+    <line x1="32" y1="32" x2="56" y2="22"/>
+    <line x1="32" y1="32" x2="14" y2="52"/>
+    <line x1="32" y1="32" x2="50" y2="52"/>
+  </g>
+  <!-- Small nodes -->
+  <g fill="#3B82F6">
+    <circle cx="8" cy="22" r="3"/>
+    <circle cx="56" cy="22" r="3"/>
+    <circle cx="14" cy="52" r="3"/>
+    <circle cx="50" cy="52" r="3"/>
+  </g>
+  <!-- Central star -->
+  <polygon 
+    points="32,6 35,22 50,22 38,32 42,48 32,40 22,48 26,32 14,22 29,22" 
+    fill="#FBBF24"
+  />
+</svg>

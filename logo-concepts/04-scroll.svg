@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Scroll / prophecy -->
+  <path d="M16,8 L48,8 Q56,8 56,16 L56,48 Q56,56 48,56 L16,56 Q8,56 8,48 L8,16 Q8,8 16,8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <!-- Scroll rolls -->
+  <ellipse cx="12" cy="12" rx="6" ry="4" fill="#FDE68A" stroke="#D97706" stroke-width="1.5"/>
+  <ellipse cx="52" cy="52" rx="6" ry="4" fill="#FDE68A" stroke="#D97706" stroke-width="1.5"/>
+  <!-- Text lines -->
+  <line x1="18" y1="22" x2="46" y2="22" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+  <line x1="18" y1="30" x2="42" y2="30" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+  <line x1="18" y1="38" x2="38" y2="38" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+</svg>

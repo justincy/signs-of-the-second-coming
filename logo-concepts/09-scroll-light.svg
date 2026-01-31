@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Scroll with radiant light behind -->
+  <!-- Light rays -->
+  <g stroke="#FDE68A" stroke-width="2" stroke-linecap="round" opacity="0.8">
+    <line x1="32" y1="2" x2="32" y2="12"/>
+    <line x1="16" y1="8" x2="22" y2="16"/>
+    <line x1="48" y1="8" x2="42" y2="16"/>
+    <line x1="8" y1="24" x2="16" y2="26"/>
+    <line x1="56" y1="24" x2="48" y2="26"/>
+  </g>
+  <!-- Scroll body -->
+  <rect x="16" y="18" width="32" height="38" rx="2" fill="#FEF3C7" stroke="#B45309" stroke-width="2"/>
+  <!-- Scroll top roll -->
+  <ellipse cx="32" cy="18" rx="18" ry="5" fill="#FDE68A" stroke="#B45309" stroke-width="1.5"/>
+  <!-- Scroll bottom roll -->
+  <ellipse cx="32" cy="56" rx="18" ry="5" fill="#FDE68A" stroke="#B45309" stroke-width="1.5"/>
+  <!-- Text lines -->
+  <g stroke="#B45309" stroke-width="1.5" stroke-linecap="round">
+    <line x1="22" y1="30" x2="42" y2="30"/>
+    <line x1="22" y1="37" x2="40" y2="37"/>
+    <line x1="22" y1="44" x2="36" y2="44"/>
+  </g>
+</svg>
