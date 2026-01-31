@@ -6,11 +6,8 @@ import {
   Chip,
   Paper,
   Breadcrumbs,
-  Divider,
   List,
   ListItem,
-  ListItemText,
-  ListItemIcon,
 } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -18,6 +15,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import Link from 'next/link';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import graphData from '../../data/graph-data.json';
+import SignGraph from '../../components/SignGraph';
 
 interface Relationship {
   sign: string;
@@ -112,6 +110,20 @@ export default function SignDetailPage({ sign }: Props) {
               {sign.memberOf}
             </Link>
           </Typography>
+        </Paper>
+      )}
+
+      {/* Relationship Graph */}
+      {(sign.comesAfter.length > 0 || sign.comesBefore.length > 0) && (
+        <Paper variant="outlined" sx={{ p: 3, mb: 3 }}>
+          <Typography variant="h6" sx={{ mb: 2 }}>
+            Timeline Position
+          </Typography>
+          <SignGraph
+            name={sign.name}
+            comesAfter={sign.comesAfter}
+            comesBefore={sign.comesBefore}
+          />
         </Paper>
       )}
 
