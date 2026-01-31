@@ -33,9 +33,13 @@ export default function SignGraph({ name, comesAfter, comesBefore }: SignGraphPr
   const nodeHeight = 36;
   const nodeRadius = 8;
   const centerX = width / 2;
-  const centerY = 150;
   const columnGap = 250;
   const rowGap = 50;
+  
+  // Calculate center Y based on number of nodes to prevent clipping
+  const maxNodes = Math.max(comesAfter.length, comesBefore.length, 1);
+  const contentHeight = maxNodes * rowGap;
+  const centerY = Math.max(100, contentHeight / 2 + 50);
 
   // Calculate positions
   const beforeNodes = comesAfter.map((rel, i) => ({
@@ -51,8 +55,7 @@ export default function SignGraph({ name, comesAfter, comesBefore }: SignGraphPr
   }));
 
   // Calculate SVG height based on content
-  const maxNodes = Math.max(comesAfter.length, comesBefore.length, 1);
-  const height = Math.max(200, centerY + (maxNodes * rowGap) / 2 + 50);
+  const height = Math.max(200, contentHeight + 100);
 
   // Truncate long names
   const truncate = (text: string, maxLen: number) => 
@@ -323,17 +326,6 @@ export default function SignGraph({ name, comesAfter, comesBefore }: SignGraphPr
               </Link>
             ))}
 
-            {/* Labels */}
-            {beforeNodes.length > 0 && (
-              <text x={centerX - columnGap} y={30} textAnchor="middle" fontSize="12" fill="#666">
-                Comes Before
-              </text>
-            )}
-            {afterNodes.length > 0 && (
-              <text x={centerX + columnGap} y={30} textAnchor="middle" fontSize="12" fill="#666">
-                Comes After
-              </text>
-            )}
           </svg>
         </Box>
       </Box>
