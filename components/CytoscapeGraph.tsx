@@ -79,7 +79,9 @@ export default function CytoscapeGraph({ elements }: CytoscapeGraphProps) {
             'line-color': '#90a4ae',
             'target-arrow-color': '#90a4ae',
             'target-arrow-shape': 'triangle',
-            'curve-style': 'bezier',
+            'curve-style': 'taxi',
+            'taxi-direction': 'downward',
+            'taxi-turn': '50%',
             'arrow-scale': 0.8,
           },
         },
@@ -103,10 +105,11 @@ export default function CytoscapeGraph({ elements }: CytoscapeGraphProps) {
         name: 'dagre',
         // @ts-ignore - dagre-specific options
         rankDir: 'TB', // Top to bottom
-        nodeSep: 50,
-        rankSep: 80,
-        edgeSep: 20,
-        spacingFactor: 1.2,
+        nodeSep: 30,
+        rankSep: 50,
+        edgeSep: 10,
+        spacingFactor: 1.0,
+        ranker: 'tight-tree',
       } as cytoscape.LayoutOptions,
       // Interaction options
       minZoom: 0.1,
