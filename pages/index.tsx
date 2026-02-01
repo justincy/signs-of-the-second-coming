@@ -18,8 +18,8 @@ import relationshipsData from '../data/relationships.json';
 import groupsData from '../data/groups.json';
 import synonymsData from '../data/synonyms.json';
 
-// Dynamic import for Cytoscape (no SSR - it needs DOM)
-const CytoscapeGraph = dynamic(() => import('../components/CytoscapeGraph'), {
+// Dynamic import for ELK graph (no SSR - it needs DOM)
+const ElkGraph = dynamic(() => import('../components/ElkGraph'), {
   ssr: false,
   loading: () => (
     <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
@@ -149,7 +149,7 @@ export default function Home({ signs, relationships, groups, synonyms }: Props) 
 
       {/* Graph */}
       <Box sx={{ flex: 1, position: 'relative' }}>
-        <CytoscapeGraph elements={elements} />
+        <ElkGraph elements={elements} />
       </Box>
     </Box>
   );
